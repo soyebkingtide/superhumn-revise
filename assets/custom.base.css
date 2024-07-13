@@ -59,8 +59,12 @@ h6,
 }
 
 .list-menu a {
-  font-size: 3.2rem;
+  font-size: 2rem;
   color: #fff;
+}
+
+.page-width-full {
+  width: 100%;
 }
 
 @media screen and (min-width: 990px) {
