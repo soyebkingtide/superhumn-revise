@@ -1,3 +1,56 @@
+@font-face {
+  font-family: "PhonkRegularItalic";
+  src: url("https://cdn.shopify.com/s/files/1/0610/8938/2550/files/font_07428854-ad7e-4134-bd8c-c42ffd0c2a7f.woff2?v=1711677908")
+      format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/0610/8938/2550/files/font_1e62e46a-5212-4da8-830b-166373088bd2.woff?v=1711677983")
+      format("woff");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "PhonkContrast";
+  src: url("https://cdn.shopify.com/s/files/1/0610/8938/2550/files/font_9ed1e32f-597d-4cc1-9bba-8eebb4293c08.woff2?v=1711678030")
+      format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/0610/8938/2550/files/font_8abe1618-0909-436f-8793-69ab7b029acd.woff?v=1711678075")
+      format("woff");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "PhonkRegular";
+  src: url("https://cdn.shopify.com/s/files/1/0610/8938/2550/files/font_f70f25b4-79d9-402a-a042-2379c740650a.woff2?v=1711678144")
+      format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/0610/8938/2550/files/font_f70f25b4-79d9-402a-a042-2379c740650a.woff2?v=1711678144")
+      format("woff");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "PhonkContrastItalic";
+  src: url("https://cdn.shopify.com/s/files/1/0610/8938/2550/files/font.woff2?v=1711678296")
+      format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/0610/8938/2550/files/font.woff?v=1711678344")
+      format("woff");
+  font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "PhonkContrast";
+  color: #fff;
+  font-weight: 600;
+  font-style: normal;
+
+  line-height: normal;
+}
+
 @media screen and (min-width: 990px) {
   .header--middle-left {
     grid-template-columns: auto;
