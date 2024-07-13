@@ -58,6 +58,11 @@ h6,
   font-family: "PhonkContrast";
 }
 
+.list-menu a {
+  font-size: 3.2rem;
+  color: #fff;
+}
+
 @media screen and (min-width: 990px) {
   .header--middle-left {
     grid-template-columns: auto;
