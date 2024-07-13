@@ -54,6 +54,9 @@ h6,
 
   line-height: normal;
 }
+.list-menu {
+  font-family: "PhonkContrast";
+}
 
 @media screen and (min-width: 990px) {
   .header--middle-left {
