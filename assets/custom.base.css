@@ -80,8 +80,8 @@ h6,
   .header__inline-menu {
     text-align: center;
   }
-  .header {
-    padding-top: 16px;
-    padding-bottom: 16px;
+  header.header {
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
   }
 }
