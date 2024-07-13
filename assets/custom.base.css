@@ -72,11 +72,16 @@ h6,
   max-width: 100%;
 }
 
+/* min device off 990px */
 @media screen and (min-width: 990px) {
   .header--middle-left {
     grid-template-columns: auto;
   }
   .header__inline-menu {
     text-align: center;
+  }
+  .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
