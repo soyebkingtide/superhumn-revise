@@ -36,12 +36,21 @@
             "button_link_2": "#",
             "button_style_secondary_2": false
           }
+        },
+        "caption_7Xn4iU": {
+          "type": "caption",
+          "settings": {
+            "caption": "FUEL YOUR INNER",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "large"
+          }
         }
       },
       "block_order": [
         "heading_tK4fQ8",
         "text_Qb4nyJ",
-        "buttons_zcJR8J"
+        "buttons_zcJR8J",
+        "caption_7Xn4iU"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Frame_42993.png",
