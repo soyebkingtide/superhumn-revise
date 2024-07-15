@@ -169,10 +169,15 @@
                   >
                  
                 {% if block.settings.caption %}
-    <span>{{ block.settings.caption | escape }}</span>   <mark>{{ block.settings.caption2 | escape }}</mark>
-{% elsif block.settings.caption2 %}
+    <span>{{ block.settings.caption | escape }}</span> 
+
+                {% endif %}
+
+{% if block.settings.caption2 %}
     <mark>{{ block.settings.caption2 | escape }}</mark> 
-{% elsif block.settings.caption3 %}
+
+     {% endif %}
+{% if block.settings.caption3 %}
     <span>{{ block.settings.caption3 | escape }}</span> 
 {% endif %}
 
