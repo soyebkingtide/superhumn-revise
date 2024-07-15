@@ -35,6 +35,10 @@
   --font-heading-family: "PhonkContrast";
 }
 
+.text-primary {
+  color: #ea3323;
+}
+
 h1,
 h2,
 h3,
