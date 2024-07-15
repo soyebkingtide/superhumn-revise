@@ -46,7 +46,7 @@
         "column_dVw8Ki"
       ],
       "settings": {
-        "title": "Multicolumn",
+        "title": "",
         "heading_size": "hxxl",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -55,7 +55,7 @@
         "background_style": "primary",
         "button_label": "Button label",
         "button_link": "",
-        "color_scheme": "",
+        "color_scheme": "scheme-2",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
