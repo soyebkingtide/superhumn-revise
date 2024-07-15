@@ -84,6 +84,15 @@ h5,
   font-size: 42px;
 }
 
+mark {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #ea3323;
+  font-size: 83.145px;
+  font-weight: 900;
+  background: transparent;
+  font-style: italic;
+}
+
 .list-menu {
   font-family: "PhonkContrast";
 }
