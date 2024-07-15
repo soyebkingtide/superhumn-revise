@@ -12,6 +12,16 @@
     "superhumn_image_banner_9wBDhQ": {
       "type": "superhumn-image-banner",
       "blocks": {
+        "caption_7Xn4iU": {
+          "type": "caption",
+          "settings": {
+            "caption": "FUEL",
+            "caption2": "YOUR",
+            "caption3": "INNER",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "large"
+          }
+        },
         "heading_tK4fQ8": {
           "type": "heading",
           "settings": {
@@ -36,21 +46,13 @@
             "button_link_2": "#",
             "button_style_secondary_2": false
           }
-        },
-        "caption_7Xn4iU": {
-          "type": "caption",
-          "settings": {
-            "caption": "FUEL YOUR INNER",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "large"
-          }
         }
       },
       "block_order": [
+        "caption_7Xn4iU",
         "heading_tK4fQ8",
         "text_Qb4nyJ",
-        "buttons_zcJR8J",
-        "caption_7Xn4iU"
+        "buttons_zcJR8J"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Frame_42993.png",
