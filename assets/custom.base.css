@@ -89,6 +89,11 @@ h5,
   color: #fff;
 }
 
+.full-width {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
 .header__menu-item {
   padding: 1.6rem;
 }
