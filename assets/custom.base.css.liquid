@@ -33,10 +33,11 @@
 
 :root {
   --font-heading-family: "PhonkContrast";
+  --color-primary:#ea3323;
 }
 
 .text-primary {
-  color: #ea3323 !important;
+  color: var(--color-primary) !important;
 }
 
 h1,
@@ -102,9 +103,9 @@ line-height: 34px; /* 121.429% */
 }
 mark {
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #ea3323;
+  -webkit-text-stroke-color: var(--color-primary);
   text-stroke-width: 2px;
-  text-stroke-color: #ea3323;
+  text-stroke-color: var(--color-primary);
   font-size: 83.145px;
   font-weight: 900;
   background: transparent;
@@ -133,6 +134,12 @@ mark {
     font-weight: 700;
     line-height: 64px;
 }
+
+.button--secondary{
+  background:var(--color-primary);
+  color:#fff;
+}
+
 
 .caption-bar {
   position: relative;
