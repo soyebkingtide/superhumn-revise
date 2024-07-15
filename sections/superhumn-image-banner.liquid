@@ -167,8 +167,21 @@
                     class="image-with-text__text image-with-text__text--caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }} {{ block.settings.text_style }}"
                     {{ block.shopify_attributes }}
                   >
-                    {{ block.settings.caption | escape }}
-                  </p>
+                 
+                 {% if block.settings.caption %}
+                 <span>{{ block.settings.caption | escape }}</span> 
+
+                 {% elsif block.settings.caption2 %}
+                    <mark>{{ block.settings.caption2 | escape }}</mark> 
+
+                   {% elsif block.settings.caption3 %}
+                      <span>{{ block.settings.caption3 | escape }}</span> 
+                  
+                 {% endif %}
+                 
+                 
+                 
+                    </p>
 
 
 
