@@ -83,7 +83,9 @@ h5,
 .h5 {
   font-size: 42px;
 }
-
+.caption-text {
+  letter-spacing: 0.831px;
+}
 mark {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #ea3323;
