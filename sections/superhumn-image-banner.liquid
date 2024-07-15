@@ -164,7 +164,7 @@
 
               {%- when 'caption' -%}
                   <p
-                    class="h3 image-with-text__text image-with-text__text--caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }} {{ block.settings.text_style }}"
+                    class="image-with-text__text image-with-text__text--caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }} {{ block.settings.text_style }}"
                     {{ block.shopify_attributes }}
                   >
                  
@@ -555,19 +555,19 @@
           "id": "text_size",
           "options": [
             {
-              "value": "small",
+              "value": "h3",
               "label": "t:sections.image-with-text.blocks.caption.settings.caption_size.options__1.label"
             },
             {
-              "value": "medium",
+              "value": "h2",
               "label": "t:sections.image-with-text.blocks.caption.settings.caption_size.options__2.label"
             },
             {
-              "value": "large",
+              "value": "h1",
               "label": "t:sections.image-with-text.blocks.caption.settings.caption_size.options__3.label"
             }
           ],
-          "default": "medium",
+          "default": "h3",
           "label": "t:sections.image-with-text.blocks.caption.settings.caption_size.label"
         }
       ]
