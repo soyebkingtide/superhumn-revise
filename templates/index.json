@@ -76,7 +76,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/image_1.png",
             "title": "",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit”<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -84,8 +84,9 @@
         "column_jCmjFn": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/Mask_group_1.png",
+            "title": "",
+            "text": "<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit”<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -93,8 +94,9 @@
         "column_WLDJFF": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/Mask_group_2.png",
+            "title": "",
+            "text": "<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit”<\/p>",
             "link_label": "",
             "link": ""
           }
