@@ -36,6 +36,25 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  
+.superhumn-title{
+  position:relative;
+}
+
+.superhumn-title:after {
+    content: {{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.collection.title | escape }};
+    POSITION: ABSOLUTE;
+    left: 0;
+    top: -12px;
+    z-index: -1;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color:  #191919;
+}
+
+
+
 {%- endstyle -%}
 
 {%- liquid
