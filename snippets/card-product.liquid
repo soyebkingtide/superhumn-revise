@@ -41,7 +41,7 @@
     endif
   -%}
   <div class="card-wrapper product-card-wrapper underline-links-hover">
-    {{card_product.type}}
+    
     <div
       class="
         card card--{{ settings.card_style }}
@@ -124,6 +124,11 @@
                 {{ card_product.title | escape }}
               </a>
             </h3>
+
+
+           <p class="product-type"> {{card_product.type}} </p>
+
+
           </div>
           <div class="card__badge {{ settings.badge_position }}">
             {%- if card_product.available == false -%}
