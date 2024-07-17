@@ -41,6 +41,15 @@ cart-items.is-empty .title-wrapper-with-link,
   font-size: inherit;
 }
 
+.product-type {
+  color: #b526d3;
+  font-family: "Zuume";
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 70%; /* 26.6px */
+}
+
 @media screen and (min-width: 990px) {
   .cart__warnings {
     padding: 7rem 0 1rem;
@@ -172,7 +181,7 @@ cart-items {
   margin: 0;
 }
 
-.cart__dynamic-checkout-buttons div[role='button'] {
+.cart__dynamic-checkout-buttons div[role="button"] {
   border-radius: var(--buttons-radius-outset) !important;
 }
 
