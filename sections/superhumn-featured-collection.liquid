@@ -100,7 +100,8 @@ top: -17%;
 .special-tag{
 position: absolute;
 
-
+right: 0;
+  top: 0;
 
 
 }
@@ -136,7 +137,7 @@ position: absolute;
 
 
 
-<img src="{{'flavor-bomb.svg' |  asset_url }}" class="special-tag" alt="FLAVOR BOMB" width="auto" height="auto">
+<img src="{{'flavor-bomb.svg' |  asset_url }}" class="special-tag img-fluid" alt="FLAVOR BOMB" width="auto" height="auto">
 
   <div
     class="collection{% if section.settings.quick_add == 'bulk' %} collection-quick-add-bulk{% endif %} section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}"
