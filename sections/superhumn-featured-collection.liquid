@@ -40,6 +40,7 @@
   
 .superhumn-title{
   position:relative;
+  font-weight:900;
 }
 .collection__title.title-wrapper{
   position:relative;
@@ -59,24 +60,29 @@
 .superhumn-title:after {
     content: '{{ section.settings.title  }}';
        position: absolute;
-    left: 6px;
-    top: -24px;
-    z-index: -1;
-    color: #931cf5;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #191919;
+ left: 1px;
+  top: -22px;
+  z-index: ;
+  color: #931cf5;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #191919;
+  height: 33%;
+  overflow:hidden;
 }
 
 
 .superhumn-title:before {
     content: '{{ section.settings.title  }}';
     position:absolute;
-        left: 10px;
-    top: -42px;
-    z-index: -1;
-    color: #931cf5;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #191919;
+     left: 2px;
+  top: -43px;
+  z-index: -1;
+  color: #931cf5;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #191919;
+  height: 33%;
+    overflow:hidden;
+  
 }
 
 .superhumn-title span{
