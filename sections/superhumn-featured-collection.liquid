@@ -99,13 +99,7 @@ top: -17%;
 
 .special-tag{
 position: absolute;
-  -webkit-text-stroke-width: 4px;
-  -webkit-text-stroke-color: #191919;
-  transform: rotate(90deg);
-  font-size: 277.08px;
-  right: 0;
-  top: 0;
-  color:var(--color-voilet);
+
 
 
 
@@ -140,9 +134,9 @@ position: absolute;
   class="color-{{ section.settings.color_scheme }} isolate gradient position-relative"
 >
 
-<h2 class="special-tag hxxl">
-  FLAVORBOMB
-</h2>
+
+
+<img src="{{'flavor-bomb.svg' |  asset_url }}" class="special-tag" alt="FLAVOR BOMB" width="auto" height="auto">
 
   <div
     class="collection{% if section.settings.quick_add == 'bulk' %} collection-quick-add-bulk{% endif %} section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}"
