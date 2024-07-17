@@ -26,7 +26,7 @@
           "type": "heading",
           "settings": {
             "heading": "SUPER HERO",
-            "heading_size": "hxl"
+            "heading_size": "hxxl"
           }
         },
         "text_Qb4nyJ": {
@@ -132,7 +132,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "vibranium",
+        "collection": "test-collection",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
