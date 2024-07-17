@@ -128,7 +128,7 @@
       "type": "superhumn-featured-collection",
       "settings": {
         "title": "CHOOSE YOUR POWER-UP",
-        "heading_size": "h1",
+        "heading_size": "hxl",
         "description": "",
         "show_description": false,
         "description_style": "body",
