@@ -47,7 +47,6 @@ cart-items.is-empty .title-wrapper-with-link,
   font-size: 38px;
   font-style: normal;
   font-weight: 700;
-  line-height: 70%; /* 26.6px */
 }
 
 @media screen and (min-width: 990px) {
