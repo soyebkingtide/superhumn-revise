@@ -1,13 +1,16 @@
+const cardMedia = document.querySelectorAll(".card--media");
+
 const videoElem = document.querySelectorAll(".controlVd");
 
-videoElem.forEach((VD) => {
+cardMedia.forEach((VD, index) => {
   VD.addEventListener("mouseenter", function () {
-    console.log(this);
-    VD.play();
+    console.log(videoElem(index));
+    videoElem(index).play();
   });
 
   VD.addEventListener("mouseout", function () {
+    console.log(videoElem(index));
     console.log(this);
-    VD.pause();
+    videoElem(index).pause();
   });
 });
