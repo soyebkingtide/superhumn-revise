@@ -1,7 +1,7 @@
 const videoElem = document.querySelectorAll(".controlVd");
 
 videoElem.forEach((VD) => {
-  controlVD.addEventListener("mouseenter", function () {
+  VD.addEventListener("mouseenter", function () {
     this.play();
   });
 
