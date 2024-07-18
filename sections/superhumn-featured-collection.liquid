@@ -165,18 +165,7 @@ right: 0;
     </div>
 
     
-          {{
-            section.settings.video
-            | video_tag:
-              image_size: '1100x',
-              autoplay: false,
-              loop: true,
-              controls: false,
-              muted: true,
-              class:'controlVd'
-          }}
-
-
+        
     <slider-component class="slider-mobile-gutter{% if section.settings.full_width %} slider-component-full-width{% endif %}{% if show_mobile_slider == false %} page-width{% endif %}{% if show_desktop_slider == false and section.settings.full_width == false %} page-width-desktop{% endif %}{% if show_desktop_slider %} slider-component-desktop{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
       <ul
         id="Slider-{{ section.id }}"
