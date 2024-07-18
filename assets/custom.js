@@ -1,8 +1,8 @@
 const cardMedia = document.querySelectorAll(".card--media");
 
-const videoElem = document.querySelector(".controlVd");
-
 cardMedia.forEach((VD, index) => {
+  const videoElem = document.querySelectorAll(".controlVd");
+
   VD.addEventListener("mouseenter", function () {
     console.log(videoElem[index]);
     videoElem[index].play();
