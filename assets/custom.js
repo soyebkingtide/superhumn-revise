@@ -1,12 +1,12 @@
 const vd = document.querySelectorAll(".controlVd");
 
 vd.forEach(
-  (controlVD = () => {
-    this.addEventListener("mouseenter", function () {
+  (controlVD = (ss) => {
+    ss.addEventListener("mouseenter", function () {
       this.play();
     });
 
-    this.addEventListener("mouseout", function () {
+    ss.addEventListener("mouseout", function () {
       this.pause();
     });
   })
