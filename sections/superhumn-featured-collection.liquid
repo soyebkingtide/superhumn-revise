@@ -194,7 +194,7 @@ right: 0;
               muted: false
           }}
 
-            {% render 'card-product',
+            {% comment %} {% render 'card-product',
               card_product: product,
               media_aspect_ratio: section.settings.image_ratio,
               image_shape: section.settings.image_shape,
@@ -204,7 +204,7 @@ right: 0;
               skip_styles: skip_card_product_styles,
               section_id: section.id,
               quick_add: section.settings.quick_add
-            %}
+            %} {% endcomment %}
           </li>
           {%- assign skip_card_product_styles = true -%}
         {%- else -%}
