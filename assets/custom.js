@@ -1,4 +1,4 @@
-const cardMedia = document.querySelectorAll(".card--media");
+const cardMedia = document.querySelectorAll(".video-block");
 
 cardMedia.forEach((VD, index) => {
   const videoElem = document.querySelectorAll(".controlVd");
