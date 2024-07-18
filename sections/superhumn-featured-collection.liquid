@@ -182,6 +182,18 @@ right: 0;
               style="--animation-order: {{ forloop.index }};"
             {% endif %}
           >
+
+
+          {{
+            'https://cdn.shopify.com/videos/c/o/v/f8a49edc178e4f99a763a84c15978ed6.mp4'
+            | video_tag:
+              image_size: '1100x',
+              autoplay: true,
+              loop: section.settings.enable_video_looping,
+              controls: true,
+              muted: false
+          }}
+
             {% render 'card-product',
               card_product: product,
               media_aspect_ratio: section.settings.image_ratio,
