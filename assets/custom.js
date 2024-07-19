@@ -14,7 +14,3 @@ cardMedia.forEach((VD, index) => {
     videoElem[index].pause();
   });
 });
-$(".banner__media").parallax({
-  naturalWidth: 600,
-  naturalHeight: 400,
-});
