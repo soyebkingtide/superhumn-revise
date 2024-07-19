@@ -152,8 +152,7 @@ font-weight:900;
   max-width:60rem!important;
 }
 
-
-.banner__box--shadow:after{
+.banner__box--shadow::after{
     content: '';
     position: absolute;
     border-radius: 1191px;
@@ -162,11 +161,13 @@ font-weight:900;
     display: block;
     max-width: 1191px;
     height: 630px;
-    z-index: -1;
+    z-index: 111;
     left: 50%;
-    transform: translate(-50%, -50%);
     top: 50%;
+    transform: translate(-50%, -50%);
+   
 }
+
 
 
 .button{
