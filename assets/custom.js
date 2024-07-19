@@ -16,4 +16,5 @@ cardMedia.forEach((VD, index) => {
 });
 
 var image = document.querySelector(".banner__media img");
+console.log(image);
 new simpleParallax(image);
