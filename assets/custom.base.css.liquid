@@ -315,16 +315,17 @@ Product Card
 
 
 .text-behind-shadow {
-    content: '';
+       content: "";
     position: absolute;
     border-radius: 20px;
     background: #000;
     filter: blur(150px);
-    display: block;
+    display: block!important;
     max-width: 1191px;
     height: 630px;
-    z-index: 111;
+    z-index: 1;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
 }
