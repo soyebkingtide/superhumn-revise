@@ -14,7 +14,7 @@ cardMedia.forEach((VD, index) => {
     videoElem[index].pause();
   });
 });
-
-var image = document.querySelector(".banner__media img");
-console.log(image);
-new simpleParallax(image);
+$(".banner__media").parallax({
+  naturalWidth: 600,
+  naturalHeight: 400,
+});
