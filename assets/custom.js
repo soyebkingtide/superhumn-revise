@@ -14,3 +14,6 @@ cardMedia.forEach((VD, index) => {
     videoElem[index].pause();
   });
 });
+
+var image = document.querySelector(".banner__media img");
+new simpleParallax(image);
