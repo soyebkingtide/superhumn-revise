@@ -11,47 +11,48 @@
 
 {% schema %}
 {
-    "name": "Text Scroller",
-    "tag":"section",
-    "class": "section",
-    "disabled_on":{"groups":["header", "footer"]},
-
-    "settings": [
-
-    {"type":"header", "content": "Add text as a block"},
-
-    {"type":"color_scheme", "id": "color", "label": "Choose Color", "default":"scheme-1"}
-        
-        ],
-
-        "blocks": [{
-            "name": "text",
-            "type": "text",
-            "settings": [
-              {
-
-              
-                    "type": "text",
-                    "id": "",
-                    "label": "",
-                    "default": ""
-                }
-            ]
-
-
-        }],
-        "presets":[
-            {
-             "name": "Text Scroller",
-             "blocks": [
+  "name": "Text Scroller",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Add text as a block"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color",
+      "label": "Choose Color",
+      "default": "scheme-1"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "text",
+      "type": "text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "default": ""
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Text Scroller",
+      "blocks": [
         {
           "type": "text"
         }
-        ]
+      ]
+    }
+  ]
 }
 
-]
-
-
-}
 {% endschema %}
