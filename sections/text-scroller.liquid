@@ -1,10 +1,34 @@
 {{ 'text-scroller.css' | asset_url | stylesheet_tag }}
 
 {%  style  %} 
+.text-scroller{
+    width:100%;
+    min-height:170px;
+}
+.text-scroller-items{ margin:0; padding:0; }
+.text-scroller-items li{
+    color:  var(--color-yellow);
+  font-family: "Zuume";
+font-size: 136.488px;
+
+font-weight: 900;
+
+letter-spacing: 2.73px; 
+}
 
 {% endstyle %} 
 
 <div class="text-scroller color-{{ section.settings.color_scheme }} gradient">
+
+<ul class="text-scroller-items">
+    <li>NON GMO</li>
+       <li>NON GMO</li>
+          <li>NON GMO</li>
+             <li>NON GMO</li>
+                <li>NON GMO</li>
+                   <li>NON GMO</li>
+                      <li>NON GMO</li>
+</ul>
 
 
 </div>
