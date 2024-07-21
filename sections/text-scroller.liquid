@@ -17,10 +17,23 @@ letter-spacing: 2.73px;
 
 display:inline;
 
-list-style-image:url({{'power-1.svg' |  asset_url }});
 
+position:relative;
 
 }
+.text-scroller-items li:after{
+content: '';
+  background: url({{'power-1.svg' |  asset_url }});
+    background-repeat: repeat;
+  width: 61px;
+  height: 93px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+}
+
 
 {% endstyle %} 
 
