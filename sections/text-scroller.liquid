@@ -1,0 +1,46 @@
+{{ 'text-scroller.css' | asset_url | stylesheet_tag }}
+
+{%  style  %} 
+
+{% endstyle %} 
+
+<div class="text-scroller color-{{ section.settings.color_scheme }} gradient">
+
+
+</div>
+
+{% schema %}
+{
+    "name": "Text Scroller",
+    "tag":"section",
+    "class": "section",
+    "disabled_on":{"groups":["header", "footer"]},
+
+    "settings": [
+
+    {"type":"header", "content": "Add text as a block"},
+
+    {"type":"color_scheme", "id": "color", "label": "Choose Color", "default":"scheme-1"}
+        
+        ],
+
+        "blocks": [{
+            "name": "text",
+            "type": "text",
+            "settings": [
+              {
+
+              
+                    "type": "text",
+                    "id": "",
+                    "label": "",
+                    "default": ""
+                }
+            ]
+
+
+        }]
+
+
+}
+{% endschema %}
