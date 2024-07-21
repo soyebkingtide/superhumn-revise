@@ -36,16 +36,21 @@ content: '';
 
 {% endstyle %} 
 
-<div class="text-scroller color-{{ section.settings.color_scheme }} gradient">
+<div class="text-scroller color-{{ section.settings.color_scheme }} gradient"     >
 
 <ul class="text-scroller-items">
-    <li>NON GMO</li>
-       <li>NON GMO</li>
-          <li>NON GMO</li>
-             <li>NON GMO</li>
-                <li>NON GMO</li>
-                   <li>NON GMO</li>
-                      <li>NON GMO</li>
+
+  {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'text' -%}
+
+           <li {{ block.shopify_attributes }} >  {{ block.settings.scroll_text }} </li>
+
+            {% endcase %}
+
+        {% endfor %}
+
+
 </ul>
 
 
