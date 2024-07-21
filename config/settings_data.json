@@ -213,9 +213,9 @@
       },
       "scheme-755a3726-29a3-4168-87d5-bb0359225390": {
         "settings": {
-          "background": "#ffffff",
+          "background": "#191919",
           "background_gradient": "",
-          "text": "#121212",
+          "text": "#f9db4a",
           "button": "#121212",
           "button_label": "#ffffff",
           "secondary_button_label": "#121212",
