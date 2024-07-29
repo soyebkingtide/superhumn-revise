@@ -31,10 +31,18 @@
   position:relative;
   }
 
-    .superhumn-multicolumns-v2 .multicolumn-card { position:relative; }
+    .superhumn-multicolumns-v2 .multicolumn-card { position:relative; z-index:1;}
 
-      .superhumn-multicolumns-v2 .multicolumn-card:after{
-        content:'';
+      .superhumn-multicolumns-v2 .multicolumn-card:before{
+       
+        content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background: red;
+  left: 67px;
+  top: 20px;
       }
 
 
