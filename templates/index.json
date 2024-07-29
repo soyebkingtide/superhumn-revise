@@ -259,7 +259,9 @@
         "column_8H8G7H"
       ],
       "settings": {
-        "title": "EVERYONE AND YOUR MOM IS RAVING",
+        "title": "EVERYONE",
+        "title1": "AND YOUR MOM",
+        "title2": "IS RAVING",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
