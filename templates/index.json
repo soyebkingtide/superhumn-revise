@@ -211,12 +211,76 @@
       "settings": {
         "color_scheme": "scheme-755a3726-29a3-4168-87d5-bb0359225390"
       }
+    },
+    "superhumn_multicolumn_3tXTw8": {
+      "type": "superhumn-multicolumn",
+      "blocks": {
+        "column_EBpjG8": {
+          "type": "column",
+          "settings": {
+            "title": "Jakob Kenter",
+            "text": "<p>I’m having an orgasm in my mouth.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_pWHHXQ": {
+          "type": "column",
+          "settings": {
+            "title": "Terry Siphron",
+            "text": "<p>This is so addicting I could legit eat this everyday.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_9kQbHd": {
+          "type": "column",
+          "settings": {
+            "title": "Gretchen Rosser",
+            "text": "<p>One of the best chicken nuggets I have ever had.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_CVaGND": {
+          "type": "column",
+          "settings": {
+            "title": "Desirae Carder",
+            "text": "<p>It looks like beef, it smells like beef, it tastes like beef it’s so good.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_EBpjG8",
+        "column_pWHHXQ",
+        "column_9kQbHd",
+        "column_CVaGND"
+      ],
+      "settings": {
+        "title": "EVERYONE AND YOUR MOM IS RAVING",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "scheme-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "superhumn_image_banner_9wBDhQ",
     "superhumn_multicolumn_fPG6bK",
     "superhumn_featured_collection_EzDf3X",
-    "text_scroller_XybLWx"
+    "text_scroller_XybLWx",
+    "superhumn_multicolumn_3tXTw8"
   ]
 }
