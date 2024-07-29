@@ -212,10 +212,10 @@
         "color_scheme": "scheme-755a3726-29a3-4168-87d5-bb0359225390"
       }
     },
-    "superhumn_multicolumn_3tXTw8": {
-      "type": "superhumn-multicolumn",
+    "superhumn_multicolumn_v2_aHCerr": {
+      "type": "superhumn-multicolumn-v2",
       "blocks": {
-        "column_EBpjG8": {
+        "column_xJAiK3": {
           "type": "column",
           "settings": {
             "title": "Jakob Kenter",
@@ -224,7 +224,7 @@
             "link": ""
           }
         },
-        "column_pWHHXQ": {
+        "column_GMHkLL": {
           "type": "column",
           "settings": {
             "title": "Terry Siphron",
@@ -233,7 +233,7 @@
             "link": ""
           }
         },
-        "column_9kQbHd": {
+        "column_EnyGfa": {
           "type": "column",
           "settings": {
             "title": "Gretchen Rosser",
@@ -242,7 +242,7 @@
             "link": ""
           }
         },
-        "column_CVaGND": {
+        "column_8H8G7H": {
           "type": "column",
           "settings": {
             "title": "Desirae Carder",
@@ -253,10 +253,10 @@
         }
       },
       "block_order": [
-        "column_EBpjG8",
-        "column_pWHHXQ",
-        "column_9kQbHd",
-        "column_CVaGND"
+        "column_xJAiK3",
+        "column_GMHkLL",
+        "column_EnyGfa",
+        "column_8H8G7H"
       ],
       "settings": {
         "title": "EVERYONE AND YOUR MOM IS RAVING",
@@ -269,6 +269,7 @@
         "button_label": "Button label",
         "button_link": "",
         "color_scheme": "scheme-2",
+        "color_scheme_boxes": "",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
@@ -281,6 +282,6 @@
     "superhumn_multicolumn_fPG6bK",
     "superhumn_featured_collection_EzDf3X",
     "text_scroller_XybLWx",
-    "superhumn_multicolumn_3tXTw8"
+    "superhumn_multicolumn_v2_aHCerr"
   ]
 }
