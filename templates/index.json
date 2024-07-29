@@ -179,13 +179,34 @@
           "settings": {
             "scroll_text": "NOTHING"
           }
+        },
+        "text_XAkMtX": {
+          "type": "text",
+          "settings": {
+            "scroll_text": "Beef"
+          }
+        },
+        "text_7WfFN4": {
+          "type": "text",
+          "settings": {
+            "scroll_text": "Chilli Crisp"
+          }
+        },
+        "text_WVNP4z": {
+          "type": "text",
+          "settings": {
+            "scroll_text": "Signature"
+          }
         }
       },
       "block_order": [
         "text_WdzLzK",
         "text_B3Nk8Q",
         "text_cFXnYC",
-        "text_yJiayt"
+        "text_yJiayt",
+        "text_XAkMtX",
+        "text_7WfFN4",
+        "text_WVNP4z"
       ],
       "settings": {
         "color_scheme": "scheme-755a3726-29a3-4168-87d5-bb0359225390"
