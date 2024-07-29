@@ -9,8 +9,8 @@ cardMedia.forEach((VD, index) => {
   });
 
   VD.addEventListener("mouseout", function () {
-    console.log(videoElem[index]);
-    console.log(this);
+    // console.log(videoElem[index]);
+    // console.log(this);
     videoElem[index].pause();
   });
 });
