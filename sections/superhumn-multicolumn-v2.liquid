@@ -68,6 +68,38 @@
   transform: translateY(50%);
 }
 
+
+
+.superhumn-title:after {
+    content: '{{ section.settings.title  }}';
+       position: absolute;
+ left: 1%;
+top: -24%;
+  z-index: ;
+  color: #931cf5;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #191919;
+  height: 33%;
+  overflow:hidden;
+}
+
+
+.superhumn-title:before {
+    content: '{{ section.settings.title  }}';
+    position:absolute;
+     left: 2%;
+  top: -48%;
+  z-index: -1;
+  color: #931cf5;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #191919;
+  height: 33%;
+    overflow:hidden;
+  
+}
+
+
+
 {%- endstyle -%}
 
 {%- liquid
