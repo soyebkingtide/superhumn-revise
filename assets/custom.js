@@ -23,6 +23,7 @@ jQuery(function ($) {
     autoplaySpeed: 1,
     speed: 10000,
     dots: false,
+    variableWidth: true,
     arrows: false,
     cssEase: "linear",
     waitForAnimate: false,
