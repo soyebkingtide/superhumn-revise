@@ -68,9 +68,19 @@
   transform: translateY(50%);
 }
 
+ 
+.superhumn-title-{{ section.id }}{
+  position:relative;
+  font-weight:900;  
+}
+  @media screen and (max-width: 1328px) {
+    .superhumn-title-{{ section.id }}{
+  font-size:12vw;
+}
+  }
 
 
-.superhumn-title:after {
+.superhumn-title-{{ section.id }}:after {
     content: '{{ section.settings.title  }}';
        position: absolute;
  left: 1%;
@@ -84,7 +94,7 @@ top: -24%;
 }
 
 
-.superhumn-title:before {
+.superhumn-title-{{ section.id }}:before {
     content: '{{ section.settings.title  }}';
     position:absolute;
      left: 2%;
@@ -305,7 +315,7 @@ top: -24%;
   {% endcomment %}
 
   <section class="our-story">
-    <h3 class="h1 superhumn-title"> sdfafsadfdsasdfsdafs </h3>
+    <h3 class="h1 superhumn-title superhumn-title-{{ section.id }}"> sdfafsadfdsasdfsdafs </h3>
   </section>
 
   </div>
