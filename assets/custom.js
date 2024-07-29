@@ -14,3 +14,19 @@ cardMedia.forEach((VD, index) => {
     videoElem[index].pause();
   });
 });
+
+jQuery(function ($) {
+  $(".text-scroller-items").slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1,
+    speed: 6000,
+    dots: false,
+    arrows: false,
+    cssEase: "linear",
+    waitForAnimate: false,
+    pauseOnFocus: false,
+    pauseOnHover: true,
+  });
+});
