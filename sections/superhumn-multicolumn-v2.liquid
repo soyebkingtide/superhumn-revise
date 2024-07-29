@@ -73,6 +73,7 @@
   position:relative;
   font-weight:900;  
   color:#EA33AD;
+   left: auto!important;
 }
   @media screen and (max-width: 1328px) {
     .superhumn-title-{{ section.id }}{
@@ -84,7 +85,7 @@
 .superhumn-title-{{ section.id }}:after {
     content: '{{ section.settings.videoTitle }}';
        position: absolute;
- left: 1%;
+ left: auto;
 top: -24%;
   z-index: ;
   color: transparent;
@@ -99,7 +100,7 @@ top: -24%;
 .superhumn-title-{{ section.id }}:before {
     content: '{{ section.settings.videoTitle }}';
     position:absolute;
-     left: 2%;
+     left: auto;
   top: -48%;
   z-index: -1;
   color: transparent;
