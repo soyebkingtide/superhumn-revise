@@ -218,8 +218,8 @@
         "column_xJAiK3": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "Jakob Kenter",
+            "text": "<p>I’m having an orgasm in my mouth.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -227,8 +227,8 @@
         "column_GMHkLL": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "Terry Siphron",
+            "text": "<p>This is so addicting I could legit eat this everyday.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -236,8 +236,17 @@
         "column_EnyGfa": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "Gretchen Rosser",
+            "text": "<p>One of the best chicken nuggets I have ever had.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_8H8G7H": {
+          "type": "column",
+          "settings": {
+            "title": "Desirae Carder",
+            "text": "<p>It looks like beef, it smells like beef, it tastes like beef it’s so good.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -246,14 +255,15 @@
       "block_order": [
         "column_xJAiK3",
         "column_GMHkLL",
-        "column_EnyGfa"
+        "column_EnyGfa",
+        "column_8H8G7H"
       ],
       "settings": {
-        "title": "Multicolumn",
+        "title": "EVERYONE AND YOUR MOM IS RAVING",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
-        "columns_desktop": 3,
+        "columns_desktop": 4,
         "column_alignment": "left",
         "background_style": "primary",
         "button_label": "Button label",
