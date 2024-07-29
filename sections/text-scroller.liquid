@@ -74,11 +74,18 @@ content: '';
   z-index: -1;
 }
 
+.light-1{
+  position:absolute;
+}
 
 
 {% endstyle %} 
 
+<img src="{{'light-1.svg' |  asset_url }}" width="auto" height="auto" class="light-1">
+
 <div class="text-scroller color-{{ section.settings.color_scheme }} gradient"     >
+
+
 
 <ul class="text-scroller-items">
 
