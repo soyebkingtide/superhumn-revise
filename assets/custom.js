@@ -21,7 +21,7 @@ jQuery(function ($) {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1,
-    speed: 2000,
+    speed: 10000,
     dots: false,
     arrows: false,
     cssEase: "linear",
