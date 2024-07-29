@@ -61,6 +61,32 @@ content: '';
 
 </div>
 
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+<script>
+
+  $(function(){
+
+  $('.text-scroller-items').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1,
+    speed: 6000,
+    dots: true,
+    cssEase: 'linear',
+    waitForAnimate: false,
+    pauseOnFocus: false, 
+    pauseOnHover: false
+  });
+})
+
+
+</script>
+
+
 {% schema %}
 {
   "name": "Text Scroller",
