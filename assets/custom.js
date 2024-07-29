@@ -20,7 +20,7 @@ jQuery(function ($) {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1,
+
     speed: 10000,
     dots: false,
     variableWidth: true,
