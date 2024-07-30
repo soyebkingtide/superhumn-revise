@@ -285,6 +285,62 @@
         "description": "",
         "full_width": false
       }
+    },
+    "superhumn_team_wPLcHr": {
+      "type": "superhumn-team",
+      "blocks": {
+        "column_iBV6Th": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/b460afbb-7477-4efe-9d75-d4ab3e7aea13_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_7j4PzY": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/b460afbb-7477-4efe-9d75-d4ab3e7aea13_1_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_am9rpz": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/b460afbb-7477-4efe-9d75-d4ab3e7aea13_1_2.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_iBV6Th",
+        "column_7j4PzY",
+        "column_am9rpz"
+      ],
+      "settings": {
+        "title": "MEET THE TEAM",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "SEE ALL",
+        "button_link": "#",
+        "color_scheme": "scheme-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
     }
   },
   "order": [
@@ -292,6 +348,7 @@
     "superhumn_multicolumn_fPG6bK",
     "superhumn_featured_collection_EzDf3X",
     "text_scroller_XybLWx",
-    "superhumn_multicolumn_v2_aHCerr"
+    "superhumn_multicolumn_v2_aHCerr",
+    "superhumn_team_wPLcHr"
   ]
 }
