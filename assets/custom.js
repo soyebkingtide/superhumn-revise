@@ -40,9 +40,9 @@ jQuery(function ($) {
     dots: false,
     variableWidth: true,
     arrows: false,
-    cssEase: "linear",
+    //  cssEase: "linear",
     waitForAnimate: false,
     pauseOnFocus: false,
-    pauseOnHover: true,
+    pauseOnHover: false,
   });
 });
