@@ -260,6 +260,7 @@
       ],
       "settings": {
         "character_image": "shopify:\/\/shop_images\/Rectangle_74.png",
+        "videoTitle": "OUR ORIGIN STORY",
         "title": "EVERYONE",
         "title1": "AND YOUR MOM",
         "title2": "IS RAVING",
@@ -275,8 +276,14 @@
         "color_scheme_boxes": "scheme-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 172,
-        "padding_bottom": 192
+        "heading": "Video",
+        "enable_video_looping": false,
+        "video": "shopify:\/\/files\/videos\/Chili Crisp FINAL.mp4",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "padding_top_video": 36,
+        "padding_bottom_video": 36
       }
     }
   },
