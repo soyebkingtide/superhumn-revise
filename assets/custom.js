@@ -31,18 +31,18 @@ jQuery(function ($) {
     pauseOnHover: true,
   });
 
-  // $(".design-text").slick({
-  //   slidesToShow: 3,
-  //   slidesToScroll: 1,
-  //   autoplay: true,
+  $(".design-text").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
 
-  //   speed: 10000,
-  //   dots: false,
-  //   variableWidth: true,
-  //   arrows: false,
-  //   //  cssEase: "linear",
-  //   waitForAnimate: false,
-  //   pauseOnFocus: false,
-  //   pauseOnHover: false,
-  // });
+    speed: 10000,
+    dots: false,
+    variableWidth: true,
+    arrows: false,
+    //  cssEase: "linear",
+    waitForAnimate: false,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+  });
 });
