@@ -138,6 +138,7 @@ top: -24%;
 border-bottom: 10px solid #FFF;
 background: #191919;
 letter-spacing: 2.73px;
+bottom:0;
  position: absolute;transform-origin: center; white-space: nowrap;
 }
 
@@ -392,7 +393,7 @@ letter-spacing: 2.73px;
   <section class="our-story">
 
 
- 
+ <div class="design-text-wrapper">
    <h3 class="design-text fw-900 h0 rotate-1 ">
    
     <span>NATURALLY</span> <span>GET</span> <span>HIGH NATURALLY</span> <span>GET HIGH</span>
@@ -403,7 +404,7 @@ letter-spacing: 2.73px;
    <h3 class="design-text fw-900 h0 rotate-2 "> <span>NATURALLY</span> <span>GET</span> <span>HIGH NATURALLY</span> <span>GET HIGH</span>
 </h3>
 
-      
+      </div>
     
      {%- unless section.settings.heading == blank -%}
         <div class="title-wrapper m-0 title-wrapper--no-top-margin{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
