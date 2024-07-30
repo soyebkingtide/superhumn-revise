@@ -351,7 +351,7 @@
           "settings": {
             "caption": "JOIN THE",
             "text_style": "caption-with-letter-spacing",
-            "text_size": "large"
+            "text_size": "h1"
           }
         },
         "heading_XbLjib": {

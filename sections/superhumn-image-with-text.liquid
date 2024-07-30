@@ -75,7 +75,7 @@
                   </h2>
                 {%- when 'caption' -%}
                   <p
-                    class=" image-with-text__text image-with-text__text--caption fs-italic {{ block.settings.text_style }}  {{ block.settings.text_style }} {{ block.settings.text_size }} {{ block.settings.text_style }}"
+                    class=" image-with-text__text image-with-text__text--caption fs-italic {{ block.settings.text_style }}  {{ block.settings.text_style }}  {{ block.settings.text_style }}"
                     {{ block.shopify_attributes }}
                   >
                     {{ block.settings.caption | escape }}
@@ -389,7 +389,7 @@
               "label": "t:sections.image-with-text.blocks.caption.settings.text_style.options__2.label"
             }
           ],
-          "default": "caption-with-lettser-spacing",
+          "default": "caption-with-letter-spacing",
           "label": "t:sections.image-with-text.blocks.caption.settings.text_style.label"
         },
         {
