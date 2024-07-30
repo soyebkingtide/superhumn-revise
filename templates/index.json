@@ -55,7 +55,7 @@
         "buttons_zcJR8J"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/bg.jpg",
+        "image": "shopify:\/\/shop_images\/Frame_42993_1.png",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-center",
@@ -358,7 +358,7 @@
           "type": "heading",
           "settings": {
             "heading": "SUPER SQUAD",
-            "heading_size": "h1"
+            "heading_size": "hxxl_5"
           }
         },
         "button_RNtA6Q": {
@@ -378,11 +378,11 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Rectangle_4888_1.png",
         "height": "adapt",
-        "desktop_image_width": "medium",
+        "desktop_image_width": "small",
         "layout": "text_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
+        "content_layout": "overlap",
         "section_color_scheme": "scheme-2",
         "color_scheme": "scheme-2",
         "image_behavior": "none",
