@@ -328,7 +328,7 @@
       "settings": {
         "section_img": "shopify:\/\/shop_images\/jerkyjumper_1.png",
         "title": "MEET THE TEAM",
-        "heading_size": "h1",
+        "heading_size": "hxxl_5",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
