@@ -342,6 +342,54 @@
         "padding_top": 100,
         "padding_bottom": 100
       }
+    },
+    "superhumn_image_with_text_387P9g": {
+      "type": "superhumn-image-with-text",
+      "blocks": {
+        "caption_Qfa9d4": {
+          "type": "caption",
+          "settings": {
+            "caption": "JOIN THE",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading_XbLjib": {
+          "type": "heading",
+          "settings": {
+            "heading": "SUPER SQUAD",
+            "heading_size": "h1"
+          }
+        },
+        "button_RNtA6Q": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "caption_Qfa9d4",
+        "heading_XbLjib",
+        "button_RNtA6Q"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Rectangle_4888_1.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-2",
+        "color_scheme": "scheme-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -350,6 +398,7 @@
     "superhumn_featured_collection_EzDf3X",
     "text_scroller_XybLWx",
     "superhumn_multicolumn_v2_aHCerr",
-    "superhumn_team_wPLcHr"
+    "superhumn_team_wPLcHr",
+    "superhumn_image_with_text_387P9g"
   ]
 }
