@@ -87,7 +87,7 @@
 
 
 .superhumn-title-{{ section.id }}:after {
-    content: '{{ section.settings.videoTitle }}';
+    content: '{{ section.settings.heading }}';
        position: absolute;
  left: 0;
 top: -24%;
@@ -104,7 +104,7 @@ top: -24%;
 
 
 .superhumn-title-{{ section.id }}:before {
-    content: '{{ section.settings.videoTitle }}';
+    content: '{{ section.settings.heading }}';
     position:absolute;
      left: 50%;
      transform: translateX(-50%);
@@ -354,7 +354,16 @@ top: -24%;
 
 
   <section class="our-story">
-    <h3 class="superhumn-title hxl superhumn-title-{{ section.id }}"> {{ section.settings.videoTitle }} </h3>
+   
+      
+    
+     {%- unless section.settings.heading == blank -%}
+        <div class="title-wrapper title-wrapper--no-top-margin{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+          <h2 class="title inline-richtext {{ section.settings.heading_size }} superhumn-title hxl superhumn-title-{{ section.id }}">{{ section.settings.heading }}</h2>
+        </div>
+      {%- endunless -%}
+    
+   
  
  
  <div class="video-wrapper">
@@ -366,11 +375,7 @@ top: -24%;
         class="page-width"
       {% endif %}
     >
-      {%- unless section.settings.heading == blank -%}
-        <div class="title-wrapper title-wrapper--no-top-margin{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-          <h2 class="title inline-richtext {{ section.settings.heading_size }}">{{ section.settings.heading }}</h2>
-        </div>
-      {%- endunless -%}
+     
     </div>
     <deferred-media
       class="video-section__media deferred-media gradient global-media-settings{% if section.settings.full_width %} global-media-settings--full-width{% endif %}{% if fix_ratio %} media-fit-cover{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
