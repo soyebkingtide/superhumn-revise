@@ -285,6 +285,59 @@
         "description": "",
         "full_width": false
       }
+    },
+    "superhumn_team_wPLcHr": {
+      "type": "superhumn-team",
+      "blocks": {
+        "column_iBV6Th": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_7j4PzY": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_am9rpz": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_iBV6Th",
+        "column_7j4PzY",
+        "column_am9rpz"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "scheme-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -292,6 +345,7 @@
     "superhumn_multicolumn_fPG6bK",
     "superhumn_featured_collection_EzDf3X",
     "text_scroller_XybLWx",
-    "superhumn_multicolumn_v2_aHCerr"
+    "superhumn_multicolumn_v2_aHCerr",
+    "superhumn_team_wPLcHr"
   ]
 }
