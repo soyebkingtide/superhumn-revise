@@ -50,7 +50,7 @@
   >
     {%- unless section.settings.title == blank -%}
       <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin multicolumn__title">
-        <h2 class="title inline-richtext {{ section.settings.heading_size }}">
+        <h2 class="title inline-richtext {{ section.settings.heading_size }} superhumn-title  superhumn-title-{{ section.id }}">
           {{ section.settings.title }}
         </h2>
         {%- if section.settings.button_label != blank and show_mobile_slider -%}
@@ -253,7 +253,16 @@
         {
           "value": "hxxl",
           "label": "t:sections.all.heading_size.options__5.label"
+        },
+
+        {
+          "value": "hxxl_5",
+          "label": "custom"
         }
+
+        
+
+
       ],
       "default": "h1",
       "label": "t:sections.all.heading_size.label"
