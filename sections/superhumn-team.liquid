@@ -13,6 +13,11 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  .team-feature-img{
+    position:absolute;
+  }
+
 {%- endstyle -%}
 
 {%- liquid
@@ -31,7 +36,7 @@
 
 {% if section.settings.section_img %}
 
-  <img src="{{ section.settings.section_img  }}" alt="Store Logo">
+  <img src="{{ section.settings.section_img | img_url: '600' }}" alt="team-feature-img">
 
 {% endif %}
 
