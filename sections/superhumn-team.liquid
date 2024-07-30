@@ -36,7 +36,7 @@
 
 {% if section.settings.section_img %}
 
-  <img src="{{ section.settings.section_img | img_url: '600x600' }}" alt="team-feature-img">
+  <img src="{{ section.settings.section_img | img_url: 'master' }}" class="team-feature-img" alt=" {{ section.settings.title }}">
 
 {% endif %}
 
