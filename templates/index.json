@@ -276,14 +276,14 @@
         "color_scheme_boxes": "scheme-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
+        "padding_top_video": 176,
+        "padding_bottom_video": 248,
         "heading": "OUR ORIGIN STORY",
         "enable_video_looping": false,
         "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "cover_image": "shopify:\/\/shop_images\/Rectangle_42.png",
         "description": "",
-        "full_width": false,
-        "padding_top_video": 36,
-        "padding_bottom_video": 36
+        "full_width": false
       }
     }
   },
