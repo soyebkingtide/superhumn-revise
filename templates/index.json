@@ -292,8 +292,9 @@
         "column_iBV6Th": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/b460afbb-7477-4efe-9d75-d4ab3e7aea13_1.png",
+            "title": "",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -301,8 +302,9 @@
         "column_7j4PzY": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/b460afbb-7477-4efe-9d75-d4ab3e7aea13_1_1.png",
+            "title": "",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -310,8 +312,9 @@
         "column_am9rpz": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/b460afbb-7477-4efe-9d75-d4ab3e7aea13_1_2.png",
+            "title": "",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -323,15 +326,15 @@
         "column_am9rpz"
       ],
       "settings": {
-        "title": "Multicolumn",
+        "title": "MEET THE TEAM",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
         "column_alignment": "left",
         "background_style": "primary",
-        "button_label": "Button label",
-        "button_link": "",
+        "button_label": "SEE ALL",
+        "button_link": "#",
         "color_scheme": "scheme-2",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
