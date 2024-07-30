@@ -12,6 +12,53 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+
+  
+
+.superhumn-title-{{ section.id }}{
+  position:relative;
+ /* color:#7DFBC0; */
+  text-align:center;
+}
+  
+.superhumn-title-{{ section.id }}:after {
+    content: '{{ section.settings.title }}';
+       position: absolute;
+ left: 0;
+top: -24%;
+  z-index: ;
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+-webkit-text-stroke-color:  #fff;
+   left: 50%;
+     transform: translateX(-50%);
+  height: 33%;
+   width:100%!important;
+  overflow:hidden;
+}
+
+
+.superhumn-title-{{ section.id }}:before {
+    content: '{{ section.settings.title }}';
+    position:absolute;
+     left: 50%;
+     transform: translateX(-50%);
+  top: -48%;
+  z-index: -1;
+  width:100%!important;
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+-webkit-text-stroke-color:  #fff;
+
+  height: 33%;
+    overflow:hidden;
+  
+}
+
+
+
+
 {%- endstyle -%}
 
 {%- liquid
