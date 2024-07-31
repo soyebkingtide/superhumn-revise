@@ -432,6 +432,10 @@
   .banner__box > * + .banner__text {
     margin-top: 4.6rem;
   }
+
+  .suberhumn-banner .banner__box > * + .banner__text {
+    margin-top: 11px;
+  }
 }
 
 .banner__box > * + * {
@@ -498,7 +502,7 @@
 @media screen and (min-width: 750px) {
   .banner--content-align-center .banner__buttons--multiple > * {
     flex-grow: 1;
-    min-width: 22rem;
+    min-width: 24.7rem;
   }
 
   .banner--content-align-right .banner__buttons--multiple {
