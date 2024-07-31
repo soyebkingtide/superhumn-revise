@@ -434,7 +434,7 @@
   }
 
   .suberhumn-banner .banner__buttons {
-    margin-top: 11px;
+    margin-top: 11px !important;
   }
 }
 
