@@ -26,7 +26,7 @@
 
 .suberhumn-banner .banner__box {
   text-align: center;
-  margin: 0 auto;
+  padding: 0 auto;
 }
 
 /* Needed for gradient continuity with or without animation, the transform scopes the gradient to its container which happens already when animation are turned on */
