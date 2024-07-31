@@ -378,7 +378,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Rectangle_4888_1.png",
-        "height": "adapt",
+        "height": "large",
         "desktop_image_width": "small",
         "layout": "text_first",
         "desktop_content_position": "top",
