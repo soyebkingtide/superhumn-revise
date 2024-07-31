@@ -448,6 +448,11 @@
   margin-bottom: 0;
 }
 
+.banner__heading.h0 {
+  line-height: 110px;
+  margin-top: 0;
+}
+
 .banner__box .banner__heading + * {
   margin-top: 1rem;
 }
