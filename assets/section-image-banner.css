@@ -449,7 +449,7 @@
 }
 
 .banner__heading.h0 {
-  line-height: 110px;
+  line-height: 110px !important;
   margin-top: 0;
 }
 
