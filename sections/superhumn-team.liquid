@@ -132,7 +132,11 @@ top: -24%;
 
           <li
             id="Slide-{{ section.id }}-{{ forloop.index }}"
-            class="multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{{ empty_column }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            class="multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{{ empty_column }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}
+            
+            color-{{ section.settings.color_scheme_post }} gradient
+            
+            "
             {{ block.shopify_attributes }}
             {% if settings.animations_reveal_on_scroll %}
               data-cascade
@@ -256,7 +260,7 @@ top: -24%;
 {% schema %}
 {
    "name": "Meet the team",
-  "class": "section",
+  "class": "section meet-the-team",
   "tag": "section",
   "disabled_on": {
     "groups": ["header", "footer"]
@@ -269,6 +273,9 @@ top: -24%;
         "id": "section_img",
         "label": "Section image"
       },
+
+
+      
 
 
     {
@@ -416,6 +423,16 @@ top: -24%;
       "label": "t:sections.all.colors.label",
       "default": "scheme-1"
     },
+
+
+     {
+      "type": "color_scheme",
+      "id": "color_scheme_post",
+      "label": "Blocks background",
+      "default": "scheme-1"
+    },
+
+
     {
       "type": "header",
       "content": "t:sections.multicolumn.settings.header_mobile.content"
