@@ -25,7 +25,7 @@
 }
 
 .suberhumn-banner .banner__box {
-  text-align: center;
+  text-align: center !important;
   padding: 0 !important;
 }
 
