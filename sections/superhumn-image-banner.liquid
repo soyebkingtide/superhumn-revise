@@ -134,10 +134,14 @@
             >
               {{ block.settings.heading }}
             </h2>
-          {%- when 'text' -%}
-            <div class="banner__text rte text-bg {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
+       
+       
+            {%- when 'text' -%}
+            <div class="banner__text rte text-bg {{ block.settings.text_style }}" {{ block.shopify_attributes }} style="background:url({{ 'text-bg.svg' |  asset_url }})">
               <p>{{ block.settings.text }}</p>
             </div>
+
+
           {%- when 'buttons' -%}
             <div
               class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}"
@@ -212,7 +216,7 @@
 {
   "name": "Superhumn image banner",
   "tag": "section",
-  "class": "section",
+  "class": "section suberhumn-banner",
   "disabled_on": {
     "groups": ["header", "footer"]
   },
