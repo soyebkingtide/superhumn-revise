@@ -74,7 +74,7 @@
         "column_ay9YVf": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/image_1.png",
+            "image": "shopify:\/\/shop_images\/image_1_1.png",
             "title": "",
             "text": "<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit”<\/p>",
             "link_label": "",
@@ -110,7 +110,7 @@
       "settings": {
         "title": "",
         "heading_size": "h2",
-        "image_width": "third",
+        "image_width": "half",
         "image_ratio": "adapt",
         "columns_desktop": 3,
         "column_alignment": "left",
