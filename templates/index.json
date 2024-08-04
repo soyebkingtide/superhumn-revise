@@ -74,9 +74,9 @@
         "column_ay9YVf": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/image_1_1.png",
+            "image": "shopify:\/\/shop_images\/Mask_group_4.png",
             "title": "",
-            "text": "<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit”<\/p>",
+            "text": "<p>The Buzziest Female Chefs Changing the Healthy Food World<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -86,7 +86,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Mask_group_1.png",
             "title": "",
-            "text": "<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit”<\/p>",
+            "text": "<p>Call me vegan-curious...but this was something else entirely. As if that wasn't enough plant-based innovation for one evening, . . . the dinner kept the surprises coming.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -96,7 +96,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Mask_group_2.png",
             "title": "",
-            "text": "<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit”<\/p>",
+            "text": "<p>A new food frontier has arrived...ahead of the curve. Fashionable chef, Cheng finds it easy to stay inspired. Without a doubt, the future of vegetables looks bright<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -113,7 +113,7 @@
         "image_width": "half",
         "image_ratio": "adapt",
         "columns_desktop": 3,
-        "column_alignment": "left",
+        "column_alignment": "center",
         "background_style": "primary",
         "button_label": "",
         "button_link": "#",
@@ -378,9 +378,6 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Rectangle_4888_1.png",
-        "height": "large",
-        "desktop_image_width": "small",
-        "layout": "text_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "overlap",
