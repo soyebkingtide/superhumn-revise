@@ -135,6 +135,8 @@ top: -24%;
 
               </style>
               {% case block.type %}
+
+              {{ block.type   }} block type
                 {%- when 'heading' -%}
                   <h2
                     class="image-with-text__heading inline-richtext {{ block.settings.heading_size }} superhumn-title-{{ block.id }} mt-80"
