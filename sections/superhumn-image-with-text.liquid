@@ -167,7 +167,7 @@ top: -24%;
                       {{ block.settings.button_label | escape }}
                     </a>
 
-                  {% when 'checkbox_block' %}
+                  {% when 'checkbox' %}
 
                    {% comment %}
                   Newsletter block here
@@ -562,7 +562,7 @@ top: -24%;
     },
 
 {
-      "type": "checkbox_block",
+      "type": "checkbox",
       "name": "Checkbox Block",
       "settings": [
         {
@@ -599,7 +599,7 @@ top: -24%;
           "type": "button"
         },
         {
-          "type": "checkbox_block"
+          "type": "checkbox"
         }
       ]
     }
