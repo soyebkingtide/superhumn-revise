@@ -369,12 +369,19 @@
             "button_link": "",
             "button_style_secondary": false
           }
+        },
+        "checkbox_gxzeAQ": {
+          "type": "checkbox",
+          "settings": {
+            "newsletter_enable": true
+          }
         }
       },
       "block_order": [
         "caption_Qfa9d4",
         "heading_XbLjib",
-        "button_RNtA6Q"
+        "button_RNtA6Q",
+        "checkbox_gxzeAQ"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Rectangle_4888_1.png",
