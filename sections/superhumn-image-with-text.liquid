@@ -167,7 +167,7 @@ top: -24%;
                       {{ block.settings.button_label | escape }}
                     </a>
 
-                 {%- when 'checkbox' -%}
+                 {%- when 'custom_block' -%}
 
                    {% comment %}
                   Newsletter block here
@@ -561,19 +561,21 @@ top: -24%;
       ]
     },
 
-    { "type": "checkbox",
-      "name": "Newsletter",
-      "limit": 1,
+
+    {
+      "type": "custom_block",
+      "name": "Custom Block",
       "settings": [
-         {
-      "type": "checkbox",
-      "id": "newsletter_enable",
-      "default": true,
-      "label": "t:sections.footer.settings.newsletter_enable.label"
-    }
-      ]
-    
-    }
+        {
+          "type": "checkbox",
+          "id": "display_text",
+          "label": "Display Text",
+          "default": true
+        }
+
+      ]}
+
+
 
     
 
@@ -595,7 +597,7 @@ top: -24%;
           "type": "button"
         },
         {
-          "type": "checkbox"
+          "type": "custom_block"
         }
       ]
     }
