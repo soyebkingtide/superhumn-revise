@@ -22,6 +22,7 @@
    
   }
 
+  .mt-80{ margin-top:80px;}
 
    .superhumn-image-text .bg-image{ 
     background-image:url({{ '0V467H0L539.svg' |  asset_url }}) ;
@@ -129,11 +130,14 @@ top: -24%;
 
 
 
+
+
+
               </style>
               {% case block.type %}
                 {%- when 'heading' -%}
                   <h2
-                    class="image-with-text__heading inline-richtext {{ block.settings.heading_size }} superhumn-title-{{ block.id }}"
+                    class="image-with-text__heading inline-richtext {{ block.settings.heading_size }} superhumn-title-{{ block.id }} mt-80"
                     {{ block.shopify_attributes }}
                   >
                     {{ block.settings.heading }}
@@ -162,6 +166,13 @@ top: -24%;
                     >
                       {{ block.settings.button_label | escape }}
                     </a>
+
+
+
+                    Newsletter block here
+
+
+
                   {%- endif -%}
               {%- endcase -%}
             {%- endfor -%}
