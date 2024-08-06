@@ -400,7 +400,7 @@
     "find_store_FCDCgU": {
       "type": "find-store",
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-5",
         "heading_size": "h1"
       }
     }
