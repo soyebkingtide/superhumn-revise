@@ -396,6 +396,13 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "find_store_FCDCgU": {
+      "type": "find-store",
+      "settings": {
+        "color_scheme": "",
+        "heading_size": "h1"
+      }
     }
   },
   "order": [
@@ -405,6 +412,7 @@
     "text_scroller_XybLWx",
     "superhumn_multicolumn_v2_aHCerr",
     "superhumn_team_wPLcHr",
-    "superhumn_image_with_text_387P9g"
+    "superhumn_image_with_text_387P9g",
+    "find_store_FCDCgU"
   ]
 }
