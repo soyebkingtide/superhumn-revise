@@ -55,7 +55,7 @@
         "buttons_zcJR8J"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Frame_42993_1.png",
+        "image": "shopify:\/\/shop_images\/Frame_42993_2.png",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "bottom-center",
@@ -364,6 +364,7 @@
         },
         "button_RNtA6Q": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "Button label",
             "button_link": "",
