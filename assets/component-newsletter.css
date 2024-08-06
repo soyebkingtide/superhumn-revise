@@ -116,13 +116,11 @@
   box-shadow: none !important;
 }
 
-@media screen and (min-width: 750px) {
-  .newsletter_superhumn.newsletter-form {
-    max-width: 64rem;
-    margin: 0;
-  }
+.newsletter_superhumn.newsletter-form {
+  max-width: 64rem;
+  margin: 0;
+}
 
-  .newsletter_superhumn .newsletter-form__field-wrapper {
-    max-width: 100%;
-  }
+.newsletter_superhumn .newsletter-form__field-wrapper {
+  max-width: 100%;
 }
