@@ -185,11 +185,11 @@ top: -24%;
                    {% endcomment %} 
 
                   {%- if block.settings.newsletter_enable -%}
-            <div class="footer-block__newsletter">
+            <div class="newsletter_block">
               {%- if block.settings.newsletter_heading != blank -%}
                 <h2 class="footer-block__heading inline-richtext">{{ block.settings.newsletter_heading }}</h2>
               {%- endif -%}
-              {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
+              {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form newsletter_superhumn' -%}
                 <input type="hidden" name="contact[tags]" value="newsletter">
                 <div class="newsletter-form__field-wrapper">
                   <div class="field">
@@ -223,7 +223,7 @@ top: -24%;
                       id="Subscribe"
                       aria-label="{{ 'newsletter.button_label' | t }}"
                     >
-                      {% render 'icon-arrow' %}
+                     dd
                     </button>
                   </div>
                   {%- if form.errors -%}
