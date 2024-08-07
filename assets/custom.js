@@ -70,6 +70,7 @@ function applyParallax() {
   }
 
   var scrollPosition = wpos.scrollTop;
+  console.log(scrollPosition);
   var parallaxSpeed = 0.1; // Adjust the speed factor as needed
   var parallaxOffset = scrollPosition * parallaxSpeed;
 
