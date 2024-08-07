@@ -69,13 +69,13 @@ function applyParallax() {
     return;
   }
 
-  var rect = wpos.getBoundingClientRect();
+  var ww = wpos.getBoundingClientRect();
   var scrollPosition = window.scrollY || window.pageYOffset;
-  var elementTop = rect.top + scrollPosition;
+  var elementTop = ww.top + scrollPosition;
   var elementScrollPosition = scrollPosition - elementTop;
   console.log(elementScrollPosition);
 
-  var parallaxSpeed = 0.9; // Adjust the speed factor as needed
+  var parallaxSpeed = 0.5; // Adjust the speed factor as needed
   var parallaxOffset = elementScrollPosition * parallaxSpeed;
 
   parallex.style.transform = `translateY(${parallaxOffset}px)`;
