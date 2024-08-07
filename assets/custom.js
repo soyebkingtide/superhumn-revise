@@ -46,7 +46,7 @@ function checkVisibility() {
   var windowHeight = window.innerHeight;
 
   // Check if the bottom of the element is visible in the viewport
-  if (rect.bottom >= 0 && rect.top <= windowHeight - rect.height) {
+  if (rect.bottom >= 0 && rect.top <= windowHeight) {
     // Bottom of the element is within the viewport
     featureImage.classList.add("comeFromRight");
     console.log("add class here");
