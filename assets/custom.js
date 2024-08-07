@@ -60,7 +60,7 @@ function checkVisibility() {
   // requestAnimationFrame(applyParallax);
 }
 
-let parallex = document.querySelector("parallex");
+let parallex = document.querySelector(".parallex");
 
 function applyParallax() {
   var scrollPosition = window.scrollY || window.pageYOffset;
