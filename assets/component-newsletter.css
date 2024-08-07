@@ -104,6 +104,11 @@
   color: #fff;
 }
 
+.footer-block .newsletter_block .field__label,
+.footer-block .newsletter_block .field__input {
+  color: #fff;
+}
+
 .newsletter_block .newsletter-form__button.field__button {
   min-width: 210px;
   margin: 0;
