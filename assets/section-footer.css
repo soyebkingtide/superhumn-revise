@@ -549,3 +549,21 @@
 .footer-block--menu li a {
   color: #fff;
 }
+
+.copyright__content-top small {
+  color: #fff;
+  font-family: "Zuume";
+  font-size: 30px;
+
+  font-weight: 700;
+}
+
+.policies li {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.policies li a {
+  color: #fff;
+}
