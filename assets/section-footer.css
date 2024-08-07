@@ -527,9 +527,9 @@
 }
 
 .custom-social-icons .list-social__item a {
-  padding: 0;
+  padding: 1rem;
 }
 
 .custom-social-icons .list-social__item:not(:first-child) a {
-  padding: 1rem;
+  padding: 1rem 0;
 }
