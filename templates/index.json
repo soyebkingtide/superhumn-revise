@@ -401,7 +401,9 @@
       "type": "find-store",
       "settings": {
         "color_scheme": "scheme-215f353b-53fa-495b-a576-0257000b9af8",
-        "heading_size": "hxl"
+        "heading_size": "hxl",
+        "padding_top": 80,
+        "padding_bottom": 80
       }
     }
   },
