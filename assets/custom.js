@@ -71,6 +71,8 @@ function applyParallax() {
 
 applyParallax();
 
+window.addEventListener("scroll", applyParallax);
+
 // Initial visibility check
 checkVisibility();
 
