@@ -192,8 +192,8 @@
                 {% endif %}
 
 {% if block.settings.caption2 %}
-    <mark>{{ block.settings.caption2 | escape }}</mark> 
-
+    {% comment %} <mark>{{ block.settings.caption2 | escape }}</mark>  {% endcomment %}
+<span>{{ block.settings.caption2 | escape }}</span> 
      {% endif %}
 {% if block.settings.caption3 %}
     <span  class="text-shadow">{{ block.settings.caption3 | escape }}</span> 
