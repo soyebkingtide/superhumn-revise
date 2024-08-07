@@ -13,6 +13,27 @@
   "sections": {
     "footer": {
       "type": "footer",
+      "blocks": {
+        "image_JVkCdW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Artwork.svg",
+            "image_width": 205,
+            "alignment": "center"
+          }
+        },
+        "link_list_MyxBjP": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": "footer"
+          }
+        }
+      },
+      "block_order": [
+        "image_JVkCdW",
+        "link_list_MyxBjP"
+      ],
       "settings": {
         "color_scheme": "scheme-2",
         "newsletter_enable": true,
