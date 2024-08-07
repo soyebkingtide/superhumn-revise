@@ -34,9 +34,6 @@ function checkVisibility() {
   }
 }
 
-// Initial check
-checkVisibility();
-
 // Check visibility on scroll
 window.addEventListener("scroll", checkVisibility);
 
