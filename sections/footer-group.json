@@ -30,8 +30,8 @@
             "menu": "footer"
           }
         },
-        "header_NxPQmt": {
-          "type": "header",
+        "newsletter_block_QNpaYT": {
+          "type": "newsletter_block",
           "settings": {
             "newsletter": true
           }
@@ -40,7 +40,7 @@
       "block_order": [
         "image_JVkCdW",
         "link_list_MyxBjP",
-        "header_NxPQmt"
+        "newsletter_block_QNpaYT"
       ],
       "settings": {
         "color_scheme": "scheme-2",
