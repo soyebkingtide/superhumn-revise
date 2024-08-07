@@ -19,37 +19,26 @@ cardMedia.forEach((VD, index) => {
 
 // starter animation
 
-function startAni(elements) {
-  var featureImage = document.querySelector(elements);
+var featureImage = document.querySelector(".feature-image");
 
-  // Ensure the element exists
-  if (!featureImage) {
-    console.warn("Element not found for selector:", elements);
-    return;
+function checkVisibility() {
+  console.log("scrolling");
+  var rect = featureImage.getBoundingClientRect();
+  var windowHeight = window.innerHeight;
+
+  // Check if the element is fully within the viewport
+  if (rect.top >= 0 && rect.bottom <= windowHeight) {
+    featureImage.classList.add("visible");
+  } else {
+    featureImage.classList.remove("visible");
   }
-
-  function checkVisibility() {
-    console.log("scrolling");
-    var rect = featureImage.getBoundingClientRect();
-    var windowHeight = window.innerHeight;
-
-    // Check if the element is fully within the viewport
-    if (rect.top >= 0 && rect.bottom <= windowHeight) {
-      featureImage.classList.add("visible");
-    } else {
-      featureImage.classList.remove("visible");
-    }
-  }
-
-  // Initial check
-  checkVisibility();
-
-  // Check visibility on scroll
-  window.addEventListener("scroll", checkVisibility);
 }
 
-// Start animation for elements with the class '.feature-image'
-startAni(".feature-image");
+// Initial check
+checkVisibility();
+
+// Check visibility on scroll
+window.addEventListener("scroll", checkVisibility);
 
 jQuery(function ($) {
   $(".text-scroller-items").slick({
