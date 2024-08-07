@@ -80,7 +80,7 @@ function applyParallax() {
 applyParallax();
 
 // Apply parallax effect on scroll within the container
-document.querySelector(".bg-image").addEventListener("scroll", applyParallax);
+window.addEventListener("scroll", applyParallax);
 
 // Initial visibility check
 checkVisibility();
