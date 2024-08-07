@@ -451,7 +451,7 @@
 }
 
 .copyright__content {
-  font-size: 1.1rem;
+  font-size: 1.6rem;
 }
 
 .copyright__content a {
@@ -476,7 +476,7 @@
 }
 
 .policies li:first-child::before {
-  padding-left: 0;
+  padding: 0;
 }
 
 .policies li a {
