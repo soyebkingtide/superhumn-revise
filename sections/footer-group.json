@@ -19,7 +19,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Artwork.svg",
             "image_width": 205,
-            "alignment": "center"
+            "alignment": "center",
+            "show_social": true
           }
         },
         "link_list_MyxBjP": {
@@ -28,11 +29,18 @@
             "heading": "Quick links",
             "menu": "footer"
           }
+        },
+        "header_NxPQmt": {
+          "type": "header",
+          "settings": {
+            "newsletter": true
+          }
         }
       },
       "block_order": [
         "image_JVkCdW",
-        "link_list_MyxBjP"
+        "link_list_MyxBjP",
+        "header_NxPQmt"
       ],
       "settings": {
         "color_scheme": "scheme-2",
