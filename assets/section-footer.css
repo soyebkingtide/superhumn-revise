@@ -469,10 +469,16 @@
   align-items: center;
 }
 
-.policies li:not(:first-child)::before {
+.policies li::before {
   /* content: "\00B7"; */
   content: "";
   padding: 0 1.6rem;
+}
+
+.policies li:first-child::before {
+  /* content: "\00B7"; */
+  content: "";
+  padding: 0 1.6rem 0 0;
 }
 
 .policies li a {
