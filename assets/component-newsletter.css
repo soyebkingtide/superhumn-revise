@@ -103,13 +103,13 @@
   min-width: 210px;
   margin: 0;
   opacity: 1;
-  color: #fff;
+  /* color: #fff; */
 
   font-family: "Zuume";
   font-size: 28px;
 
   font-weight: 700;
-  background: var(--color-voilet);
+  /* background: var(--color-voilet); */
 }
 
 .newsletter_block .field::before {
