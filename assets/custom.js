@@ -75,7 +75,7 @@ function applyParallax() {
   var elementScrollPosition = scrollPosition - elementTop;
   console.log(elementScrollPosition);
 
-  var parallaxSpeed = 0.1; // Adjust the speed factor as needed
+  var parallaxSpeed = 0.9; // Adjust the speed factor as needed
   var parallaxOffset = elementScrollPosition * parallaxSpeed;
 
   parallex.style.transform = `translateY(${parallaxOffset}px)`;
