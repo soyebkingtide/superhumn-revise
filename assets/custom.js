@@ -69,10 +69,14 @@ function applyParallax() {
     return;
   }
 
-  var scrollPosition = wpos.scrollTop;
-  console.log(scrollPosition);
+  var rect = wpos.getBoundingClientRect();
+  var scrollPosition = window.scrollY || window.pageYOffset;
+  var elementTop = rect.top + scrollPosition;
+  var elementScrollPosition = scrollPosition - elementTop;
+  console.log(elementScrollPosition);
+
   var parallaxSpeed = 0.1; // Adjust the speed factor as needed
-  var parallaxOffset = scrollPosition * parallaxSpeed;
+  var parallaxOffset = elementScrollPosition * parallaxSpeed;
 
   parallex.style.transform = `translateY(${parallaxOffset}px)`;
 }
@@ -80,7 +84,7 @@ function applyParallax() {
 // Initial parallax effect application
 applyParallax();
 
-// Apply parallax effect on scroll within the container
+// Apply parallax effect on window scroll
 window.addEventListener("scroll", applyParallax);
 
 // Initial visibility check
