@@ -15,28 +15,6 @@ cardMedia.forEach((VD, index) => {
   });
 });
 
-// script.js
-
-// starter animation
-
-var featureImage = document.querySelector(".feature-image");
-
-function checkVisibility() {
-  var rect = featureImage.getBoundingClientRect();
-  var windowHeight = window.innerHeight;
-
-  // Check if the element is fully within the viewport
-  if (rect.top >= 0 && rect.bottom <= windowHeight) {
-    console.log("add cclass here");
-    featureImage.classList.add("visible");
-  } else {
-    featureImage.classList.remove("visible");
-  }
-}
-
-// Check visibility on scroll
-window.addEventListener("scroll", checkVisibility);
-
 jQuery(function ($) {
   $(".text-scroller-items").slick({
     slidesToShow: 3,
@@ -52,5 +30,3 @@ jQuery(function ($) {
     pauseOnHover: true,
   });
 });
-
-// .feature-img
