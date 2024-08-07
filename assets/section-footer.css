@@ -66,7 +66,7 @@
   .footer__content-bottom-wrapper {
     flex-wrap: wrap;
     row-gap: 1.5rem;
-    justify-content: center;
+    justify-content: start;
   }
 
   .footer__content-bottom.scroll-trigger.animate--slide-in {
@@ -292,14 +292,14 @@
 }
 
 .footer__copyright {
-  text-align: center;
+  text-align: left;
   margin-top: 1.5rem;
 }
 
 @media screen and (min-width: 750px) {
   .footer__content-bottom-wrapper:not(.footer__content-bottom-wrapper--center)
     .footer__copyright {
-    text-align: right;
+    text-align: left;
   }
 }
 
@@ -551,13 +551,16 @@
 }
 
 .copyright__content-top small {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.5);
   font-family: "Zuume";
   font-size: 30px;
 
   font-weight: 700;
 }
 
+.copyright__content-top small a {
+  color: inherit;
+}
 .policies li {
   font-size: 16px;
   font-style: normal;
