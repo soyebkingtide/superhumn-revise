@@ -23,6 +23,12 @@ document.addEventListener("DOMContentLoaded", function () {
   function startAni(elements) {
     var featureImage = document.querySelector(elements);
 
+    // Ensure the element exists
+    if (!featureImage) {
+      console.warn("Element not found for selector:", elements);
+      return;
+    }
+
     function checkVisibility() {
       var rect = featureImage.getBoundingClientRect();
       var windowHeight = window.innerHeight;
@@ -41,6 +47,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // Check visibility on scroll
     window.addEventListener("scroll", checkVisibility);
   }
+
+  // Start animation for elements with the class '.feature-image'
   startAni(".feature-image");
 });
 
