@@ -62,7 +62,7 @@ function checkVisibility() {
 
 function applyParallax() {
   var scrollPosition = window.scrollY || window.pageYOffset;
-  var parallaxSpeed = 0.1; // Adjust the speed factor as needed
+  var parallaxSpeed = 0.5; // Adjust the speed factor as needed
   var parallaxOffset = scrollPosition * parallaxSpeed;
 
   featureImage.style.transform = `translateY(${parallaxOffset}px)`;
