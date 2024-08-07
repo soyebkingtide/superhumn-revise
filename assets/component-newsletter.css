@@ -102,6 +102,8 @@
 .footer-block .newsletter_block .field__input {
   background: #252525;
   color: #fff;
+  font-family: "Zuume";
+  font-size: 24px;
 }
 
 .footer-block .newsletter_block .field__label,
