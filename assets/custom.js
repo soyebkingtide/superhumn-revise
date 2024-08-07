@@ -61,17 +61,26 @@ function checkVisibility() {
 }
 
 function applyParallax() {
+  let wpos = document.querySelector(".bg-image");
   let parallex = document.querySelector(".para");
-  var scrollPosition = window.scrollY || window.pageYOffset;
+
+  if (!wpos || !parallex) {
+    console.warn("Elements not found for selector: .bg-image or .para");
+    return;
+  }
+
+  var scrollPosition = wpos.scrollTop;
   var parallaxSpeed = 0.1; // Adjust the speed factor as needed
   var parallaxOffset = scrollPosition * parallaxSpeed;
 
   parallex.style.transform = `translateY(${parallaxOffset}px)`;
 }
 
+// Initial parallax effect application
 applyParallax();
 
-window.addEventListener("scroll", applyParallax);
+// Apply parallax effect on scroll within the container
+document.querySelector(".bg-image").addEventListener("scroll", applyParallax);
 
 // Initial visibility check
 checkVisibility();
