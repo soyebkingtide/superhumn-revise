@@ -65,7 +65,7 @@ function applyParallax() {
   var parallaxSpeed = 0.5; // Adjust the speed factor as needed
   var parallaxOffset = scrollPosition * parallaxSpeed;
 
-  featureImage.style.transform = `translateY(${parallaxOffset}px)`;
+  featureImage.style.transform = `translateY(${parallaxOffset}px)!important`;
 }
 
 // Initial visibility check
