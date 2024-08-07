@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function checkVisibility() {
+      console.log("scrolling");
       var rect = featureImage.getBoundingClientRect();
       var windowHeight = window.innerHeight;
 
