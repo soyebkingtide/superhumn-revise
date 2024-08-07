@@ -530,6 +530,6 @@
   padding: 1rem;
 }
 
-.custom-social-icons .list-social__item:not(:first-child) a {
+.custom-social-icons .list-social__item:not(:last-child) a {
   padding: 1rem 0;
 }
