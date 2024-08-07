@@ -48,15 +48,15 @@
         "color_scheme": "scheme-fb259804-bb48-4402-bbfd-c3e6a817dacc",
         "bg_image": "shopify:\/\/shop_images\/footer-bg.jpg",
         "newsletter_heading": "Sign up for freebies and updates",
-        "enable_follow_on_shop": true,
-        "show_social": true,
+        "enable_follow_on_shop": false,
+        "show_social": false,
         "enable_country_selector": false,
         "enable_language_selector": false,
         "payment_enable": false,
         "show_policy": true,
         "margin_top": 0,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 64,
+        "padding_bottom": 32
       }
     }
   },
