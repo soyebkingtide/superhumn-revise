@@ -533,3 +533,19 @@
 .custom-social-icons .list-social__item:not(:last-child) a {
   padding: 1rem 0;
 }
+
+.footer-block--menu ul {
+  font-family: "Zuume";
+}
+
+.footer-block--menu li {
+  text-transform: uppercase;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 98%; /* 25.48px */
+}
+
+.footer-block--menu li a {
+  color: #fff;
+}
