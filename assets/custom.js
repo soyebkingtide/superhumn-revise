@@ -30,3 +30,47 @@ jQuery(function ($) {
     pauseOnHover: true,
   });
 });
+
+// Select the element
+var featureImage = document.querySelector(".feature-image");
+
+// Function to check visibility and apply parallax effect
+function checkVisibility() {
+  // Ensure the element exists
+  if (!featureImage) {
+    console.warn("Element not found for selector: .feature-image");
+    return;
+  }
+
+  var rect = featureImage.getBoundingClientRect();
+  var windowHeight = window.innerHeight;
+
+  // Check if the bottom of the element is visible in the viewport
+  if (rect.bottom >= 0 && rect.top <= windowHeight - rect.height) {
+    // Bottom of the element is within the viewport
+    featureImage.classList.add("comeFromRight");
+    console.log("add class here");
+  } else {
+    // Bottom of the element is not within the viewport
+    featureImage.classList.remove("comeFromRight");
+    console.log("remove class here");
+  }
+
+  // Apply parallax effect
+  requestAnimationFrame(applyParallax);
+}
+
+function applyParallax() {
+  var scrollPosition = window.scrollY || window.pageYOffset;
+  var parallaxSpeed = 0.1; // Adjust the speed factor as needed
+  var parallaxOffset = scrollPosition * parallaxSpeed;
+
+  featureImage.style.transform = `translateY(${parallaxOffset}px)`;
+}
+
+// Initial visibility check
+checkVisibility();
+
+// Check visibility and parallax effect on scroll and resize
+window.addEventListener("scroll", checkVisibility);
+window.addEventListener("resize", checkVisibility);
