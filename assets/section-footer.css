@@ -521,3 +521,11 @@
 .custom-social-icons .footer__list-social {
   margin: 50px 0;
 }
+
+.custom-social-icons .footer__list-social.list-social:only-child {
+  justify-content: flex-start;
+}
+
+.custom-social-icons .list-social__link:not(:first-child) {
+  padding: 1rem;
+}
