@@ -527,5 +527,5 @@
 }
 
 .custom-social-icons .list-social__link:not(:first-child) {
-  padding: 1rem;
+  padding: 1rem !important;
 }
