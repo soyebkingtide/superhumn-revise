@@ -57,16 +57,20 @@ function checkVisibility() {
   }
 
   // Apply parallax effect
-  requestAnimationFrame(applyParallax);
+  // requestAnimationFrame(applyParallax);
 }
+
+let parallex = document.querySelector("parallex");
 
 function applyParallax() {
   var scrollPosition = window.scrollY || window.pageYOffset;
   var parallaxSpeed = 0.5; // Adjust the speed factor as needed
   var parallaxOffset = scrollPosition * parallaxSpeed;
 
-  featureImage.style.transform = `translateY(${parallaxOffset}px)!important`;
+  parallex.style.transform = `translateY(${parallaxOffset}px)!important`;
 }
+
+applyParallax();
 
 // Initial visibility check
 checkVisibility();
