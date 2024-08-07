@@ -22,12 +22,12 @@ cardMedia.forEach((VD, index) => {
 var featureImage = document.querySelector(".feature-image");
 
 function checkVisibility() {
-  console.log("scrolling");
   var rect = featureImage.getBoundingClientRect();
   var windowHeight = window.innerHeight;
 
   // Check if the element is fully within the viewport
   if (rect.top >= 0 && rect.bottom <= windowHeight) {
+    console.log("add cclass here");
     featureImage.classList.add("visible");
   } else {
     featureImage.classList.remove("visible");
