@@ -164,20 +164,7 @@
 
   {%- when 'newsletter_block' -%}
 
-                    Newsletter
-                {%- endcase -%}
-              </div>
-            {%- endfor -%}
-          </div>
-        {%- endif -%}
-
-        <div
-          class="footer-block--newsletter{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-          {% if settings.animations_reveal_on_scroll %}
-            data-cascade
-          {% endif %}
-        >
-          {%- if section.settings.newsletter_enable -%}
+       
             <div class="footer-block__newsletter">
               {%- if section.settings.newsletter_heading != blank -%}
                 <h2 class="footer-block__heading inline-richtext">{{ section.settings.newsletter_heading }}</h2>
@@ -240,7 +227,22 @@
                 {%- endif -%}
               {%- endform -%}
             </div>
-          {%- endif -%}
+        
+
+                   
+                {%- endcase -%}
+              </div>
+            {%- endfor -%}
+          </div>
+        {%- endif -%}
+
+        <div
+          class="footer-block--newsletter{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+          {% if settings.animations_reveal_on_scroll %}
+            data-cascade
+          {% endif %}
+        >
+     
 
           {%- if shop.features.follow_on_shop? and section.settings.enable_follow_on_shop -%}
             <div class="footer__follow-on-shop">
@@ -465,12 +467,7 @@
       "content": "t:sections.footer.settings.header__1.content",
       "info": "t:sections.footer.settings.header__1.info"
     },
-    {
-      "type": "checkbox",
-      "id": "newsletter_enable",
-      "default": true,
-      "label": "t:sections.footer.settings.newsletter_enable.label"
-    },
+   
     {
       "type": "inline_richtext",
       "id": "newsletter_heading",
