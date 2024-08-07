@@ -526,6 +526,6 @@
   justify-content: flex-start;
 }
 
-.custom-social-icons .list-social__item a {
+.custom-social-icons .list-social__item:not(:first-child) a {
   padding: 0rem !important;
 }
