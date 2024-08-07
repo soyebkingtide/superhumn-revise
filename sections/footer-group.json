@@ -34,7 +34,7 @@
           "type": "newsletter_block",
           "settings": {
             "newsletter_heading": "Subscribe to our emails",
-            "heading_size": "h1",
+            "heading_size": "hxl",
             "newsletter": true
           }
         }
