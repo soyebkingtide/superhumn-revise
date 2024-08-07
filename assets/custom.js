@@ -60,9 +60,8 @@ function checkVisibility() {
   // requestAnimationFrame(applyParallax);
 }
 
-let parallex = document.querySelector(".parallex");
-
 function applyParallax() {
+  let parallex = document.querySelector(".parallex");
   var scrollPosition = window.scrollY || window.pageYOffset;
   var parallaxSpeed = 0.5; // Adjust the speed factor as needed
   var parallaxOffset = scrollPosition * parallaxSpeed;
