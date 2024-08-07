@@ -185,6 +185,10 @@ top: -24%;
                    {% endcomment %} 
 
                   {%- if block.settings.newsletter_enable -%}
+
+                      {%- if block.settings.newsletter_heading != blank -%}
+                <h2 class="footer-block__heading inline-richtext">{{ block.settings.newsletter_heading }}</h2>
+              {%- endif -%}
             
                   {%  render 'newsletter' %}
 
