@@ -32,13 +32,13 @@ jQuery(function ($) {
 });
 
 // Select the element
-var featureImage = document.querySelector(".feature-image");
+var featureImage = document.querySelector(".feature-img");
 
 // Function to check visibility and apply parallax effect
 function checkVisibility() {
   // Ensure the element exists
   if (!featureImage) {
-    console.warn("Element not found for selector: .feature-image");
+    console.warn("Element not found for selector: .feature-img");
     return;
   }
 
