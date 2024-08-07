@@ -99,6 +99,10 @@
   border: 0;
 }
 
+.footer .newsletter_block .field__input {
+  background: #252525;
+}
+
 .newsletter_block .newsletter-form__button.field__button {
   min-width: 210px;
   margin: 0;
