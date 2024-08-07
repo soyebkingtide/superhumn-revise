@@ -61,7 +61,7 @@ function checkVisibility() {
 }
 
 function applyParallax() {
-  let parallex = document.querySelector(".parallex");
+  let parallex = document.querySelector(".para");
   var scrollPosition = window.scrollY || window.pageYOffset;
   var parallaxSpeed = 0.5; // Adjust the speed factor as needed
   var parallaxOffset = scrollPosition * parallaxSpeed;
