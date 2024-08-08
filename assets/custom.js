@@ -88,6 +88,8 @@ function applyParallax(container, target) {
 function onScroll() {
   applyParallax(".bg-image", ".para");
 
+  applyParallax(".superhumn-multicolumns-v2", ".character ");
+
   checkVisibilityAndToggleClass(".feature-img", "comeFromRight");
 
   checkVisibilityAndToggleClass(".team-feature-img", "comeFromleft");
