@@ -506,7 +506,7 @@ h6:empty {
 }
 
 .link--text:hover {
-  color: rgba(var(--color-foreground), 1);
+  color: rgba(var(--color-foreground), 0.75);
 }
 
 .link-with-icon {
@@ -1480,7 +1480,7 @@ details[open] > .share-button__fallback {
 }
 
 .share-button__fallback button:hover {
-  color: rgba(var(--color-foreground), 1);
+  color: rgba(var(--color-foreground), 0.75);
 }
 
 .share-button__fallback button:hover svg {
@@ -1637,7 +1637,7 @@ details[open] > .share-button__fallback {
   font-style: var(--font-body-style);
   font-weight: var(--font-body-weight);
   font-size: 1.2rem;
-  color: rgba(var(--color-foreground), 1);
+  color: rgba(var(--color-foreground), 0.75);
 }
 
 .field:hover.field:after,
@@ -2450,7 +2450,7 @@ input[type="checkbox"] {
 
 .header__heading-link {
   display: inline-block;
-  padding: 1rem;
+  padding: 0.75rem;
   text-decoration: none;
   word-break: break-word;
 }
@@ -2461,7 +2461,7 @@ input[type="checkbox"] {
 
 .header__heading-link .h2 {
   line-height: 1;
-  color: rgba(var(--color-foreground), 1);
+  color: rgba(var(--color-foreground), 0.75);
 }
 
 .header__heading-logo {
@@ -2495,7 +2495,7 @@ input[type="checkbox"] {
 @media screen and (min-width: 990px) {
   .header--middle-left .header__heading-link,
   .header--top-left .header__heading-link {
-    margin-left: -1rem;
+    margin-left: -0.75rem;
   }
 
   .header__heading,
@@ -2799,7 +2799,7 @@ details[open] > .header__submenu {
 .header__menu-item {
   padding: 1.2rem;
   text-decoration: none;
-  color: rgba(var(--color-foreground), 1);
+  color: rgba(var(--color-foreground), 0.75);
 }
 
 .header__menu-item:hover {
@@ -3503,7 +3503,7 @@ details-disclosure > details {
     .card-wrapper:hover
     .card--standard
     .card__inner {
-    transform: translateY(-1rem);
+    transform: translateY(-0.75rem);
   }
 
   .animate--hover-vertical-lift .card-wrapper:active .card--card,
