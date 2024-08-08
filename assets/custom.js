@@ -43,17 +43,16 @@ function checkVisibility() {
   }
 
   var rect = featureImage.getBoundingClientRect();
+
   var windowHeight = window.innerHeight;
 
   // Check if the bottom of the element is visible in the viewport
   if (rect.bottom >= 0 && rect.top <= windowHeight - rect.height) {
     // Bottom of the element is within the viewport
     featureImage.classList.add("comeFromRight");
-    console.log("add class here");
   } else {
     // Bottom of the element is not within the viewport
     featureImage.classList.remove("comeFromRight");
-    console.log("remove class here");
   }
 
   // Apply parallax effect
@@ -79,6 +78,8 @@ function applyParallax() {
   var parallaxOffset = elementScrollPosition * parallaxSpeed;
 
   parallex.style.transform = `translateY(${parallaxOffset}px)`;
+
+  parallex.style.right = `${parallaxOffset}px)`;
 }
 
 // Initial parallax effect application
