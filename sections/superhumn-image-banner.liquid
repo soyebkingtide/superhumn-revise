@@ -84,13 +84,17 @@ bottom: 0;
 
 
 
+.framebars-cover{
+  width:100%;
+  height:100%;
 
-
+}
 .framebars{
   position: absolute;
   left: 50%!important;;
   top: 50%!important;;
   transform: translate(-50%, -50%)!important;;
+   background-image: url({{ 'fireembers.svg' |  asset_url   }});
 
 }
 
@@ -183,9 +187,16 @@ z-index: 2;
 
  <img src="{{ 'characters.svg' |  asset_url   }}" class="characters" data-depth="0.2">
 
-       <img src="{{ 'fireembers.svg' |  asset_url   }}" class="framebars" data-depth="0.4">
+ <div class="framebars-cover" data-depth="0.4">
+
+ <div class="framebars">
 
 
+ </div>
+
+      
+
+</div>
 
       </div>
 
