@@ -52,8 +52,17 @@ position: absolute;
 }
 
 .framebars{
-  position:absolute;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
 }
+
+.characters{  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);}
 
 
   #Banner-{{ section.id }}::after {
@@ -109,7 +118,7 @@ position: absolute;
 
       <div class="parallax-window" data-parallax="scroll" data-position-Y="top" data-image-src="{{ section.settings.image | image_url: width: 3840  }}" stle="height:100vh">
 
-
+ <img src="{{ 'characters.svg' |  asset_url   }}" class="characters">
 
        <img src="{{ 'fireembers.svg' |  asset_url   }}" class="framebars">
 
