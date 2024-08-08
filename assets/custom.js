@@ -88,11 +88,10 @@ window.addEventListener("scroll", applyParallax);
 checkVisibility();
 
 // Check visibility and parallax effect on scroll and resize
-window.addEventListener(
-  "scroll",
-  checkVisibilityAndToggleClass(".feature-img", "comeFromRight")
-);
-window.addEventListener(
-  "resize",
-  checkVisibilityAndToggleClass(".feature-img", "comeFromRight")
-);
+
+function onScroll() {
+  checkVisibilityAndToggleClass(".feature-img", "comeFromRight");
+}
+
+window.addEventListener("scroll", onScroll);
+window.addEventListener("resize", onScroll);
