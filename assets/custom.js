@@ -91,6 +91,8 @@ window.addEventListener("scroll", applyParallax);
 
 function onScroll() {
   checkVisibilityAndToggleClass(".feature-img", "comeFromRight");
+
+  checkVisibilityAndToggleClass(".team-feature-img;", "comeFromRight");
 }
 
 window.addEventListener("scroll", onScroll);
