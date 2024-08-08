@@ -31,32 +31,30 @@ jQuery(function ($) {
   });
 });
 
-// Select the element
-var featureImage = document.querySelector(".feature-img");
+// Global function to check visibility and apply a class
+function checkVisibilityAndToggleClass(selector, className) {
+  // Select the element based on the provided selector
+  var element = document.querySelector(selector);
 
-// Function to check visibility and apply parallax effect
-function checkVisibility() {
   // Ensure the element exists
-  if (!featureImage) {
-    console.warn("Element not found for selector: .feature-img");
+  if (!element) {
+    console.warn(`Element not found for selector: ${selector}`);
     return;
   }
 
-  var rect = featureImage.getBoundingClientRect();
-
+  var rect = element.getBoundingClientRect();
   var windowHeight = window.innerHeight;
 
-  // Check if the bottom of the element is visible in the viewport
+  // Check if the element is visible in the viewport
   if (rect.bottom >= 0 && rect.top <= windowHeight - rect.height) {
-    // Bottom of the element is within the viewport
-    featureImage.classList.add("comeFromRight");
+    // Add the class if the element is visible
+    element.classList.add(className);
   } else {
-    // Bottom of the element is not within the viewport
-    featureImage.classList.remove("comeFromRight");
+    // Remove the class if the element is not visible
+    element.classList.remove(className);
   }
 
-  // Apply parallax effect
-  // requestAnimationFrame(applyParallax);
+  // Apply any additional effects like parallax here, if necessary
 }
 
 function applyParallax() {
@@ -90,5 +88,11 @@ window.addEventListener("scroll", applyParallax);
 checkVisibility();
 
 // Check visibility and parallax effect on scroll and resize
-window.addEventListener("scroll", checkVisibility);
-window.addEventListener("resize", checkVisibility);
+window.addEventListener(
+  "scroll",
+  checkVisibilityAndToggleClass(".feature-img", "comeFromRight")
+);
+window.addEventListener(
+  "resize",
+  checkVisibilityAndToggleClass(".feature-img", "comeFromRight")
+);
