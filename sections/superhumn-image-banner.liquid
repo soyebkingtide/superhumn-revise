@@ -104,11 +104,29 @@ width: 300%;
 
 }
 
-.characters{  position: absolute;
-z-index: 2;
+.characters-cover{
+  width:100%;
+  height:100%;
+
+}
+
+
+.characters{ 
+  
+  position: absolute;
   left: 50%!important;
+width: 300%;
+  height:100%;
   top: 50%!important;
-  transform: translate(-50%, -50%)!important;}
+    transform: translate(-50%, -50%)!important;;
+
+   background-image: url({{ 'characters.svg' |  asset_url   }});
+
+   background-repeat: no-repeat;
+  background-size: contain;
+
+
+}
 
 
   #Banner-{{ section.id }}::after {
@@ -191,7 +209,17 @@ z-index: 2;
 
          </div>
 
- <img src="{{ 'characters.svg' |  asset_url   }}" class="characters" data-depth="0.2">
+         <div class="characters-cover" data-depth="0.2">
+
+         <div class="characters">
+
+
+         </div>
+
+
+         </div>
+
+
 
  <div class="framebars-cover" data-depth="0.4">
 
