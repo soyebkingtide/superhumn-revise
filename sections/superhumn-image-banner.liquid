@@ -75,7 +75,17 @@
         endif
       -%}
 
-      <div class="parallax-window" data-parallax="scroll" data-position-Y="top" data-image-src="{{ section.settings.image | image_url: width: 3840  }}" stle="height:100vh"></div>
+      <div class="parallax-window" data-parallax="scroll" data-position-Y="top" data-image-src="{{ section.settings.image | image_url: width: 3840  }}" stle="height:100vh">
+
+
+       <img src="{{ 'background-clouds-1.svg' |  asset_url   }}" class="cloud-1">
+
+      <img src="{{ 'background-clouds-2.svg' |  asset_url   }}" class="cloud-1">
+
+
+
+
+      </div>
 
 
       {% comment %} {{
