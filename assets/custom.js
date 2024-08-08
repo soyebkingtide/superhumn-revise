@@ -78,8 +78,6 @@ function applyParallax() {
   var parallaxOffset = elementScrollPosition * parallaxSpeed;
 
   parallex.style.transform = `translateY(${parallaxOffset}px)`;
-
-  featureImage.style.right = `${scrollPosition}px`;
 }
 
 // Initial parallax effect application
