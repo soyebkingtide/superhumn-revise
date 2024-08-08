@@ -56,10 +56,10 @@ function checkVisibilityAndToggleClass(selector, className) {
 
   // Apply any additional effects like parallax here, if necessary
 }
-
+let target;
 function applyParallax(container, target) {
   let wpos = document.querySelector(container);
-  let target = document.querySelector(target);
+  target = document.querySelector(target);
 
   if (!wpos || !target) {
     console.warn("Elements not found for selector: .bg-image or .para");
