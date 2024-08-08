@@ -115,15 +115,12 @@ width: 300%;
   
   position: absolute;
   left: 50%!important;
-width: 100%;
-  height:100%;
+
+
   top: 50%!important;
     transform: translate(-50%, -50%)!important;;
 
-   background-image: url({{ 'characters.svg' |  asset_url   }});
 
-   background-repeat: no-repeat;
-  background-size: contain;
 
 
 }
@@ -211,10 +208,9 @@ width: 100%;
 
          <div class="characters-cover" data-depth="0.2">
 
-         <div class="characters">
+         <img src="{{ 'characters.svg' |  asset_url   }}" class="characters">
 
-
-         </div>
+        
 
 
          </div>
