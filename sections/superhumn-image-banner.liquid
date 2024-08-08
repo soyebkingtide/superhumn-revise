@@ -134,18 +134,14 @@ animation:wave 7.11111s 0.1s infinite linear;
 
 
 
-  @keyframes wave {
+@keyframes wave {
   0% {
-    -webkit-transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg);
-    -moz-transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg);
-    transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg); }
+    transform: rotate(0deg) translateY(10%);
+  }
   100% {
-    -webkit-transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg);
-    -moz-transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg);
-    transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg); } }
-
-
-
+    transform: rotate(360deg) translateY(10%);
+  }
+}
 
 
 
