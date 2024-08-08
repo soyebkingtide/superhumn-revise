@@ -34,12 +34,25 @@
 
 .cloud-1{
 
-position: absolute;
-  left: 0;
+
+ height: 100%;
   width: 100%;
-  bottom: 0;
+  padding: 0;
+  margin: 0;
 
 
+}
+
+.wave{
+  bottom: 108px;
+    margin: 0px 0px;
+    background-position: center bottom;
+    background-size: auto 101%;
+    height: 144px;
+    position: absolute;
+  width: 300%;
+  left: -100%;
+    background-image: url({{ 'background-clouds2.png' |  asset_url   }});
 }
 
 .cloud-2{
@@ -118,15 +131,25 @@ z-index: 2;
       -%}
 
       <div id="scene-1" class="parallax-window" data-parallax="scroll" data-position-Y="top" data-image-src="{{ section.settings.image | image_url: width: 3840  }}" stle="height:100vh">
-
+{% comment %} 
  <img src="{{ 'characters.svg' |  asset_url   }}" class="characters" data-depth="0.2">
 
        <img src="{{ 'fireembers.svg' |  asset_url   }}" class="framebars" data-depth="0.4">
 
 
-       <img src="{{ 'bg-2.png' |  asset_url   }}" class="cloud-2" data-depth="0.6">
+       <img src="{{ 'bg-2.png' |  asset_url   }}" class="cloud-2" data-depth="0.6"> {% endcomment %}
 
-      <img src="{{ 'background-clouds2.png' |  asset_url   }}" class="cloud-1" data-depth="0.8">
+       <div class="cloud-1" data-depth="0.8">
+
+       <div class="wave">
+
+
+       </div>
+
+
+
+       </div>
+
 
 
 
