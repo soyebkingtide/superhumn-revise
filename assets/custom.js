@@ -57,14 +57,12 @@ function checkVisibilityAndToggleClass(selector, className) {
   // Apply any additional effects like parallax here, if necessary
 }
 
-function applyParallax(classBgImage, classPara, speedFactor = 0.5) {
-  let wpos = document.querySelector(classBgImage);
-  let parallax = document.querySelector(classPara);
+function applyParallax(container, target) {
+  let wpos = document.querySelector(container);
+  let parallex = document.querySelector(target);
 
-  if (!wpos || !parallax) {
-    console.warn(
-      `Elements not found for selectors: ${classBgImage} or ${classPara}`
-    );
+  if (!wpos || !parallex) {
+    console.warn("Elements not found for selector: .bg-image or .para");
     return;
   }
 
@@ -72,29 +70,16 @@ function applyParallax(classBgImage, classPara, speedFactor = 0.5) {
   var scrollPosition = window.scrollY || window.pageYOffset;
   var elementTop = ww.top + scrollPosition;
   var elementScrollPosition = scrollPosition - elementTop;
+  console.log(elementScrollPosition);
 
-  var parallaxOffset = elementScrollPosition * speedFactor;
-  parallax.style.transform = `translateY(${parallaxOffset}px)`;
+  var parallaxSpeed = 0.5; // Adjust the speed factor as needed
+  var parallaxOffset = elementScrollPosition * parallaxSpeed;
+
+  parallex.style.transform = `translateY(${parallaxOffset}px)`;
 }
 
-// Function to apply parallax effect to multiple elements
-function applyParallaxToMultiple(elements) {
-  elements.forEach(({ bgImageClass, paraClass, speedFactor }) => {
-    applyParallax(bgImageClass, paraClass, speedFactor);
-  });
-}
-
-// Example usage
-applyParallaxToMultiple([
-  { bgImageClass: ".bg-image-1", paraClass: ".para-1", speedFactor: 0.5 },
-]);
-
-// Apply parallax effect on window scroll
-window.addEventListener("scroll", () => {
-  applyParallaxToMultiple([
-    { bgImageClass: ".bg-image-1", paraClass: ".para-1", speedFactor: 0.5 },
-  ]);
-});
+// Initial parallax effect application
+applyParallax();
 
 // Initial visibility check
 //checkVisibility();
@@ -102,6 +87,8 @@ window.addEventListener("scroll", () => {
 // Check visibility and parallax effect on scroll and resize
 
 function onScroll() {
+  applyParallax(".bg-image", ".para");
+
   checkVisibilityAndToggleClass(".feature-img", "comeFromRight");
 
   checkVisibilityAndToggleClass(".team-feature-img", "comeFromleft");
