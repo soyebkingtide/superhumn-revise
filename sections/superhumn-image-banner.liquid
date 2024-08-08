@@ -134,14 +134,18 @@ animation:wave 7.11111s 0.1s infinite linear;
 
 
 
-@keyframes wave {
+  @keyframes wave {
   0% {
-    transform: rotate(0deg) translateY(10%);
-  }
+   
+    transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg); }
   100% {
-    transform: rotate(360deg) translateY(10%);
+    
+    transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg); }
+  
   }
-}
+
+
+
 
 
 
