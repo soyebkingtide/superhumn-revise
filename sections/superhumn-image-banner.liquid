@@ -44,11 +44,11 @@
 }
 
 .wave{
-  bottom: 0;
+bottom: 0;
   margin: 0px 0px;
-  background-position: center bottom;
+  background-position: center;
   background-size: cover;
-  height: auto;
+  height: 100%;
   width: 100%;
 
  
@@ -137,7 +137,7 @@ z-index: 2;
        <img src="{{ 'fireembers.svg' |  asset_url   }}" class="framebars" data-depth="0.4">
 
 
-       <img src="{{ 'bg-2.png' |  asset_url   }}" class="cloud-2" data-depth="0.6"> {% endcomment %}
+      {% endcomment %}
 
       
 
@@ -149,6 +149,9 @@ z-index: 2;
 
 
        </div>
+
+
+         <img src="{{ 'bg-2.png' |  asset_url   }}" class="cloud-2" data-depth="0.6">
 
 
 
