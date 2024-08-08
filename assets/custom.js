@@ -79,7 +79,7 @@ function applyParallax() {
 
   parallex.style.transform = `translateY(${parallaxOffset}px)`;
 
-  parallex.style.right = `${parallaxOffset}px)`;
+  featureImage.style.right = `${parallaxOffset}px)`;
 }
 
 // Initial parallax effect application
