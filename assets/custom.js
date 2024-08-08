@@ -93,6 +93,8 @@ function onScroll() {
   checkVisibilityAndToggleClass(".feature-img", "comeFromRight");
 
   checkVisibilityAndToggleClass(".team-feature-img", "comeFromleft");
+
+  checkVisibilityAndToggleClass(".character", "character-from-right");
 }
 
 window.addEventListener("scroll", onScroll);
