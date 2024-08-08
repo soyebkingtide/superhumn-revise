@@ -79,7 +79,6 @@ function applyParallax(container, target) {
 }
 
 // Initial parallax effect application
-applyParallax();
 
 // Initial visibility check
 //checkVisibility();
