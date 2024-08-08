@@ -92,11 +92,14 @@ bottom: 0;
 .framebars{
   position: absolute;
   left: 50%!important;
-   width:100%;
+width: 300%;
   height:100%;
   top: 50%!important;
-  transform: translate(-50%, -50%)!important;;
+ 
    background-image: url({{ 'fireembers.svg' |  asset_url   }});
+
+   background-repeat: repeat;
+  background-size: contain;
 
 }
 
