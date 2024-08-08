@@ -60,6 +60,7 @@ position: absolute;
 }
 
 .characters{  position: absolute;
+z-index: 2;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);}
@@ -116,16 +117,16 @@ position: absolute;
         endif
       -%}
 
-      <div class="parallax-window" data-parallax="scroll" data-position-Y="top" data-image-src="{{ section.settings.image | image_url: width: 3840  }}" stle="height:100vh">
+      <div id="scene-1" class="parallax-window" data-parallax="scroll" data-position-Y="top" data-image-src="{{ section.settings.image | image_url: width: 3840  }}" stle="height:100vh">
 
- <img src="{{ 'characters.svg' |  asset_url   }}" class="characters">
+ <img src="{{ 'characters.svg' |  asset_url   }}" class="characters" data-depth="0.2">
 
-       <img src="{{ 'fireembers.svg' |  asset_url   }}" class="framebars">
+       <img src="{{ 'fireembers.svg' |  asset_url   }}" class="framebars" data-depth="0.4">
 
 
-       <img src="{{ 'bg-2.png' |  asset_url   }}" class="cloud-2">
+       <img src="{{ 'bg-2.png' |  asset_url   }}" class="cloud-2" data-depth="0.6">
 
-      <img src="{{ 'background-clouds2.png' |  asset_url   }}" class="cloud-1">
+      <img src="{{ 'background-clouds2.png' |  asset_url   }}" class="cloud-1" data-depth="0.8">
 
 
 

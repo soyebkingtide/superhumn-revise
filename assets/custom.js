@@ -92,3 +92,6 @@ checkVisibility();
 // Check visibility and parallax effect on scroll and resize
 window.addEventListener("scroll", checkVisibility);
 window.addEventListener("resize", checkVisibility);
+
+var scene = document.getElementById("scene-1");
+var parallaxInstance = new Parallax(scene);
