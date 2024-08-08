@@ -88,7 +88,7 @@ function applyParallax(container, target) {
 function onScroll() {
   applyParallax(".bg-image", ".para");
 
-  applyParallax(".superhumn-multicolumns-v2", ".character ");
+  applyParallax(".superhumn-multicolumns-v2", ".para");
 
   checkVisibilityAndToggleClass(".feature-img", "comeFromRight");
 
