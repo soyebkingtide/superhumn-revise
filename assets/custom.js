@@ -59,9 +59,9 @@ function checkVisibilityAndToggleClass(selector, className) {
 
 function applyParallax(container, target) {
   let wpos = document.querySelector(container);
-  let parallex = document.querySelector(target);
+  let target = document.querySelector(target);
 
-  if (!wpos || !parallex) {
+  if (!wpos || !target) {
     console.warn("Elements not found for selector: .bg-image or .para");
     return;
   }
@@ -75,7 +75,7 @@ function applyParallax(container, target) {
   var parallaxSpeed = 0.5; // Adjust the speed factor as needed
   var parallaxOffset = elementScrollPosition * parallaxSpeed;
 
-  parallex.style.transform = `translateY(${parallaxOffset}px)`;
+  target.style.transform = `translateY(${parallaxOffset}px)`;
 }
 
 // Initial parallax effect application
