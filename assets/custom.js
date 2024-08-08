@@ -57,12 +57,14 @@ function checkVisibilityAndToggleClass(selector, className) {
   // Apply any additional effects like parallax here, if necessary
 }
 
-function applyParallax() {
-  let wpos = document.querySelector(".bg-image");
-  let parallex = document.querySelector(".para");
+function applyParallax(classBgImage, classPara, speedFactor = 0.5) {
+  let wpos = document.querySelector(classBgImage);
+  let parallax = document.querySelector(classPara);
 
-  if (!wpos || !parallex) {
-    console.warn("Elements not found for selector: .bg-image or .para");
+  if (!wpos || !parallax) {
+    console.warn(
+      `Elements not found for selectors: ${classBgImage} or ${classPara}`
+    );
     return;
   }
 
@@ -70,19 +72,29 @@ function applyParallax() {
   var scrollPosition = window.scrollY || window.pageYOffset;
   var elementTop = ww.top + scrollPosition;
   var elementScrollPosition = scrollPosition - elementTop;
-  console.log(elementScrollPosition);
 
-  var parallaxSpeed = 0.5; // Adjust the speed factor as needed
-  var parallaxOffset = elementScrollPosition * parallaxSpeed;
-
-  parallex.style.transform = `translateY(${parallaxOffset}px)`;
+  var parallaxOffset = elementScrollPosition * speedFactor;
+  parallax.style.transform = `translateY(${parallaxOffset}px)`;
 }
 
-// Initial parallax effect application
-applyParallax();
+// Function to apply parallax effect to multiple elements
+function applyParallaxToMultiple(elements) {
+  elements.forEach(({ bgImageClass, paraClass, speedFactor }) => {
+    applyParallax(bgImageClass, paraClass, speedFactor);
+  });
+}
+
+// Example usage
+applyParallaxToMultiple([
+  { bgImageClass: ".bg-image-1", paraClass: ".para-1", speedFactor: 0.5 },
+]);
 
 // Apply parallax effect on window scroll
-window.addEventListener("scroll", applyParallax);
+window.addEventListener("scroll", () => {
+  applyParallaxToMultiple([
+    { bgImageClass: ".bg-image-1", paraClass: ".para-1", speedFactor: 0.5 },
+  ]);
+});
 
 // Initial visibility check
 //checkVisibility();
