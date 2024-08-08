@@ -62,12 +62,9 @@ function checkVisibility() {
 function applyParallax() {
   let wpos = document.querySelector(".bg-image");
   let parallex = document.querySelector(".para");
-  let featureImage = document.querySelector(".feature-image");
 
-  if (!wpos || !parallex || !featureImage) {
-    console.warn(
-      "Elements not found for selector: .bg-image, .para, or .feature-image"
-    );
+  if (!wpos || !parallex) {
+    console.warn("Elements not found for selector: .bg-image or .para");
     return;
   }
 
@@ -75,7 +72,6 @@ function applyParallax() {
   var scrollPosition = window.scrollY || window.pageYOffset;
   var elementTop = ww.top + scrollPosition;
   var elementScrollPosition = scrollPosition - elementTop;
-
   console.log(elementScrollPosition);
 
   var parallaxSpeed = 0.5; // Adjust the speed factor as needed
@@ -83,29 +79,8 @@ function applyParallax() {
 
   parallex.style.transform = `translateY(${parallaxOffset}px)`;
 
-  // Move featureImage from -300px to 0px based on the container's visibility on the screen
-  var container = document.querySelector(".bg-image"); // Replace with the actual container's selector
-  var containerRect = container.getBoundingClientRect();
-
-  if (containerRect.top <= window.innerHeight && containerRect.bottom >= 0) {
-    // Calculate how much the container is visible
-    var containerVisibleRatio =
-      (window.innerHeight - containerRect.top) /
-      (containerRect.height + window.innerHeight);
-
-    // Clamp the value between 0 and 1
-    containerVisibleRatio = Math.max(0, Math.min(1, containerVisibleRatio));
-
-    // Calculate the new right position for featureImage
-    var newRight = -300 + 300 * containerVisibleRatio;
-    featureImage.style.right = `${newRight}px`;
-  } else {
-    // If the container is not visible, reset featureImage position
-    featureImage.style.right = "-300px";
-  }
+  featureImage.style.right = `${scrollPosition}px`;
 }
-
-window.addEventListener("scroll", applyParallax);
 
 // Initial parallax effect application
 applyParallax();
