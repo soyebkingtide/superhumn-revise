@@ -177,7 +177,7 @@ z-index:0;
 <div class="multicolumn superhumn-multicolumns-v2 color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}">
   
 
-<img src="{{ section.settings.character_image | image_url: width: 400 }}" class="character">
+<img src="{{ section.settings.character_image | image_url: width: 600 }}" class="character">
 
 
   <div
@@ -188,7 +188,7 @@ z-index:0;
   >
     {%- unless section.settings.title == blank -%}
       <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin multicolumn__title">
-        <h2 class="title inline-richtext {{ section.settings.heading_size }} subheading">
+        <h2 class="title inline-richtext {{ section.settings.heading_size }} subheading fs-italic">
          <span> {{ section.settings.title }} </span>
 
           {% if  section.settings.title1  %}
@@ -393,7 +393,7 @@ z-index:0;
 
 
  <div class="design-text-wrapper">
-   <h3 class="design-text fw-900 h0  rotate-1 fs-italic ">
+   <h3 class="design-text fw-900 h0   rotate-1 fs-italic ">
    
     <span>NATURALLY</span> <span>GET</span> <span>HIGH NATURALLY</span> <span>GET HIGH</span>  <span>NATURALLY</span> <span>GET</span> <span>HIGH NATURALLY</span> <span>GET HIGH</span>
     
