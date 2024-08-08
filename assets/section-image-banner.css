@@ -22,6 +22,7 @@
 
 .suberhumn-banner .banner__text p {
   font-size: 24px;
+  color: rgba(var(--color-foreground), 1);
 }
 
 .suberhumn-banner .banner__box {
