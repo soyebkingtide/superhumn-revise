@@ -33,7 +33,7 @@
         "newsletter_block_QNpaYT": {
           "type": "newsletter_block",
           "settings": {
-            "newsletter_heading": "Subscribe to our emails",
+            "newsletter_heading": "Sign up for freebies and updates",
             "heading_size": "h2",
             "newsletter": true
           }
