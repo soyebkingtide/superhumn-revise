@@ -85,7 +85,7 @@ applyParallax();
 window.addEventListener("scroll", applyParallax);
 
 // Initial visibility check
-checkVisibility();
+//checkVisibility();
 
 // Check visibility and parallax effect on scroll and resize
 
