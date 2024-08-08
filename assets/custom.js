@@ -78,9 +78,16 @@ function applyParallax() {
   var parallaxOffset = elementScrollPosition * parallaxSpeed;
 
   parallex.style.transform = `translateY(${parallaxOffset}px)`;
-
-  featureImage.style.right = `${parallaxOffset}px)`;
 }
+
+window.addEventListener("scroll", () => {
+  // Calculate the parallaxOffset based on the scroll position
+  let scrollPosition = window.scrollY;
+  let parallaxOffset = Math.max(0, scrollPosition); // Ensure parallaxOffset is not negative
+
+  // Apply the offset to the right property
+  featureImage.style.right = `${parallaxOffset}px`;
+});
 
 // Initial parallax effect application
 applyParallax();
