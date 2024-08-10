@@ -338,8 +338,8 @@
         "button_link": "#",
         "color_scheme": "scheme-ec5e6b23-0e8c-4f58-bcce-0e003064963a",
         "color_scheme_post": "scheme-4",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
         "padding_top": 100,
         "padding_bottom": 100
       }
