@@ -355,6 +355,6 @@
   }
 
   .design-text .h0 {
-    font-size: 70px;
+    font-size: 70px !important;
   }
 }
