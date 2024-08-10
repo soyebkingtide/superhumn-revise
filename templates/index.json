@@ -119,7 +119,7 @@
         "button_link": "#",
         "color_scheme": "scheme-4",
         "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 80,
         "padding_bottom": 80
       }
@@ -143,12 +143,12 @@
         "color_scheme": "scheme-5",
         "image_ratio": "adapt",
         "image_shape": "default",
-        "show_secondary_image": false,
+        "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
         "padding_top": 120,
         "padding_bottom": 200
       }
@@ -338,8 +338,8 @@
         "button_link": "#",
         "color_scheme": "scheme-ec5e6b23-0e8c-4f58-bcce-0e003064963a",
         "color_scheme_post": "scheme-4",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
         "padding_top": 100,
         "padding_bottom": 100
       }
