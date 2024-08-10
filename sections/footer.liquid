@@ -166,7 +166,7 @@
                       {%- endif -%}
 
                        {%- if block.settings.show_social and has_social_icons -%}
-                        <div class="custom-social-icons">
+                        <div class="custom-social-icons for-mob">
                         {%- render 'social-icons', class: 'footer__list-social' -%}
                         </div>
                       {%- endif -%}
@@ -206,7 +206,7 @@
           {%- endif -%}
 
           {%- if section.settings.show_social and has_social_icons -%}
-            {%- render 'social-icons', class: 'footer__list-social' -%}
+            {%- render 'social-icons', class: 'footer__list-social for-desk' -%}
           {%- endif -%}
         </div>
       </div>
