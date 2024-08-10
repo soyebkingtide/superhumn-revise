@@ -119,7 +119,7 @@
         "button_link": "#",
         "color_scheme": "scheme-4",
         "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 80,
         "padding_bottom": 80
       }
