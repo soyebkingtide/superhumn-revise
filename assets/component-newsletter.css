@@ -137,3 +137,22 @@
 .newsletter_superhumn .newsletter-form__field-wrapper {
   max-width: 100%;
 }
+
+@media (max-width: 749px) {
+  .newsletter_block .newsletter-form__button.field__button {
+    min-width: 120px;
+  }
+
+  .newsletter_block .field__input {
+    height: 5.7rem;
+  }
+
+  .newsletter_block .field__label,
+  .newsletter_block .field__input {
+    font-size: 18px;
+  }
+
+  .newsletter_block .field__label {
+    top: 14px;
+  }
+}

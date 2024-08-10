@@ -1,3 +1,4 @@
+{{ 'component-newsletter.css' | asset_url | stylesheet_tag }}
 {{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
@@ -22,7 +23,7 @@
    
   }
 
-  .mt-80{ margin-top:80px;}
+
 
    .superhumn-image-text .bg-image{ 
     background-image:url({{ '0V467H0L539.svg' |  asset_url }}) ;
@@ -34,6 +35,20 @@
   .superhumn-image-text .media{
     background-color:transparent;
   }
+
+    .mt-80{ margin-top:80px;}
+
+    @media(max-width:749px){
+    .mt-80{ margin-top:22px;}
+
+    .image-with-text--overlap .image-with-text__content {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+    }
 
   /* .superhumn-image-text:after{
     content:'';
