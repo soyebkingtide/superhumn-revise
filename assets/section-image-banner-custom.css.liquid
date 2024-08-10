@@ -1,0 +1,117 @@
+
+.cloud-1{
+
+
+ height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+
+}
+
+.wave{
+bottom: 0;
+  margin: 0px 0px;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+
+ 
+    background-image: url({{ 'cloud-1.png' |  asset_url   }});
+}
+
+
+
+.cloud-2{
+position: absolute;
+  width: 100%;
+  left:0%;
+  z-index: 1;
+  bottom: 0!important;
+ 
+
+}
+
+
+
+.wave2{
+position:absolute;
+bottom: 0;
+  margin: 0px 0px;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 110%;
+
+ 
+    background-image: url({{ 'bg-2.png' |  asset_url   }});
+}
+
+
+
+.framebars-cover{
+  width:100%;
+  height:100%;
+  z-index:-1;
+
+}
+.framebars{
+  position: absolute;
+  left: 50%!important;
+width: 300%;
+  height:100%;
+  top: 50%!important;
+    transform: translate(-50%, -50%)!important;;
+
+   background-image: url({{ 'fireembers.svg' |  asset_url   }});
+
+   background-repeat: repeat;
+  background-size: contain;
+
+}
+
+.characters-cover{
+  width:100%;
+  height:100%;   z-index:2;
+
+}
+
+
+.characters{ 
+  
+  position: absolute;
+  left: 50%!important;
+
+animation:wave 7.11111s 0.1s infinite linear;
+  top: 50%!important;
+
+
+ 
+
+
+
+
+}
+
+
+  #Banner-{{ section.id }}::after {
+    opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
+  }
+
+
+
+@keyframes wave {
+  0% {
+    transform: translate(-50%, -50%) translateY(10%);
+  }
+  50% {
+    transform: translate(-50%, -50%) translateY(-10%);
+  }
+  100% {
+    transform: translate(-50%, -50%) translateY(10%);
+  }
+}
+
+
