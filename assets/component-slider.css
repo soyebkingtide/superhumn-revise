@@ -20,9 +20,9 @@ slider-component.slider-component-full-width {
   slider-component.page-width {
     padding: 0 1.5rem;
   }
-  .superhumn-card-items {
-    max-width: 450px;
-    margin: auto;
+
+  .contains-card li {
+    max-width: 450px !important;
   }
 }
 
