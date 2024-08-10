@@ -311,7 +311,8 @@
 
 .design-text {
   color: #fff;
-
+  border-top: 10px solid #fff;
+  border-bottom: 10px solid #fff;
   background: #191919;
   letter-spacing: 2.73px;
   bottom: 5%;
@@ -319,11 +320,6 @@
   position: absolute;
   transform-origin: center;
   white-space: nowrap;
-}
-
-.design-text span {
-  border-top: 10px solid #fff;
-  border-bottom: 10px solid #fff;
 }
 
 .rotate-1 {
