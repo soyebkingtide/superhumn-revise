@@ -335,7 +335,15 @@
 }
 
 @media screen and (max-width: 749px) {
-  .multicolumn-list__item--empty {
-    display: list-item;
+  .our-story {
+    padding: 0;
+  }
+
+  .rotate-1 {
+    position: relative;
+  }
+
+  .video-wrapper {
+    margin: -13% 0 0;
   }
 }
