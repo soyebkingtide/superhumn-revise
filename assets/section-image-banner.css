@@ -36,8 +36,8 @@
 }
 
 @media (max-width: 680px) {
-  .suberhumn-banner .banner__text p {
-    background-image: none;
+  .suberhumn-banner .banner__text {
+    background-image: none !important;
     background-color: var(--gray);
   }
 }
