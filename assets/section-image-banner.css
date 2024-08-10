@@ -35,6 +35,13 @@
   }
 }
 
+@media (max-width: 680px) {
+  .suberhumn-banner .banner__text p {
+    background-image: none;
+    background-color: var(--gray);
+  }
+}
+
 .suberhumn-banner .banner__box {
   text-align: center !important;
   padding: 0 !important;
