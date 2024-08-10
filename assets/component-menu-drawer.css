@@ -38,7 +38,6 @@ menu-drawer > details[open] > summary::before {
   width: 100%;
   padding: 0;
   background-color: rgb(var(--color-background));
-  background-image: url('{{"footer-bg.jpg"|asset_url}}');
   overflow-x: hidden;
   filter: drop-shadow(
     var(--drawer-shadow-horizontal-offset) var(--drawer-shadow-vertical-offset)
