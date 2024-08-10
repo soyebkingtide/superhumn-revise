@@ -25,45 +25,6 @@
   }
 
 
-    .superhumn-multicolumns-v2 .multicolumn-card__info{
-    display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: baseline;
-  height: 100%;
-  position:relative;
-  }
-
-.fullvh  {
-    height: 100%;
-  width: 100%;
-  }
-
-    .super_card { position:relative; z-index:1;}
-
-    .super_card:before{
-       
-        content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -2;
-  background: #681109;
-  left: 20px;
-  top: 20px;
-      }
-.light-1{
-  position:absolute;
-  left: 0;
-  top: 0;
-}
-
-      .mark{
-      
-  -webkit-text-stroke-width: 2px;-webkit-text-stroke-color:  #FFF; 
-  color: transparent;
-
-      }
 
  
 .superhumn-title-{{ section.id }}{
@@ -115,43 +76,7 @@ top: -24%;
 }
 
 
-.our-story{
-  padding:160px 0;
-  position:relative;
-}
 
-.video-wrapper{margin:-75px 0 0 0; }
-
-.video-section{
-  max-width:1160px;
-}
-
-.design-text{
-  color: #FFF;
-   border-top: 10px solid #FFF;
-border-bottom: 10px solid #FFF;
-background: #191919;
-letter-spacing: 2.73px;
-bottom:5%;
-z-index:0;
- position: absolute;transform-origin: center; white-space: nowrap;
-}
-
-.rotate-1{
-     
-    transform: rotate(14deg);
-    
-      
-    left: -10%;
-}
-
-.rotate-2{
-     
-    transform: rotate(-14deg);
-    
-      
-    right: -10%;
-}
 
 
 {%- endstyle -%}
