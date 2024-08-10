@@ -33,7 +33,7 @@
         "newsletter_block_QNpaYT": {
           "type": "newsletter_block",
           "settings": {
-            "newsletter_heading": "Subscribe to our emails",
+            "newsletter_heading": "Sign up for freebies and updates",
             "heading_size": "h2",
             "newsletter": true
           }
@@ -47,7 +47,7 @@
       "settings": {
         "color_scheme": "scheme-fb259804-bb48-4402-bbfd-c3e6a817dacc",
         "bg_image": "shopify:\/\/shop_images\/footer-bg.jpg",
-        "newsletter_heading": "Sign up for freebies and updates",
+        "newsletter_heading": "<strong>Sign up for freebies and updates<\/strong>",
         "enable_follow_on_shop": false,
         "show_social": false,
         "enable_country_selector": false,
