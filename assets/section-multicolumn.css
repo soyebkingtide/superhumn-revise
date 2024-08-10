@@ -353,4 +353,8 @@
   .super_card {
     margin-bottom: 20px;
   }
+
+  .design-text .h0 {
+    font-size: 70px;
+  }
 }
