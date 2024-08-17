@@ -1,26 +1,30 @@
-const screenSize = window.innerWidth;
+function videoControl() {
+  const screenSize = window.innerWidth;
 
-const cardMedia = document.querySelectorAll(".video-block");
+  const cardMedia = document.querySelectorAll(".video-block");
 
-cardMedia.forEach((VD, index) => {
-  const videoElem = document.querySelectorAll(".controlVd");
+  cardMedia.forEach((VD, index) => {
+    const videoElem = document.querySelectorAll(".controlVd");
 
-  if (screenSize >= 922) {
-    videoElem[index].pause();
-    VD.addEventListener("mouseenter", function () {
-      // console.log(videoElem[index]);
-      videoElem[index].play();
-    });
-
-    VD.addEventListener("mouseout", function () {
-      // console.log(videoElem[index]);
-      // console.log(this);
+    if (screenSize >= 922) {
       videoElem[index].pause();
-    });
-  } else {
-    videoElem[index].play();
-  }
-});
+      VD.addEventListener("mouseenter", function () {
+        // console.log(videoElem[index]);
+        videoElem[index].play();
+      });
+
+      VD.addEventListener("mouseout", function () {
+        // console.log(videoElem[index]);
+        // console.log(this);
+        videoElem[index].pause();
+      });
+    } else {
+      videoElem[index].play();
+    }
+  });
+}
+
+window.addEventListener("resize", videoControl);
 
 jQuery(function ($) {
   $(".text-scroller-items").slick({
