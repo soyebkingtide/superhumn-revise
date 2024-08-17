@@ -327,7 +327,7 @@
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 100,
-        "padding_bottom": 100
+        "padding_bottom": 0
       }
     },
     "superhumn_image_with_text_387P9g": {
@@ -357,6 +357,13 @@
             "button_style_secondary": false
           }
         },
+        "text_kXHnXz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We're assembling the greatest team of SUPERHUMNs on the planet<\/p>",
+            "text_style": "body"
+          }
+        },
         "checkbox_gxzeAQ": {
           "type": "checkbox",
           "settings": {
@@ -368,6 +375,7 @@
         "caption_Qfa9d4",
         "heading_XbLjib",
         "button_RNtA6Q",
+        "text_kXHnXz",
         "checkbox_gxzeAQ"
       ],
       "settings": {
