@@ -1,4 +1,4 @@
-const screenSize = document.innerHeight;
+const screenSize = window.innerHeight;
 
 if (screenSize >= 922) {
   const cardMedia = document.querySelectorAll(".video-block");
