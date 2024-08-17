@@ -1,4 +1,4 @@
-const screenSize = window.innerHeight;
+const screenSize = window.innerWidth;
 
 const cardMedia = document.querySelectorAll(".video-block");
 
