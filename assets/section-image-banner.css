@@ -510,6 +510,9 @@
 }
 
 @media screen and (max-width: 749px) {
+  .banner__heading.h0 {
+    line-height: normal !important;
+  }
   .banner--content-align-mobile-right .banner__buttons--multiple {
     justify-content: flex-end;
   }
