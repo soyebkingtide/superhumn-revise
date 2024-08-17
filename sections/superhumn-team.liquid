@@ -103,11 +103,15 @@ top: -24%;
 
 
 <div
-    class="page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    class="w-100 section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
     {% if settings.animations_reveal_on_scroll %}
       data-cascade
     {% endif %}
   >
+
+
+  <div class="page-width">
+
     {%- unless section.settings.title == blank -%}
       <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin multicolumn__title">
         <h2 class="title inline-richtext {{ section.settings.heading_size }} mx-auto  superhumn-title-{{ section.id }} superhumn-title">
@@ -270,6 +274,7 @@ top: -24%;
     </div>
     </div>
   </div>
+</div>
 </div>
 
 {% schema %}
