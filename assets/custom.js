@@ -1,19 +1,25 @@
-const cardMedia = document.querySelectorAll(".video-block");
+const screenSize = document.innerHeight;
 
-cardMedia.forEach((VD, index) => {
-  const videoElem = document.querySelectorAll(".controlVd");
+if (screenSize >= 922) {
+  const cardMedia = document.querySelectorAll(".video-block");
 
-  VD.addEventListener("mouseenter", function () {
-    // console.log(videoElem[index]);
-    videoElem[index].play();
+  cardMedia.forEach((VD, index) => {
+    const videoElem = document.querySelectorAll(".controlVd");
+
+    VD.addEventListener("mouseenter", function () {
+      // console.log(videoElem[index]);
+      videoElem[index].play();
+    });
+
+    VD.addEventListener("mouseout", function () {
+      // console.log(videoElem[index]);
+      // console.log(this);
+      videoElem[index].pause();
+    });
   });
-
-  VD.addEventListener("mouseout", function () {
-    // console.log(videoElem[index]);
-    // console.log(this);
-    videoElem[index].pause();
-  });
-});
+} else {
+  videoElem[index].play();
+}
 
 jQuery(function ($) {
   $(".text-scroller-items").slick({
