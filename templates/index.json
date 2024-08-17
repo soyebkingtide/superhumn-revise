@@ -156,6 +156,12 @@
     "text_scroller_XybLWx": {
       "type": "text-scroller",
       "blocks": {
+        "text_UtQhrc": {
+          "type": "text",
+          "settings": {
+            "scroll_text": "25G Protein"
+          }
+        },
         "text_WdzLzK": {
           "type": "text",
           "settings": {
@@ -171,42 +177,22 @@
         "text_cFXnYC": {
           "type": "text",
           "settings": {
-            "scroll_text": "25G Protein"
+            "scroll_text": "NOTHING"
           }
         },
         "text_yJiayt": {
           "type": "text",
           "settings": {
-            "scroll_text": "NOTHING"
-          }
-        },
-        "text_XAkMtX": {
-          "type": "text",
-          "settings": {
-            "scroll_text": "Beef"
-          }
-        },
-        "text_7WfFN4": {
-          "type": "text",
-          "settings": {
-            "scroll_text": "Chilli Crisp"
-          }
-        },
-        "text_WVNP4z": {
-          "type": "text",
-          "settings": {
-            "scroll_text": "Signature"
+            "scroll_text": "ADDED"
           }
         }
       },
       "block_order": [
+        "text_UtQhrc",
         "text_WdzLzK",
         "text_B3Nk8Q",
         "text_cFXnYC",
-        "text_yJiayt",
-        "text_XAkMtX",
-        "text_7WfFN4",
-        "text_WVNP4z"
+        "text_yJiayt"
       ],
       "settings": {
         "color_scheme": "scheme-755a3726-29a3-4168-87d5-bb0359225390"
