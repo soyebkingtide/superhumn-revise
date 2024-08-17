@@ -171,7 +171,7 @@ right: 0;
    {% comment %} <img src="{{'power.svg' |  asset_url }}" class="icon-power"> {% endcomment %}
     
     <ul
-        id="Slider-{{ section.id }}"
+      
         data-id="{{ section.id }}"
         class="grid slideee product-grid contains-card contains-card--product{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid--{{ section.settings.columns_desktop }}-col-desktop{% if section.settings.collection == blank %} grid--2-col-tablet-down{% else %} grid--{{ section.settings.columns_mobile }}-col-tablet-down{% endif %}{% if show_mobile_slider or show_desktop_slider %} slider{% if show_desktop_slider %} slider--desktop{% endif %}{% if show_mobile_slider %} slider--tablet grid--peek{% endif %}{% endif %}"
         role="list"
@@ -238,7 +238,7 @@ right: 0;
             class="slider-button slider-button--prev"
             name="previous"
             aria-label="{{ 'general.slider.previous_slide' | t }}"
-            aria-controls="Slider-{{ section.id }}"
+           
           >
             {% render 'icon-caret' %}
           </button>
@@ -253,7 +253,7 @@ right: 0;
             class="slider-button slider-button--next"
             name="next"
             aria-label="{{ 'general.slider.next_slide' | t }}"
-            aria-controls="Slider-{{ section.id }}"
+           
           >
             {% render 'icon-caret' %}
           </button>
