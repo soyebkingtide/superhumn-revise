@@ -2,10 +2,10 @@ const screenSize = window.innerHeight;
 
 const cardMedia = document.querySelectorAll(".video-block");
 
-if (screenSize >= 922) {
-  cardMedia.forEach((VD, index) => {
-    const videoElem = document.querySelectorAll(".controlVd");
+cardMedia.forEach((VD, index) => {
+  const videoElem = document.querySelectorAll(".controlVd");
 
+  if (screenSize >= 922) {
     VD.addEventListener("mouseenter", function () {
       // console.log(videoElem[index]);
       videoElem[index].play();
@@ -16,10 +16,10 @@ if (screenSize >= 922) {
       // console.log(this);
       videoElem[index].pause();
     });
-  });
-} else {
-  videoElem[index].play();
-}
+  } else {
+    videoElem[index].play();
+  }
+});
 
 jQuery(function ($) {
   $(".text-scroller-items").slick({
