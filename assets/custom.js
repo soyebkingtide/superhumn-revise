@@ -23,7 +23,7 @@ function videoControl() {
     }
   });
 }
-
+videoControl();
 window.addEventListener("resize", videoControl);
 
 jQuery(function ($) {
