@@ -327,7 +327,7 @@
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 100,
-        "padding_bottom": 100
+        "padding_bottom": 0
       }
     },
     "superhumn_image_with_text_387P9g": {
