@@ -1,8 +1,8 @@
 const screenSize = window.innerHeight;
 
-if (screenSize >= 922) {
-  const cardMedia = document.querySelectorAll(".video-block");
+const cardMedia = document.querySelectorAll(".video-block");
 
+if (screenSize >= 922) {
   cardMedia.forEach((VD, index) => {
     const videoElem = document.querySelectorAll(".controlVd");
 
