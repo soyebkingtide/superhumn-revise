@@ -24,7 +24,7 @@
 
     <h1 class="{{ section.settings.heading_size }} m-0 p-0 fs-italic"> FIND A STORE </h1>
 
-       {%- for block in section.blocks -%}
+       {% comment %} {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'buttons' -%}
             <div
@@ -59,7 +59,7 @@
 
               {%- endcase -%}
       {%- endfor -%}
-
+ {% endcomment %}
 
 </div>
 
@@ -144,12 +144,8 @@
   ],
 
   "blocks": [ 
-  
+
   {
-      "type": "heading",
-      "name": "t:sections.image-banner.blocks.heading.name",
-      "limit": 1,
-      "settings": [   {
       "type": "buttons",
       "name": "t:sections.image-banner.blocks.buttons.name",
       "limit": 1,
@@ -191,8 +187,9 @@
           "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_2.label"
         }
       ]
-    }]
-    }],
+    }
+  
+],
 
   "presets": [
     {
