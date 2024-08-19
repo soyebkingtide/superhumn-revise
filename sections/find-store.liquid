@@ -24,7 +24,7 @@
 
     <h1 class="{{ section.settings.heading_size }} m-0 p-0 fs-italic"> FIND A STORE </h1>
 
-       {% comment %} {%- for block in section.blocks -%}
+       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'buttons' -%}
             <div
@@ -59,7 +59,7 @@
 
               {%- endcase -%}
       {%- endfor -%}
- {% endcomment %}
+
 
 </div>
 
