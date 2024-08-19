@@ -182,9 +182,6 @@
   }
 
   .banner__content.banner__content--bottom-center {
-  }
-
-  .suberhumn-banner .banner__content.banner__content--bottom-center {
     align-items: flex-end;
     justify-content: center;
   }
