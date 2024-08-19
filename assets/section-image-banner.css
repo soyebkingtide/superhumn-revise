@@ -176,15 +176,12 @@
     justify-content: flex-end;
   }
 
-  /* .banner__content.banner__content--bottom-left {
+  .banner__content.banner__content--bottom-left {
     align-items: flex-end;
     justify-content: flex-start;
-  } */
+  }
 
   .banner__content.banner__content--bottom-center {
-    align-items: center;
-    justify-content: center;
-    top: 10%;
   }
 
   .suberhumn-banner .banner__content.banner__content--bottom-center {
