@@ -24,7 +24,8 @@
 
     <h1 class="{{ section.settings.heading_size }} m-0 p-0 fs-italic"> FIND A STORE </h1>
 
-    
+       {%- for block in section.blocks -%}
+        {%- case block.type -%}
           {%- when 'buttons' -%}
             <div
               class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}"
@@ -56,7 +57,9 @@
               {%- endif -%}
             </div>
 
+            {% endcase %}
 
+          {% endfor %}
 
 
 </div>
