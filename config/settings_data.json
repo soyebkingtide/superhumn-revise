@@ -238,8 +238,8 @@
           "background": "#f9db4a",
           "background_gradient": "",
           "text": "#ffffff",
-          "button": "#191919",
-          "button_label": "#ffffff",
+          "button": "#ffffff",
+          "button_label": "#191919",
           "secondary_button_label": "#121212",
           "shadow": "#121212"
         }
