@@ -393,6 +393,22 @@
     },
     "find_store_FCDCgU": {
       "type": "find-store",
+      "blocks": {
+        "buttons_EWGyLU": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop online",
+            "button_link_1": "#",
+            "button_style_secondary_1": false,
+            "button_label_2": "FIND A STORE",
+            "button_link_2": "#",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "buttons_EWGyLU"
+      ],
       "settings": {
         "color_scheme": "scheme-215f353b-53fa-495b-a576-0257000b9af8",
         "heading_size": "hxl",
