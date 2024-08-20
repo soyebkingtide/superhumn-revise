@@ -168,6 +168,12 @@
             "scroll_text": "KETO"
           }
         },
+        "text_3tt9N6": {
+          "type": "text",
+          "settings": {
+            "scroll_text": "Add a tagline"
+          }
+        },
         "text_B3Nk8Q": {
           "type": "text",
           "settings": {
@@ -177,22 +183,16 @@
         "text_cFXnYC": {
           "type": "text",
           "settings": {
-            "scroll_text": "NOTHING"
-          }
-        },
-        "text_yJiayt": {
-          "type": "text",
-          "settings": {
-            "scroll_text": "ADDED"
+            "scroll_text": "NOTHING ADDED"
           }
         }
       },
       "block_order": [
         "text_UtQhrc",
         "text_WdzLzK",
+        "text_3tt9N6",
         "text_B3Nk8Q",
-        "text_cFXnYC",
-        "text_yJiayt"
+        "text_cFXnYC"
       ],
       "settings": {
         "color_scheme": "scheme-755a3726-29a3-4168-87d5-bb0359225390"
