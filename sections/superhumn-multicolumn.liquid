@@ -46,6 +46,10 @@
 
     .as-seen-in p{ font-size:24px; }
 
+.multicolumn__text{    .font-size: 34px;
+font-style: normal;
+font-weight: 400;}
+
 {%- endstyle -%}
 
 {%- liquid
@@ -65,7 +69,7 @@
   >
     {%- unless section.settings.title == blank -%}
       <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin multicolumn__title">
-        <h2 class="title inline-richtext {{ section.settings.heading_size }} heading fs-italic text-center">
+        <h2 class="title inline-richtext {{ section.settings.heading_size }}  fs-italic text-center">
           {{ section.settings.title }}
         </h2>
 
