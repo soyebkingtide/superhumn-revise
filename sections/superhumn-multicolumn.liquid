@@ -65,9 +65,16 @@
   >
     {%- unless section.settings.title == blank -%}
       <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin multicolumn__title">
-        <h2 class="title inline-richtext {{ section.settings.heading_size }} heading fs-italic">
+        <h2 class="title inline-richtext {{ section.settings.heading_size }} heading fs-italic text-center">
           {{ section.settings.title }}
         </h2>
+
+        {% if section.settings.desc  %}
+        <p class="multicolumn__text">
+{{ section.settings.desc }}
+
+        </p>
+        {% endif %}
         {%- if section.settings.button_label != blank and show_mobile_slider -%}
           <a href="{{ section.settings.button_link }}" class="link underlined-link large-up-hide">
             {{- section.settings.button_label | escape -}}
@@ -236,6 +243,15 @@
       "default": "t:sections.multicolumn.settings.title.default",
       "label": "t:sections.multicolumn.settings.title.label"
     },
+
+     {
+      "type": "inline_richtext",
+      "id": "desc",
+      "default": "t:sections.multicolumn.settings.title.default",
+      "label": "Discription"
+    },
+
+
     {
       "type": "select",
       "id": "heading_size",
