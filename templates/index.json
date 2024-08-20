@@ -169,12 +169,6 @@
             "scroll_text": "KETO"
           }
         },
-        "text_3tt9N6": {
-          "type": "text",
-          "settings": {
-            "scroll_text": "Add a tagline"
-          }
-        },
         "text_B3Nk8Q": {
           "type": "text",
           "settings": {
@@ -191,7 +185,6 @@
       "block_order": [
         "text_UtQhrc",
         "text_WdzLzK",
-        "text_3tt9N6",
         "text_B3Nk8Q",
         "text_cFXnYC"
       ],
