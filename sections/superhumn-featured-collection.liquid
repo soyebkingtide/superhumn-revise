@@ -238,7 +238,7 @@ right: 0;
           {%- endfor -%}
         {%- endfor -%}
       </ul>
-      {%- if show_mobile_slider or show_desktop_slider -%}
+      {% comment %} {%- if show_mobile_slider or show_desktop_slider -%}
         <div class="slider-buttons">
           <button
             type="button"
@@ -265,7 +265,7 @@ right: 0;
             {% render 'icon-caret' %}
           </button>
         </div>
-      {%- endif -%}
+      {%- endif -%} {% endcomment %}
     </slider-component>
 
     {%- if section.settings.show_view_all and more_in_collection -%}
