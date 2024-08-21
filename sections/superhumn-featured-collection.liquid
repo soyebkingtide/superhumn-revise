@@ -291,7 +291,24 @@ right: 0;
 <script>
 
   $(document).ready(function(){
-  $('.slick-items').slick();
+  $('.slick-items').slick({
+    slidesToShow: 3,
+     autoplay: true,
+    slidesToScroll: 1,
+     cssEase: "linear",
+
+      responsive: [
+         {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+       
+      }
+    },
+      ]
+
+  });
 });
 
 
