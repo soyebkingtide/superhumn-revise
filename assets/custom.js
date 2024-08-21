@@ -27,19 +27,19 @@ videoControl();
 window.addEventListener("resize", videoControl);
 
 jQuery(function ($) {
-  $(".text-scroller-items").slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    speed: 10000,
-    dots: false,
-    variableWidth: true,
-    arrows: false,
-    cssEase: "linear",
-    waitForAnimate: false,
-    pauseOnFocus: false,
-    pauseOnHover: true,
-  });
+  // $(".text-scroller-items").slick({
+  //   slidesToShow: 3,
+  //   slidesToScroll: 1,
+  //   autoplay: true,
+  //   speed: 10000,
+  //   dots: false,
+  //   variableWidth: true,
+  //   arrows: false,
+  //   cssEase: "linear",
+  //   waitForAnimate: false,
+  //   pauseOnFocus: false,
+  //   pauseOnHover: true,
+  // });
 
   $(".slick-items").slick();
 });
