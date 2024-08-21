@@ -40,6 +40,8 @@ jQuery(function ($) {
     pauseOnFocus: false,
     pauseOnHover: true,
   });
+
+  $(".slick-items").slick();
 });
 
 // Global function to check visibility and apply a class
