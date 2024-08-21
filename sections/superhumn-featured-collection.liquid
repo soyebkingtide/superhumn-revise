@@ -288,6 +288,15 @@ right: 0;
 
 {%  render 'slick-js' %}
 
+<style>
+
+.feature-collection .slick-initialized .slick-slide {
+  display: block;
+  margin: 0 16px;
+}
+
+</style>
+
 <script>
 
   $(document).ready(function(){
@@ -322,7 +331,7 @@ right: 0;
 {
   "name": "Superhumn collection",
   "tag": "section",
-  "class": "section",
+  "class": "section feature-collection",
   "disabled_on": {
     "groups": ["header", "footer"]
   },
