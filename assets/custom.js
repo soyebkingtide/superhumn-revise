@@ -29,6 +29,8 @@ window.addEventListener("resize", videoControl);
 
 // character top position  .characters{top: calc(160px + 10%) !important; }
 // position of .header + top-padding to .superhumn-image-banner
+
+console.log("works");
 function adjustPosTopImage() {
   const floatingCharacters = document.querySelector(".characters");
   const headerHeight = document.querySelector(".header");
