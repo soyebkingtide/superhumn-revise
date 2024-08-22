@@ -27,6 +27,24 @@ function videoControl() {
 videoControl();
 window.addEventListener("resize", videoControl);
 
+// character top position  .characters{top: calc(160px + 10%) !important; }
+// position of .header + top-padding to .superhumn-image-banner
+function adjustPosTopImage() {
+  const floatingCharacters = document.querySelector(".characters");
+  const headerHeight = document.querySelector(".header");
+  const bannerHeight = document.querySelector(".superhumn-image-banner");
+
+  floatingCharacters.style.top = calc(
+    headerHeight.height + bannerHeight.style.paddingTop + "px " + " 10%"
+  );
+
+  console.log("top position" + floatingCharacters.style.top);
+}
+
+adjustPosTopImage();
+
+window.addEventListener("resize", adjustPosTopImage);
+
 jQuery(function ($) {
   $(".text-scroller-items").slick({
     slidesToShow: 3,
