@@ -43,7 +43,7 @@ function adjustPosTopImage() {
 
   const topPosition = headerHeightValue + bannerPaddingTopValue;
 
-  floatingCharacters.style.top = `calc(${topPosition}px + 10%)`;
+  floatingCharacters.style.top = `calc(${topPosition}px + 16%)`;
 
   console.log("top position: " + floatingCharacters.style.top);
 }
