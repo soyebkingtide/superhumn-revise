@@ -5,22 +5,23 @@ function videoControl() {
 
   cardMedia.forEach((VD, index) => {
     const videoElem = document.querySelectorAll(".controlVd");
+    videoElem[index].play();
 
-    if (screenSize >= 1200) {
-      videoElem[index].pause();
-      VD.addEventListener("mouseenter", function () {
-        // console.log(videoElem[index]);
-        videoElem[index].play();
-      });
+    // if (screenSize >= 1200) {
+    //   videoElem[index].pause();
+    //   VD.addEventListener("mouseenter", function () {
+    //     // console.log(videoElem[index]);
+    //     videoElem[index].play();
+    //   });
 
-      VD.addEventListener("mouseout", function () {
-        // console.log(videoElem[index]);
-        // console.log(this);
-        videoElem[index].pause();
-      });
-    } else {
-      videoElem[index].play();
-    }
+    //   VD.addEventListener("mouseout", function () {
+    //     // console.log(videoElem[index]);
+    //     // console.log(this);
+    //     videoElem[index].pause();
+    //   });
+    // } else {
+    //   videoElem[index].play();
+    // }
   });
 }
 videoControl();
