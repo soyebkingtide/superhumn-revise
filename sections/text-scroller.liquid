@@ -18,6 +18,16 @@
 
         {% endfor %}
 
+          {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'text' -%}
+
+           <li {{ block.shopify_attributes }} class="heading" >  {{ block.settings.scroll_text }} </li>
+
+            {% endcase %}
+
+        {% endfor %}
+
 
 </ul>
 
