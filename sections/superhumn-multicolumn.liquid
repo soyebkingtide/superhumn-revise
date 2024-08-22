@@ -52,6 +52,16 @@ display: block;
   margin: auto;  font-family: "Zuume";
 font-weight: 400;}
 
+
+@media screen and (max-width: 989px) {
+  .as-seen-in .grid--1-col-tablet-down .grid__item {
+    
+    width: calc(33.33% - var(--grid-desktop-horizontal-spacing) * 2 / 3)!important;
+   
+  }
+
+}
+
 {%- endstyle -%}
 
 {%- liquid
