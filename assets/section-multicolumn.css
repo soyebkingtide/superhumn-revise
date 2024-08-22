@@ -337,6 +337,9 @@
 
   right: -10%;
 }
+.video-wrapper {
+  margin: 0 20px;
+}
 
 @media screen and (max-width: 749px) {
   .our-story {
