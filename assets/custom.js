@@ -31,16 +31,21 @@ window.addEventListener("resize", videoControl);
 // position of .header + top-padding to .superhumn-image-banner
 
 console.log("works");
+
 function adjustPosTopImage() {
   const floatingCharacters = document.querySelector(".characters");
   const headerHeight = document.querySelector(".header");
   const bannerHeight = document.querySelector(".superhumn-image-banner");
 
-  floatingCharacters.style.top = calc(
-    headerHeight.height + bannerHeight.style.paddingTop + "px " + " 10%"
-  );
+  const headerHeightValue = headerHeight.getBoundingClientRect().height;
+  const bannerPaddingTop = window.getComputedStyle(bannerHeight).paddingTop;
+  const bannerPaddingTopValue = parseFloat(bannerPaddingTop);
 
-  console.log("top position" + floatingCharacters.style.top);
+  const topPosition = headerHeightValue + bannerPaddingTopValue;
+
+  floatingCharacters.style.top = `calc(${topPosition}px + 10%)`;
+
+  console.log("top position: " + floatingCharacters.style.top);
 }
 
 adjustPosTopImage();
