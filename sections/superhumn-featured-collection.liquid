@@ -304,15 +304,24 @@ right: 0;
 }
 
 .slick-dots{
-  bottom:0;
+  bottom: -60px;
 }
 
 .slick-dots li{
   background:transparent;
+  border:transparent;
+}
+
+.slick-dots li button::before {
+  color:#fff;
 }
 
 .slick-dots li button::before {
   font-size: 22px;
+}
+
+li.slick-active  button::before {
+  color:#fff;
 }
 
 </style>
