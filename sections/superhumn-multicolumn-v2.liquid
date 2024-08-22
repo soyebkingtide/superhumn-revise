@@ -76,6 +76,17 @@ top: -24%;
 }
 
 
+.mom{
+  position:relative;
+}
+
+
+.quotes{
+  position:absolute;
+  right:0;
+  bottom:0;
+  }
+
 
 
 
@@ -101,11 +112,15 @@ top: -24%;
 </div>
 
   <div
-    class="page-width page-width-medium section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    class="page-width page-width-medium section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} mom"
     {% if settings.animations_reveal_on_scroll %}
       data-cascade
     {% endif %}
   >
+
+<img src="{{'quotes.svg' |  asset_url }}" width="auto" height="auto" class="quotes">
+
+
     {%- unless section.settings.title == blank -%}
       <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin multicolumn__title">
         <h2 class="title inline-richtext {{ section.settings.heading_size }} subheading fs-italic">
