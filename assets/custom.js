@@ -6,7 +6,7 @@ function videoControl() {
   cardMedia.forEach((VD, index) => {
     const videoElem = document.querySelectorAll(".controlVd");
 
-    if (screenSize >= 922) {
+    if (screenSize >= 1200) {
       videoElem[index].pause();
       VD.addEventListener("mouseenter", function () {
         // console.log(videoElem[index]);
