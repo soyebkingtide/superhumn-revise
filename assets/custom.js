@@ -108,5 +108,9 @@ function onScroll() {
   checkVisibilityAndToggleClass(".character", "character-from-right");
 }
 
-window.addEventListener("scroll", onScroll);
-window.addEventListener("resize", onScroll);
+const screenSize1 = window.innerWidth;
+
+if (screenSize1 >= 922) {
+  window.addEventListener("scroll", onScroll);
+  window.addEventListener("resize", onScroll);
+}
