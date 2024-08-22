@@ -89,6 +89,13 @@ top: -24%;
   }
 
 
+  
+.meet-the-team .video-wrapper{
+  background:url({{'meet-the-team-scroller.svg' |  asset_url}}) no-repeat ;
+  background-position:bottom center;
+  background-size:contain
+}
+
 
 
 {%- endstyle -%}
@@ -328,7 +335,7 @@ top: -24%;
   <section class="our-story">
 
 
- <div class="design-text-wrapper">
+ {% comment %} <div class="design-text-wrapper">
    <h3 class="design-text fw-900 h0   rotate-1 fs-italic ">
     {% assign i = 1 %}
    {% for i in (i..6) %}
@@ -345,7 +352,7 @@ top: -24%;
    {% endfor %}
 </h3>
 
-      </div>
+      </div> {% endcomment %}
     
      {%- unless section.settings.heading == blank -%}
         <div class="title-wrapper m-0 title-wrapper--no-top-margin{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
