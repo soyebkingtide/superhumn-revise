@@ -174,19 +174,12 @@
           "settings": {
             "scroll_text": "NON GMO"
           }
-        },
-        "text_cFXnYC": {
-          "type": "text",
-          "settings": {
-            "scroll_text": "NOTHING ADDED"
-          }
         }
       },
       "block_order": [
         "text_UtQhrc",
         "text_WdzLzK",
-        "text_B3Nk8Q",
-        "text_cFXnYC"
+        "text_B3Nk8Q"
       ],
       "settings": {
         "color_scheme": "scheme-755a3726-29a3-4168-87d5-bb0359225390"
