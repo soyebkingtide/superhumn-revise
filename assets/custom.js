@@ -1,6 +1,6 @@
-function videoControl() {
-  const screenSize = window.innerWidth;
+let screenSize = window.innerWidth;
 
+function videoControl() {
   const cardMedia = document.querySelectorAll(".video-block");
 
   cardMedia.forEach((VD, index) => {
@@ -43,7 +43,11 @@ function adjustPosTopImage() {
 
   const topPosition = headerHeightValue + bannerPaddingTopValue;
 
-  floatingCharacters.style.top = `calc(${topPosition}px)`;
+  if (screenSize < 992) {
+    floatingCharacters.style.top = `calc(${topPosition}px)`;
+  } else {
+    floatingCharacters.style.top = `calc(${topPosition}px + 10%)`;
+  }
 
   console.log("top position: " + floatingCharacters.style.top);
 }
