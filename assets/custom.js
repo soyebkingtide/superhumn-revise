@@ -43,6 +43,8 @@ function adjustPosTopImage() {
 
   const topPosition = headerHeightValue + bannerPaddingTopValue;
 
+  screenSize = window.innerWidth;
+
   if (screenSize < 992) {
     floatingCharacters.style.top = `calc(${topPosition}px)`;
   } else {
