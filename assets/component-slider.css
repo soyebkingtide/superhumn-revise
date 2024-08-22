@@ -23,6 +23,7 @@ slider-component.slider-component-full-width {
 
   .contains-card li {
     max-width: 450px !important;
+    min-width: 450px;
   }
 }
 
