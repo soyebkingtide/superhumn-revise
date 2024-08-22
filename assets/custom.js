@@ -48,7 +48,7 @@ function adjustPosTopImage() {
   if (screenSize < 992) {
     floatingCharacters.style.top = `calc(${topPosition}px)`;
   } else {
-    floatingCharacters.style.top = `calc(${topPosition}px + 20%)`;
+    floatingCharacters.style.top = `calc(${topPosition}px )`;
   }
 
   console.log("top position: " + floatingCharacters.style.top);
