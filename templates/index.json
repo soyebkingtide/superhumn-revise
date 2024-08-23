@@ -312,7 +312,7 @@
         "color_scheme": "scheme-ec5e6b23-0e8c-4f58-bcce-0e003064963a",
         "color_scheme_post": "scheme-4",
         "columns_mobile": "1",
-        "swipe_on_mobile": true,
+        "swipe_on_mobile": false,
         "padding_top": 100,
         "padding_bottom": 0
       }
