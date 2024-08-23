@@ -126,8 +126,7 @@
 
                           
                         <div
-                          class="footer-block__image-wrapper m-0"
-                        
+                          class="footer-block__image-wrapper m-0"                        
                         >
                           {{
                             settings.brand_image
@@ -154,7 +153,7 @@
                         {%- assign image_size_2x = block.settings.image_width | times: 2 | at_most: 5760 -%}
                         <div
                           class="footer-block__image-wrapper m-0"
-                          style="max-width: min(100%, {{ block.settings.image_width }}px);"
+                          {% comment %} style="max-width: min(100%, {{ block.settings.image_width }}px);" {% endcomment %}
                         >
                           <img
                             srcset="{{ block.settings.image | image_url: width: block.settings.image_width }}, {{ block.settings.image | image_url: width: image_size_2x }} 2x"
