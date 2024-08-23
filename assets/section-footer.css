@@ -443,6 +443,14 @@
   max-width: 100%;
 }
 
+@media (max-width: 749px) {
+  .footer-block__image-wrapper img {
+    display: block;
+    height: auto;
+    max-width: 400px;
+  }
+}
+
 .footer-block__brand-info {
   text-align: left;
 }
