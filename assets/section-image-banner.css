@@ -36,6 +36,7 @@
 @media (max-width: 680px) {
   .suberhumn-banner .banner__text p {
     font-size: 18px;
+    transform: skew(30deg);
   }
   .suberhumn-banner .banner__text {
     background-image: none !important;
@@ -43,6 +44,8 @@
     padding: 15px 20px !important;
     height: auto;
     transform: skew(-30deg);
+    margin: 0 20px !important;
+    width: auto !important;
   }
 }
 
