@@ -800,6 +800,10 @@ summary::-webkit-details-marker {
     padding-right: 0;
   }
 }
+.title,
+.title-wrapper-with-link {
+  margin-bottom: 0rem;
+}
 
 @media screen and (min-width: 990px) {
   .title,
