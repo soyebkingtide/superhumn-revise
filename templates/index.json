@@ -150,8 +150,8 @@
         "quick_add": "none",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "padding_top": 120,
-        "padding_bottom": 200
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     },
     "text_scroller_XybLWx": {
@@ -249,8 +249,8 @@
         "color_scheme_boxes": "scheme-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 180,
-        "padding_bottom": 100,
+        "padding_top": 32,
+        "padding_bottom": 32,
         "heading": "OUR ORIGIN STORY",
         "enable_video_looping": false,
         "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
