@@ -405,8 +405,14 @@
 }
 
 @media screen and (max-width: 749px) {
+  .two-col {
+    column-count: 2;
+    max-width: 300px;
+    margin: auto;
+  }
+
   .list-menu__item--link {
-    justify-content: center !important;
+    justify-content: start !important;
   }
 
   #ContactFooter {
