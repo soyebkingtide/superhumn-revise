@@ -112,19 +112,22 @@ top: -24%;
 
 
  
-{% comment %} 
+
     {%- unless section.settings.title == blank -%}
       <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin multicolumn__title">
         <h2 class="title inline-richtext {{ section.settings.heading_size }} mx-auto  superhumn-title-{{ section.id }} superhumn-title">
           {{ section.settings.title }}
         </h2>
+{% comment %} 
         {%- if section.settings.button_label != blank and show_mobile_slider -%}
           <a href="{{ section.settings.button_link }}" class="link underlined-link large-up-hide">
             {{- section.settings.button_label | escape -}}
           </a>
-        {%- endif -%}
+
+
+        {%- endif -%} {% endcomment %}
       </div>
-    {%- endunless -%} {% endcomment %}
+    {%- endunless -%}
     <div class=" multicolumn-list-bg">
 
      <div class="page-width">
