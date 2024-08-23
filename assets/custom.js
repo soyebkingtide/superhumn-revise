@@ -129,10 +129,6 @@ function applyParallax(container, target) {
 // Check visibility and parallax effect on scroll and resize
 
 function onScroll() {
-  applyParallax(".bg-image", ".para");
-
-  applyParallax(".superhumn-multicolumns-v2", ".para1");
-
   checkVisibilityAndToggleClass(".feature-img", "comeFromRight");
 
   checkVisibilityAndToggleClass(".team-feature-img", "comeFromleft");
