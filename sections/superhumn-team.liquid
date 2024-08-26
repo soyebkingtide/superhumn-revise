@@ -98,6 +98,8 @@ top: -24%;
     padding:0!important;
   }
 
+   .team-list{ max-width:245px;}
+
 }
 
 .page-1047{
@@ -186,7 +188,7 @@ top: -24%;
 
           <li
             id="Slide-{{ section.id }}-{{ forloop.index }}"
-            class="multicolumn-list__item grid__item"
+            class="multicolumn-list__item grid__item team-list"
             {{ block.shopify_attributes }}
             {% if settings.animations_reveal_on_scroll %}
               data-cascade
