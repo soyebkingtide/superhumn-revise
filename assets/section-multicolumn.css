@@ -262,6 +262,8 @@
 .super_card {
   width: 229px !important;
   height: 229px !important;
+  max-width: 229px !important;
+  margin: auto;
 }
 
 .superhumn-multicolumns-v2 .multicolumn-card__info {
