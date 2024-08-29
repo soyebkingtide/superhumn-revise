@@ -328,7 +328,7 @@ right: 0;
   $(document).ready(function(){
 
   $('.slick-items').slick({
-   
+    centerMode: false,
   slidesToShow: 3,
   autoplay: true,
   slidesToScroll: 3,
@@ -346,6 +346,11 @@ right: 0;
          {
       breakpoint: 1200,
       settings: {
+
+       centerPadding: '0px',
+         
+ variableWidth: true,
+
          dots:true,
         slidesToShow: 2,
         slidesToScroll: 1,
@@ -357,6 +362,11 @@ right: 0;
     {
       breakpoint: 749,
       settings: {
+
+       centerPadding: '0px',
+         
+ variableWidth: true,
+ 
         slidesToShow: 1,
         slidesToScroll: 1,
         dots:true,
