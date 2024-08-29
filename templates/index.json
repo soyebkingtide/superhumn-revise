@@ -262,20 +262,20 @@
     "superhumn_team_wPLcHr": {
       "type": "superhumn-team",
       "blocks": {
-        "column_iBV6Th": {
+        "column_7j4PzY": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_76870624-d702-43ca-8dac-11b209397bc5.png",
+            "image": "shopify:\/\/shop_images\/Jade.png",
             "title": "",
             "text": "",
             "link_label": "",
             "link": ""
           }
         },
-        "column_7j4PzY": {
+        "column_iBV6Th": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Jade.png",
+            "image": "shopify:\/\/shop_images\/Frame_76870624-d702-43ca-8dac-11b209397bc5.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -294,8 +294,8 @@
         }
       },
       "block_order": [
-        "column_iBV6Th",
         "column_7j4PzY",
+        "column_iBV6Th",
         "column_am9rpz"
       ],
       "settings": {
