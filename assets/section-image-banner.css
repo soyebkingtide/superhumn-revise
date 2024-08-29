@@ -125,7 +125,7 @@
 
   .banner--medium:not(.banner--mobile-bottom):not(.banner--adapt)
     .banner__content {
-    min-height: calc(100vh - 200px);
+    min-height: calc(100vh - 100px);
     align-items: end;
     margin-bottom: 10%;
   }
