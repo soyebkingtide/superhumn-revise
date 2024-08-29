@@ -268,6 +268,17 @@
   position: relative;
 }
 
+@media (max-width: 1550px) {
+  .superhumn-multicolumns-v2 .multicolumn-card__info p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .superhumn-multicolumns-v2 .multicolumn-card__info .h4 {
+    font-size: 25px !important;
+  }
+}
+
 .super_card {
   position: relative;
   z-index: 1;
