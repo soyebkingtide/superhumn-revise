@@ -259,6 +259,11 @@
 
 /*Custom style*/
 
+.super_card {
+  width: 229px !important;
+  height: 229px !important;
+}
+
 .superhumn-multicolumns-v2 .multicolumn-card__info {
   display: flex;
   flex-direction: column;
