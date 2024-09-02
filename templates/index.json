@@ -121,6 +121,16 @@
             "link": ""
           }
         },
+        "column_nPFHKz": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_1_65b88885-1cdd-44ce-92af-9d1e2257ac72.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
         "column_jwBNzA": {
           "type": "column",
           "settings": {
@@ -138,6 +148,7 @@
         "column_WLDJFF",
         "column_CaNaA8",
         "column_UqMQaw",
+        "column_nPFHKz",
         "column_jwBNzA"
       ],
       "settings": {
