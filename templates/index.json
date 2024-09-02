@@ -100,12 +100,45 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "column_CaNaA8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Mask_group_2.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_UqMQaw": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_1_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_jwBNzA": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Mask_group_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "column_ay9YVf",
         "column_jCmjFn",
-        "column_WLDJFF"
+        "column_WLDJFF",
+        "column_CaNaA8",
+        "column_UqMQaw",
+        "column_jwBNzA"
       ],
       "settings": {
         "title": "BROUGHT TO YOU BY JADE",
