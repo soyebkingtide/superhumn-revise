@@ -111,16 +111,6 @@
             "link": ""
           }
         },
-        "column_UqMQaw": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/image_1_1.png",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "column_nPFHKz": {
           "type": "column",
           "settings": {
@@ -133,8 +123,19 @@
         },
         "column_jwBNzA": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Mask_group_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_QmFGVg": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Mask_group_4.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -147,9 +148,9 @@
         "column_jCmjFn",
         "column_WLDJFF",
         "column_CaNaA8",
-        "column_UqMQaw",
         "column_nPFHKz",
-        "column_jwBNzA"
+        "column_jwBNzA",
+        "column_QmFGVg"
       ],
       "settings": {
         "title": "BROUGHT TO YOU BY JADE",
