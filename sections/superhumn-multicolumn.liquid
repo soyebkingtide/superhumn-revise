@@ -2,6 +2,8 @@
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
+
+
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
@@ -22,8 +24,8 @@
   }
 
   .pattern-bg{
-   
-    position:relative;
+       position:relative;
+
   }
 
     .pattern-bg div{
@@ -46,14 +48,19 @@
 
     /* .as-seen-in p{ font-size:36px; } */
 
-.multicolumn__text{   font-size: 34px;
-font-style: normal; 
-display: block;
+.multicolumn__text{ 
+  
+  font-size: 34px;
+  font-style: normal; 
+  display: block;
   margin: auto;  font-family: "Zuume";
-font-weight: 400;}
+  font-weight: 400;
+
+}
 
 
 @media screen and (max-width: 989px) {
+
   .as-seen-in .grid--1-col-tablet-down .grid__item {
     
     width: calc(33.33% - var(--grid-desktop-horizontal-spacing) * 2 / 3)!important;
@@ -104,9 +111,9 @@ font-weight: 400;}
         {%- endif -%}
       </div>
     {%- endunless -%}
-    <slider-component class="slider-mobile-gutter">
+    <slider-component>
       <ul
-        class="multicolumn-list as-features-slider contains-content-container grid grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop{% if show_mobile_slider %} slider slider--tablet grid--peek{% endif %}"
+        class="multicolumn-list as-features-slider contains-content-container grid"
         id="Slider-{{ section.id }}"
         role="list"
       >
