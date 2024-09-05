@@ -163,7 +163,9 @@
                 {% endif %}
                 <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %}
                 
-                
+                   {% if section.settings.desc != '' %}
+                multicolumn-card-spacing
+                {% endif %}
                 
                 {% endif %}">
                   <div
