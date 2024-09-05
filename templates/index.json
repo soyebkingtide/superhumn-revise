@@ -155,10 +155,10 @@
       "settings": {
         "title": "BROUGHT TO YOU BY JADE",
         "desc": "AS FEATURED IN",
-        "heading_size": "h1",
-        "image_width": "half",
+        "heading_size": "h2",
+        "image_width": "full",
         "image_ratio": "adapt",
-        "columns_desktop": 3,
+        "columns_desktop": 4,
         "column_alignment": "center",
         "background_style": "primary",
         "button_label": "",
