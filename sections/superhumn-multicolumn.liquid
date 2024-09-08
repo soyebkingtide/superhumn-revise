@@ -158,7 +158,7 @@
             <div class="content-container">
            {% if block.settings.image  %}
                   
-<img src={{ block.settings.image  | image_url: width: 300 }}>
+<img src={{ block.settings.image  | image_url: width: block.settings.logo_width }}>
 
            {% endif %}
 
@@ -526,8 +526,8 @@
   "max": 500,
   "step": 5,
   "unit": "px",
-  "label": "Padding Bottom",
-  "default": 35
+  "label": "Logo Width",
+  "default": 200
 }
 ,
 
