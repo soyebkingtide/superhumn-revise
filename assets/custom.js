@@ -30,7 +30,7 @@ window.addEventListener("resize", videoControl);
 // character top position  .characters{top: calc(160px + 10%) !important; }
 // position of .header + top-padding to .superhumn-image-banner
 
-console.log("works");
+//console.log("works");
 
 function adjustPosTopImage() {
   const floatingCharacters = document.querySelector(".characters");
@@ -51,7 +51,7 @@ function adjustPosTopImage() {
     floatingCharacters.style.top = `calc(${topPosition}px + 10%)`;
   }
 
-  console.log("top position: " + floatingCharacters.style.top);
+  // console.log("top position: " + floatingCharacters.style.top);
 }
 
 adjustPosTopImage();
@@ -81,7 +81,7 @@ function checkVisibilityAndToggleClass(selector, className) {
 
   // Ensure the element exists
   if (!element) {
-    console.warn(`Element not found for selector: ${selector}`);
+    //  console.warn(`Element not found for selector: ${selector}`);
     return;
   }
 
@@ -105,7 +105,7 @@ function applyParallax(container, target) {
   ss = document.querySelector(target);
 
   if (!wpos || !ss) {
-    console.warn("Elements not found for selector: .bg-image or .para");
+    //  console.warn("Elements not found for selector: .bg-image or .para");
     return;
   }
 
@@ -113,7 +113,7 @@ function applyParallax(container, target) {
   var scrollPosition = window.scrollY || window.pageYOffset;
   var elementTop = ww.top + scrollPosition;
   var elementScrollPosition = scrollPosition - elementTop;
-  console.log(elementScrollPosition);
+  //  console.log(elementScrollPosition);
 
   var parallaxSpeed = 0.5; // Adjust the speed factor as needed
   var parallaxOffset = elementScrollPosition * parallaxSpeed;
