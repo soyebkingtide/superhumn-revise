@@ -58,13 +58,6 @@
       left: 50%!important;
 
   transform: translateX(-50%);
-
-
-  max-width: 300px;
-
-  width:100%;
-
-
     }
 
 .multicolumn__text{ 
@@ -176,7 +169,7 @@
                 
                 {% endif %}">
                   <div
-                    class="multiple-logo"
+                    class="media media--transparent "
                     {% if section.settings.image_ratio == 'adapt' %}
                       style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 120 }}%;"
                     {% endif %}
