@@ -74,9 +74,9 @@
         "column_AyLfGx": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/MensHealth.png",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/Mask_group_2_de9601f2-a852-41c7-ba9c-884eac953560.png",
+            "title": "",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -84,8 +84,39 @@
         "column_KkA9Kr": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/Frame_9.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_X68fUX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_8.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_zYW9L7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_7.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_xTxmeE": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Mask_group_3.png",
+            "title": "",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -93,7 +124,10 @@
       },
       "block_order": [
         "column_AyLfGx",
-        "column_KkA9Kr"
+        "column_KkA9Kr",
+        "column_X68fUX",
+        "column_zYW9L7",
+        "column_xTxmeE"
       ],
       "settings": {
         "title": "BROUGHT TO YOU BY JADE",
