@@ -75,6 +75,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Mask_group_2_de9601f2-a852-41c7-ba9c-884eac953560.png",
+            "logo_width": 200,
             "title": "",
             "text": "",
             "link_label": "",
@@ -85,6 +86,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_9.png",
+            "logo_width": 200,
             "title": "",
             "text": "",
             "link_label": "",
@@ -95,6 +97,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_8.png",
+            "logo_width": 200,
             "title": "",
             "text": "",
             "link_label": "",
@@ -105,6 +108,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_7.png",
+            "logo_width": 200,
             "title": "",
             "text": "",
             "link_label": "",
@@ -115,6 +119,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Mask_group_3.png",
+            "logo_width": 170,
             "title": "",
             "text": "",
             "link_label": "",
