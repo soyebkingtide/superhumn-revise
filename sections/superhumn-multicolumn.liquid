@@ -157,17 +157,7 @@
             {% endif %}
           >
             <div class="multicolumn-card content-container">
-              {%- if block.settings.image != blank -%}
-                {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
-                  {% assign spaced_image = true %}
-                {% endif %}
-                <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %}
-                
-                   {% if section.settings.desc != '' %}
-                multicolumn-card-spacing
-                {% endif %}
-                
-                {% endif %}">
+           
                   
 
 
@@ -182,9 +172,6 @@
                     }}
 
 
-
-                </div>
-              {%- endif -%}
               <div class="multicolumn-card__info">
                 {%- if block.settings.title != blank -%}
                   <h3 class="inline-richtext">{{ block.settings.title }}</h3>
