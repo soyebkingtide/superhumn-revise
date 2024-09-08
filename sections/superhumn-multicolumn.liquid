@@ -156,10 +156,11 @@
             {% endif %}
           >
             <div class="content-container">
-           
+           {% if block.settings.image  %}
                   
-<img src={{ block.settings.image  | image_url: width: 500 }}>
+<img src={{ block.settings.image  | image_url: width: 300 }}>
 
+           {% endif %}
 
               <div class="multicolumn-card__info">
                 {%- if block.settings.title != blank -%}
