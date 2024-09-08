@@ -71,86 +71,29 @@
     "superhumn_multicolumn_fPG6bK": {
       "type": "superhumn-multicolumn",
       "blocks": {
-        "column_ay9YVf": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/WellGood.png",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_jCmjFn": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Forbes.png",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_WLDJFF": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Vogue.png",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_CaNaA8": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/WSJ.png",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_nPFHKz": {
+        "column_AyLfGx": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/MensHealth.png",
-            "title": "",
-            "text": "",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
             "link": ""
           }
         },
-        "column_jwBNzA": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Mask_group_1.png",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_QmFGVg": {
+        "column_KkA9Kr": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Mask_group_4.png",
-            "title": "",
-            "text": "",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
             "link": ""
           }
         }
       },
       "block_order": [
-        "column_ay9YVf",
-        "column_jCmjFn",
-        "column_WLDJFF",
-        "column_CaNaA8",
-        "column_nPFHKz",
-        "column_jwBNzA",
-        "column_QmFGVg"
+        "column_AyLfGx",
+        "column_KkA9Kr"
       ],
       "settings": {
         "title": "BROUGHT TO YOU BY JADE",
