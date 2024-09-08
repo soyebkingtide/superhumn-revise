@@ -173,7 +173,7 @@
                     {% if section.settings.image_ratio == 'adapt' %}
                       style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 120 }}%;"
                     {% endif %}
-                  >
+                  >  
                     {%- liquid
                       assign number_of_columns = section.settings.columns_desktop
                       assign number_of_columns_mobile = section.settings.columns_mobile
