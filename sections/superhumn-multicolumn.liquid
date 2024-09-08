@@ -158,7 +158,7 @@
             <div class="content-container">
            {% if block.settings.image  %}
                   
-<img src={{ block.settings.image  | image_url: width:  }}>
+<img src={{ block.settings.image  | image_url: width: 300 }}>
 
            {% endif %}
 
@@ -355,7 +355,6 @@
       "default": "h1",
       "label": "t:sections.all.heading_size.label"
     },
-    
     {
       "type": "select",
       "id": "image_width",
@@ -520,15 +519,18 @@
           "label": "t:sections.multicolumn.blocks.column.settings.image.label"
         },
 
-            {
+
+         {
       "type": "range",
-      "id": "image_width",
-      "min": 10,
+      "id": "logo_width",
+      "min": 0,
       "max": 500,
-      "step": 10,
-      "default": 300,
-      "label": "Adjust Image Width"
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
     },
+
         {
           "type": "inline_richtext",
           "id": "title",
