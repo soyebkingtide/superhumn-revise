@@ -250,13 +250,43 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "column_xqRjUf": {
+          "type": "column",
+          "settings": {
+            "title": "Leonard Cruz",
+            "text": "<p>The chili crisp flavor is straight fire<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_HG33Kn": {
+          "type": "column",
+          "settings": {
+            "title": "Maynard Keenan",
+            "text": "<p>What kind of beef is this? Black angus?<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_hneFgU": {
+          "type": "column",
+          "settings": {
+            "title": "Crys Lopez",
+            "text": "<p>This beef barbacoa taco is as good as anything I have ever had<\/p>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "column_xJAiK3",
         "column_GMHkLL",
         "column_EnyGfa",
-        "column_8H8G7H"
+        "column_8H8G7H",
+        "column_xqRjUf",
+        "column_HG33Kn",
+        "column_hneFgU"
       ],
       "settings": {
         "character_image": "shopify:\/\/shop_images\/websiteguy.svg",
