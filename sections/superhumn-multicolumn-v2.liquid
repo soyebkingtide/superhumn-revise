@@ -205,8 +205,7 @@ margin:0 20px;
 
           <li
             id="Slide-{{ section.id }}-{{ forloop.index }}"
-            class="super_card multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{{ empty_column }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}
-          "
+            class="super_card"
             {{ block.shopify_attributes }}
             {% if settings.animations_reveal_on_scroll %}
               data-cascade
