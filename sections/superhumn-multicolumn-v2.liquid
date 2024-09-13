@@ -480,7 +480,13 @@ background-position: center bottom;
 
 
 {%  render 'slick-js' %}
-
+<style>.slick-slider {
+  margin: 0 auto; /* Center the slider */
+  padding: 0;     /* Remove any padding */
+}
+.slick-slide {
+  padding: 0 10px; /* Adjust padding as needed */
+}</style>
 <script>
 
   $(document).ready(function(){
@@ -490,7 +496,11 @@ background-position: center bottom;
     slidesToScroll: 1,
     autoplay: true,
     speed: 600,
-   centerMode: false,
+
+
+    centerMode: true,        // This will center the slides
+  centerPadding: '0px',    // Adjust the padding around the centered slide
+  focusOnSelect: true
 
     dots: false,
   
