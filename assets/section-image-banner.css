@@ -127,7 +127,7 @@
     .banner__content {
     min-height: calc(100vh - 100px);
     align-items: end;
-    margin-bottom: 10%;
+    margin-bottom: 20%;
   }
 
   .suberhumn-banner .banner__box > * + .banner__buttons {
