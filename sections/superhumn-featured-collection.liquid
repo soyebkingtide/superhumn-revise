@@ -151,7 +151,7 @@ right: 0;
 <img src="{{'flavor-bomb.svg' |  asset_url }}" class="special-tag img-fluid" alt="FLAVOR BOMB" width="auto" height="auto">
 
   <div
-    class="page-width-full collection{% if section.settings.quick_add == 'bulk' %} collection-quick-add-bulk{% endif %} section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}"
+    class="page-width collection{% if section.settings.quick_add == 'bulk' %} collection-quick-add-bulk{% endif %} section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}"
     id="collection-{{ section.id }}"
     data-id="{{ section.id }}"
   >
@@ -188,7 +188,7 @@ right: 0;
     
     <ul
        
-        class="grid p-60 product-grid contains-card owl-carousel"
+        class="grid p-60 product-grid contains-card slick-items"
       
         aria-label="{{ 'general.slider.name' | t }}"
       >
@@ -290,8 +290,8 @@ right: 0;
   </div>
 </div>
 
-{% comment %} 
-{%  render 'slick-js' %} {% endcomment %}
+
+{%  render 'slick-js' %}
 
 <style>
 
@@ -311,9 +311,6 @@ right: 0;
 
  
 }
-
-.superhumn-card-items{  width:240px!important;}
-
 
 .feature-collection .card__media{
   min-height: 100%;
@@ -365,49 +362,77 @@ right: 0;
 
 </style>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-
-
- <script src="{{ 'owl.carousel.min.js' | asset_url }}" defer="defer"></script>
-
-
 <script>
 
   $(document).ready(function(){
 
-  $(".owl-carousel").owlCarousel({
-  stagePadding: 0,
-  loop: true,
-  margin: 20,
-  nav: false,
-  // center:true,
-   autoWidth:true,
+  $('.slick-items').slick({
+    centerMode: false,
+  slidesToShow: 6,
   autoplay: true,
-  slideTransition: "linear",
-  autoplayTimeout: 6000,
-  autoplaySpeed: 6000,
-  autoplayHoverPause: false,
-  responsive: {
-    0: {
-      items: 1
-    },
-     400: {
-      items: 2
-    },
-    600: {
-      items: 3
-    },
-    1000: {
-      items: 6
-    }
-  }
-});
+  slidesToScroll: 3,
+  dots:false,
+  arrows:false,
+  autoplaySpeed: 5000,
+
+  
+    speed: 10000,
+    autoplaySpeed: 0, // Set to 0 for continuous sliding
+    cssEase: "linear", // For smooth, continuous movement
+    infinite: true, // Allows continuous looping
 
 
+
+  // centerMode: true,
+  // centerPadding: '0px',
+     
+
+      responsive: [
+
+
+    {
+      breakpoint: 1300,
+      settings: {
+
+       centerPadding: '0',
+         
+ variableWidth: false,
+ 
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots:true,
+          // centerPadding: '7px',
+       
+      }
+    },
+
+
+    
+    {
+      breakpoint: 749,
+      settings: {
+
+       centerPadding: '0',
+         
+ variableWidth: true,
+ 
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots:true,
+          // centerPadding: '7px',
+       
+      }
+    },
+
+
+      ]
+
+  });
 });
 
 
 </script>
+
 
 
 {% schema %}
