@@ -1,6 +1,6 @@
 {{ 'section-multicolumn.css' | asset_url | stylesheet_tag }}
-{{ 'component-slider.css.liquid' | asset_url | stylesheet_tag }}
-
+{{ 'component-slider.css' | asset_url | stylesheet_tag }}
+{{ 'component-team-slider.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -16,8 +16,42 @@
   }
 
 
+.superhumn-title-{{ section.id }}:after {
+    content: '{{ section.settings.title }}';
+       position: absolute;
+ left: 0;
+top: -24%;
+  z-index: ;
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+-webkit-text-stroke-color:  #fff;
+   left: 50%;
+     transform: translateX(-50%);
+  height: 33%;
+   width:100%!important;
+  overflow:hidden;
+}
+
+
+.superhumn-title-{{ section.id }}:before {
+    content: '{{ section.settings.title }}';
+    position:absolute;
+     left: 50%;
+     transform: translateX(-50%);
+  top: -48%;
+  z-index: -1;
+  width:100%!important;
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+-webkit-text-stroke-color:  #fff;
+
+  height: 33%;
+    overflow:hidden;
+  
+}
+
 {%- endstyle -%}
-{{ 'component-team-slider.css' | asset_url | stylesheet_tag }}
+
 {%- liquid
   assign columns_mobile_int = section.settings.columns_mobile | plus: 0
   assign show_mobile_slider = false
