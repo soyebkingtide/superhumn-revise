@@ -112,6 +112,57 @@ $(".slider-testimonials").slick({
   ],
 });
 
+//------Featured collection slider
+
+$(document).ready(function () {
+  $(".slick-items").slick({
+    centerMode: false,
+    slidesToShow: 3,
+    autoplay: true,
+    slidesToScroll: 3,
+    dots: false,
+    arrows: false,
+
+    speed: 3600,
+    autoplaySpeed: 0, // Set to 0 for continuous sliding
+    cssEase: "linear", // For smooth, continuous movement
+    infinite: true, // Allows continuous looping
+
+    // centerMode: true,
+    // centerPadding: '0px',
+
+    responsive: [
+      {
+        breakpoint: 1300,
+        settings: {
+          centerPadding: "0",
+
+          variableWidth: false,
+
+          slidesToShow: 2,
+          slidesToScroll: 1,
+
+          // centerPadding: '7px',
+        },
+      },
+
+      {
+        breakpoint: 749,
+        settings: {
+          centerPadding: "0",
+
+          variableWidth: true,
+
+          slidesToShow: 1,
+          slidesToScroll: 1,
+
+          // centerPadding: '7px',
+        },
+      },
+    ],
+  });
+});
+
 // Global function to check visibility and apply a class
 function checkVisibilityAndToggleClass(selector, className) {
   // Select the element based on the provided selector
