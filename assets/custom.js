@@ -63,12 +63,15 @@ jQuery(function ($) {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 10000,
+
     dots: false,
     variableWidth: true,
     arrows: false,
-    cssEase: "linear",
-    waitForAnimate: false,
+
+    speed: 3600,
+    autoplaySpeed: 0, // Set to 0 for continuous sliding
+    cssEase: "linear", // For smooth, continuous movement
+    infinite: true, // Allows continuous looping
     pauseOnFocus: false,
     pauseOnHover: true,
   });
