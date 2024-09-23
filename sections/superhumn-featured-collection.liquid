@@ -290,8 +290,8 @@ right: 0;
   </div>
 </div>
 
-
-{%  render 'slick-js' %}
+{% comment %} 
+{%  render 'slick-js' %} {% endcomment %}
 
 <style>
 
@@ -362,66 +362,39 @@ right: 0;
 
 </style>
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
 <script>
 
   $(document).ready(function(){
 
-  $('.slick-items').slick({
-    centerMode: false,
-  slidesToShow: 3,
+  $(".slick-items").owlCarousel({
+  stagePadding: 0,
+  loop: true,
+  margin: 20,
+  nav: false,
+  // center:true,
   autoplay: true,
-  slidesToScroll: 3,
-  dots:false,
-  arrows:false,
-  autoplaySpeed: 5000,
-
-
-
-  // centerMode: true,
-  // centerPadding: '0px',
-     
-
-      responsive: [
-
-
-    {
-      breakpoint: 1300,
-      settings: {
-
-       centerPadding: '0',
-         
- variableWidth: false,
- 
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        dots:true,
-          // centerPadding: '7px',
-       
-      }
+  slideTransition: "linear",
+  autoplayTimeout: 3000,
+  autoplaySpeed: 3000,
+  autoplayHoverPause: false,
+  responsive: {
+    0: {
+      items: 2
     },
-
-
-    
-    {
-      breakpoint: 749,
-      settings: {
-
-       centerPadding: '0',
-         
- variableWidth: true,
- 
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots:true,
-          // centerPadding: '7px',
-       
-      }
+    600: {
+      items: 3
     },
+    1000: {
+      items: 5
+    }
+  }
+});
 
 
-      ]
-
-  });
 });
 
 
