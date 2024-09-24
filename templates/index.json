@@ -309,7 +309,7 @@
         "padding_top": 32,
         "padding_bottom": 32,
         "heading": "OUR ORIGIN STORY",
-        "enable_video_looping": false,
+        "enable_video_looping": true,
         "video": "shopify://files/videos/Coming soon.mp4",
         "video_url": "",
         "cover_image": "shopify://shop_images/Rectangle_42.png",
