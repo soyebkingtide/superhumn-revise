@@ -55,7 +55,7 @@
         "buttons_zcJR8J"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/header-bg.png",
+        "image": "shopify://shop_images/header-bg.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -74,7 +74,7 @@
         "column_AyLfGx": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Mask_group_2_de9601f2-a852-41c7-ba9c-884eac953560.png",
+            "image": "shopify://shop_images/Mask_group_2_de9601f2-a852-41c7-ba9c-884eac953560.png",
             "logo_width": 200,
             "title": "",
             "text": "",
@@ -85,7 +85,7 @@
         "column_KkA9Kr": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_9.png",
+            "image": "shopify://shop_images/Frame_9.png",
             "logo_width": 200,
             "title": "",
             "text": "",
@@ -96,7 +96,7 @@
         "column_X68fUX": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_8.png",
+            "image": "shopify://shop_images/Frame_8.png",
             "logo_width": 200,
             "title": "",
             "text": "",
@@ -107,7 +107,7 @@
         "column_zYW9L7": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_7.png",
+            "image": "shopify://shop_images/Frame_7.png",
             "logo_width": 200,
             "title": "",
             "text": "",
@@ -118,7 +118,7 @@
         "column_xTxmeE": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Mask_group_3.png",
+            "image": "shopify://shop_images/Mask_group_3.png",
             "logo_width": 170,
             "title": "",
             "text": "",
@@ -156,12 +156,12 @@
       "type": "superhumn-featured-collection",
       "settings": {
         "title": "CHOOSE YOUR POWER-UP",
-        "video": "shopify:\/\/files\/videos\/Chili Crisp FINAL.mp4",
+        "video": "shopify://files/videos/Chili Crisp FINAL.mp4",
         "heading_size": "hxl",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "test-collection",
+        "collection": "power-up",
         "products_to_show": 3,
         "columns_desktop": 3,
         "full_width": true,
@@ -219,7 +219,7 @@
           "type": "column",
           "settings": {
             "title": "Jakob Kenter",
-            "text": "<p>I’m having an orgasm in my mouth.<\/p>",
+            "text": "<p>I’m having an orgasm in my mouth.</p>",
             "link_label": "",
             "link": ""
           }
@@ -228,7 +228,7 @@
           "type": "column",
           "settings": {
             "title": "Terry Siphron",
-            "text": "<p>This is so addicting I could legit eat this everyday.<\/p>",
+            "text": "<p>This is so addicting I could legit eat this everyday.</p>",
             "link_label": "",
             "link": ""
           }
@@ -237,7 +237,7 @@
           "type": "column",
           "settings": {
             "title": "Gretchen Rosser",
-            "text": "<p>This is some of the best pulled pork I have ever had<\/p>",
+            "text": "<p>This is some of the best pulled pork I have ever had</p>",
             "link_label": "",
             "link": ""
           }
@@ -246,7 +246,7 @@
           "type": "column",
           "settings": {
             "title": "Desirae Carder",
-            "text": "<p>It looks like beef, it smells like beef, it tastes like beef it’s so good.<\/p>",
+            "text": "<p>It looks like beef, it smells like beef, it tastes like beef it’s so good.</p>",
             "link_label": "",
             "link": ""
           }
@@ -255,7 +255,7 @@
           "type": "column",
           "settings": {
             "title": "Leonard Cruz",
-            "text": "<p>The chili crisp flavor is straight fire<\/p>",
+            "text": "<p>The chili crisp flavor is straight fire</p>",
             "link_label": "",
             "link": ""
           }
@@ -264,7 +264,7 @@
           "type": "column",
           "settings": {
             "title": "Maynard Keenan",
-            "text": "<p>What kind of beef is this? Black angus?<\/p>",
+            "text": "<p>What kind of beef is this? Black angus?</p>",
             "link_label": "",
             "link": ""
           }
@@ -273,7 +273,7 @@
           "type": "column",
           "settings": {
             "title": "Crys Lopez",
-            "text": "<p>This beef barbacoa taco is as good as anything I have ever had<\/p>",
+            "text": "<p>This beef barbacoa taco is as good as anything I have ever had</p>",
             "link_label": "",
             "link": ""
           }
@@ -289,7 +289,7 @@
         "column_hneFgU"
       ],
       "settings": {
-        "character_image": "shopify:\/\/shop_images\/websiteguy.svg",
+        "character_image": "shopify://shop_images/websiteguy.svg",
         "videoTitle": "OUR ORIGIN STORY",
         "title": "EVERYONE",
         "title1": "AND YOUR MOM",
@@ -309,9 +309,10 @@
         "padding_top": 32,
         "padding_bottom": 32,
         "heading": "OUR ORIGIN STORY",
-        "enable_video_looping": false,
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "cover_image": "shopify:\/\/shop_images\/Rectangle_42.png",
+        "enable_video_looping": true,
+        "video": "shopify://files/videos/Coming soon.mp4",
+        "video_url": "",
+        "cover_image": "shopify://shop_images/Rectangle_42.png",
         "description": "",
         "full_width": false
       }
@@ -322,7 +323,7 @@
         "column_7j4PzY": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Jade_-_Copy.png",
+            "image": "shopify://shop_images/Jade_-_Copy.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -332,7 +333,7 @@
         "column_iBV6Th": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_76870624-d702-43ca-8dac-11b209397bc5.png",
+            "image": "shopify://shop_images/Frame_76870624-d702-43ca-8dac-11b209397bc5.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -342,7 +343,7 @@
         "column_am9rpz": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_2.png",
+            "image": "shopify://shop_images/Frame_2.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -356,7 +357,7 @@
         "column_am9rpz"
       ],
       "settings": {
-        "section_img": "shopify:\/\/shop_images\/jerkyjumper_1.png",
+        "section_img": "shopify://shop_images/jerkyjumper_1.png",
         "title": "MEET THE TEAM",
         "heading_size": "hxxl_5",
         "image_width": "full",
@@ -404,7 +405,7 @@
         "text_kXHnXz": {
           "type": "text",
           "settings": {
-            "text": "<p>We're assembling the greatest team of SUPERHUMNs on the planet<\/p>",
+            "text": "<p>We're assembling the greatest team of SUPERHUMNs on the planet</p>",
             "text_style": "body"
           }
         },
@@ -423,7 +424,7 @@
         "checkbox_gxzeAQ"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Rectangle_4888_1.png",
+        "image": "shopify://shop_images/Rectangle_4888_1.png",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "overlap",
