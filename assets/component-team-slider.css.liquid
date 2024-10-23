@@ -11,15 +11,35 @@
   
 .multicolumn-list-bg{
  /* background:url({{'new-bg.svg' |  asset_url }});*/
-  padding: 80px 219px;
+  padding: 100px 219px;
   position:relative;
 }
 
 .multicolumn-list-bg:before{
   content:'';
   background:url({{'light-line.svg' |  asset_url }});
+  height: 120px;
+  width: 100%;
+  position: absolute;
+  background-position: center;
+  left: 0;
+  top: 0;
+  background-size: contain;
 }
 
+
+
+.multicolumn-list-bg:after{
+  content:'';
+  background:url({{'light-line.svg' |  asset_url }});
+  height: 120px;
+  width: 100%;
+  position: absolute;
+  background-position: center;
+  left: 0;
+  bottom: 0;
+  background-size: contain;
+}
 
 
 
