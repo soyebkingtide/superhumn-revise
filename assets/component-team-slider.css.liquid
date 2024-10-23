@@ -14,33 +14,22 @@
   padding: 0;
   position:relative;
 }
-
-.multicolumn-list-bg:before{
-  content:'';
-  background:url({{'light-line.svg' |  asset_url }});
+.multicolumn-list-bg:before, 
+.multicolumn-list-bg:after {
+  content: '';
+  background: url({{'light-line.svg' | asset_url}});
   height: 90px;
   width: 100%;
   position: relative;
-  background-position: top center;
-  display:block;
+  display: block;
   background-size: contain;
+  background-repeat: repeat-x;
+  background-position: top center;
 }
 
-
-
-.multicolumn-list-bg:after{
-  content:'';
-  background:url({{'light-line.svg' |  asset_url }});
-  height: 90px;
-  width: 100%;
-  position: absolute;
-  position: relative;
-  background-position: top center;
-  display:block;
-  background-size: contain;
+.multicolumn-list-bg:after {
+  background-position: bottom center;
 }
-
-
 
 .meet-the-team .media {
     border: solid 18px #7DFBC0;
