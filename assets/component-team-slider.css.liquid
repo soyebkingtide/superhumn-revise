@@ -10,9 +10,17 @@
 
   
 .multicolumn-list-bg{
-  background:url({{'new-bg.svg' |  asset_url }});
+ /* background:url({{'new-bg.svg' |  asset_url }});*/
   padding: 80px 219px;
+  position:relative;
 }
+
+.multicolumn-list-bg:before{
+  content:'';
+  background:url({{'light-line.svg' |  asset_url }});
+}
+
+
 
 
 .meet-the-team .media {
@@ -23,7 +31,7 @@
 
 @media(max-width:1500px){
  .meet-the-team .multicolumn-list-bg{
-  background:url({{'new-bg.svg' |  asset_url }});
+/*  background:url({{'new-bg.svg' |  asset_url }}); */
   padding: 50px 40px;
 
 }
