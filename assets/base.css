@@ -3017,7 +3017,7 @@ details-disclosure > details {
     rgba(var(--color-foreground), var(--media-border-opacity));
   border-radius: var(--media-radius);
   overflow: visible !important;
-  background-color: rgb(var(--color-background));
+  /* background-color: rgb(var(--color-background)); */
 }
 
 .global-media-settings:after {
