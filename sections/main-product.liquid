@@ -116,6 +116,12 @@ background: rgba(157, 157, 157, 1)!important;
     margin: 65px auto;
            }
 
+           .product__title{    text-align: left;
+    
+    font-size: 130.751px;
+    font-style: italic;
+    text-shadow: 6px 5px 0px var( --color-primary);}
+
 
   {%- endstyle -%}
 
@@ -182,7 +188,7 @@ background: rgba(157, 157, 157, 1)!important;
                   {{- block.settings.text -}}
                 </p>
               {%- when 'title' -%}
-                <div class="product__title banner__heading h0" {{ block.shopify_attributes }}>
+                <div class="product__title" {{ block.shopify_attributes }}>
                   <h1>{{ product.title | escape }}</h1>
                   <a href="{{ product.url }}" class="product__title">
                     <h2 class="h1">
