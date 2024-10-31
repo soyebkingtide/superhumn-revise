@@ -212,4 +212,5 @@ variant-selects {
 .product-form__input--pill input[type="radio"]:hover + label.pack {
   background: var(--color-primary);
   border-color: var(--color-primary);
+  color: #fff;
 }
