@@ -164,6 +164,7 @@ variant-selects {
   text-align: left;
   padding: 12px;
   min-width: 188px;
+  border: solid 1px #fff;
 }
 
 .product-form__input--pill input[type="radio"] + label.flavor h3 {
