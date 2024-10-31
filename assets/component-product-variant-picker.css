@@ -215,4 +215,5 @@ variant-selects {
 .pack-variant:nth-child(2) {
   border: solid 1px #fff;
   padding: 6px;
+  border-radius: 53px;
 }
