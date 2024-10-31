@@ -45,7 +45,9 @@
       {{- 'products.product.variant_sold_out_or_unavailable' | t -}}
     </span>
   {%- endcapture -%}
-Button
+
+  {{ option.name }}
+
     <input
       type="radio"
       id="{{ input_id }}"
