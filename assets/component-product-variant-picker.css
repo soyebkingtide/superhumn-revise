@@ -202,6 +202,7 @@ variant-selects {
   text-transform: uppercase;
   padding: 0;
   margin: 0;
+  border-color: transparent;
 }
 
 .product-form__input--pill input[type="radio"]:checked + label.pack,
@@ -212,4 +213,6 @@ variant-selects {
 }
 
 .pack-variant:nth-child(2) {
+  border: solid 1px #fff;
+  padding: 6px;
 }
