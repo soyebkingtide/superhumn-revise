@@ -165,5 +165,5 @@ variant-selects {
 }
 
 .product-form__input--pill input[type="radio"]:checked + label.flavor {
-  color: var(--color-primary);
+  background: var(--color-primary);
 }
