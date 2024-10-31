@@ -159,6 +159,11 @@ variant-selects {
 }
 /* End custom styles for Swatch display type */
 
+.product-form__input--pill {
+  /* display: flex;
+  align-items: space-between; */
+}
+
 .product-form__input--pill input[type="radio"] + label.flavor {
   border-radius: 0;
   text-align: left;
