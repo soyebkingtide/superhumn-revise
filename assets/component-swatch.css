@@ -23,7 +23,3 @@
   border-style: dashed;
   border-color: rgba(var(--color-foreground), 0.5);
 }
-
-.product-form__input--pill input[type="radio"] + label.flavor {
-  border-radius: 0;
-}
