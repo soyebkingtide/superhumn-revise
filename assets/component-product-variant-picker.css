@@ -201,6 +201,7 @@ variant-selects {
   line-height: normal;
   text-transform: uppercase;
   padding: 0;
+  margin: 0;
 }
 
 .product-form__input--pill input[type="radio"]:checked + label.pack,
