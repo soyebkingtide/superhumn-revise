@@ -29,8 +29,7 @@
       -%}
       {%- if picker_type == 'swatch' -%}
 
-        swatch
-
+       
         <fieldset class="js product-form__input product-form__input--swatch">
           <legend class="form__label">
             {{ option.name }}:
@@ -45,20 +44,46 @@
             picker_type: picker_type
           %}
         </fieldset>
+
+
+
+
+
+
+
+
+
+{% comment %} Custom button for variation flavour buttton  {% endcomment %}
+
       {%- elsif picker_type == 'button' -%}
-        button
+        
         
         <fieldset class="js product-form__input product-form__input--pill">
 
 
           <legend class="form__label">{{ option.name }}</legend>
-          {% render 'product-variant-options',
+          {% render 'product-variant-options-button',
             product: product,
             option: option,
             block: block,
             picker_type: picker_type
           %}
         </fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       {%- else -%}
         <div class="product-form__input product-form__input--dropdown">
           <label class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}">
