@@ -377,7 +377,6 @@ font-weight: 700; }
                   {%- assign cart_qty = cart
                     | item_count_for_variant: product.selected_or_first_available_variant.id
                   -%}
-                  
                   {% # theme-check-enable %}
                   <label class="quantity__label form__label" for="Quantity-{{ section.id }}">
                     {% comment %} {{ 'products.product.quantity.label' | t }} {% endcomment %}
