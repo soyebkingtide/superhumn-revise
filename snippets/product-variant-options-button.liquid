@@ -46,9 +46,32 @@
     </span>
   {%- endcapture -%}
 
-  {{ option.name }}
+  
+{%if option.name == 'Flavor' %}
 
-    <input
+ <input
+      type="radio"
+      id="{{ input_id }}"
+      name="{{ input_name }}"
+      value="{{ value | escape }}"
+      form="{{ product_form_id }}"
+      {% if value.selected %}
+        checked
+      {% endif %}
+      {% if option_disabled %}
+        class="disabled"
+      {% endif %}
+      {{ input_dataset }}
+    >
+    <label for="{{ input_id }}">
+      {{ value -}}
+      {{ label_unavailable }}
+      {{'BEEF JERKY'}}
+    </label>
+  
+  {% else %}
+
+ <input
       type="radio"
       id="{{ input_id }}"
       name="{{ input_name }}"
@@ -66,5 +89,9 @@
       {{ value -}}
       {{ label_unavailable }}
     </label>
+  
+  {% endif %}
+
+   
  
 {%- endfor -%}
