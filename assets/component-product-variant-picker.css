@@ -167,3 +167,14 @@ variant-selects {
 .product-form__input--pill input[type="radio"]:checked + label.flavor {
   background: var(--color-primary) !important;
 }
+
+.product-form__input--pill input[type="radio"]:checked + label.flavor h3 {
+  font-size: 29.064px;
+  line-height: normal;
+}
+
+.product-form__input--pill input[type="radio"]:checked + label.flavor span {
+  font-family: "Zuume";
+  font-size: 19px;
+  font-weight: 700;
+}
