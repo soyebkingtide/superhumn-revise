@@ -195,3 +195,18 @@ variant-selects {
   background: var(--color-primary);
   border-color: var(--color-primary);
 }
+
+.product-form__input--pill input[type="radio"] + label.pills {
+  min-width: 143.47px;
+  min-height: 43.312px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Zuume";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 0;
+}
