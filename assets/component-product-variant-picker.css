@@ -207,3 +207,9 @@ variant-selects {
   text-transform: uppercase;
   padding: 0;
 }
+
+.product-form__input--pill input[type="radio"]:checked + label.pack,
+.product-form__input--pill input[type="radio"]:hover + label.pack {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+}
