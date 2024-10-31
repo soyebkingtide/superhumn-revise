@@ -47,6 +47,11 @@
   {%- endcapture -%}
 
   
+  {%- capture label_JERKY -%}
+   <span>BEEF JERKY</span>
+  {%- endcapture -%}
+
+  
 {%if option.name == 'Flavor' %}
 
  <input
@@ -63,12 +68,15 @@
       {% endif %}
       {{ input_dataset }}
     >
+
+
     <label for="{{ input_id }}">
       {{ value -}}
       {{ label_unavailable }}
       <br>
-      {{'BEEF JERKY'}}
+      {{ label_JERKY  }}
     </label>
+
   
   {% else %}
 
