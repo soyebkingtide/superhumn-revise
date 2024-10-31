@@ -210,3 +210,6 @@ variant-selects {
   border-color: var(--color-primary);
   color: #fff;
 }
+
+.pack-variant:nth-child(2) {
+}
