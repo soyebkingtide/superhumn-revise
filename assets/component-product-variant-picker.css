@@ -178,6 +178,7 @@ variant-selects {
   font-size: 18px;
   font-weight: 700;
   color: #931cf5;
+  transition: all 600ms;
 }
 .product-form__input--pill input[type="radio"]:checked + label.flavor span,
 .product-form__input--pill input[type="radio"]:hover + label.flavor span {
