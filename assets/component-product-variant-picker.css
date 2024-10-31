@@ -163,3 +163,7 @@ variant-selects {
   border-radius: 0;
   text-align: left;
 }
+
+.product-form__input--pill input[type="radio"]:checked + label.flavor {
+  color: var(--color-primary);
+}
