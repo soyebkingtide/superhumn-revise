@@ -61,7 +61,7 @@
         <fieldset class="js product-form__input product-form__input--pill d-flex justify-content-between">
 
 
-          <legend class="form__label">{{ option.name }}</legend>
+          {% comment %} <legend class="form__label">{{ option.name }}</legend> {% endcomment %}
           {% render 'product-variant-options-button',
             product: product,
             option: option,
