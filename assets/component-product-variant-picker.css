@@ -163,6 +163,7 @@ variant-selects {
   border-radius: 0;
   text-align: left;
   padding: 12px;
+  min-width: 188px;
 }
 
 .product-form__input--pill input[type="radio"] + label.flavor h3 {
@@ -174,6 +175,10 @@ variant-selects {
   font-family: "Zuume";
   font-size: 18px;
   font-weight: 700;
+  color: #931cf5;
+}
+.product-form__input--pill input[type="radio"]:checked + label.flavor span {
+  color: #191919;
 }
 
 .product-form__input--pill input[type="radio"]:checked + label.flavor {
