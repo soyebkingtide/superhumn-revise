@@ -22,9 +22,12 @@
 
 <div class="color-{{ section.settings.color_scheme }} gradient position-relative">
 
-<div class="para">
-<img src="{{ 'jerkyjumper_1.png' | file_url }}" alt="" height="368" loading="lazy" class="feature-img comeFromRight flip-180">
-</div>
+
+{% if section.settings.section_img %}
+
+  <img src="{{ section.settings.section_img | img_url: 'master' }}" class="feature-img comeFromRight" alt="hero">
+
+{% endif %}
 
 
   <product-recommendations
@@ -70,6 +73,14 @@
   "tag": "section",
   "class": "section",
   "settings": [
+  
+ {
+        "type": "image_picker",
+        "id": "section_img",
+        "label": "Section image"
+      },
+
+
     {
       "type": "paragraph",
       "content": "t:sections.related-products.settings.paragraph__1.content"
