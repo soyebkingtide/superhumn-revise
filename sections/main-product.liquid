@@ -951,10 +951,15 @@ if(this.checked){
                                                       rcCheckbox1.parentNode.insertBefore(spanElement, rcCheckbox1.nextSibling);
 
                                                       console.log(rcCheckbox1.value+"RC VLAUE HERE");
+
+
+                                                      const  pillsContainerPack = document.querySelectorAll('.pack-variant');
+
+                                                      pillsContainerPack.forEach((getSecondClass, i)=>{
+
+                                                      if(i == 2){
+
                                                       
-
-                                                      const  pillsContainerPack = document.querySelector('.pack-variant');
-
                                                       if(rcCheckbox1.value == "on"){
 
                                                       const discountTag = document.createElement('span');
@@ -967,9 +972,14 @@ if(this.checked){
 
                                                       discountTag.className = 'discount_tag';
 
-                                                      pillsContainerPack.appendChild(discountTag)
+                                                      getSecondClass.appendChild(discountTag)
 
                                                       }
+
+                                                      }
+                                                        
+                                                      })
+
                                                       
 
 
