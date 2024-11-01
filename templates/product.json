@@ -81,6 +81,7 @@
     "related-products": {
       "type": "related-products",
       "settings": {
+        "section_img": "shopify://shop_images/jerkyjumper_1_ae69b19f-4db4-4b5e-bcf4-e5d7ed58f108.png",
         "heading": "You may <em>also like</em>",
         "heading_size": "h1",
         "products_to_show": 3,
@@ -92,13 +93,37 @@
         "show_vendor": false,
         "show_rating": false,
         "columns_mobile": "2",
-        "padding_top": 36,
-        "padding_bottom": 28
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "rich_text_YX8W3L": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_eUXaUL": {
+          "type": "heading",
+          "settings": {
+            "heading": "WHAT PEOPLE<em> ARE SAYING</em>",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_eUXaUL"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
       }
     }
   },
   "order": [
     "main",
-    "related-products"
+    "related-products",
+    "rich_text_YX8W3L"
   ]
 }
