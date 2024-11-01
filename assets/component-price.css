@@ -39,7 +39,9 @@
 
 .price--large {
   font-size: 1.6rem;
-  line-height: calc(1 + 0.5 / var(--font-body-scale));
+  line-height: none;
+
+  /* line-height: calc(1 + 0.5 / var(--font-body-scale)); */
   letter-spacing: 0.13rem;
 }
 
