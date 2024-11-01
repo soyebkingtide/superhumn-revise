@@ -953,13 +953,9 @@ if(this.checked){
                                                       console.log(rcCheckbox1.value+"RC VLAUE HERE");
 
 
-                                                      const  pillsContainerPack = document.querySelectorAll('.pack-variant');
+                                                      const  pillsContainerPack = document.querySelector('.pack-variant');
 
-                                                      pillsContainerPack.forEach((getSecondClass, i)=>{
-
-                                                      if(i == 2){
-
-                                                      
+                                                     
                                                       if(rcCheckbox1.value == "on"){
 
                                                       const discountTag = document.createElement('span');
@@ -972,14 +968,9 @@ if(this.checked){
 
                                                       discountTag.className = 'discount_tag';
 
-                                                      getSecondClass.appendChild(discountTag)
+                                                      pillsContainerPack[1].appendChild(discountTag)
 
                                                       }
-
-                                                      }
-                                                        
-                                                      })
-
                                                       
 
 
