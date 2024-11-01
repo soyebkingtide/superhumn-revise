@@ -862,6 +862,116 @@ font-weight: 700; }
   </div>
 </product-info>
 
+
+
+
+<script>
+
+
+// chnage product main image bg + tabs bg
+
+// chagne bg according to Flavor Test
+const allOptions = document.querySelectorAll('[name="Flavor"]');
+let mainImageBg = document.querySelector('#superhumn-slider');
+let optionVlaue ;
+
+allOptions.forEach(option=>{
+if (option.checked) {
+
+
+
+optionVlaue = option.value.toLowerCase().replace(/\s+/g, '-');
+mainImageBg.classList.add('main-'+optionVlaue);
+console.log(optionVlaue);
+      }
+ 
+
+option.addEventListener('change', function(){
+
+mainImageBg.classList.remove('main-'+optionVlaue);
+
+if(this.checked){
+  optionVlaue = this.value.toLowerCase().replace(/\s+/g, '-');
+  mainImageBg.classList.add('main-'+optionVlaue);
+  console.log(optionVlaue)
+}
+
+
+})
+
+
+      
+})
+
+//#End
+
+
+
+        setTimeout(function() {
+            var subscriptionElements = document.querySelectorAll('.rc-checkbox__subscription');
+            let discountText;
+            if (subscriptionElements) {
+                subscriptionElements.forEach(function(element) {
+                    var text = element.textContent;
+                    var parts = text.split('&');
+                    var updatedText = ' <span> ' + parts[0].trim() + ' </span> & ' + parts[1].trim();
+                    discountText =  parts[1].trim();
+                    element.innerHTML = updatedText;
+                });
+
+                            var spanElement = document.createElement('span');
+                             
+                              spanElement.className = 'checkField';
+
+                                          var rcCheckbox1 = document.getElementById('rc-checkbox1');
+
+                                          rcCheckbox1.style.display = 'none';
+
+
+
+
+
+                                                      rcCheckbox1.parentNode.insertBefore(spanElement, rcCheckbox1.nextSibling);
+
+                                                      console.log(rcCheckbox1.value+"RC VLAUE HERE");
+
+                                                      const  pillsContainerPack = document.querySelector('.pills-container-Pack');
+
+                                                      if(rcCheckbox1.value == "on"){
+
+                                                      const discountTag = document.createElement('span');
+
+                                                     // discountTag.textContent =   discountText;
+
+                                                      var newText = discountText.replace("save ", "");
+                                                      
+                                                      discountTag.textContent = newText+" DISCOUNT!";
+
+                                                      discountTag.className = 'discount_tag';
+
+                                                      pillsContainerPack.appendChild(discountTag)
+
+                                                      }
+                                                      
+
+
+
+            }
+        }, 2000); // 6 seconds delay (6000 milliseconds)
+
+
+        
+//detect subscription option position
+
+
+
+
+
+    </script>
+
+
+
+
 {% schema %}
 {
   "name": "t:sections.main-product.name",
