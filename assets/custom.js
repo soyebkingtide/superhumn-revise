@@ -59,7 +59,7 @@ adjustPosTopImage();
 window.addEventListener("resize", adjustPosTopImage);
 
 jQuery(function ($) {
-  $(".text-scroller-items").slick({
+  $(".text-scroller-items-hold").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
