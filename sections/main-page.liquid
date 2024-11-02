@@ -26,12 +26,13 @@
 {% comment %} How to use meta data object {% endcomment %}
 
 {% assign selected_option = page.metafields.custom.image.value %}
- Sucess meta object test - -
-{{ selected_option }}
 
- <img src="{{ selected_option |  file_url }}">
-
-
+{% if selected_option %}
+  <p>Success meta object test - -</p>
+  <img src="{{ selected_option | file_url }}" alt="Image">
+{% else %}
+  <p>No image found in metafields.</p>
+{% endif %}
 
 {% schema %}
 {
