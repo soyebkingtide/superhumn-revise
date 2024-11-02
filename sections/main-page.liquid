@@ -28,6 +28,7 @@
 {% assign selected_option = page.metafields.custom.image.value %}
 {% if selected_option %}
   <p>Success meta object test - </p>
+  {{selected_option}}<br>
    {{ image_metafield | file_url }} <br>
   <img src="{{ selected_option | file_url }}" alt="{{ page.title }}">
 {% else %}
