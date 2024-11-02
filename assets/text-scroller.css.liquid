@@ -29,7 +29,7 @@ color:rgba(var(--color-foreground), 1);
 letter-spacing: 2.73px;
 display: inline-block;
   position: relative;
-  padding: 0 80px;
+  padding: 0 50px;
 
 
   @media(min-width:750px){
@@ -46,33 +46,29 @@ display: inline-block;
 
 
 .text-scroller-items li:after{
-content: '';
-     background: white;
-    width: 16px;
+    content: "";
+    background: #fff;
+    width: 14px;
     height: 106%;
-    left: -16px;
-   
+    right: 6px;
     display: block;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%) rotate(3deg);
-   
+    transform: translateY(-50%) rotate(10deg);
    
  
 }
 
 .text-scroller-items li:before {
-    content: '';
-  
-    background: white;
-    width: 16px;
+        content: "";
+    background: #fff;
+    width: 14px;
     height: 106%;
-    left: 16px;
-   
+    left: 6px;
     display: block;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%) rotate(3deg);
+    transform: translateY(-50%) rotate(10deg);
   
 }
 
