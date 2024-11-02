@@ -29,7 +29,7 @@
 
 {% if selected_option %}
   <p>Success meta object test - -</p>
-   {{ image_metafield | file_url }}
+   {{ image_metafield | file_url }} <br>
 
   <img src="{{ selected_option | file_url }}" alt="{{ page.title }}">
 {% else %}
