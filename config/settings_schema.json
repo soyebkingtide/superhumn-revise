@@ -55,7 +55,7 @@
           {
             "type": "color",
             "id": "heading_text",
-            "label": "Heading Text",
+            "label": "Heading Color",
             "default": "#121212"
           },
 
