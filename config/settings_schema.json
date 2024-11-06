@@ -54,6 +54,13 @@
           },
           {
             "type": "color",
+            "id": "heading_text",
+            "label": "Heading Text",
+            "default": "#121212"
+          },
+
+          {
+            "type": "color",
             "id": "text",
             "label": "t:settings_schema.colors.settings.text.label",
             "default": "#121212"
