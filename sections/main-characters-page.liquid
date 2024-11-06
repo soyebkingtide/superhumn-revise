@@ -12,6 +12,13 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+
+  h1{
+    color:rgba( --color-heading )!important
+  }
+
+
 {%- endstyle -%}
 
 
@@ -39,10 +46,7 @@
   <p>No image found in metafields.</p>
 {% endif %}
 
-{{ scheme.settings.heading_text }} heading color
-rgb({{ scheme.settings.heading_text.rgb }});dd
 
-{{ scheme.settings.heading_text.rgba }};
 
 </div>
 
