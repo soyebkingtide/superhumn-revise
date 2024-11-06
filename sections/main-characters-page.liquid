@@ -24,8 +24,24 @@
     position:relative;
 }
 
+.characters-page{
+border-radius: 3px;
+  border: 18px solid rgba(var(--color-heading));
+}
 
+.character{position: relative;
+  top: -180px;
+  max-width: 330px;
+  left: -60px;}
+  
 
+  .characters-content, .characters-content p{
+    font-family: "Zuume";
+font-size: 45px;
+font-style: normal;
+font-weight: 700;
+line-height: 105%; /* 47.25px */
+  }
 
 .superhumn-title-{{ section.id }}:after {
     content: '{{ page.title | escape }}';
@@ -85,13 +101,13 @@ top: -24%;
 
 {% assign selected_option = page.metafields.custom.image %}
 {% if selected_option %}
-   <img src="{{ selected_option | file_url }}" alt="{{ page.title }}" class="img-fluid">
+   <img src="{{ selected_option | file_url }}" alt="{{ page.title }}" class="img-fluid character">
 {% else %}
   <p>No image found in metafields.</p>
 {% endif %}
 
 
-  <div class="">
+  <div class="characters-content">
     {{ page.content }}
   </div>
 
