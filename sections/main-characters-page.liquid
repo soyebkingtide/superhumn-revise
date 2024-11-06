@@ -23,9 +23,18 @@
   </div>
 </div>
 
+{% comment %} How to use meta data object {% endcomment %}
+
+{% assign selected_option = page.metafields.custom.image %}
+{% if selected_option %}
+   <img src="{{ selected_option | file_url }}" alt="{{ page.title }}" class="img-fluid">
+{% else %}
+  <p>No image found in metafields.</p>
+{% endif %}
+
 {% schema %}
 {
-  "name": "t:sections.main-page.name",
+  "name": "Characters Page",
   "tag": "section",
   "class": "section",
   "settings": [
