@@ -44,9 +44,9 @@ border-radius: 3px;
     margin:0;
     font-family: "Zuume";
 font-size: 45px;
-font-style: normal;
-font-weight: 700;
-line-height: 105%; /* 47.25px */
+
+font-weight: 600;
+
 color: rgba(var(--color-foreground), 1);
   }
 
@@ -84,6 +84,8 @@ top: -24%;
   
 }
 
+.page-width-auto{max-width: max-content!important;}
+
 
 {%- endstyle -%}
 
@@ -94,7 +96,7 @@ top: -24%;
 
 
 
-<div class="page-width section-{{ section.id }}-padding">
+<div class="page-width page-width-auto section-{{ section.id }}-padding">
    
   <h1 class="main-page-title page-title hxxl_5 highlighter-color superhumn-title-{{ section.id }} {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
     {{ page.title | escape }}
