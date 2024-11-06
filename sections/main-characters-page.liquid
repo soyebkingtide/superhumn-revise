@@ -30,12 +30,13 @@ border-radius: 3px;
   display: flex;
     align-items: flex-start;
     justify-content: flex-start;    padding: 42px;
+        max-width: 1090px;
 }
 
-.character{position: relative;
-  top: -180px;
-  max-width: 330px;
-  left: -60px;}
+.character{    position: relative;
+    top: -222px;
+    max-width: 366px;
+    left: -120px;}
   
 
   .characters-content, .characters-content p{
@@ -102,7 +103,7 @@ top: -24%;
   <div class="characters-page" {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}>
 
   
-{% comment %} How to use meta data object {% endcomment %}
+{% comment %} How to use meta data object
 
 {% assign selected_option = page.metafields.custom.image %}
 {% if selected_option %}
@@ -110,7 +111,7 @@ top: -24%;
 {% else %}
   <p>No image found in metafields.</p>
 {% endif %}
-
+ {% endcomment %}
 
   <div class="characters-content">
     {{ page.content }}
