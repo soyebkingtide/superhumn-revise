@@ -18,6 +18,51 @@
      color: rgba(var(--color-heading)) !important;
   }
 
+
+
+.superhumn-title-{{ section.id }}{
+
+    bottom: -36%!important;
+}
+
+
+
+
+.superhumn-title-{{ section.id }}:after {
+    content: '{{ page.title | escape }}';
+       position: absolute;
+ left: 0;
+top: -24%;
+  z-index: ;
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+-webkit-text-stroke-color:  #fff;
+   left: 50%;
+     transform: translateX(-50%);
+  height: 33%;
+   width:100%!important;
+  overflow:hidden;
+}
+
+
+.superhumn-title-{{ section.id }}:before {
+    content: '{{ page.title | escape }}';
+    position:absolute;
+     left: 50%;
+     transform: translateX(-50%);
+  top: -48%;
+  z-index: -1;
+  width:100%!important;
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+-webkit-text-stroke-color:  #fff;
+
+  height: 33%;
+    overflow:hidden;
+  
+}
+
+
 {%- endstyle -%}
 
 
@@ -29,7 +74,7 @@
 
 <div class="page-width page-width--narrow section-{{ section.id }}-padding">
    
-  <h1 class="main-page-title page-title hxxl_5 highlighter-color {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+  <h1 class="main-page-title page-title hxxl_5 highlighter-color superhumn-title-{{ section.id }} {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
     {{ page.title | escape }}
   </h1>
   <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
