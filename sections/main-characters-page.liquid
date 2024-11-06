@@ -76,11 +76,11 @@ top: -24%;
   <h1 class="main-page-title page-title hxxl_5 highlighter-color superhumn-title-{{ section.id }} {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
     {{ page.title | escape }}
   </h1>
-  <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-    {{ page.content }}
-  </div>
-</div>
 
+
+  <div class="characters-page" {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}>
+
+  
 {% comment %} How to use meta data object {% endcomment %}
 
 {% assign selected_option = page.metafields.custom.image %}
@@ -89,6 +89,18 @@ top: -24%;
 {% else %}
   <p>No image found in metafields.</p>
 {% endif %}
+
+
+  <div class="">
+    {{ page.content }}
+  </div>
+
+
+
+  </div>
+
+
+</div>
 
 
 
