@@ -25,7 +25,7 @@
     <div class="heading-cover position-relative">
       <h1 class="main-page-title page-title hxxl_5 highlighter-color h-190 superhumn-title-{{ section.id }} {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"> {{ page.title | escape }} </h1>
     </div>
-    <div class="characters-page" {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}>
+    <div class="characters-page"  {% if section.settings.section_img %} character-ms {% endif %} {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}>
     {% comment %} How to use meta data object {% endcomment %}
     
  
@@ -65,7 +65,7 @@
  {
         "type": "image_picker",
         "id": "section_img",
-        "label": "Section image"
+        "label": "Character image"
       },
 
     {
