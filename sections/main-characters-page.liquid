@@ -1,5 +1,7 @@
 {{ 'section-main-page.css' | asset_url | stylesheet_tag }}
 
+{{ 'section-main-characters-page.css' | asset_url | stylesheet_tag }}
+
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -12,115 +14,6 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
-
-
-  .highlighter-color{
-     color: rgba(var(--color-heading)) !important;
-  }
-
-
-.superhumn-title-{{ section.id }}{
-  
-    position:relative;
-}
-
-.characters-page{
-  position:relative;
-  background:rgb(var(--color-background));
-border-radius: 3px;
-  border: 18px solid rgba(var(--color-heading));
-  display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;    padding: 42px;
-        max-width: 1090px;
-        padding-left: 315px;
-}
-
-.character{    position: absolute;
-    top: -90px;
-    max-width: 366px;
-    left: 10px;}
-  
-
-
-  .characters-content, .characters-content p{
-    margin:0;
-    font-family: "Zuume";
-font-size: 45px;
-
-font-weight: 600;
-
-line-height:48px;
-
-color: rgba(var(--color-foreground), 1);
-  }
-
-.superhumn-title-{{ section.id }}:after {
-    content: '{{ page.title | escape }}';
-       position: absolute;
- left: 0;
-top: -24%;
-  z-index: ;
-  color: transparent;
-  -webkit-text-stroke-width: 2px;
--webkit-text-stroke-color: rgba(var(--color-heading)) !important;;
-   left: 50%;
-     transform: translateX(-50%);
-  height: 33%;
-   width:100%!important;
-  overflow:hidden;
-}
-
-
-.superhumn-title-{{ section.id }}:before {
-    content: '{{ page.title | escape }}';
-    position:absolute;
-     left: 50%;
-     transform: translateX(-50%);
-  top: -48%;
-  z-index: -1;
-  width:100%!important;
-  color: transparent;
-  -webkit-text-stroke-width: 2px;
--webkit-text-stroke-color: rgba(var(--color-heading)) !important;;
-
-  height: 33%;
-    overflow:hidden;
-  
-}
-
-.page-width-auto{max-width: max-content!important;}
-
-.hover-default:hover{
-  background: rgba(var(--color-heading)) !important;
-}
-
-.grapical-text{
-  -webkit-text-stroke-width: 2.6px;
--webkit-text-stroke-color: #fff;
-color:rgb(var(--color-background));
-
-font-size: 240.734px;
-font-style: normal;
-font-weight: 900;
-
-position:absolute;
-transform: rotate(90deg);
-z-index:0;
-
-    margin: 0;
-    padding: 0;
-    right: -264px;
-    top: 50%;
-    transform: translateY(-50%) rotate(90deg);
-
-
-}
-
-
-.bg-character{
-  background-image:url({{ 'power-artwork.svg' |  asset_url  }});
-}
 
 
 
