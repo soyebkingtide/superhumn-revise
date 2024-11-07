@@ -13,6 +13,7 @@
       "type": "main-characters-page",
       "settings": {
         "color_scheme": "scheme-d3b29b88-4521-44de-bf49-53c238a351c5",
+        "section_img": "shopify://shop_images/omi.png",
         "padding_top": 100,
         "padding_bottom": 100
       }
