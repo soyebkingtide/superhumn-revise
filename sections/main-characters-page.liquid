@@ -118,13 +118,19 @@ z-index:0;
 }
 
 
+.bg-character{
+  background:url({{ 'power-artwork.svg' |  asset_url  }}) no-repeat center left;
+}
+
+
+
 {%- endstyle -%}
 
 
 
 
 <div
-  class="color-{{ section.settings.color_scheme }} isolate gradient position-relative py-40"
+  class="color-{{ section.settings.color_scheme }} isolate gradient position-relative py-40 bg-character"
 >
 
 
