@@ -15,6 +15,23 @@
     }
   }
 
+  
+.superhumn-title-{{ section.id }} {
+
+  position: relative;
+}
+
+.superhumn-title-{{ section.id }}:after {
+  content: '{{ page.title | escape }}';
+ 
+}
+
+
+.superhumn-title-{{ section.id }}:before {
+  content: '{{ page.title | escape }}';
+ 
+}
+
 {%- endstyle -%}
 
 <div

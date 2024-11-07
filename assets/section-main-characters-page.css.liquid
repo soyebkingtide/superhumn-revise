@@ -72,13 +72,9 @@
 }
 
 
-.superhumn-title-{{ section.id }} {
-
-  position: relative;
-}
 
 .superhumn-title-{{ section.id }}:after {
-  content: '{{ page.title | escape }}';
+ 
   position: absolute;
   left: 0;
   top: -24%;
@@ -95,7 +91,7 @@
 
 
 .superhumn-title-{{ section.id }}:before {
-  content: '{{ page.title | escape }}';
+
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
