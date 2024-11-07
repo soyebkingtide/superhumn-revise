@@ -19,6 +19,8 @@
 
 
 
+
+
 .character {
   position: absolute;
   top: -90px;
@@ -30,13 +32,31 @@
 .characters-content p {
   margin: 0;
   font-family: "Zuume";
-  font-size: 45px;
+  font-size: 36px;
 
   font-weight: 600;
 
-  line-height: 48px;
+  line-height: normal;
 
   color: rgba(var(--color-foreground), 1);
+
+
+
+}
+
+@media(max-width:992px){
+
+.characters-content,
+.characters-content p {   
+  
+  font-size: 45px;
+
+
+  line-height: 48px;
+
+}
+
+
 }
 
 .page-width-auto {
@@ -104,5 +124,36 @@
 
   height: 33%;
   overflow: hidden;
+
+}
+
+
+
+@media(max-width:749px){
+  .character-ms {
+    padding-left: 42;
+}
+
+.character {
+    position: relative;
+  
+}
+
+.characters-page{
+  flex-direction:column;
+}
+
+.main-page-title {
+    margin-bottom: 0;
+}
+.heading-cover {
+    margin-left: auto;
+    text-align: center;
+}
+
+.h-190 {
+    height: 50px!important;
+}
+
 
 }
