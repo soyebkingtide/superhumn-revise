@@ -35,12 +35,12 @@
 {%- endstyle -%}
 
 <div
-  class="color-{{ section.settings.color_scheme }} isolate gradient position-relative py-40 bg-character"
+  class="color-{{ section.settings.color_scheme }} isolate gradient position-relative bg-character"
 >
   <h1 class="grapical-text">MEET THE TEAM</h1>
   <div class="page-width page-width-auto section-{{ section.id }}-padding">
     <div class="heading-cover position-relative">
-      <h1 class="main-page-title page-title hxxl_5 highlighter-color h-190 superhumn-title superhumn-title-{{ section.id }} {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"> {{ page.title | escape }} </h1>
+      <h1 class="main-page-title page-title hxxl_5 highlighter-color superhumn-title m-0 superhumn-title-{{ section.id }} {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"> {{ page.title | escape }} </h1>
     </div>
     <div class="characters-page {% if section.settings.section_img %} character-ms {% endif %}"   {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}>
     {% comment %} How to use meta data object {% endcomment %}
