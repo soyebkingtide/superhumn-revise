@@ -258,8 +258,8 @@ font-weight: 700; }
                   {{- block.settings.text -}}
                 </p>
               {%- when 'title' -%}
-                <div class="product__title" {{ block.shopify_attributes }}>
-                  <h1 class="h0">{{ product.title | escape }}</h1>
+                <div class="product__title m-0" {{ block.shopify_attributes }}>
+                  <h1 class="h1 m-0">{{ product.title | escape }}</h1>
                   <a href="{{ product.url }}" class="product__title">
                     <h2 class="h1">
                       {{ product.title | escape }}
@@ -267,12 +267,12 @@ font-weight: 700; }
                   </a>
                 </div>
               {%- when 'price' -%}
-                <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
+                <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }} class="m-0">
                   {%- render 'price',
                     product: product,
                     use_variant: true,
                     show_badges: true,
-                    price_class: 'price--large'
+                    price_class: 'price--large '
                   -%}
                 </div>
                 {%- if product.quantity_price_breaks_configured? -%}
