@@ -12,10 +12,10 @@
     "main": {
       "type": "main-characters-page",
       "settings": {
-        "color_scheme": "scheme-0b027456-1ea8-49e5-99be-d8fd9740431f",
-        "section_img": "shopify://shop_images/lil.png",
-        "padding_top": 56,
-        "padding_bottom": 56
+        "color_scheme": "scheme-f3a9e862-9858-4020-b70e-03e41cf43a3a",
+        "section_img": "shopify://shop_images/MARCEL.png",
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     }
   },
