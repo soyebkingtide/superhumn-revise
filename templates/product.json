@@ -89,7 +89,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "",
+        "collection": "power-up",
         "products_to_show": 3,
         "columns_desktop": 3,
         "full_width": true,
