@@ -81,6 +81,34 @@
         "padding_bottom": 12
       }
     },
+    "superhumn_featured_collection_Ap6rJn": {
+      "type": "superhumn-featured-collection",
+      "settings": {
+        "title": "CHOOSE YOUR POWER-UP",
+        "heading_size": "hxl",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
     "related-products": {
       "type": "related-products",
       "disabled": true,
@@ -127,6 +155,7 @@
   },
   "order": [
     "main",
+    "superhumn_featured_collection_Ap6rJn",
     "related-products",
     "rich_text_YX8W3L"
   ]
