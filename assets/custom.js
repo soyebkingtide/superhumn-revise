@@ -32,37 +32,7 @@ window.addEventListener("resize", videoControl);
 
 //console.log("works");
 
-let floatingCharacters;
-let headerHeight;
-let bannerHeight;
-
-let headerHeightValue;
-let bannerPaddingTop;
-let bannerPaddingTopValue;
-
-let topPosition = headerHeightValue + bannerPaddingTopValue;
-
-function adjustPosTopImage() {
-  floatingCharacters = document.querySelector(".characters");
-  headerHeight = document.querySelector(".header");
-  bannerHeight = document.querySelector(".superhumn-image-banner");
-
-  headerHeightValue = headerHeight.getBoundingClientRect().height;
-  bannerPaddingTop = window.getComputedStyle(bannerHeight).paddingTop;
-  bannerPaddingTopValue = parseFloat(bannerPaddingTop);
-
-  topPosition = headerHeightValue + bannerPaddingTopValue;
-
-  screenSize = window.innerWidth;
-
-  if (screenSize < 992) {
-    floatingCharacters.style.top = `calc(${topPosition}px + 10%)`;
-  } else {
-    floatingCharacters.style.top = `calc(${topPosition}px + 10%)`;
-  }
-
-  // console.log("top position: " + floatingCharacters.style.top);
-}
+function adjustPosTopImage() {}
 
 adjustPosTopImage();
 
