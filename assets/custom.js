@@ -34,22 +34,28 @@ window.addEventListener("resize", videoControl);
 
 alert("v2");
 function adjustPosTopImage() {
+  // Select the elements
   const floatingCharacters = document.querySelector(".characters");
   const headerHeight = document.querySelector(".header");
   const bannerHeight = document.querySelector(".superhumn-image-banner");
 
+  // If any of the required elements are missing, stop the function
+  if (!floatingCharacters || !headerHeight || !bannerHeight) {
+    return; // Exit the function early if elements are missing
+  }
+
+  // Get the height of the header and the padding from the banner
   const headerHeightValue = headerHeight.getBoundingClientRect().height;
   const bannerPaddingTop = window.getComputedStyle(bannerHeight).paddingTop;
   const bannerPaddingTopValue = parseFloat(bannerPaddingTop);
 
+  // Calculate the top position based on header height and banner padding
   const topPosition = headerHeightValue + bannerPaddingTopValue;
 
-  if (!floatingCharacters || !headerHeight || !bannerHeight) {
-    return;
-  }
+  // Get the screen width to apply different logic based on size
+  const screenSize = window.innerWidth;
 
-  screenSize = window.innerWidth;
-
+  // Adjust the top position based on screen size
   if (screenSize < 992) {
     floatingCharacters.style.top = `calc(${topPosition}px + 10%)`;
   } else {
@@ -59,6 +65,7 @@ function adjustPosTopImage() {
   // console.log("top position: " + floatingCharacters.style.top);
 }
 
+// Automatically run the function without any additional page checks
 adjustPosTopImage();
 
 window.addEventListener("resize", adjustPosTopImage);
