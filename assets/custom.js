@@ -32,7 +32,27 @@ window.addEventListener("resize", videoControl);
 
 //console.log("works");
 
-function adjustPosTopImage() {}
+function adjustPosTopImage() {
+  const floatingCharacters = document.querySelector(".characters");
+  const headerHeight = document.querySelector(".header");
+  const bannerHeight = document.querySelector(".superhumn-image-banner");
+
+  const headerHeightValue = headerHeight.getBoundingClientRect().height;
+  const bannerPaddingTop = window.getComputedStyle(bannerHeight).paddingTop;
+  const bannerPaddingTopValue = parseFloat(bannerPaddingTop);
+
+  const topPosition = headerHeightValue + bannerPaddingTopValue;
+
+  screenSize = window.innerWidth;
+
+  if (screenSize < 992) {
+    floatingCharacters.style.top = `calc(${topPosition}px + 10%)`;
+  } else {
+    floatingCharacters.style.top = `calc(${topPosition}px + 10%)`;
+  }
+
+  // console.log("top position: " + floatingCharacters.style.top);
+}
 
 adjustPosTopImage();
 
