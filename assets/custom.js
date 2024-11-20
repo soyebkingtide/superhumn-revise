@@ -43,6 +43,10 @@ function adjustPosTopImage() {
 
   const topPosition = headerHeightValue + bannerPaddingTopValue;
 
+  if (!floatingCharacters || !headerHeight || !bannerHeight) {
+    return;
+  }
+
   screenSize = window.innerWidth;
 
   if (screenSize < 992) {
