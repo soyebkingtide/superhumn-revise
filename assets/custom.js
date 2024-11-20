@@ -60,6 +60,8 @@ function adjustPosTopImage() {
 
 adjustPosTopImage();
 
+alert("v2");
+
 window.addEventListener("resize", adjustPosTopImage);
 
 jQuery(function ($) {
