@@ -32,7 +32,7 @@ window.addEventListener("resize", videoControl);
 
 //console.log("works");
 
-alert("v2");
+alert("v3");
 function adjustPosTopImage() {
   // Select the elements
   const floatingCharacters = document.querySelector(".characters");
