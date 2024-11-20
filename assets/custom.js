@@ -32,6 +32,7 @@ window.addEventListener("resize", videoControl);
 
 //console.log("works");
 
+alert("v2");
 function adjustPosTopImage() {
   const floatingCharacters = document.querySelector(".characters");
   const headerHeight = document.querySelector(".header");
@@ -59,8 +60,6 @@ function adjustPosTopImage() {
 }
 
 adjustPosTopImage();
-
-alert("v2");
 
 window.addEventListener("resize", adjustPosTopImage);
 
