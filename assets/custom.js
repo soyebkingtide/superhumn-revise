@@ -32,16 +32,26 @@ window.addEventListener("resize", videoControl);
 
 //console.log("works");
 
+let floatingCharacters;
+let headerHeight;
+let bannerHeight;
+
+let headerHeightValue;
+let bannerPaddingTop;
+let bannerPaddingTopValue;
+
+let topPosition = headerHeightValue + bannerPaddingTopValue;
+
 function adjustPosTopImage() {
-  const floatingCharacters = document.querySelector(".characters");
-  const headerHeight = document.querySelector(".header");
-  const bannerHeight = document.querySelector(".superhumn-image-banner");
+  floatingCharacters = document.querySelector(".characters");
+  headerHeight = document.querySelector(".header");
+  bannerHeight = document.querySelector(".superhumn-image-banner");
 
-  const headerHeightValue = headerHeight.getBoundingClientRect().height;
-  const bannerPaddingTop = window.getComputedStyle(bannerHeight).paddingTop;
-  const bannerPaddingTopValue = parseFloat(bannerPaddingTop);
+  headerHeightValue = headerHeight.getBoundingClientRect().height;
+  bannerPaddingTop = window.getComputedStyle(bannerHeight).paddingTop;
+  bannerPaddingTopValue = parseFloat(bannerPaddingTop);
 
-  const topPosition = headerHeightValue + bannerPaddingTopValue;
+  topPosition = headerHeightValue + bannerPaddingTopValue;
 
   screenSize = window.innerWidth;
 
