@@ -14,13 +14,11 @@
       "blocks": {
         "title": {
           "type": "title",
-          "settings": {
-          }
+          "settings": {}
         },
         "price": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "recharge_subscriptions_subscription_widget_eERfVc": {
           "type": "shopify://apps/recharge-subscriptions/blocks/subscription-widget/371eed76-0b44-4869-9813-730372ea378e",
@@ -37,8 +35,7 @@
         },
         "quantity_selector": {
           "type": "quantity_selector",
-          "settings": {
-          }
+          "settings": {}
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -49,8 +46,7 @@
         },
         "description": {
           "type": "description",
-          "settings": {
-          }
+          "settings": {}
         },
         "share": {
           "type": "share",
@@ -85,8 +81,37 @@
         "padding_bottom": 12
       }
     },
+    "superhumn_featured_collection_Ap6rJn": {
+      "type": "superhumn-featured-collection",
+      "settings": {
+        "title": "CHOOSE YOUR POWER-UP",
+        "heading_size": "hxl",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "power-up",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "section_img": "shopify://shop_images/jerkyjumper_1_ae69b19f-4db4-4b5e-bcf4-e5d7ed58f108.png",
         "heading": "You may <em>also like</em>",
@@ -130,6 +155,7 @@
   },
   "order": [
     "main",
+    "superhumn_featured_collection_Ap6rJn",
     "related-products",
     "rich_text_YX8W3L"
   ]
