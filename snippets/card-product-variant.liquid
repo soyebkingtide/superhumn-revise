@@ -71,7 +71,16 @@ Card video
 
       {{card_video}}
 
-
+{{
+            card_product.card_video
+            | video_tag:
+              image_size: '500x',
+              autoplay: false,
+              loop: true,
+              controls: false,
+              muted: true,
+              class:'controlVd'
+          }}
 
 
 
