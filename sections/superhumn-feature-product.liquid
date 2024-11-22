@@ -164,7 +164,7 @@
         
         {% unless unique_titles contains variant_title %}
 
-           
+{% comment %}            
 
     {% if variant.metafields.custom.video %}
 
@@ -172,7 +172,7 @@
            VIDEI   {{variant.metafields.custom.video}} 
 
 
-    {% endif  %}
+    {% endif  %} {% endcomment %}
             
         
     
