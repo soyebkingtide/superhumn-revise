@@ -143,8 +143,8 @@
         {{ product.title }}
 
 
-       22<br>
-
+       33<br>
+{{ product.selected_or_first_available_variant  }}
          {%- for option in product.options_with_values -%} {{option.name}} {% endfor %}
       DESC:  <p>{{ product.description }}</p>
 
