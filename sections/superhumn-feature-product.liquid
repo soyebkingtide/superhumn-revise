@@ -127,28 +127,10 @@
       {%- endif -%}
     </div>
 
-    
-
-  
-
       {% assign product = all_products[section.settings.product] %}
 
-
-
-
-
-
-        
     <slider-component class="slider-mobile-gutter{% if section.settings.full_width %} slider-component-full-width{% endif %}{% if show_mobile_slider == false %} page-width{% endif %}{% if show_desktop_slider == false and section.settings.full_width == false %} page-width-desktop{% endif %}{% if show_desktop_slider %} slider-component-desktop{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} position-relative">
      
-  
-
-
-
-
-
-
-    
     <ul
        
         class="grid p-60 product-grid contains-card slick-items"
@@ -168,30 +150,13 @@
         
         {% unless unique_titles contains variant_title %}
 
-{% comment %}            
-
-    {% if variant.metafields.custom.video %}
-
-
-           VIDEI   {{variant.metafields.custom.video}} 
-
-
-    {% endif  %} {% endcomment %}
-            
-        
-
-
           <li
             id=""
             class="superhumn-card-items"
            
           >
 
-
-
-
             {% render 'card-product-variant',
-
             card_video:variant.metafields.custom.video,
               
               cart_title:variant_title,
@@ -205,22 +170,17 @@
               skip_styles: skip_card_product_styles,
               section_id: section.id,
               quick_add: section.settings.quick_add
-            %}
-          
+            %}         
 
 
-           </li> 
-           
+           </li>            
 
             {% assign unique_titles = unique_titles | append: variant_title | append: ',' %}
         {% endunless %}
     {% endfor %}
 
-
-
           {%- assign skip_card_product_styles = true -%}
-      
-       
+            
       
       </ul>
       
