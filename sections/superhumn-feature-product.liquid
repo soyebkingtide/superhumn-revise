@@ -133,6 +133,11 @@
         data-id="{{ section.id }}"
           role="list"
         {% endcomment %}
+
+
+
+        {{ section.settings.product }} Product
+
     
     <ul
        
@@ -148,7 +153,7 @@
            
           >
 
-          {{ product.title }}
+          {{ product.title }} Product title
 
 
             {% render 'card-product',
@@ -193,34 +198,7 @@
           {%- endfor -%}
         {%- endfor -%}
       </ul>
-      {% comment %} {%- if show_mobile_slider or show_desktop_slider -%}
-        <div class="slider-buttons">
-          <button
-            type="button"
-            class="slider-button slider-button--prev"
-            name="previous"
-            aria-label="{{ 'general.slider.previous_slide' | t }}"
-            aria-controls="Slider-{{ section.id }}"
-          >
-            {% render 'icon-caret' %}
-          </button>
-          <div class="slider-counter caption">
-            <span class="slider-counter--current">1</span>
-            <span aria-hidden="true"> / </span>
-            <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
-            <span class="slider-counter--total">{{ products_to_display }}</span>
-          </div>
-          <button
-            type="button"
-            class="slider-button slider-button--next"
-            name="next"
-            aria-label="{{ 'general.slider.next_slide' | t }}"
-            aria-controls="Slider-{{ section.id }}"
-          >
-            {% render 'icon-caret' %}
-          </button>
-        </div>
-      {%- endif -%} {% endcomment %}
+      
     </slider-component>
 
     {%- if section.settings.show_view_all and more_in_collection -%}
