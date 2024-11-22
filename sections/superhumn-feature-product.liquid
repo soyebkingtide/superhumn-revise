@@ -151,11 +151,11 @@
 
             <li>
                 
-                Variant: {{ variant.title }} - {{ variant.price | money }}
+                Variant: {{ variant.title }} 
 
               <br>
               
-              First Variants title :{{ product.selected_or_first_available_variant.title }}
+              {% comment %} First Variants title :{{ product.selected_or_first_available_variant.title }} {% endcomment %}
             </li>
         {% endfor %}
     </ul>
