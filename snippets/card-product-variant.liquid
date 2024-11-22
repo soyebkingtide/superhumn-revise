@@ -66,15 +66,20 @@
       >
 
 
-Vidio TAG
+
     
+
+      {% assign VD = card_video |  file_url %}
+
+    
+
+
 <video width="1100" autoplay loop muted="false" class="controlVd" >
-  <source src="{{ VD }}" type="video/mp4">
-  <source src="{{ VD }}" type="video/webm">
-  <source src="{{ VD }}" type="video/ogg">
+  <source src={{ VD }} type="video/mp4">
+  <source src={{ VD }} type="video/webm">
+  <source src={{ VD }} type="video/ogg">
   Your browser does not support the video tag.
 </video>
-
 
 
 
