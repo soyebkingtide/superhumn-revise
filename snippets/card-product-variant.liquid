@@ -74,6 +74,17 @@
     
 
 
+
+
+
+
+        {%- if VD -%}
+          <div class="card__media{% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
+            <div class="media media--transparent media--hover-effect">
+              {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
+
+              
+
 <video width="1100" autoplay loop muted="false" class="controlVd" >
   <source src={{ VD }} type="video/mp4">
   <source src={{ VD }} type="video/webm">
@@ -82,27 +93,6 @@
 </video>
 
 
-
-
-        {%- if card_product.featured_media -%}
-          <div class="card__media{% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
-            <div class="media media--transparent media--hover-effect">
-              {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
-
-              
-
-            {% if  card_product.featured_media.media_type  == 'video' %}
-
-    {{
-            card_product.featured_media
-            | video_tag:
-              image_size: '500x',
-              autoplay: false,
-              loop: true,
-              controls: false,
-              muted: true,
-              class:'controlVd'
-          }}
 
               {% else %}
             
