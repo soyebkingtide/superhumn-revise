@@ -154,6 +154,7 @@
     },
     "superhumn_featured_collection_EzDf3X": {
       "type": "superhumn-featured-collection",
+      "disabled": true,
       "settings": {
         "title": "CHOOSE YOUR POWER-UP",
         "heading_size": "hxl",
