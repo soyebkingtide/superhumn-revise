@@ -169,8 +169,11 @@
         {% assign variant_title = variant.title | split: ' / ' | first %}
         
         {% unless unique_titles contains variant_title %}
+
+
+            {{unique_titles}}
           
-                {{ variant_title }}
+               
            
 
 
@@ -184,10 +187,9 @@
 
 
 
-          {{ product.title }} Product title
 
 
-            {% render 'card-product',
+            {% comment %} {% render 'card-product',
               card_product: product,
               media_aspect_ratio: section.settings.image_ratio,
               image_shape: section.settings.image_shape,
@@ -198,7 +200,7 @@
               section_id: section.id,
               quick_add: section.settings.quick_add
             %}
-         
+          {% endcomment %}
 
 
            </li>
