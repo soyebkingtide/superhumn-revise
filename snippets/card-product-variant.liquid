@@ -2,6 +2,9 @@
   Renders a product card
 
   Accepts:
+
+  cart_title
+  - cart_title: {Object} Product Liquid object 
   - card_product: {Object} Product Liquid object (optional)
   - media_aspect_ratio: {String} Size of the product image card. Values are "square" and "portrait". Default is "square" (optional)
   - image_shape: {String} Image mask to apply to the product image card. Values are "arch", "blob", "chevronleft", "chevronright", "diamond", "parallelogram", and "round". (optional)
@@ -153,7 +156,7 @@
                 class="full-unstyled-link"
                 aria-labelledby="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }} NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
               >
-                  {{ variant_title  }}
+                  {{ cart_title }}
 
               </a>
             </h3>
@@ -195,7 +198,7 @@
               class="full-unstyled-link"
               aria-labelledby="CardLink-{{ section_id }}-{{ card_product.id }} Badge-{{ section_id }}-{{ card_product.id }}"
             >
-                 {{ variant_title  }}
+                 {{ cart_title }}
             </a>
           </h3>
           <div class="card-information">
@@ -547,7 +550,7 @@
                       </div>
                       <div class="quick-add-modal__content-info--bulk-details large-up-hide">
                         <a href="{{ card_product.url }}" class="full-unstyled-link">
-                          <h3>   {{ variant_title  }}</h3>
+                          <h3>   {{ cart_title}}</h3>
                         </a>
                         {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
                         {%- if card_product.quantity_price_breaks_configured? -%}
@@ -561,7 +564,7 @@
                       <div class="quick-add-modal__content-info--bulk-details small-hide medium-hide">
                         <a href="{{ card_product.url }}" class="full-unstyled-link">
                           <h3 class="h2">
-                             {{ variant_title }}
+                             {{ cart_title}}
                           </h3>
                         </a>
                         {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}

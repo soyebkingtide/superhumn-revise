@@ -179,12 +179,12 @@
           >
 
 
-  {{ variant_title  }}
-
   <br>
 
 
             {% render 'card-product-variant',
+              
+              cart_title:variant_title,
               card_product: variant,
               media_aspect_ratio: section.settings.image_ratio,
               image_shape: section.settings.image_shape,
