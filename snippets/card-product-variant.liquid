@@ -81,7 +81,7 @@
             {% if  card_product.featured_media.media_type  == 'video' %}
 
     {{
-            card_product.featured_media
+            card_product.variant.metafields.custom.video
             | video_tag:
               image_size: '500x',
               autoplay: false,
