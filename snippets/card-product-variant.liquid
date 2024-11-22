@@ -74,7 +74,7 @@ Card video
       {% assign VD = card_video |  file_url %}
 
 {{
-            {card_video |  file_url
+            card_video |  file_url
             | video_tag:
               image_size: '500x',
               autoplay: false,
