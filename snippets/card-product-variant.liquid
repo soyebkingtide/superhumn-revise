@@ -46,13 +46,6 @@
   <div class="card-wrapper product-card-wrapper underline-links-hover">
 
 
-    {% if variant.metafields.custom.video %}
-
-              {{variant.metafields.custom.video}} test
-
-
-{% else  %}
-            
     
     <div
       class="
@@ -81,7 +74,7 @@
             {% if  card_product.featured_media.media_type  == 'video' %}
 
     {{
-            card_product.variant.metafields.custom.video
+            card_product.featured_media
             | video_tag:
               image_size: '500x',
               autoplay: false,
@@ -144,7 +137,6 @@
 
 
 
- {%- endif -%}
 
 
 
