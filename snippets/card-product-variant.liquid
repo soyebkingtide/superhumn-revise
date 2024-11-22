@@ -46,6 +46,13 @@
   <div class="card-wrapper product-card-wrapper underline-links-hover">
 
 
+    {% if variant.metafields.custom.video %}
+
+              {{variant.metafields.custom.video}} test
+
+
+{% else  %}
+            
     
     <div
       class="
@@ -71,13 +78,6 @@
 
               
 
-    {% if variant.metafields.custom.video %}
-
-              {{variant.metafields.custom.video}}
-
-
-{% else  %}
-            
             {% if  card_product.featured_media.media_type  == 'video' %}
 
     {{
