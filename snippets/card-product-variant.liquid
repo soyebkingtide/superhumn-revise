@@ -70,14 +70,13 @@
 Card video
 
     
-{% assign VD = card_video | file_url %}  <!-- Convert string to URL -->
-{{ VD | video_tag:
-    image_size: '1100x',
-    autoplay: true,
-    loop: true,
-    controls: true,
-    muted: false
-}}
+<video width="1100" autoplay loop muted="false">
+  <source src="{{ VD }}" type="video/mp4">
+  <source src="{{ VD }}" type="video/webm">
+  <source src="{{ VD }}" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
 
 
 
