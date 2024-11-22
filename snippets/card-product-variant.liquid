@@ -70,10 +70,7 @@
 Card video
 
     
-{% assign VD = card_video | file_url %}
-
-{{ VD }} <!-- This will output the video URL for debugging -->
-
+{% assign VD = card_video | file_url %}  <!-- Convert string to URL -->
 {{ VD | video_tag:
     image_size: '1100x',
     autoplay: true,
