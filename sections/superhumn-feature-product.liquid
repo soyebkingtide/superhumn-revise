@@ -141,7 +141,11 @@
         {% assign product = all_products['section.settings.product'] %}
 
         {{ product.title }}
-        1<br>
+
+
+       22<br>
+
+         {%- for option in product.options_with_values -%} {{option.name}} {% endfor %}
       DESC:  <p>{{ product.description }}</p>
 
       {{product.variants}}
