@@ -142,10 +142,8 @@
 
         {{ product.title }}
 
-    {%- for option in product.options_with_values -%} {{option.name}} {% endfor %}
-      
-{{ product.selected_or_first_available_variant  }}
 
+      
    
 
          <ul>
@@ -157,7 +155,7 @@
 
               <br>
               
-              First Variants title : {{ product.selected_or_first_available_variant.title }}
+              First Variants title :{{ product.selected_or_first_available_variant.title }}
             </li>
         {% endfor %}
     </ul>
