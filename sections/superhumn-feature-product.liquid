@@ -138,27 +138,24 @@
 
         {{ section.settings.product }} 
 
-        {% assign product = all_products[section.settings.product] %}
+      {% assign product = all_products[section.settings.product] %}
 
-        {{ product.title }}
+{{ product.title }}
 
-
-      
-   
-
-         <ul>
-        {% for variant in product.variants %}
-
+<ul>
+    {% assign unique_titles = '' %}
+    {% for variant in product.variants %}
+        {% assign variant_title = variant.title | split: ' / ' | first %}
+        
+        {% unless unique_titles contains variant_title %}
             <li>
-                
-                Variant: {{ variant.title }} 
-
-              <br>
-              
-              {% comment %} First Variants title :{{ product.selected_or_first_available_variant.title }} {% endcomment %}
+                {{ variant_title }}
             </li>
-        {% endfor %}
-    </ul>
+            {% assign unique_titles = unique_titles | append: variant_title | append: ',' %}
+        {% endunless %}
+    {% endfor %}
+</ul>
+
 
 
 
