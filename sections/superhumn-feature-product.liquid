@@ -143,6 +143,8 @@
         {{ product.title }}
       DESC:  <p>{{ product.description }}</p>
 
+      {{product.variants}}
+
          <ul>
         {% for variant in product.variants %}
             <li>
