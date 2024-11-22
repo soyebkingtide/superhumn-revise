@@ -460,6 +460,34 @@
         "padding_top": 80,
         "padding_bottom": 80
       }
+    },
+    "superhumn_feature_product_UHrLC6": {
+      "type": "superhumn-feature-product",
+      "settings": {
+        "title": "Featured collection",
+        "heading_size": "hxl",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "product": "beefjerky",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
     }
   },
   "order": [
@@ -470,6 +498,7 @@
     "superhumn_multicolumn_v2_aHCerr",
     "superhumn_team_wPLcHr",
     "superhumn_image_with_text_387P9g",
-    "find_store_FCDCgU"
+    "find_store_FCDCgU",
+    "superhumn_feature_product_UHrLC6"
   ]
 }
