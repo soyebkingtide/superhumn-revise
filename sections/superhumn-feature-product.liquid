@@ -175,8 +175,6 @@
     {% endif  %} {% endcomment %}
             
         
-    {{variant.metafields.custom.video |  file_url}}
-                
 
 
           <li
@@ -191,7 +189,7 @@
 
             {% render 'card-product-variant',
 
-            card_video:variant.metafields.custom.video,
+            card_video:{{ variant.metafields.custom.video |  file_url}},
               
               cart_title:variant_title,
               card_product: variant,
