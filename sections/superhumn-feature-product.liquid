@@ -136,13 +136,6 @@
 
 
 
-        {{ section.settings.product }} 
-
-
-
-
-
-
 
 
 
@@ -161,11 +154,15 @@
       
         aria-label="{{ 'general.slider.name' | t }}"
       >
+
+      
         {% assign skip_card_product_styles = false %}
        
 
             {% assign unique_titles = '' %}
-    {% for variant in product.variants %}
+
+        {% for variant in product.variants %}
+            
         {% assign variant_title = variant.title | split: ' / ' | first %}
         
         {% unless unique_titles contains variant_title %}
