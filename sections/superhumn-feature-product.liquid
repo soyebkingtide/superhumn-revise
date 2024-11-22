@@ -136,7 +136,13 @@
 
 
 
-        {{ section.settings.product }} Product
+        {{ section.settings.product }} 
+
+        {% assign product = all_products['section.settings.product'] %}
+
+        {{ product.title }}
+
+
 
     
     <ul
