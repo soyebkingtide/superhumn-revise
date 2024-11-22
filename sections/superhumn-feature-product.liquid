@@ -138,20 +138,21 @@
 
         {{ section.settings.product }} 
 
-        {% assign product = all_products['section.settings.product'] %}
+        {% assign product = all_products[section.settings.product] %}
 
         {{ product.title }}
 
 
-       33<br>
+      
 {{ product.selected_or_first_available_variant  }}
-         {%- for option in product.options_with_values -%} {{option.name}} {% endfor %}
-      DESC:  <p>{{ product.description }}</p>
 
-      {{product.variants}}
+         
+{{product.variants}}
+   
 
          <ul>
         {% for variant in product.variants %}
+
             <li>
                 asdad
                 Variant: {{ variant.title }} - {{ variant.price | money }}
