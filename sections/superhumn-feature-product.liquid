@@ -149,15 +149,7 @@
         
     <slider-component class="slider-mobile-gutter{% if section.settings.full_width %} slider-component-full-width{% endif %}{% if show_mobile_slider == false %} page-width{% endif %}{% if show_desktop_slider == false and section.settings.full_width == false %} page-width-desktop{% endif %}{% if show_desktop_slider %} slider-component-desktop{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} position-relative">
      
-   {% comment %} <img src="{{'power.svg' |  asset_url }}" class="icon-power">
-    
-    id="Slider-{{ section.id }}"
-        data-id="{{ section.id }}"
-          role="list"
-        {% endcomment %}
-
-
-
+  
 
 
 
@@ -224,6 +216,8 @@
 
            </li> {% endcomment %}
            
+
+            {% assign unique_titles = unique_titles | append: variant_title | append: ',' %}
         {% endunless %}
     {% endfor %}
 
