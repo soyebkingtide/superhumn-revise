@@ -172,7 +172,13 @@
               quick_add: section.settings.quick_add
             %}         
 
-
+   {%- assign placeholder_image = 'product-apparel-' | append: ridx -%}
+              {% render 'card-product',
+                show_vendor: section.settings.show_vendor,
+                media_aspect_ratio: section.settings.image_ratio,
+                image_shape: section.settings.image_shape,
+                placeholder_image: placeholder_image
+              %}
            </li>            
 
             {% assign unique_titles = unique_titles | append: variant_title | append: ',' %}
