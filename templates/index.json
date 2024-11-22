@@ -180,6 +180,35 @@
         "padding_bottom": 100
       }
     },
+    "superhumn_feature_product_UHrLC6": {
+      "type": "superhumn-feature-product",
+      "settings": {
+        "title": "CHOOSE YOUR POWER-UP",
+        "video": "shopify://files/videos/Signature FINAL(2).mp4",
+        "heading_size": "hxl",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "product": "beefjerky",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
     "text_scroller_XybLWx": {
       "type": "text-scroller",
       "blocks": {
@@ -459,62 +488,17 @@
         "padding_top": 80,
         "padding_bottom": 80
       }
-    },
-    "superhumn_feature_product_UHrLC6": {
-      "type": "superhumn-feature-product",
-      "settings": {
-        "title": "Featured collection",
-        "video": "shopify://files/videos/Signature FINAL(2).mp4",
-        "heading_size": "hxl",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "product": "beefjerky",
-        "products_to_show": 3,
-        "columns_desktop": 3,
-        "full_width": true,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 100,
-        "padding_bottom": 100
-      }
-    },
-    "video_pcqYga": {
-      "type": "video",
-      "settings": {
-        "heading": "Video",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video": "shopify://files/videos/Signature FINAL (2).mp4",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "scheme-2",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "superhumn_image_banner_9wBDhQ",
     "superhumn_multicolumn_fPG6bK",
     "superhumn_featured_collection_EzDf3X",
+    "superhumn_feature_product_UHrLC6",
     "text_scroller_XybLWx",
     "superhumn_multicolumn_v2_aHCerr",
     "superhumn_team_wPLcHr",
     "superhumn_image_with_text_387P9g",
-    "find_store_FCDCgU",
-    "superhumn_feature_product_UHrLC6",
-    "video_pcqYga"
+    "find_store_FCDCgU"
   ]
 }
