@@ -31,6 +31,17 @@
  
 }
 
+.team-thumbnail li{
+  width:200px;
+  height:200px;
+
+}
+
+.team-thumbnail img.thumbnail-character{
+  width:100%;
+  height:auto;
+}
+
 {%- endstyle -%}
 
 <div
@@ -71,11 +82,39 @@
   <li><a href="#">
 
   
-{% if section.settings.section_img %}
-
   <img src="{{ section.settings.section_img | img_url: 'master' }}" class="img-fluid thumbnail-character" alt=" {{ page.title | escape }} ">
 
-{% endif %}
+
+  </a></li>
+
+   <li><a href="#">
+
+  
+  <img src="{{ section.settings.section_img | img_url: 'master' }}" class="img-fluid thumbnail-character" alt=" {{ page.title | escape }} ">
+
+
+  </a></li>
+
+   <li><a href="#">
+
+  
+  <img src="{{ section.settings.section_img | img_url: 'master' }}" class="img-fluid thumbnail-character" alt=" {{ page.title | escape }} ">
+
+
+  </a></li>
+
+   <li><a href="#">
+
+  
+  <img src="{{ section.settings.section_img | img_url: 'master' }}" class="img-fluid thumbnail-character" alt=" {{ page.title | escape }} ">
+
+
+  </a></li>
+
+   <li><a href="#">
+
+  
+  <img src="{{ section.settings.section_img | img_url: 'master' }}" class="img-fluid thumbnail-character" alt=" {{ page.title | escape }} ">
 
 
   </a></li>
