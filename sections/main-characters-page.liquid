@@ -100,87 +100,15 @@ background:#191919;
 
     </div>
   </div>
+
+
   <div class="text-center"> <a href="/" class="button button-primary btn-large mt-1 hover-default transition-6ms">Back</a> </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 {% comment %} Team thumbnail {% endcomment %}
 
-<ul class="team-thumbnail d-flex">
-
-
-
-
-{% assign page_handle = page.handle %}
-
-
-
-{% assign jassica = "team-2" %}
-
-  <li><a href="#">
-
-  
-  <img src="{{ section.settings.section_img | img_url: 'master' }}" class="img-fluid thumbnail-character" alt=" {{ page.title | escape }} ">
-
-
-  </a></li>
-
-
-
-   <li class ="{% if page_handle == jassica %} thumb-active {% else %} thumb {% endif %}"> 
-    
-   <a href="#">
-
-  
-  <img src="{{ section.settings.section_img | img_url: 'master' }}" class="img-fluid thumbnail-character" alt=" {{ page.title | escape }} ">
-
-
-  </a></li>
-
-   <li><a href="#">
-
-  
-  <img src="{{ section.settings.section_img | img_url: 'master' }}" class="img-fluid thumbnail-character" alt=" {{ page.title | escape }} ">
-
-
-  </a></li>
-
-   <li><a href="#">
-
-  
-  <img src="{{ section.settings.section_img | img_url: 'master' }}" class="img-fluid thumbnail-character" alt=" {{ page.title | escape }} ">
-
-
-  </a></li>
-
-
-
-   <li><a href="#">
-
-  
-  <img src="{{ 'MARCEL.png' | file_url }}" class="img-fluid thumbnail-character" alt=" {{ page.title | escape }} " width="auto" height="auto">
-
-
-  </a></li>
-</ul>
-
-
-
+{% render 'team-member' %}
 
 
   </div>
