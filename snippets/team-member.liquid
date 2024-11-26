@@ -2,7 +2,7 @@
   {% assign page_handle = page.handle %}
   {% assign memberMarcel = "marcel" %}
 
-  <!-- First Team Member -->
+  {% comment %} <!-- First Team Member -->
   <li {% if page_handle == 'x' %} class="thumb-active" {% endif %}>
     <a href="#">
       <img src="{{ section.settings.section_img | img_url: 'master' }}" class="img-fluid thumbnail-character" alt="{{ page.title | escape }}" width="auto" height="auto">
@@ -28,7 +28,7 @@
     <a href="#">
       <img src="{{ section.settings.section_img | img_url: 'master' }}" class="img-fluid thumbnail-character" alt="{{ page.title | escape }}" width="auto" height="auto">
     </a>
-  </li>
+  </li> {% endcomment %}
 
   <!-- Fifth Team Member (Marcel with a different image source) -->
   <li {% if page_handle == 'memberMarcel' %} class="thumb-active" {% endif %}>
