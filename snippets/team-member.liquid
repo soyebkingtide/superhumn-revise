@@ -1,10 +1,11 @@
 <ul class="team-thumbnail d-flex">
+
   {% assign page_handle = page.handle %}
+
   {% assign memberMarcel = "marcel" %}
 
-  {{page_handle}}
+  {% assign memberMarcel = "jade" %}
 
-  {{memberMarcel}}
 
   {% comment %} <!-- First Team Member -->
   <li {% if page_handle == 'x' %} class="thumb-active" {% endif %}>
@@ -26,13 +27,13 @@
       <img src="{{ section.settings.section_img | img_url: 'master' }}" class="img-fluid thumbnail-character" alt="{{ page.title | escape }}" width="auto" height="auto">
     </a>
   </li>
-
+ {% endcomment %}
   <!-- Fourth Team Member -->
-  <li {% if page_handle == 'x' %} class="thumb-active" {% endif %}>
+  <li {% if page_handle == 'jade' %} class="thumb-active" {% endif %}>
     <a href="#">
       <img src="{{ section.settings.section_img | img_url: 'master' }}" class="img-fluid thumbnail-character" alt="{{ page.title | escape }}" width="auto" height="auto">
     </a>
-  </li> {% endcomment %}
+  </li>
 
   <!-- Fifth Team Member (Marcel with a different image source) -->
   <li {% if page_handle == memberMarcel %} class="thumb-active" {% endif %}>
