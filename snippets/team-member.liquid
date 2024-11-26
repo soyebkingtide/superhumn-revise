@@ -6,6 +6,8 @@
 
   {% assign memberJade = "jade" %}
 
+    {% assign memberJessica = "jessica" %}
+
 
   {% comment %} <!-- First Team Member -->
   <li {% if page_handle == 'x' %} class="thumb-active" {% endif %}>
@@ -22,12 +24,11 @@
   </li>
  {% endcomment %}
   <!-- Third Team Member -->
-  <li {% if page_handle == 'x' %} class="thumb-active" {% endif %}>
+  <li {% if page_handle == memberJessica %} class="thumb-active" {% endif %}>
     <a href="#">
-      <img src="{{ section.settings.section_img | img_url: 'master' }}" class="img-fluid thumbnail-character" alt="{{ page.title | escape }}" width="auto" height="auto">
+      <img src="{{ 'team-2.png' | file_url }}" class="img-fluid thumbnail-character" alt="{{ page.title | escape }}" width="auto" height="auto">
     </a>
   </li>
-
   <!-- Fourth Team Member -->
   <li {% if page_handle == memberJade %} class="thumb-active" {% endif %}>
     <a href="#">
