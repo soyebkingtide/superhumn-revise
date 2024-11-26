@@ -125,7 +125,6 @@ background:#191919;
 
 
 
-Page handler
 
 {% assign page_handle = page.handle %}
 
@@ -169,15 +168,16 @@ Page handler
 
   </a></li>
 
+
+
    <li><a href="#">
 
   
-  <img src="{{ section.settings.section_img | img_url: 'master' }}" class="img-fluid thumbnail-character" alt=" {{ page.title | escape }} ">
+  <img src="{{ 'MARCEL.png' | asset_url }}" class="img-fluid thumbnail-character" alt=" {{ page.title | escape }} " width="auto" height="auto">
 
 
   </a></li>
 </ul>
-
 
 
 
