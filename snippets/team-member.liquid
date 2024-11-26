@@ -17,14 +17,6 @@
 <img src="{{ 'jade_e49dbb9f-4d59-48b8-8f3a-cc278c58da57.png' | file_url }}" class="img-fluid thumbnail-character" alt="{{ page.title | escape }}" width="auto" height="auto">    </a>
   </li>
 
-  <!-- Second Team Member (Active if page_handle is jassica) -->
-  <li {% if page_handle == memberLil %} class="thumb-active" {% endif %}>
-    <a href="#">
-      <img src="{{ 'lil.png' | file_url }}" class="img-fluid thumbnail-character" alt="{{ page.title | escape }}" width="auto" height="auto">
-    </a>
-  </li>
-
-
 
   <!-- Second Team Member (Active if page_handle is jassica) -->
   <li {% if page_handle == memberOmi %} class="thumb-active" {% endif %}>
@@ -39,6 +31,14 @@
     </a>
   </li>
  
+
+  <!-- Second Team Member (Active if page_handle is jassica) -->
+  <li {% if page_handle == memberLil %} class="thumb-active" {% endif %}>
+    <a href="#">
+      <img src="{{ 'lil.png' | file_url }}" class="img-fluid thumbnail-character" alt="{{ page.title | escape }}" width="auto" height="auto">
+    </a>
+  </li>
+
 
   <!-- Fifth Team Member (Marcel with a different image source) -->
   <li {% if page_handle == memberMarcel %} class="thumb-active" {% endif %}>
