@@ -65,6 +65,10 @@ background:#191919;
   height: auto;
 }
 
+.thumb-active{
+  border-color:rgba(var(--color-heading));
+}
+
 {%- endstyle -%}
 
 <div
@@ -123,10 +127,11 @@ background:#191919;
 
 Page handler
 
-{{ page.handle }}
+{% assign page_handle = page.handle %}
 
 
 
+{% assign jassica = "team-2" %}
 
   <li><a href="#">
 
@@ -136,7 +141,11 @@ Page handler
 
   </a></li>
 
-   <li><a href="#">
+
+
+   <li class ="{% if page_handle == jassica %} thumb-active {% else %} thumb {% endif %}"> 
+    
+   <a href="#">
 
   
   <img src="{{ section.settings.section_img | img_url: 'master' }}" class="img-fluid thumbnail-character" alt=" {{ page.title | escape }} ">
