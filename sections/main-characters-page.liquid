@@ -52,7 +52,11 @@
   align-items: center;
 border:8px solid rgba(255, 255, 255, 0.20);
 background:#191919;
+ transition:all 1s;
+}
 
+.team-thumbnail li:hover{
+   border-color:rgba(var(--color-heading))!important;
 }
 
 .team-thumbnail li a{
@@ -65,8 +69,8 @@ background:#191919;
   height: auto;
 }
 
-.thumb-active, .thumb-active:hover{
-  transition:all 1s;
+.thumb-active{
+ 
   border-color:rgba(var(--color-heading))!important;
 }
 
