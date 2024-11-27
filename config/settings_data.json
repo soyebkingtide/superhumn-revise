@@ -231,7 +231,7 @@
         "settings": {
           "background": "#191919",
           "background_gradient": "",
-          "highlighted_color": "#121212",
+          "highlighted_color": "#f9db4a",
           "text": "#7dfbc0",
           "button": "#ffffff",
           "button_label": "#191919",
