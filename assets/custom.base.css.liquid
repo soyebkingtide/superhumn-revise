@@ -847,3 +847,59 @@ font-weight: 700;
 .rc-subscription-details svg path{
   fill: var(--SUPERHUMN-Yellow);
 }
+
+
+
+
+.team-thumbnail {
+  margin: 100px 0 0 0;
+  padding: 0;
+  gap: 23px;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  position: relative;
+}
+
+.team-thumbnail li{
+  width:200px;
+  height:200px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+border:8px solid rgba(255, 255, 255, 0.20);
+background:#191919;
+ transition:all 1s;
+}
+
+.team-thumbnail li:hover{
+   border-color:rgba(var(--color-heading))!important;
+
+}
+
+.team-thumbnail li:hover img{transform:scale(1.2)}
+
+.team-thumbnail li a {
+  width:100%;
+  height:100%;
+    display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.team-thumbnail li a img{
+  transition:all 1s;
+  display: block;
+}
+
+.team-thumbnail img.thumbnail-character {
+  
+  height: auto;
+}
+
+.thumb-active{
+ 
+  border-color:rgba(var(--color-heading))!important;
+}
