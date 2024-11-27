@@ -114,7 +114,7 @@ top: -24%;
      {% render 'team-member' %}
 
     
-    <slider-component class="slider-mobile-gutter">
+    {% comment %} <slider-component class="slider-mobile-gutter">
 
 
       <ul
@@ -244,7 +244,9 @@ top: -24%;
           </button>
         </div>
       {%- endif -%}
-    </slider-component>
+    </slider-component> {% endcomment %}
+
+
     <div class="center{% if show_mobile_slider %} small-hide medium-hide{% endif %}">
       {%- if section.settings.button_label != blank -%}
         <a
