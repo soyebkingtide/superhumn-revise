@@ -114,7 +114,7 @@
 
                   <tbody role="rowgroup">
                     {%- for item in cart.items -%}
-                      <tr id="CartDrawer-Item-{{ item.index | plus: 1 }}" class="cart-item" role="row">
+                      <tr id="CartDrawer-Item-{{ item.index | plus: 1 }}" class="cart-item" role="row" data-cart-item-key="{{ item.key }}">
                         <td class="cart-item__media" role="cell" headers="CartDrawer-ColumnProductImage">
                           {% if item.image %}
                             {% comment %} Leave empty space due to a:empty CSS display: none rule {% endcomment %}
@@ -146,18 +146,18 @@
                               </span>
                               <s class="cart-item__old-price product-option" bss-b2b-cart-item-key="{{ item.key }}" bss-b2b-item-original-price>
                                 {{- item.original_price | money -}}
-                              </s>
+                              </s><div class="bss-b2b-qb-table"></div>
                               <span class="visually-hidden">
                                 {{ 'products.product.price.sale_price' | t }}
                               </span>
                               <strong class="cart-item__final-price product-option" bss-b2b-cart-item-key="{{ item.key }}" bss-b2b-item-final-price>
                                 {{ item.final_price | money }}
-                              </strong>
+                              </strong><div class="bss-b2b-qb-table"></div>
                             </div>
                           {%- else -%}
                             <div class="product-option" bss-b2b-cart-item-key="{{ item.key }}" bss-b2b-item-original-price>
                               {{ item.original_price | money }}
-                            </div>
+                            </div><div class="bss-b2b-qb-table"></div>
                           {%- endif -%}
 
                           {%- if item.product.has_only_default_variant == false
