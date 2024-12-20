@@ -331,7 +331,7 @@
                               {%- assign price = product.selected_or_first_available_variant.price
                                 | money_with_currency
                               -%}
-                              <span data-text="{{ 'products.product.volume_pricing.price_at_each' | t: price: variant_price }}">
+                              <span data-text="{{ 'products.product.volume_pricing.price_at_each' | t: price: variant_price }}" bss-b2b-product-id="{{ card_product.id }}" bss-b2b-product-price {% if use_variant %} bss-b2b-variant-price bss-b2b-variant-id="{{ product.selected_or_first_available_variant.id }}" bss-b2b-featured-product="true" {% endif %} >
                                 {{ 'sections.quick_order_list.each' | t: money: price -}}
                               </span>
                             </li>
@@ -343,7 +343,7 @@
                                   <span aria-hidden="true">+</span></span
                                 >
                                 {%- assign price = price_break.price | money_with_currency -%}
-                                <span data-text="{{ 'products.product.volume_pricing.price_at_each' | t: price: price_break_price }}">
+                                <span data-text="{{ 'products.product.volume_pricing.price_at_each' | t: price: price_break_price }}" bss-b2b-product-id="{{ card_product.id }}" bss-b2b-product-price {% if use_variant %} bss-b2b-variant-price bss-b2b-variant-id="{{ product.selected_or_first_available_variant.id }}" bss-b2b-featured-product="true" {% endif %} >
                                   {{ 'sections.quick_order_list.each' | t: money: price -}}
                                 </span>
                               </li>
