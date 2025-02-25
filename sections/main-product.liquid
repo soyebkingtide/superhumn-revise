@@ -1024,10 +1024,7 @@ if(this.checked){
         }, 2000); // 6 seconds delay (6000 milliseconds)
 
 
-        
-//detect subscription option position
-
-
+        document.addEventListener("DOMContentLoaded", () => {
 setTimeout(() => {
   const checkoutButton = document.querySelector('.accelerated-checkout-button');
   if (checkoutButton) {
@@ -1039,7 +1036,11 @@ setTimeout(() => {
   if (buttonContent) {
     buttonContent.style.background = 'transparent';
   }
-}, 2000);
+}, 4000);
+
+  })
+//detect subscription option position
+
 
 
 
