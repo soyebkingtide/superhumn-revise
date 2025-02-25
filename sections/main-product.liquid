@@ -1028,6 +1028,18 @@ if(this.checked){
 //detect subscription option position
 
 
+setTimeout(() => {
+  const checkoutButton = document.querySelector('.accelerated-checkout-button');
+  if (checkoutButton) {
+    checkoutButton.style.height = '64px';
+    checkoutButton.style.background = '#931CF5';
+  }
+
+  const buttonContent = document.querySelector('.button-content');
+  if (buttonContent) {
+    buttonContent.style.background = 'transparent';
+  }
+}, 2000);
 
 
 
