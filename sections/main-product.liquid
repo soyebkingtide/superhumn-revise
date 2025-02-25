@@ -220,15 +220,6 @@ font-weight: 700; }
       padding-top:30px;
     }
 
-
-    
-.accelerated-checkout-button{height: 64px!important;
-  background: #931CF5!important;}
-
-.button-content{
-  background:transparent!important;
-}
-
   {%- endstyle -%}
 
   <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
@@ -1024,22 +1015,9 @@ if(this.checked){
         }, 2000); // 6 seconds delay (6000 milliseconds)
 
 
-        document.addEventListener("DOMContentLoaded", () => {
-setTimeout(() => {
-  const checkoutButton = document.querySelector('.accelerated-checkout-button');
-  if (checkoutButton) {
-    checkoutButton.style.height = '64px';
-    checkoutButton.style.background = '#FFFFFF';
-  }
-
-  const buttonContent = document.querySelector('.button-content');
-  if (buttonContent) {
-    buttonContent.style.background = 'transparent';
-  }
-}, 4000);
-
-  })
+        
 //detect subscription option position
+
 
 
 
