@@ -43,6 +43,9 @@
         "share",
         "content"
       ],
+      "custom_css": [
+        ".circle-divider{display:none}"
+      ],
       "settings": {}
     }
   },
