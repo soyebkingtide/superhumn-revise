@@ -45,7 +45,8 @@
       ],
       "custom_css": [
         ".circle-divider {display: none; max-width: 400px;}",
-        ".media > img {max-width: 500px;height:auto;}"
+        ".media > img {max-width: 500px; height: auto;}",
+        ".article-template__hero-adapt .media{position:relative!important;padding-bottom:0!important;}"
       ],
       "settings": {}
     }
