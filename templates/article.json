@@ -44,8 +44,8 @@
         "content"
       ],
       "custom_css": [
-        ".circle-divider {display: none; max-width: 400px; }",
-        ".media > img{max-width:500px;}"
+        ".circle-divider {display: none; max-width: 400px;}",
+        ".media > img {max-width: 500px;height:auto;}"
       ],
       "settings": {}
     }
