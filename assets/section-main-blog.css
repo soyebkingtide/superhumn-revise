@@ -63,7 +63,6 @@
   display: block;
 }
 
+.blog-articles__article {filter: grayscale(1); transition: all 600ms;}
 
-/* .article-card__image img{filter: grayscale(1); transition: all 600ms;}
-
-.article-card__image:hover img{filter: grayscale(0)!important;} */
+.blog-articles__article:hover {filter: grayscale(0)!important;}
