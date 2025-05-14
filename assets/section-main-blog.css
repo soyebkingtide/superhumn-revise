@@ -62,4 +62,4 @@
 
 .article-card__image img{filter: grayscale(1); transition: all 600ms;}
 
-.article-card__image-wrapper img:hover{filter: grayscale(0);}
+.article-card__image:hover img{filter: grayscale(0)!important;}
