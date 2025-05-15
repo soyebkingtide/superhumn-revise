@@ -12,12 +12,13 @@
     "main": {
       "type": "main-blog",
       "custom_css": [
-        "@media screen and (min-width: 750px) {.blog-articles {grid-template-columns: 1fr 1fr 1fr; column-gap: var(--grid-desktop-horizontal-spacing); row-gap: var(--grid-desktop-vertical-spacing); }}"
+        "@media screen and (min-width: 750px) {.blog-articles {grid-template-columns: 1fr 1fr 1fr; column-gap: var(--grid-desktop-horizontal-spacing); row-gap: var(--grid-desktop-vertical-spacing); }}",
+        "#MainContent {max-width: 1000px;}"
       ],
       "settings": {
         "layout": "grid",
         "show_image": true,
-        "image_height": "medium",
+        "image_height": "adapt",
         "show_date": false,
         "show_author": false,
         "padding_top": 36,
