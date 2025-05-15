@@ -7,7 +7,7 @@
 
 @media screen and (min-width: 990px) {
   .article-card__image--large .ratio::before {
-    padding-bottom: 30rem;
+    padding-bottom: 35rem;
   }
 }
 
