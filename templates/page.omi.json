@@ -11,12 +11,10 @@
   "sections": {
     "main": {
       "type": "main-characters-page",
-      "custom_css": [
-        ".character{max-width:450px; width:100%;right:100px;}"
-      ],
+      "custom_css": [],
       "settings": {
         "color_scheme": "scheme-d3b29b88-4521-44de-bf49-53c238a351c5",
-        "section_img": "shopify://shop_images/Omi_91d41be4-964a-4d7c-ac73-a3b21ed35349.png",
+        "section_img": "shopify://shop_images/Slice_1_1dbcf671-c011-4c32-9ca2-f8e18491a8ab.png",
         "padding_top": 100,
         "padding_bottom": 100
       }
