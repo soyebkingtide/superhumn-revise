@@ -484,6 +484,16 @@
         "padding_top": 80,
         "padding_bottom": 80
       }
+    },
+    "custom_liquid_mWaRrm": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/@itsdimpey/video/7504780443074497822\" data-video-id=\"7504780443074497822\" style=\"max-width: 605px;min-width: 325px;\" > <section> <a target=\"_blank\" title=\"@itsdimpey\" href=\"https://www.tiktok.com/@itsdimpey?refer=embed\">@itsdimpey</a> I’m excited to share with you guys a new short form series I’ve been working on called &#34;Buz’d up&#34;  “Buz’d Up” is a fire short-form action&#47;comedy series following Omi Sims, a young Black teen who unlocks some mind-blowing abilities rooted in his ancestral DNA after eating a mysterious jerky. As he adjusts to life in a new town, Omi’s journey dives deep into the mystic and the unknown, blending urban legend with supernatural twists. <a title=\"fyp\" target=\"_blank\" href=\"https://www.tiktok.com/tag/fyp?refer=embed\">#fyp</a> <a target=\"_blank\" title=\"♬ original sound - Dimpey\" href=\"https://www.tiktok.com/music/original-sound-7504785537019022111?refer=embed\">♬ original sound - Dimpey</a> </section> </blockquote> <script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -494,6 +504,7 @@
     "text_scroller_XybLWx",
     "superhumn_multicolumn_v2_aHCerr",
     "superhumn_team_wPLcHr",
+    "custom_liquid_mWaRrm",
     "superhumn_image_with_text_387P9g",
     "find_store_FCDCgU"
   ]
