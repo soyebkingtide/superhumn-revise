@@ -12,7 +12,7 @@
     }
   {%- endstyle -%}
   <div class="color-{{ section.settings.color_scheme }} gradient">
-    <div class="section-{{ section.id }}-padding">
+    <div class="section-{{ section.id }}-padding d-flex">
       {% for block in section.blocks %}
         <div class="custom-liquid-block" {{ block.shopify_attributes }}>
           {{ block.settings.custom_liquid }}
@@ -20,6 +20,9 @@
       {% endfor %}
     </div>
   </div>  
+
+  <script async src="https://www.tiktok.com/embed.js"></script>
+
   {% schema %}
   {
     "name": "TickTock",
