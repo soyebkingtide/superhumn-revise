@@ -12,7 +12,7 @@
     }
   {%- endstyle -%}
   <div class="color-{{ section.settings.color_scheme }} gradient">
-    <div class="section-{{ section.id }}-padding d-flex">
+    <div class="section-{{ section.id }}-padding tick-tock-flex">
       {% for block in section.blocks %}
         <div class="custom-liquid-block" {{ block.shopify_attributes }}>
           {{ block.settings.custom_liquid }}
