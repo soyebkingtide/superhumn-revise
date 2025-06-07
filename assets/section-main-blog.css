@@ -5,6 +5,12 @@
   row-gap: var(--grid-mobile-vertical-spacing);
 }
 
+@media screen and (min-width: 990px) {
+  .article-card__image--large .ratio::before {
+    padding-bottom: 35rem;
+  }
+}
+
 .blog-articles .card-wrapper {
   width: 100%;
 }
@@ -59,3 +65,10 @@
     padding-bottom: 82.5rem;
   }
 }
+.article-card__image {
+  display: block;
+}
+
+.blog-articles__article {filter: grayscale(1); transition: all 600ms;}
+
+.blog-articles__article:hover {filter: grayscale(0)!important;}

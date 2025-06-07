@@ -11,6 +11,7 @@
   "current": {
     "logo": "shopify://shop_images/superhumn-logo.svg",
     "logo_width": 210,
+    "favicon": "shopify://shop_images/favicon_bd0bd0fd-0e51-4cec-83a2-5b53d78672dc.svg",
     "type_header_font": "assistant_n7",
     "heading_scale": 100,
     "type_body_font": "assistant_n4",
@@ -64,7 +65,7 @@
     "collection_card_shadow_horizontal_offset": 0,
     "collection_card_shadow_vertical_offset": 4,
     "collection_card_shadow_blur": 5,
-    "blog_card_style": "standard",
+    "blog_card_style": "card",
     "blog_card_image_padding": 0,
     "blog_card_text_alignment": "left",
     "blog_card_color_scheme": "scheme-2",

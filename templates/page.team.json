@@ -10,13 +10,13 @@
 {
   "sections": {
     "main": {
-      "type": "main-characters-page",
-      "custom_css": [],
+      "type": "main-page",
+      "custom_css": [
+        "p {font-size: 12px;}"
+      ],
       "settings": {
-        "color_scheme": "scheme-d3b29b88-4521-44de-bf49-53c238a351c5",
-        "section_img": "shopify://shop_images/Slice_1_1dbcf671-c011-4c32-9ca2-f8e18491a8ab.png",
-        "padding_top": 100,
-        "padding_bottom": 100
+        "padding_top": 28,
+        "padding_bottom": 28
       }
     }
   },

@@ -187,7 +187,6 @@
         "title": "CHOOSE YOUR POWER-UP",
         "heading_size": "hxl",
         "description": "",
-        "show_description": false,
         "description_style": "body",
         "product": "beefjerky",
         "products_to_show": 3,
@@ -195,10 +194,7 @@
         "full_width": true,
         "show_view_all": true,
         "view_all_style": "solid",
-        "enable_desktop_slider": false,
         "color_scheme": "",
-        "image_ratio": "adapt",
-        "image_shape": "default",
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
@@ -394,13 +390,23 @@
         "column_alignment": "left",
         "background_style": "primary",
         "button_label": "SEE ALL",
-        "button_link": "#",
+        "button_link": "shopify://pages/jade",
         "color_scheme": "scheme-ec5e6b23-0e8c-4f58-bcce-0e003064963a",
         "color_scheme_post": "scheme-4",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 100,
         "padding_bottom": 0
+      }
+    },
+    "custom_liquid_mWaRrm": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/@itsdimpey/video/7504780443074497822\" data-video-id=\"7504780443074497822\" style=\"max-width: 605px;min-width: 325px;\" > <section> <a target=\"_blank\" title=\"@itsdimpey\" href=\"https://www.tiktok.com/@itsdimpey?refer=embed\">@itsdimpey</a> I’m excited to share with you guys a new short form series I’ve been working on called &#34;Buz’d up&#34;  “Buz’d Up” is a fire short-form action&#47;comedy series following Omi Sims, a young Black teen who unlocks some mind-blowing abilities rooted in his ancestral DNA after eating a mysterious jerky. As he adjusts to life in a new town, Omi’s journey dives deep into the mystic and the unknown, blending urban legend with supernatural twists. <a title=\"fyp\" target=\"_blank\" href=\"https://www.tiktok.com/tag/fyp?refer=embed\">#fyp</a> <a target=\"_blank\" title=\"♬ original sound - Dimpey\" href=\"https://www.tiktok.com/music/original-sound-7504785537019022111?refer=embed\">♬ original sound - Dimpey</a> </section> </blockquote> <script async src=\"https://www.tiktok.com/embed.js\"></script>\n\n<style>\n.section-template--17097602859158__custom_liquid_mWaRrm-padding{ width:100%; max-width:100%;\nposition:relative;}\n.section-template--17097602859158__custom_liquid_mWaRrm-padding::after {\n  content: \"\";\n  background: url(//superhumn.co/cdn/shop/t/26/assets/light-line.svg?v=17979295338787039291729743200);\n    background-position-x: 0%;\n    background-position-y: 0%;\n    background-repeat: repeat;\n    background-size: auto;\n  height: 167px;\n  width: 100%;\n  position: relative;\n  display: block;\n  background-size: auto;\n  background-repeat: no-repeat;\n  background-position: top center;\n  margin: 0;\n}\n\n</style>",
+        "color_scheme": "scheme-755a3726-29a3-4168-87d5-bb0359225390",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "superhumn_image_with_text_387P9g": {
@@ -498,6 +504,7 @@
     "text_scroller_XybLWx",
     "superhumn_multicolumn_v2_aHCerr",
     "superhumn_team_wPLcHr",
+    "custom_liquid_mWaRrm",
     "superhumn_image_with_text_387P9g",
     "find_store_FCDCgU"
   ]
