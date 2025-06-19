@@ -1,0 +1,134 @@
+.parallax-mirror{
+  background-color:var( --gray)!important;
+}
+
+.cloud-1{
+
+
+ height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+
+}
+
+.wave{
+bottom: 0;
+  margin: 0px 0px;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+
+ 
+    background-image: url(//superhumn.co/cdn/shop/t/37/assets/cloud-1.png?v=123707784275651856081749034787);
+}
+
+
+
+.cloud-2{
+position: absolute;
+  width: 100%;
+  left:0%;
+  z-index: 1;
+  bottom: 0!important;
+ 
+
+}
+
+
+
+.wave2{
+position:absolute;
+bottom: 0;
+  margin: 0px 0px;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 110%;
+
+ 
+    background-image: url(//superhumn.co/cdn/shop/t/37/assets/bg-2.png?v=30528409682696415001749034784);
+}
+
+
+
+.framebars-cover{
+  width:100%;
+  height:100%;
+  z-index:-1;
+
+}
+.framebars{
+  position: absolute;
+  left: 50%!important;
+width: 300%;
+  height:100%;
+  top: 50%!important;
+    transform: translate(-50%, -50%)!important;;
+
+   background-image: url(//superhumn.co/cdn/shop/t/37/assets/fireembers.svg?v=27611726093604955341749034812);
+
+   background-repeat: repeat;
+  background-size: contain;
+
+}
+
+.characters-cover{
+  width:100%;
+  height:100%;   z-index:2;
+
+}
+
+
+.characters{ 
+  
+  position: absolute;
+  left: 50%!important;
+
+animation:wave 7.11111s 0.1s infinite linear;
+
+
+
+ 
+
+
+
+
+}
+
+.characters img{  margin:auto; max-width:100%; }
+
+@media(max-width:1220px){
+
+  .characters{ 
+    max-width:100%; 
+    height:auto; 
+   
+  }
+}
+
+@media(max-width:749px){
+
+ .characters img{ }
+
+}
+
+
+
+
+
+@keyframes wave {
+  0% {
+    transform: translate(-50%, -50%) translateY(10%);
+  }
+  50% {
+    transform: translate(-50%, -50%) translateY(0%);
+  }
+  100% {
+    transform: translate(-50%, -50%) translateY(10%);
+  }
+}
+
+

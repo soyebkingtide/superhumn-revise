@@ -1,0 +1,60 @@
+  .superhumn-multicolumns-v2  .multicolumn-card__image-wrapper{ margin:auto; }
+  .superhumn-multicolumns-v2  .multicolumn-card{ background:transparent!important;}
+  .superhumn-multicolumns-v2{
+ --grid-desktop-horizontal-spacing:5rem;
+   --grid-desktop-vertical-spacing:5rem;
+  }
+
+
+
+
+
+.mom{
+  position:relative;
+}
+
+
+.quotes{
+  position:absolute;
+ right: 64px;
+  bottom: 0;
+  z-index: 2;
+  }
+
+
+  @media (max-width: 1550px) {
+
+  .slider-testimonials .slick-list{ min-height:235px!important;}
+
+}
+  @media(max-width:749px){
+
+
+    .quotes{
+
+
+bottom: 0px;
+    width: 80px;
+
+  }
+
+  }
+
+
+  
+.our-story{
+  background:url(//superhumn.co/cdn/shop/t/37/assets/meet-the-team-scroller.svg?v=48120415122450842571749034819) no-repeat ;
+background-position: center bottom;
+   background-size: 100%;
+}
+
+
+.slider-testimonials {  padding-left:0!important; }
+
+.slider-testimonials .slick-list{ min-height:340px;}
+
+.slider-testimonials  li.super_card {
+
+margin:0 20px;
+
+}

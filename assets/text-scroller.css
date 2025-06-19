@@ -1,0 +1,126 @@
+.text-scroller{
+    width:110%;
+    min-height:170px;
+    line-height:normal;
+     border: 10px solid #FFF;
+      border-left: 0;
+    border-right: 0;
+
+    transform: rotate(-3deg);
+  position:absolute;
+
+ 
+left:-10px;
+
+}
+.text-scroller-items{ margin:0; padding:0;
+
+   
+  
+  }
+.text-scroller-items li{
+    /* color:  var(--color-yellow); */
+  font-family: "Zuume";
+font-size: 136.488px;
+
+color:rgba(var(--color-foreground), 1);
+
+
+letter-spacing: 2.73px;
+display: inline-block;
+  position: relative;
+  padding: 0 50px;
+
+
+  @media(min-width:750px){
+    min-height:172px;
+    display:flex!important;
+    align-items:center;
+    background-size:92px;
+  }
+
+
+
+}
+
+
+
+.text-scroller-items li:after{
+    content: "";
+    background: #fff;
+    width: 14px;
+    height: 106%;
+    right: 6px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(10deg);
+   
+ 
+}
+
+.text-scroller-items li:before {
+        content: "";
+    background: #fff;
+    width: 14px;
+    height: 106%;
+    left: 6px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(10deg);
+  
+}
+
+.scroller{ position:relative; height:300px;  z-index:9; }
+
+ 
+.scroller::before {
+  content: '';
+  width: 100%;
+  height: 50%;
+  background: #931cf5;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.scroller::after {
+  content: '';
+  width: 100%;
+  height: 50%;
+  background: #191919;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+
+
+@media(max-width:749px){
+
+  .scroller{
+    height:auto;
+    min-height:0;
+  }
+
+  .text-scroller {
+ 
+  min-height: 0;
+  top: -45px;
+}
+  .text-scroller-items li {
+    padding: 0 50px;
+  font-size: 70px;}
+
+  
+.text-scroller-items li:after{
+left:-34px;
+  height: 85px!important;
+}
+
+
+
+
+}

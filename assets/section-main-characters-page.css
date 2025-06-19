@@ -1,0 +1,179 @@
+.highlighter-color {
+  color: rgba(var(--color-heading)) !important;
+}
+
+.characters-page {
+  position: relative;
+  background: rgb(var(--color-background), .8);
+  border-radius: 3px;
+  border: 18px solid rgba(var(--color-heading));
+  border-bottom:0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px 20px 38px;
+  max-width: 1090px;
+}
+
+
+.character-ms{padding-left:250px; position: relative;}
+
+
+.character-ms:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    border-bottom: solid 18px rgba(var(--color-heading));
+    bottom: 0;
+}
+
+
+.main-page-title{
+  font-size:130px;
+}
+
+
+
+.character {
+  position: absolute;
+  top: auto;
+  max-width: 200px;
+  left: 10px;
+  bottom: 20px;
+}
+
+.characters-content,
+.characters-content p {
+  margin: 0;
+  font-family: "Zuume";
+  font-size: 36px;
+
+  font-weight: 600;
+
+  line-height: normal;
+
+  color: rgba(var(--color-foreground), 1);
+
+
+
+}
+
+@media(min-width:992px){
+
+.characters-content,
+.characters-content p {   
+  
+  font-size: 38px;
+
+
+  line-height: normal;
+
+}
+
+
+}
+
+.page-width-auto {
+  max-width: max-content !important;
+}
+
+.hover-default:hover {
+  background: rgba(var(--color-heading)) !important;
+}
+
+.grapical-text {
+  -webkit-text-stroke-width: 2.6px;
+  -webkit-text-stroke-color: #fff;
+  color: rgb(var(--color-background));
+
+  font-size: 240.734px;
+  font-style: normal;
+  font-weight: 900;
+
+  position: absolute;
+  transform: rotate(90deg);
+  z-index: 0;
+
+  margin: 0;
+  padding: 0;
+  right: -264px;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.bg-character {
+  background-image: url('//superhumn.co/cdn/shop/t/37/assets/power-artwork.svg?v=164327362273080270271749034837');
+}
+
+
+
+.superhumn-title:after {
+ 
+  position: absolute;
+  left: 0;
+  top: -24%;
+  z-index: ;
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgba(var(--color-heading)) !important;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 33%;
+  width: 100% !important;
+  overflow: hidden;
+}
+
+
+.superhumn-title:before {
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -48%;
+  z-index: -1;
+  width: 100% !important;
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgba(var(--color-heading)) !important;
+
+  height: 33%;
+  overflow: hidden;
+
+}
+
+
+
+@media(max-width:749px){
+  .character-ms {
+    padding: 22px!important;
+}
+
+.character {
+    position: relative;
+  top: 0;
+}
+
+.characters-page{
+  flex-direction:column;
+}
+
+.main-page-title {
+    margin-bottom: 0;
+}
+.heading-cover {
+    margin-left: auto;
+    text-align: center;
+}
+
+.h-190 {
+    height:auto!important;
+}
+
+    .superhumn-title {
+        font-size: 20vw!important;
+    }
+
+
+}

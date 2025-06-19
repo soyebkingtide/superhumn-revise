@@ -820,7 +820,7 @@ font-weight: 700;
   width: 100%; 
   height: 24px;
   display: flex;
-  background: var(--gray) url({{ 'icon-yellow-check.svg' | asset_url }});
+  background: var(--gray) url(//superhumn.co/cdn/shop/t/37/assets/icon-yellow-check.svg?v=140833960245847567561749034815);
   border-radius: 100%;
   justify-content: center;
   align-items: center;

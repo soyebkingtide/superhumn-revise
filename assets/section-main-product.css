@@ -177,6 +177,14 @@ product-info {
   /* max-width: 58.6rem; */
   min-width: fit-content;
   border: none;
+  justify-content: flex-start!important;
+  gap:10px;
+}
+
+.product--no-media .product-form__input{
+  
+    justify-content: center!important;
+
 }
 
 .product-form__input .form__label {
@@ -344,7 +352,7 @@ a.product__text {
 }
 
 .product--no-media .product-form > .form {
-  max-width: 30rem;
+ /* max-width: 30rem; */
   width: 100%;
 }
 
@@ -1526,9 +1534,4 @@ a.product__text {
   .recipient-form > input[type="checkbox"]:checked + label .icon-checkmark {
     border: none;
   }
-}
-
-.product-form__input {
-  justify-content: flex-start !important;
-  gap: 10px;
 }
