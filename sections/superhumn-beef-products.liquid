@@ -40,7 +40,6 @@
 {% endstyle %}
 
 
-
 {% assign beef_products = '' %}
 {% for product in collections.all.products %}
   {% if product.tags contains 'Beef Jerky' %}
@@ -48,9 +47,6 @@
   {% endif %}
 {% endfor %}
 {% assign product_handles = beef_products | split: ',' %}
-
-
-
 
 
 
@@ -72,13 +68,15 @@
     </div>
 
     <slider-component class="slider-mobile-gutter{% if section.settings.full_width %} slider-component-full-width{% endif %} position-relative">
-        <ul class="grid p-60 product-grid contains-card slick-items" aria-label="{{ 'general.slider.name' | t }}">
+
+
+        <ul class="grid p-60 product-grid contains-card beef-jerkey-items" aria-label="{{ 'general.slider.name' | t }}">
             {% assign count = 0 %}
             {% for handle in product_handles %}
               {% if count >= section.settings.products_to_show %}{% break %}{% endif %}
               {% assign product = all_products[handle] %}
               {% if product %}
-                <li class="superhumn-card-items">
+                <li class="superhumn-card-items ">
                   {% render 'card-product',
                     card_product: product,
                     media_aspect_ratio: section.settings.image_ratio,

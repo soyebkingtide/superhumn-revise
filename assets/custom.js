@@ -118,6 +118,38 @@ $(".slider-testimonials").slick({
   ],
 });
 
+$(".beef-jerkey-items").slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: false, // No autoplay
+  speed: 600, // Transition speed in ms
+  //infinite: true, // Enables loop
+  //cssEase: "linear", // No ease (straight transition)
+  dots: false,
+  arrows: true, // Show next/prev arrows
+
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 500,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
+});
+
 //------Featured collection slider
 
 $(document).ready(function () {
