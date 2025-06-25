@@ -85,7 +85,7 @@
       "type": "superhumn-beef-products",
       "name": "Related Products by Tag",
       "settings": {
-        "title": "",
+        "title": "Related Products",
         "description": "",
         "heading_size": "hxl",
         "description_style": "body",
