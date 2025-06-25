@@ -39,14 +39,7 @@
 .product-grid { max-width: 1180px; margin: auto; }
 {% endstyle %}
 
-{% assign all_products_by_tag = [] %}
-{% for product in collections.all.products %}
-  {% if product.tags contains 'Beef Jerky' %}
-    {% assign all_products_by_tag = all_products_by_tag | push: product %}
-  {% endif %}
-{% endfor %}
-
-{% assign products_to_display = all_products_by_tag.size | at_most: section.settings.products_to_show %}
+{% assign matching_products = collections.all.products | where: "tags", "Beef Jerky" %}
 
 <div class="color-{{ section.settings.color_scheme }} isolate gradient position-relative py-40">
   <img src="{{ 'flavor-bomb.svg' | asset_url }}" class="special-tag img-fluid" alt="FLAVOR BOMB">
@@ -67,7 +60,7 @@
 
     <slider-component class="slider-mobile-gutter{% if section.settings.full_width %} slider-component-full-width{% endif %} position-relative">
       <ul class="grid p-60 product-grid contains-card slick-items" aria-label="{{ 'general.slider.name' | t }}">
-        {% for product in all_products_by_tag limit: section.settings.products_to_show %}
+        {% for product in matching_products limit: section.settings.products_to_show %}
           <li class="superhumn-card-items">
             {% render 'card-product',
               card_product: product,
