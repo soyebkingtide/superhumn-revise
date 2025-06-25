@@ -37,6 +37,10 @@
   }
 }
 .product-grid { max-width: 1180px; margin: auto; }
+
+.kill-after:after{
+    display:none!important; 
+}
 {% endstyle %}
 
 
@@ -56,7 +60,7 @@
   <div class="page-width px-0 section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}" id="collection-{{ section.id }}">
     <div class="collection__title title-wrapper w-100 p-60">
       {% if section.settings.title != blank %}
-        <h2 class="title superhumn-title ways-title-{{ section.id }} mb-22 inline-richtext heading fs-italic {{ section.settings.heading_size }}">
+        <h2 class="title superhumn-title kill-after ways-title-{{ section.id }} mb-22 inline-richtext heading fs-italic {{ section.settings.heading_size }}">
           <span>{{ section.settings.title }}</span>
         </h2>
       {% endif %}
