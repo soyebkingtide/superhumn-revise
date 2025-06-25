@@ -41,6 +41,8 @@
 
 {% assign matching_products = collections.all.products | where: "tags", "Beef Jerky" %}
 
+{{  matching_products }} tags
+
 <div class="color-{{ section.settings.color_scheme }} isolate gradient position-relative py-40">
   <img src="{{ 'flavor-bomb.svg' | asset_url }}" class="special-tag img-fluid" alt="FLAVOR BOMB">
 
