@@ -91,12 +91,12 @@
         "description_style": "body",
         "products_to_show": 9,
         "full_width": true,
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-3a864607-c0d1-4fd8-a68f-38ebb640ce06",
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "none",
-        "padding_top": 100,
+        "padding_top": 0,
         "padding_bottom": 100
       }
     },
