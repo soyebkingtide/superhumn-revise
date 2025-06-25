@@ -140,7 +140,7 @@
         "section_img": "shopify://shop_images/jerkyjumper_1_ae69b19f-4db4-4b5e-bcf4-e5d7ed58f108.png",
         "heading": "You may <em>also like</em>",
         "heading_size": "h1",
-        "products_to_show": 3,
+        "products_to_show": 10,
         "columns_desktop": 3,
         "color_scheme": "scheme-2",
         "image_ratio": "square",
