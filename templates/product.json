@@ -81,6 +81,25 @@
         "padding_bottom": 12
       }
     },
+    "superhumn_beef_products_ghFYDP": {
+      "type": "superhumn-beef-products",
+      "name": "Related Products by Tag",
+      "settings": {
+        "title": "Related Products",
+        "description": "",
+        "heading_size": "h2",
+        "description_style": "body",
+        "products_to_show": 4,
+        "full_width": true,
+        "color_scheme": "scheme-3a864607-c0d1-4fd8-a68f-38ebb640ce06",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "padding_top": 0,
+        "padding_bottom": 100
+      }
+    },
     "superhumn_featured_collection_Ap6rJn": {
       "type": "superhumn-featured-collection",
       "disabled": true,
@@ -176,33 +195,14 @@
         "padding_top": 40,
         "padding_bottom": 0
       }
-    },
-    "superhumn_beef_products_ghFYDP": {
-      "type": "superhumn-beef-products",
-      "name": "Related Products by Tag",
-      "settings": {
-        "title": "Related Products",
-        "description": "<p>wer ewr ewrewr</p>",
-        "heading_size": "hxl",
-        "description_style": "body",
-        "products_to_show": 3,
-        "full_width": true,
-        "color_scheme": "",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "padding_top": 100,
-        "padding_bottom": 100
-      }
     }
   },
   "order": [
     "main",
+    "superhumn_beef_products_ghFYDP",
     "superhumn_featured_collection_Ap6rJn",
     "superhumn_feature_product_kBh6zD",
     "related-products",
-    "rich_text_YX8W3L",
-    "superhumn_beef_products_ghFYDP"
+    "rich_text_YX8W3L"
   ]
 }
