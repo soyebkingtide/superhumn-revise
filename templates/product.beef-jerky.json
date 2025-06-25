@@ -91,7 +91,7 @@
         "description_style": "body",
         "products_to_show": 9,
         "full_width": true,
-        "color_scheme": "",
+        "color_scheme": "scheme-2",
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
