@@ -39,9 +39,22 @@
 .product-grid { max-width: 1180px; margin: auto; }
 {% endstyle %}
 
+
+
+
 {% assign matching_products = collections.all.products | where: "tags", "Beef Jerky" %}
 
-{{  matching_products }} tags
+
+{% assign matching_products = '' %}
+{% assign beef_products = '' %}
+{% for product in collections.all.products %}
+  {% if product.tags contains 'Beef Jerky' %}
+    {% capture beef_products %}{{ beef_products }}{{ product.handle }},{% endcapture %}
+  {% endif %}
+{% endfor %}
+
+{% assign product_handles = beef_products | split: ',' %}
+
 
 <div class="color-{{ section.settings.color_scheme }} isolate gradient position-relative py-40">
   <img src="{{ 'flavor-bomb.svg' | asset_url }}" class="special-tag img-fluid" alt="FLAVOR BOMB">
