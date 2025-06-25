@@ -47,7 +47,7 @@
   {% if product.tags contains 'Beef Jerky' %}
     {% capture beef_products %}{{ beef_products }}{{ product.handle }},{% endcapture %}
   {% endif %}
-{% endfor %}
+
 
 {% assign product_handles = beef_products | split: ',' %}
 
