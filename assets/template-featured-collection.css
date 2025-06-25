@@ -141,7 +141,7 @@
 
 } */
 
-#beef-product .slick-slide {
+#beef-product .feature-collection .slick-initialized .slick-slide {
   padding: 0 !important;
 }
 
