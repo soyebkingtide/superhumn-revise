@@ -141,15 +141,15 @@
 
 } */
 
-#beef-product .feature-collection .slick-initialized .slick-slide {
+#beef-product .slick-slide {
   padding: 0;
 }
 
-#beef-product .feature-collection .card__inner {
+#beef-product .card__inner {
   max-width: 100%;
 }
 
-#beef-product .feature-collection .card__information {
+#beef-product .card__information {
   padding-bottom: 15px;
   padding-top: 15px;
 }
