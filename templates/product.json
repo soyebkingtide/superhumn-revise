@@ -182,7 +182,7 @@
       "name": "Related Products by Tag",
       "settings": {
         "title": "Related Products",
-        "description": "",
+        "description": "<p>wer ewr ewrewr</p>",
         "heading_size": "hxl",
         "description_style": "body",
         "products_to_show": 3,
