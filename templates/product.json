@@ -136,6 +136,7 @@
     },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "section_img": "shopify://shop_images/jerkyjumper_1_ae69b19f-4db4-4b5e-bcf4-e5d7ed58f108.png",
         "heading": "You may <em>also like</em>",
@@ -175,6 +176,25 @@
         "padding_top": 40,
         "padding_bottom": 0
       }
+    },
+    "superhumn_beef_products_ghFYDP": {
+      "type": "superhumn-beef-products",
+      "name": "Related Products by Tag",
+      "settings": {
+        "title": "Related Products",
+        "description": "",
+        "heading_size": "hxl",
+        "description_style": "body",
+        "products_to_show": 3,
+        "full_width": true,
+        "color_scheme": "",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
     }
   },
   "order": [
@@ -182,6 +202,7 @@
     "superhumn_featured_collection_Ap6rJn",
     "superhumn_feature_product_kBh6zD",
     "related-products",
-    "rich_text_YX8W3L"
+    "rich_text_YX8W3L",
+    "superhumn_beef_products_ghFYDP"
   ]
 }
