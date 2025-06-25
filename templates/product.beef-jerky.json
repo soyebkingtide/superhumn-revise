@@ -87,7 +87,7 @@
       "settings": {
         "title": "Related Products",
         "description": "",
-        "heading_size": "hxl",
+        "heading_size": "h2",
         "description_style": "body",
         "products_to_show": 9,
         "full_width": true,
