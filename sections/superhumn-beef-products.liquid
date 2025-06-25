@@ -58,7 +58,7 @@
 <div class="color-{{ section.settings.color_scheme }} isolate gradient position-relative py-40">
   <img src="{{ 'flavor-bomb.svg' | asset_url }}" class="special-tag img-fluid" alt="FLAVOR BOMB">
 
-  <div class="page-width px-0 section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}" id="collection-{{ section.id }}">
+  <div class="page-width w-100 px-0 section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}" id="collection-{{ section.id }}">
     <div class="collection__title title-wrapper w-100 p-60 kill-after">
       {% if section.settings.title != blank %}
         <h2 class="title superhumn-title  ways-title-{{ section.id }} mb-22 inline-richtext heading fs-italic {{ section.settings.heading_size }}">
