@@ -42,12 +42,8 @@
 
 
 
-{% assign matching_products = collections.all.products | where: "tags", "Beef Jerky" %}
 
 
-{% assign matching_products = '' %}
-{% assign beef_products = '' %}
-{% for product in collections.all.products %}
   {% if product.tags contains 'Beef Jerky' %}
     {% capture beef_products %}{{ beef_products }}{{ product.handle }},{% endcapture %}
   {% endif %}
