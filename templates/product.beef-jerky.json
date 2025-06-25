@@ -136,7 +136,6 @@
     },
     "related-products": {
       "type": "related-products",
-      "disabled": true,
       "settings": {
         "section_img": "shopify://shop_images/jerkyjumper_1_ae69b19f-4db4-4b5e-bcf4-e5d7ed58f108.png",
         "heading": "You may <em>also like</em>",
@@ -168,6 +167,7 @@
       "block_order": [
         "heading_eUXaUL"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
