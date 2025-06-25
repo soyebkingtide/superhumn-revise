@@ -1,0 +1,138 @@
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+{{ 'component-slider.css' | asset_url | stylesheet_tag }}
+{{ 'template-collection.css' | asset_url | stylesheet_tag }}
+{{ 'template-featured-collection.css' | asset_url | stylesheet_tag }}
+
+{% if section.settings.image_shape == 'blob' %}
+  {{ 'mask-blobs.css' | asset_url | stylesheet_tag }}
+{% endif %}
+
+{% unless section.settings.quick_add == 'none' %}
+  {{ 'quick-add.css' | asset_url | stylesheet_tag }}
+  <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+{% endunless %}
+
+{% if section.settings.quick_add == 'standard' %}
+  <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
+{% endif %}
+
+{% if section.settings.quick_add == 'bulk' %}
+  <script src="{{ 'quick-add-bulk.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'quantity-popover.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'price-per-item.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'quick-order-list.js' | asset_url }}" defer="defer"></script>
+{% endif %}
+
+{% style %}
+.section-{{ section.id }}-padding {
+  padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+  padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+}
+@media screen and (min-width: 750px) {
+  .p-60 { padding: 0 60px; }
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+}
+.product-grid { max-width: 1180px; margin: auto; }
+{% endstyle %}
+
+{% assign filtered_products = section.settings.collection.products | where: "tags", "Beef Jerky" %}
+{% assign products_to_display = filtered_products.size | at_most: section.settings.products_to_show %}
+
+<div class="color-{{ section.settings.color_scheme }} isolate gradient position-relative py-40">
+  <img src="{{ 'flavor-bomb.svg' | asset_url }}" class="special-tag img-fluid" alt="FLAVOR BOMB">
+
+  <div class="page-width px-0 section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}" id="collection-{{ section.id }}">
+    <div class="collection__title title-wrapper w-100 p-60">
+      {% if section.settings.title != blank %}
+        <h2 class="title superhumn-title ways-title-{{ section.id }} mb-22 inline-richtext heading fs-italic {{ section.settings.heading_size }}">
+          <span>{{ section.settings.title }}</span>
+        </h2>
+      {% endif %}
+      {% if section.settings.description != blank %}
+        <div class="collection__description {{ section.settings.description_style }} rte">
+          {{ section.settings.description }}
+        </div>
+      {% endif %}
+    </div>
+
+    <slider-component class="slider-mobile-gutter{% if section.settings.full_width %} slider-component-full-width{% endif %} position-relative">
+      <ul class="grid p-60 product-grid contains-card slick-items" aria-label="{{ 'general.slider.name' | t }}">
+        {% for product in filtered_products limit: section.settings.products_to_show %}
+          <li class="superhumn-card-items">
+            {% render 'card-product',
+              card_product: product,
+              media_aspect_ratio: section.settings.image_ratio,
+              image_shape: section.settings.image_shape,
+              show_secondary_image: section.settings.show_secondary_image,
+              show_vendor: section.settings.show_vendor,
+              show_rating: section.settings.show_rating,
+              section_id: section.id,
+              quick_add: section.settings.quick_add
+            %}
+          </li>
+        {% endfor %}
+      </ul>
+    </slider-component>
+
+    {% if section.settings.show_view_all and section.settings.collection.products_count > section.settings.products_to_show %}
+      <div class="center collection__view-all">
+        <a href="{{ section.settings.collection.url }}" class="{% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %}">
+          {{ 'sections.featured_collection.view_all' | t }}
+        </a>
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+{% render 'slick-js' %}
+
+{% schema %}
+{
+  "name": "Related Products by Tag",
+  "tag": "section",
+  "class": "section feature-collection",
+  "settings": [
+    { "type": "inline_richtext", "id": "title", "label": "Heading", "default": "Related Products" },
+    { "type": "richtext", "id": "description", "label": "Description" },
+    { "type": "select", "id": "heading_size", "label": "Heading Size", "options": [
+        { "value": "h2", "label": "H2" },
+        { "value": "h1", "label": "H1" },
+        { "value": "h0", "label": "H0" },
+        { "value": "hxl", "label": "HXL" },
+        { "value": "hxxl", "label": "HXXL" }
+      ], "default": "hxl" },
+    { "type": "select", "id": "description_style", "label": "Description Style", "options": [
+        { "value": "body", "label": "Body" },
+        { "value": "subtitle", "label": "Subtitle" },
+        { "value": "uppercase", "label": "Uppercase" }
+      ], "default": "body" },
+    { "type": "collection", "id": "collection", "label": "Collection" },
+    { "type": "range", "id": "products_to_show", "label": "Number of Products", "min": 2, "max": 25, "step": 1, "default": 3 },
+    { "type": "checkbox", "id": "full_width", "label": "Full Width", "default": true },
+    { "type": "checkbox", "id": "show_view_all", "label": "Show View All Button", "default": true },
+    { "type": "select", "id": "view_all_style", "label": "View All Style", "options": [
+        { "value": "link", "label": "Link" },
+        { "value": "outline", "label": "Outline" },
+        { "value": "solid", "label": "Solid" }
+      ], "default": "solid" },
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color Scheme", "default": "scheme-5" },
+    { "type": "checkbox", "id": "show_secondary_image", "label": "Show Secondary Image", "default": false },
+    { "type": "checkbox", "id": "show_vendor", "label": "Show Vendor", "default": false },
+    { "type": "checkbox", "id": "show_rating", "label": "Show Rating", "default": false },
+    { "type": "select", "id": "quick_add", "label": "Quick Add Option", "options": [
+        { "value": "none", "label": "None" },
+        { "value": "standard", "label": "Standard" },
+        { "value": "bulk", "label": "Bulk" }
+      ], "default": "none" },
+    { "type": "range", "id": "padding_top", "label": "Padding Top", "min": 0, "max": 200, "step": 4, "unit": "px", "default": 100 },
+    { "type": "range", "id": "padding_bottom", "label": "Padding Bottom", "min": 0, "max": 200, "step": 4, "unit": "px", "default": 100 }
+  ],
+  "presets": [
+    { "name": "Related Products by Tag" }
+  ]
+}
+{% endschema %}
