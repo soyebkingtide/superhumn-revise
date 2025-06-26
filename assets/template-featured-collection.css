@@ -128,15 +128,15 @@
   }
 }
 
-#beef-product .feature-collection .slick-initialized .slick-slide {
+.feature-collection.beef-product-scroller .slick-initialized .slick-slide {
   padding: 0 !important;
 }
 
-#beef-product .card__inner {
+.beef-product-scroller .card__inner {
   max-width: 100% !important;
 }
 
-#beef-product .card__information {
+.beef-product-scroller .card__information {
   padding-bottom: 15px !important;
   padding-top: 15px !important;
 }
