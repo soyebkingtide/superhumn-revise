@@ -261,7 +261,7 @@ font-weight: 700; }
   <div class="page-width">
     <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
 
- {%- for block in section.blocks -%}
+ {% comment %} {%- for block in section.blocks -%}
             {%- case block.type -%}
 
          {%- when 'description' -%}
@@ -272,7 +272,7 @@ font-weight: 700; }
                 {%- endif -%}
               {%- endcase -%}
 
-   {%- endfor -%}
+   {%- endfor -%} {% endcomment %}
 
       
         
@@ -309,6 +309,19 @@ font-weight: 700; }
                     </h2>
                   </a>
                 </div>
+
+
+                
+         {%- when 'description' -%}
+          {%- if product.description != blank -%}
+            <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
+              {{ product.description }}
+            </div>
+          {%- endif -%}
+       
+
+
+
               {%- when 'price' -%}
                 <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }} class="m-0">
                   {%- render 'price',
