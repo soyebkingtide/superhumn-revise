@@ -128,7 +128,8 @@
   }
 }
 
-.beef-product-scroller .slick-initialized .slick-slide {
+.beef-product-scroller .slick-initialized .slick-slide,
+.beef-product-scroller .contains-card li {
   padding: 0 !important;
 }
 
