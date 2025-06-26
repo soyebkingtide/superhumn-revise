@@ -74,9 +74,9 @@
 }
 
 /* .controlVd{
-        transform: scale(.6)!important;
-        margin-top:-20px;
-  } */
+      transform: scale(.6)!important;
+      margin-top:-20px;
+} */
 
 .feature-collection .card__inner {
   max-width: 210px;
@@ -130,13 +130,13 @@
 
 /* 
 .feature-collection  .card__inner{
-    min-height: 690px;
+  min-height: 690px;
 } */
 
 /* @media (max-width:749px) {
-  .feature-collection .slick-initialized .slick-slide {
- 
-  margin: 0 10px;
+.feature-collection .slick-initialized .slick-slide {
+
+margin: 0 10px;
 }
 
 } */
