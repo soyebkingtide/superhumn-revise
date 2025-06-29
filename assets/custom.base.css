@@ -300,19 +300,30 @@ mark {
   font-family: "Zuume";
 }
 
-.list-menu a,
-header-menu summary {
+.list-menu a {
   font-size: 3.2rem;
   color: #fff;
   border-radius: 4px;
   font-weight: 700;
 }
 
+header-menu summary {
+  font-size: 3.2rem !important;
+  color: #fff !important;
+  border-radius: 4px !important;
+  font-weight: 700 !important;
+}
+
 .list-menu a:hover,
-a[aria-current="page"],
-header-menu summary:hover {
+a[aria-current="page"] {
   text-shadow: 6px 4px 0 var(--gray);
   background: #ea3323;
+  text-decoration: none !important;
+}
+
+header-menu summary:hover {
+  text-shadow: 6px 4px 0 var(--gray) !important;
+  background: #ea3323 !important;
   text-decoration: none !important;
 }
 
