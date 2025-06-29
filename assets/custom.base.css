@@ -308,7 +308,7 @@ summary.list-menu__item {
   font-weight: 700;
 }
 
-header-menu summary {
+summary.list-menu__item {
   font-size: 3.2rem !important;
   color: #fff !important;
   border-radius: 4px !important;
