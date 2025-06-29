@@ -300,7 +300,8 @@ mark {
   font-family: "Zuume";
 }
 
-.list-menu a {
+.list-menu a,
+summary.list-menu__item {
   font-size: 3.2rem;
   color: #fff;
   border-radius: 4px;
