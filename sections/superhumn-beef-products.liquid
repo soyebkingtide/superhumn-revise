@@ -42,6 +42,32 @@
     display:none!important; 
     content:'';
 }
+  .w-94{
+    
+    width:90%;
+    margin:auto;
+  }
+
+
+#beef-product  .beef-jerkey-items {
+      border: solid 10px;
+}
+#beef-product  .beef-jerkey-items .superhumn-card-items {
+  padding: 0;
+}
+
+#beef-product .beef-jerkey-items .card__inner {
+  max-width: 100%;
+}
+
+#beef-product .beef-jerkey-items .card__information {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+
+  
+  
 {% endstyle %}
 
 
@@ -58,7 +84,7 @@
 <div class="color-{{ section.settings.color_scheme }} isolate gradient position-relative py-40" id="beef-product">
   <img src="{{ 'flavor-bomb.svg' | asset_url }}" class="special-tag img-fluid" alt="FLAVOR BOMB">
 
-  <div class="page-width px-0 section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}" id="collection-{{ section.id }}">
+  <div class="page-width w-100 px-0 section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}" id="collection-{{ section.id }}">
     <div class="collection__title title-wrapper w-100 p-60 kill-after">
       {% if section.settings.title != blank %}
         <h2 class="title superhumn-title  ways-title-{{ section.id }} mb-22 inline-richtext heading fs-italic {{ section.settings.heading_size }}">
@@ -72,7 +98,7 @@
       {% endif %}
     </div>
 
-    <slider-component class="slider-mobile-gutter{% if section.settings.full_width %} slider-component-full-width{% endif %} position-relative">
+    <slider-component class="w-94 slider-mobile-gutter{% if section.settings.full_width %} slider-component-full-width{% endif %} position-relative">
 
 
         <ul class="grid p-60 product-grid  w-100 contains-card beef-jerkey-items" aria-label="{{ 'general.slider.name' | t }}">

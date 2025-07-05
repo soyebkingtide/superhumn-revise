@@ -118,38 +118,6 @@ $(".slider-testimonials").slick({
   ],
 });
 
-$(".beef-jerkey-items").slick({
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  autoplay: false, // No autoplay
-  speed: 600, // Transition speed in ms
-  //infinite: true, // Enables loop
-  //cssEase: "linear", // No ease (straight transition)
-  dots: false,
-  arrows: true, // Show next/prev arrows
-
-  responsive: [
-    {
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 3,
-      },
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 2,
-      },
-    },
-    {
-      breakpoint: 500,
-      settings: {
-        slidesToShow: 1,
-      },
-    },
-  ],
-});
-
 //------Featured collection slider
 
 $(document).ready(function () {
@@ -199,6 +167,41 @@ $(document).ready(function () {
       },
     ],
   });
+});
+
+
+// Beef Jerkey new products
+$(".beef-jerkey-items").slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  centerMode:false,
+  autoplay: false, // No autoplay
+  speed: 600, // Transition speed in ms
+  //infinite: true, // Enables loop
+  //cssEase: "linear", // No ease (straight transition)
+  dots: false,
+  arrows: true, // Show next/prev arrows
+
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 500,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
 });
 
 // Global function to check visibility and apply a class
@@ -275,3 +278,45 @@ if (screenSize1 >= 922) {
   window.addEventListener("scroll", onScroll);
   window.addEventListener("resize", onScroll);
 }
+
+
+// open mega menu on hover
+
+const mega_menu = document.querySelector('.mega-menu');
+const mega_menu_content = document.querySelector('.mega-menu__content');
+const HeaderMenu_get_jerky_link =  document.querySelector('#HeaderMenu-get-jerky');
+
+
+
+mega_menu.addEventListener('mouseenter', () => {
+  mega_menu.setAttribute('open', '');
+  mega_menu_content.setAttribute('open', '');
+   mega_menu_content.style.zIndex = 1;
+  console.log("Hovered: open attribute added to both");
+});
+
+mega_menu.addEventListener('mouseleave', () => {
+  mega_menu.removeAttribute('open');
+  mega_menu_content.removeAttribute('open');
+   mega_menu_content.style.zIndex = 0;
+  
+  console.log("Mouse left: open attribute removed from both");
+});
+
+
+HeaderMenu_get_jerky_link.addEventListener('click', () => {
+
+  window.location.href = "/products/beefjerky";
+  
+})
+
+
+
+
+
+
+
+
+
+  
+
