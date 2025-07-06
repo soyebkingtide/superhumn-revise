@@ -251,13 +251,21 @@
     const contactForm_numlocations = document.querySelector('#ContactForm-numlocations');
     const contactForm_multiple = document.querySelector('#ContactForm-multiple');
 
-    if (contactForm_multiple) {
-      console.log(contactForm_multiple.value + " ➤ get the value of multiple locations dropdown");
-    } else {
-      console.warn("contactForm_multiple not found");
+    let showOptionNumlocations = false;
+
+    if(contactForm_multiple.value == "no"){
+
+    showOptionNumlocations = false;
+
     }
 
-    // You can add logic here to show/hide contactForm_numlocations based on selection
+    else {
+        showOptionNumlocations = true;
+    }
+
+   
+
+    
   });
 </script>
 
