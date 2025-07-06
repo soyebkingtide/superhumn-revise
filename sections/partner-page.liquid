@@ -32,6 +32,9 @@
   <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
     {{ page.content }}
 
+
+    <h2>Wholesale Inquiry Form</h2>
+
     {%- form 'contact', id: 'WholesaleInquiryForm', class: 'isolate scroll-trigger animate--slide-in', novalidate: 'novalidate', data-hcaptcha-bound: 'true' -%}
       <input type="hidden" name="form_type" value="contact">
       <input type="hidden" name="utf8" value="✓">
