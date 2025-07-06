@@ -143,19 +143,24 @@
           <label>What products are you interested in?</label>
           <div class="field__input">
 
-          <ul class="product-list">
+          <div class="product-list">
             {% assign collection = collections['fresh-meat-flavors'] %}
             {% for product in collection.products %}
-              <li><a href="{{ product.url }}">{{ product.title }}</a></li>
+             
+
+              <label><input type="checkbox" name="contact[Product Interests][]" value="{{ product.title }}">{{ product.title }}</label><br>
+
+
             {% endfor %}
-          </ul>
 
-
-            <label><input type="checkbox" name="contact[Product Interests][]" value="Plant-Based Chicken"> Plant-Based Chicken</label><br>
-            <label><input type="checkbox" name="contact[Product Interests][]" value="Plant-Based Beef"> Plant-Based Beef</label><br>
-            <label><input type="checkbox" name="contact[Product Interests][]" value="Vegan Cheese"> Vegan Cheese</label><br>
-            <label><input type="checkbox" name="contact[Product Interests][]" value="Prepared Meals"> Prepared Meals</label><br>
             <label><input type="checkbox" name="contact[Product Interests][]" value="Other"> Other</label>
+            
+          </div>
+
+
+            
+          
+         
           </div>
         </div>
 
