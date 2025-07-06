@@ -21,7 +21,18 @@
   .field {
    
     margin: 10px 0!important;
+    box-shadow:none;
 }
+
+
+.field input{
+   
+    transition: box-shadow var(--duration-short) ease;
+}
+
+
+
+
 {%- endstyle -%}
 
 <div class="page-width page-width--narrow section-{{ section.id }}-padding">
