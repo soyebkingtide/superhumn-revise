@@ -253,17 +253,25 @@
 
     let showOptionNumlocations = false;
 
-    contactForm_multiple.value = "no";
-    contactForm_numlocations.style.display = showOptionNumlocations == true? "block": "none"
+    function toggleOptionDisplay(){
+        contactForm_numlocations.style.display = showOptionNumlocations == true? "block": "none"
+    }
+
 
 
     contactForm_multiple.addEventListener("change", function(){
 
     showOptionNumlocations = contactForm_multiple.value == "yes"? true: false;
-    contactForm_numlocations.style.display = showOptionNumlocations == true? "block": "none"
+    toggleOptionDisplay();
 
 
     })
+
+    
+    contactForm_multiple.value = "no";
+
+    toggleOptionDisplay();
+    
 
     
 
