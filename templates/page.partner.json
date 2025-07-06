@@ -13,9 +13,11 @@
       "type": "partner-page",
       "settings": {
         "padding_top": 28,
-        "padding_bottom": 28
+        "padding_bottom": 100
       }
     }
   },
-  "order": ["main"]
+  "order": [
+    "main"
+  ]
 }
