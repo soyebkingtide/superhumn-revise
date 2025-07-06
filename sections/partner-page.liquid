@@ -143,12 +143,11 @@
           <label>What products are you interested in?</label>
           <div class="field__input">
 
-
-    {% for product in collection.products %} 
-    
-        {{ product.title }}
-    
-    {% endfor %}
+          <ul class="product-list">
+            {% for product in collection.products %}
+              <li><a href="{{ product.url }}">{{ product.title }}</a></li>
+            {% endfor %}
+          </ul>
 
 
             <label><input type="checkbox" name="contact[Product Interests][]" value="Plant-Based Chicken"> Plant-Based Chicken</label><br>
