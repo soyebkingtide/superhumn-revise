@@ -258,6 +258,8 @@
     contactForm_multiple.addEventListener("change", function(){
 
     showOptionNumlocations = contactForm_multiple.value == "yes"? true: false;
+    contactForm_numlocations.style.display = showOptionNumlocations == true? "block": "none"
+
 
     })
 
@@ -267,7 +269,6 @@
 
     console.log(showOptionNumlocations)
 
-    contactForm_numlocations.style.display = showOptionNumlocations == true? "block": "none"
 
    
 
