@@ -111,10 +111,10 @@
 
         <div class="field">
           <select class="field__input" id="ContactForm-multiple" name="contact[Multiple Locations]">
-            <option>No</option>
-            <option>Yes</option>
+            <option value="no" checked>No</option>
+            <option value="yes">Yes</option>
           </select>
-          <label class="field__label" for="ContactForm-multiple">Operate Multiple Locations?</label>
+          <label class="field__label" for="ContactForm-multiple">Do you operate multiple locations?</label>
         </div>
 
         <div class="field">
@@ -245,6 +245,14 @@
     </div>
   </div>
 </div>
+
+<script>
+
+const contactForm_numlocations = document.querySelector('#ContactForm-numlocations');
+const contactForm_multiple = document.querySelector('#ContactForm-multiple');
+
+consle.log(contactForm_multiple.value)
+</script>
 
 {% schema %}
 {
