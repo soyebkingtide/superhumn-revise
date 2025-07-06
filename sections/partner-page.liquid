@@ -140,8 +140,17 @@
         <!-- 🔹 Order Details -->
         <h3 class="m-0">Order Details </h3>
         <div class="field">
-          <label class="field__label">Product Interests</label>
+          <label>What products are you interested in?</label>
           <div class="field__input">
+
+
+    {% for product in collection.products %} 
+    
+        {{ product.title }}
+    
+    {% endfor %}
+
+
             <label><input type="checkbox" name="contact[Product Interests][]" value="Plant-Based Chicken"> Plant-Based Chicken</label><br>
             <label><input type="checkbox" name="contact[Product Interests][]" value="Plant-Based Beef"> Plant-Based Beef</label><br>
             <label><input type="checkbox" name="contact[Product Interests][]" value="Vegan Cheese"> Vegan Cheese</label><br>
