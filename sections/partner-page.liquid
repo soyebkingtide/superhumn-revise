@@ -253,17 +253,10 @@
 
     let showOptionNumlocations = false;
 
-    if(contactForm_multiple.value == "no"){
+  
+    showOptionNumlocations = contactForm_multiple.value === "yes";
 
-    showOptionNumlocations = false;
-
-    }
-
-    else {
-        showOptionNumlocations = true;
-    }
-
-    console.log("Shw form" + showOptionNumlocations)
+    console.log(showOptionNumlocations)
 
    
 
