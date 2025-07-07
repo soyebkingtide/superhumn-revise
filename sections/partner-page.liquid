@@ -13,26 +13,18 @@
     }
   }
 
-
-  .field__input, .customer .field input{
-    height:auto!important;
+  .field__input, .customer .field input {
+    height: auto !important;
   }
 
   .field {
-   
-    margin: 10px 0!important;
-    box-shadow:none;
-}
+    margin: 10px 0 !important;
+    box-shadow: none;
+  }
 
-
-.field input{
-   
+  .field input {
     transition: box-shadow var(--duration-short) ease;
-}
-
-
-
-
+  }
 {%- endstyle -%}
 
 <div class="page-width page-width--narrow section-{{ section.id }}-padding">
@@ -45,31 +37,38 @@
 
     <br>
 
-    <h2>Wholesale Inquiry Form test1</h2>
+    <h2>Wholesale Inquiry Form</h2>
 
-      {%- form 'contact', id: 'WholesaleInquiryForm', class: contact_form_class -%}
+    
+
+    {%- form 'contact', id: 'WholesaleInquiryForm', class: contact_form_class -%}
       {%- if form.posted_successfully? -%}
         <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>
           {% render 'icon-success' %}
           {{ 'templates.contact.form.post_success' | t }}
         </h2>
-      {%- elsif form.errors -%}
-        <div class="form__message">
-          <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>
-            {% render 'icon-error' %}
-            {{ 'templates.contact.form.error_heading' | t }}
-          </h2>
+      {%- else -%}
+        <div class="form__message" id="form-messages">
+          {%- if form.errors -%}
+            <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>
+              {% render 'icon-error' %}
+              {{ 'templates.contact.form.error_heading' | t }}
+            </h2>
+          {%- endif -%}
         </div>
-        <ul class="form-status-list caption-large" role="list">
-          <li>
-            <a href="#ContactForm-email" class="link">
-              {{ form.errors.translated_fields.email | capitalize }}
-              {{ form.errors.messages.email }}
-            </a>
-          </li>
+
+        <ul class="form-status-list caption-large" role="list" id="custom-error-list">
+          {%- if form.errors contains 'email' -%}
+            <li>
+              <a href="#ContactForm-email" class="link">
+                {{ form.errors.translated_fields.email | capitalize }}
+                {{ form.errors.messages.email }}
+              </a>
+            </li>
+          {%- endif -%}
+          <!-- Company error added via JS -->
         </ul>
       {%- endif -%}
-
 
       <input type="hidden" name="form_type" value="contact">
       <input type="hidden" name="utf8" value="✓">
@@ -77,7 +76,7 @@
       <div class="contact__fields">
 
         <!-- 🔹 Company Info -->
-         <h3 class="m-0">Company Info</h3>
+        <h3 class="m-0">Company Info</h3>
         <div class="field">
           <input class="field__input" type="text" id="ContactForm-company" name="contact[Company Name]" placeholder="Company Name">
           <label class="field__label" for="ContactForm-company">Company Name</label>
@@ -144,16 +143,16 @@
             placeholder="{{ 'templates.contact.form.email' | t }}"
           >
           <label class="field__label" for="ContactForm-email">
-            {{- 'templates.contact.form.email' | t }}
-            <span aria-hidden="true">*</span></label
-          >
+            {{ 'templates.contact.form.email' | t }}
+            <span aria-hidden="true">*</span>
+          </label>
           {%- if form.errors contains 'email' -%}
             <small class="contact__field-error" id="ContactForm-email-error">
               <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
               <span class="form__message">
-                {%- render 'icon-error' -%}
-                {{- form.errors.translated_fields.email | capitalize }}
-                {{ form.errors.messages.email -}}
+                {% render 'icon-error' %}
+                {{ form.errors.translated_fields.email | capitalize }}
+                {{ form.errors.messages.email }}
               </span>
             </small>
           {%- endif -%}
@@ -173,7 +172,7 @@
 
         <div class="field">
           <select class="field__input" id="ContactForm-multiple" name="contact[Multiple Locations]">
-            <option value="no" checked>No</option>
+            <option value="no" selected>No</option>
             <option value="yes">Yes</option>
           </select>
           <label class="field__label" for="ContactForm-multiple">Do you operate multiple locations?</label>
@@ -188,33 +187,18 @@
           <input class="field__input" type="text" id="ContactForm-delivery" name="contact[Delivery Address]" placeholder="Delivery Address (optional)">
           <label class="field__label" for="ContactForm-delivery">Delivery Address</label>
         </div>
-        <!-- 🔹 Order Details -->
-        <h3 class="m-0">Order Details </h3>
-        <label><strong></strong></label>
-        <div class="field">
-        
-          <div class="field__input">
 
-          <div class="product-list">
+        <!-- 🔹 Order Details -->
+        <h3 class="m-0">Order Details</h3>
+        <div class="field">
+          <div class="field__input product-list">
             {% assign collection = collections['fresh-meat-flavors'] %}
             {% for product in collection.products %}
-             
-
               <label><input type="checkbox" name="contact[Product Interests][]" value="{{ product.title }}">{{ product.title }}</label><br>
-
-
             {% endfor %}
-
             <label><input type="checkbox" name="contact[Product Interests][]" value="Other"> Other</label>
-            
           </div>
-
-
-            
-          
-         
-          </div>
-          <label class="field__label" >What products are you interested in?</label>
+          <label class="field__label">What products are you interested in?</label>
         </div>
 
         <div class="field">
@@ -250,18 +234,16 @@
         <!-- 🔹 Operations -->
         <h3 class="m-0">Operations</h3>
         <div class="field">
-          <label class="field__label">Current Distributors or Broadliners </label>
+          <label class="field__label">Current Distributors or Broadliners</label>
           <div class="field__input">
             <label><input type="checkbox" name="contact[Distributors][]" value="Sysco"> Sysco</label><br>
             <label><input type="checkbox" name="contact[Distributors][]" value="US Foods"> US Foods</label><br>
             <label><input type="checkbox" name="contact[Distributors][]" value="KeHe"> KeHe</label><br>
             <label><input type="checkbox" name="contact[Distributors][]" value="UNFI"> UNFI</label><br>
             Other: <input type="text" name="contact[Distributors Other]" id="broadliners-others">
-           
           </div>
         </div>
 
-        
         <div class="field">
           <select class="field__input" name="contact[Sample Request]">
             <option>No</option>
@@ -270,15 +252,12 @@
           <label class="field__label">Request Sample Pack?</label>
         </div>
 
-
-
         <div class="field">
           <input class="field__input" type="text" name="contact[Sample Delivery Address]" placeholder="Address for Sample Delivery">
           <label class="field__label">Sample Delivery Address</label>
         </div>
 
         <div class="field">
-        
           <div class="field__input">
             <label><input type="checkbox" name="contact[Certifications][]" value="Kosher"> Kosher</label><br>
             <label><input type="checkbox" name="contact[Certifications][]" value="Halal"> Halal</label><br>
@@ -287,11 +266,11 @@
             <label><input type="checkbox" name="contact[Certifications][]" value="Organic"> Organic</label><br>
             <label><input type="checkbox" name="contact[Certifications][]" value="None"> None</label>
           </div>
-          <label class="field__label">Any specific certifications required? </label>
+          <label class="field__label">Any specific certifications required?</label>
         </div>
 
         <!-- 🔹 Notes & Source -->
-        <h3 class="m-0"> Notes & Source </h3>
+        <h3 class="m-0">Notes & Source</h3>
         <div class="field">
           <textarea rows="5" id="ContactForm-notes" class="text-area field__input" name="contact[Notes]" placeholder="Tell us more about your needs or menu plans"></textarea>
           <label class="field__label" for="ContactForm-notes">Tell us more about your needs or menu plans</label>
@@ -313,84 +292,52 @@
       <div class="contact__button">
         <button type="submit" class="button">Submit</button>
       </div>
+
+
+    
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.querySelector('#WholesaleInquiryForm');
+      const companyField = document.getElementById('ContactForm-company');
+      const errorList = document.getElementById('custom-error-list');
+      if (!form || !companyField || !errorList) return;
+
+      form.addEventListener("submit", function (e) {
+        const prev = document.getElementById('company-error-item');
+        if (prev) prev.remove();
+
+        if (companyField.value.trim() === "") {
+          e.preventDefault();
+          e.stopImmediatePropagation();
+          errorList.innerHTML += `
+            <li id="company-error-item">
+              <a href="#ContactForm-company" class="link">Please enter Company Info</a>
+            </li>`;
+          companyField.focus();
+        }
+      }, { capture: true });
+    });
+  </script>
+
+    
     {%- endform -%}
 
-
     <p><i class="fas fa-phone"></i><a href="tel:000000000"> book a call with Paul Johnson </a></p>
-
   </div>
 </div>
 
+<!-- JS: Toggle # of locations -->
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     const contactForm_numlocations = document.querySelector('#ContactForm-numlocations');
     const contactForm_multiple = document.querySelector('#ContactForm-multiple');
 
-    let showOptionNumlocations = false;
-
-    function toggleOptionDisplay(){
-        contactForm_numlocations.style.display = showOptionNumlocations == true? "block": "none"
+    function toggleOptionDisplay() {
+      contactForm_numlocations.style.display = contactForm_multiple.value === "yes" ? "block" : "none";
     }
 
-
-
-    contactForm_multiple.addEventListener("change", function(){
-
-    showOptionNumlocations = contactForm_multiple.value == "yes"? true: false;
-    toggleOptionDisplay();
-
-
-    })
-
-    
-    contactForm_multiple.value = "no";
-
-    toggleOptionDisplay();
-    
-
-    
-
-    
-
-    console.log(showOptionNumlocations)
-
-
-   
-
-    
+    contactForm_multiple.addEventListener("change", toggleOptionDisplay);
+    toggleOptionDisplay(); // Run on load
   });
 </script>
 
-{% schema %}
-{
-  "name": "Partner",
-  "tag": "section",
-  "class": "section",
-  "settings": [
-    {
-      "type": "header",
-      "content": "t:sections.all.padding.section_padding_heading"
-    },
-    {
-      "type": "range",
-      "id": "padding_top",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.all.padding.padding_top",
-      "default": 36
-    },
-    {
-      "type": "range",
-      "id": "padding_bottom",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.all.padding.padding_bottom",
-      "default": 36
-    }
-  ]
-}
-{% endschema %}
