@@ -34,6 +34,22 @@
       </a>
     </div>
 
+
+
+
+    {% assign packs_per_case = 10 %}
+{% assign pack_weight = 2 %}
+{% assign weight_unit = "lbs" %}
+{% assign total_weight = packs_per_case | times: pack_weight %}
+{% assign price_per_lb = 5.50 %}
+{% assign case_price = total_weight | times: price_per_lb %}
+
+<p><strong>Case ({{ packs_per_case }} packs × {{ pack_weight }} {{ weight_unit }} = {{ total_weight }} {{ weight_unit }})</strong></p>
+<p>${{ case_price | money_without_trailing_zeros }}</p>
+
+
+
+
     <div class="cart__warnings">
       <h1 class="cart__empty-text">{{ 'sections.cart.empty' | t }}</h1>
       <a href="{{ routes.all_products_collection_url }}" class="button">
