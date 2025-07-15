@@ -184,11 +184,7 @@
                       </ul>
 
 
-                      
-
 {% assign weight_unit = "lbs" %}
-{% assign packs_per_order = 10 %}
-
 {%- assign title = item.variant.title | downcase -%}
 
 {%- assign pack_weight_str = title | split: "lbs" | first | split: "-" | last | strip -%}
@@ -197,13 +193,16 @@
 {%- assign pack_weight = pack_weight_str | times: 1.0 -%}
 {%- assign price_per_lb = price_per_lb_str | times: 1.0 -%}
 
-{%- assign total_weight = packs_per_order | times: pack_weight -%}
 {%- assign pack_price = pack_weight | times: price_per_lb -%}
 {%- assign total_price = pack_price | times: item.quantity -%}
 {%- assign total_weight_all = pack_weight | times: item.quantity -%}
 
 <p><strong>Pack ({{ pack_weight }} {{ weight_unit }})</strong></p>
-<p>Total: {{ item.quantity }} pack{{ item.quantity > 1  ? 's' : '' }} = {{ total_weight_all }} {{ weight_unit }}</p>
+<p>
+  Total: {{ item.quantity }} pack
+  {% if item.quantity > 1 %}s{% endif %}
+  = {{ total_weight_all }} {{ weight_unit }}
+</p>
 <p>Price per lb: ${{ price_per_lb }}</p>
 <p>Total Price: ${{ total_price | money_without_trailing_zeros }}</p>
 
