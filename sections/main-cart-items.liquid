@@ -186,8 +186,7 @@
 
 
 
-
-                   {% assign weight_unit = "lbs" %}
+{% assign weight_unit = "lbs" %}
 {% assign packs_per_case = 10 %}
 
 {%- assign title = item.variant.title | downcase -%}
@@ -202,7 +201,7 @@
 {%- assign case_price = total_weight | times: price_per_lb -%}
 
 <p><strong>Case ({{ packs_per_case }} packs × {{ pack_weight }} {{ weight_unit }} = {{ total_weight }} {{ weight_unit }})</strong></p>
-{% comment %} <p>${{ case_price | money_without_trailing_zeros }}</p> {% endcomment %}
+<p>${{ case_price | money_without_trailing_zeros }}</p>
 
 
 
