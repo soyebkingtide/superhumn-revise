@@ -186,23 +186,23 @@
 
 
 
-                      
-                                  
-{% assign packs_per_case = item.product.metafields.custom.packs_per_case.value %}
-{% assign pack_weight = item.product.metafields.custom.pack_weight.value %}
-{% assign price_per_lb = item.product.metafields.custom.price_per_lb.value %}
-{% assign weight_unit = "lbs" %}
 
-{% if packs_per_case and pack_weight and price_per_lb %}
-  {% assign total_weight = packs_per_case | times: pack_weight %}
-  {% assign case_price = total_weight | times: price_per_lb %}
+                   {% assign weight_unit = "lbs" %}
+{% assign packs_per_case = 10 %}
 
-  <p><strong>Case ({{ packs_per_case }} packs × {{ pack_weight }} {{ weight_unit }} = {{ total_weight }} {{ weight_unit }})</strong></p>
-  <p>${{ case_price | money_without_trailing_zeros }}</p>
-{% else %}
-  <p>{{ item.product.title }}</p>
-  <p><em>Missing metafields</em></p>
-{% endif %}
+{%- assign title = item.variant.title | downcase -%}
+
+{%- assign pack_weight_str = title | split: "lbs" | first | split: "-" | last | strip -%}
+{%- assign price_per_lb_str = title | split: "$" | last | split: "/lb" | first | strip -%}
+
+{%- assign pack_weight = pack_weight_str | times: 1.0 -%}
+{%- assign price_per_lb = price_per_lb_str | times: 1.0 -%}
+
+{%- assign total_weight = packs_per_case | times: pack_weight -%}
+{%- assign case_price = total_weight | times: price_per_lb -%}
+
+<p><strong>Case ({{ packs_per_case }} packs × {{ pack_weight }} {{ weight_unit }} = {{ total_weight }} {{ weight_unit }})</strong></p>
+<p>${{ case_price | money_without_trailing_zeros }}</p>
 
 
 
