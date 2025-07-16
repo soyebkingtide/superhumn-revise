@@ -303,8 +303,6 @@ font-weight: 700; }
                   -%}
 
 
-
-                    
            {% assign weight_unit = "lbs" %}
 {% assign packs_per_case = 10 %}
 
@@ -323,6 +321,16 @@ font-weight: 700; }
                  
 <p><strong>Total Case Price: </strong>${{ case_price | money_without_trailing_zeros }}</p>
                   {% endcomment %}
+
+
+<!-- Calculate and assign case_info -->
+{% assign case_info = packs_per_case | append: " packs × " | append: pack_weight | append: " " | append: weight_unit | append: " = " | append: total_weight | append: " " | append: weight_unit %}
+
+<!-- Display on product page -->
+<p><strong>Case ({{ case_info }})</strong></p>
+
+<!-- Add as property to show in shipping info -->
+<input type="hidden" name="properties[Case Info]" value="{{ case_info }}">
 
 
 
