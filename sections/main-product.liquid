@@ -324,7 +324,13 @@ font-weight: 700; }
 
 
 <!-- Calculate and assign case_info -->
+ {% comment %}  
 {% assign case_info = packs_per_case | append: " packs × " | append: pack_weight | append: " " | append: weight_unit | append: " = " | append: total_weight | append: " " | append: weight_unit %}
+{% endcomment %}
+
+{% assign case_info = packs_per_case | append: " x " | append: pack_weight | append: " " | append: weight_unit | append: " packs (" | append: total_weight | append: " " | append: weight_unit | append: ")" %}
+
+
 
 <!-- Display on product page -->
 <p><strong>Case ({{ case_info }})</strong></p>
