@@ -201,9 +201,9 @@
 
 
 
-{%- if pack_weight == 2 -%}
+{%- if pack_weight == 2.0 -%}
   {% assign packs_per_case = 10 %}
-{%- elsif pack_weight == 8 -%}
+{%- elsif pack_weight == 8.0 -%}
   {% assign packs_per_case = 4 %}
 {%- else -%}
   {% assign packs_per_case = default_packs_per_case %}
