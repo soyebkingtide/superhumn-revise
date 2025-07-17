@@ -346,6 +346,17 @@ font-weight: 700; }
 
 {%- assign total_weight = packs_per_case | times: pack_weight -%}
 {%- assign case_price = total_weight | times: price_per_lb -%}
+
+
+
+{%- if pack_weight == 2.0 -%}
+  {% assign packs_per_case = 10 %}
+{%- elsif pack_weight == 8.0 -%}
+  {% assign packs_per_case = 4 %}
+{%- else -%}
+  {% assign packs_per_case = default_packs_per_case %}
+{%- endif -%}
+
  {% comment %}
 <p><strong>Case ({{ packs_per_case }} packs × {{ pack_weight }} {{ weight_unit }} = {{ total_weight }} {{ weight_unit }})</strong></p>
                  
