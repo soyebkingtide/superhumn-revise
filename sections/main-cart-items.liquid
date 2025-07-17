@@ -198,6 +198,19 @@
 {%- assign pack_weight = pack_weight_str | times: 1.0 -%}
 {%- assign price_per_lb = price_per_lb_str | times: 1.0 -%}
 
+
+
+
+{%- if pack_weight == 4 -%}
+  {% assign packs_per_case = 8 %}
+{%- elsif pack_weight == 8 -%}
+  {% assign packs_per_case = 4 %}
+{%- else -%}
+  {% assign packs_per_case = default_packs_per_case %}
+{%- endif -%}
+
+
+
 {%- assign total_weight = packs_per_case | times: pack_weight -%}
 {%- assign case_price = total_weight | times: price_per_lb -%}
 {% comment %} 
