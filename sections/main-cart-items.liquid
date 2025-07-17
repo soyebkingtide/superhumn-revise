@@ -200,11 +200,13 @@
 
 {%- assign total_weight = packs_per_case | times: pack_weight -%}
 {%- assign case_price = total_weight | times: price_per_lb -%}
-
+{% comment %} 
 <p><strong>Case ({{ packs_per_case }} packs × {{ pack_weight }} {{ weight_unit }} = {{ total_weight }} {{ weight_unit }})</strong></p>
 {% comment %} <p>${{ case_price | money_without_trailing_zeros }}</p> {% endcomment %}
+ {% endcomment %}
 
 
+ <p><strong>Case ({{ packs_per_case }} x {{ pack_weight }} {{ weight_unit }} packs ({{ total_weight }} {{ weight_unit }}))</strong></p>
 
 
 
