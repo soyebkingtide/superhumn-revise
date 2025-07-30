@@ -39,36 +39,45 @@
 
 
     {% unless customer %}
-  <!-- login and recover form HTML here -->
+<div class="customer-login" style="max-width: 400px; margin: 40px auto;">
+  <h2 style="text-align: center;">Customer Login</h2>
+
+  {% form 'customer_login' %}
+    {% if form.errors %}
+      <div style="color: red; margin-bottom: 15px;">
+        {{ form.errors | default_errors }}
+      </div>
+    {% endif %}
+
+    <div style="margin-bottom: 15px;">
+      <label for="CustomerEmail">Email</label>
+      <input type="email" name="customer[email]" id="CustomerEmail" required style="width: 100%; padding: 10px;">
+    </div>
+
+    <div style="margin-bottom: 15px;">
+      <label for="CustomerPassword">Password</label>
+      <input type="password" name="customer[password]" id="CustomerPassword" required style="width: 100%; padding: 10px;">
+    </div>
+
+    <div style="margin-bottom: 20px;">
+      <a href="/account/recover">Forgot your password?</a>
+    </div>
+
+    <button type="submit" style="width: 100%; padding: 10px; background: #000; color: #fff;">
+      Login
+    </button>
+  {% endform %}
+
+  <p style="text-align: center; margin-top: 20px;">
+    Don't have an account? <a href="/account/register">Register here</a>
+  </p>
+</div>
 {% else %}
-  <p>Welcome, {{ customer.first_name }}. You are logged in.</p>
-  <p><a href="/account">Go to your account</a></p>
+  <p style="text-align: center;">You are already logged in. <a href="/account">Go to your account</a></p>
 {% endunless %}
 
 
-    ==================
-
-
-    {% if customer and customer.tags contains 'wholesale' %}
-  <p>Wholesale Price: {{ product.metafields.custom.wholesale_price }}</p>
-{% else %}
-  <p>Retail Price: {{ product.price | money }}</p>
-{% endif %}
-
-
-    ===============
-
-
-    <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    if (window.location.hash === '#recover') return; // skip redirect for recovery
-
-    {% if customer %}
-      window.location.href = "/collections/wholesale"; // or any wholesale collection
-    {% endif %}
-  });
-</script>
-
+    
   </div>
   
 
