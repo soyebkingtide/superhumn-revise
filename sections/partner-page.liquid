@@ -34,11 +34,14 @@
 
 
 
-  <div class="customer-login">
-
 
 
     {% unless customer %}
+
+  
+
+  <div class="customer-login">
+    
 <div class="customer-login" style="max-width: 400px; margin: 40px auto;">
   <h2 style="text-align: center;">Customer Login</h2>
 
@@ -74,11 +77,14 @@
 </div>
 {% else %}
   <p style="text-align: center;">Welcome {{ customer.first_name}}  {{ customer.last_name}}!    You are already logged in. <a href="/account">Go to your account</a></p>
+
+    
+  </div>
+  
 {% endunless %}
 
 
     
-  </div>
   
 
   <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
