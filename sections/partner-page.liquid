@@ -30,12 +30,15 @@
 
 
 <div class="page-width section-{{ section.id }}-padding">
+
+    <h1 class="main-page-title page-title center h2{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+        {{ page.title | escape }}
+      </h1>
+  
   <div class="grid grid--1-col-tablet-down grid--2-col">
     
     <div class="grid__item">
-      <h1 class="main-page-title page-title center h2{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
-        {{ page.title | escape }}
-      </h1>
+    
 
       {% unless customer %}
         <div class="customer-login" style="max-width: 400px; margin: 40px auto;">
