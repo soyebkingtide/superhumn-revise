@@ -32,9 +32,10 @@
     {{ page.title | escape }}
   </h1>
 
+
 <div class="grid grid--1-col-tablet-down grid--2-col">
-  <!-- Login Form Column -->
-  <div class="grid__item">
+
+
 
     {% unless customer %}
 
@@ -83,10 +84,8 @@
   
 {% endunless %}
 
-  </div>
 
-  
-      <div class="grid__item">
+    
   
 
   <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
@@ -350,7 +349,7 @@
         <button type="submit" class="button">Submit</button>
       </div>
 
-  </div>
+
     
   <script>
     document.addEventListener("DOMContentLoaded", function () {
