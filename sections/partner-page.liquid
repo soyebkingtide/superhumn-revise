@@ -25,6 +25,10 @@
   .field input {
     transition: box-shadow var(--duration-short) ease;
   }
+
+  .login-btn, .register-btn { max-width:500px!important;}
+
+  
 {%- endstyle -%}
 
 
@@ -71,7 +75,7 @@
           {% endform %}
 
           
-             <a href="/account/register" class="button">Create Wholesale Account</a>
+             <a href="/account/register" class="button register-btn">Create Wholesale Account</a>
          
         </div>
       {% else %}
