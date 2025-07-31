@@ -471,6 +471,22 @@
       "url": {{ request.origin | append: page.url | json }}
     }
   </script>
+
+
+ <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const headerMenu = document.getElementById("Details-HeaderMenu-2");
+    
+    if (headerMenu) {
+      headerMenu.addEventListener("click", function () {
+        window.location.href = "/collections/fresh-meat-flavors";
+      });
+    }
+  });
+</script>
+
+
+
 {%- endif -%}
 
 {% schema %}
