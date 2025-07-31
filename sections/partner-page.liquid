@@ -374,8 +374,22 @@ Sign up or log in to access exclusive wholesale pricing, order history, and volu
       </div>
 
     
+
+
     
-  <script>
+    {%- endform -%}
+
+    <p><i class="fas fa-phone"></i><a href="tel:000000000"> book a call with Paul Johnson </a></p>
+      content
+    </div>
+    </div>
+  </div>
+</div>
+
+
+
+    
+{% javascript %}
     document.addEventListener("DOMContentLoaded", function () {
       const form = document.querySelector('#WholesaleInquiryForm');
       const companyField = document.getElementById('ContactForm-company');
@@ -397,19 +411,7 @@ Sign up or log in to access exclusive wholesale pricing, order history, and volu
         }
       }, { capture: true });
     });
-  </script>
-
-    
-    {%- endform -%}
-
-    <p><i class="fas fa-phone"></i><a href="tel:000000000"> book a call with Paul Johnson </a></p>
-      content
-    </div>
-    </div>
-  </div>
-</div>
-
-
+{% endjavascript %}
 
 <!-- JS: Toggle # of locations -->
 <script>
