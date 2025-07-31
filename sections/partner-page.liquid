@@ -203,13 +203,13 @@ Sign up or log in to access exclusive wholesale pricing, order history, and volu
         <!-- 🔹 Contact Info -->
         <h3 class="m-0">Contact Info</h3>
         <div class="field">
-          <input class="field__input" type="text" id="ContactForm-name" name="contact[Full Name]" placeholder="Full Name">
-          <label class="field__label" for="ContactForm-name">Full Name</label>
+          <input class="field__input" type="text" id="ContactForm-name" name="contact[Full Name]" placeholder="Full Name" required>
+          <label class="field__label" for="ContactForm-name">Full Name <em>*</em></label>
         </div>
 
         <div class="field">
-          <input class="field__input" type="text" id="ContactForm-job" name="contact[Job Title]" placeholder="Job Title">
-          <label class="field__label" for="ContactForm-job">Job Title</label>
+          <input class="field__input" type="text" id="ContactForm-job" name="contact[Job Title]" placeholder="Job Title" required>
+          <label class="field__label" for="ContactForm-job">Job Title <em>*</em></label>
         </div>
 
         <div class="field field--with-error">
@@ -228,9 +228,10 @@ Sign up or log in to access exclusive wholesale pricing, order history, and volu
               aria-describedby="ContactForm-email-error"
             {% endif %}
             placeholder="{{ 'templates.contact.form.email' | t }}"
+            required
           >
           <label class="field__label" for="ContactForm-email">
-            {{ 'templates.contact.form.email' | t }}
+            {{ 'templates.contact.form.email' | t }} <em>*</em>
             <span aria-hidden="true">*</span>
           </label>
           {%- if form.errors contains 'email' -%}
@@ -246,8 +247,8 @@ Sign up or log in to access exclusive wholesale pricing, order history, and volu
         </div>
 
         <div class="field">
-          <input class="field__input" type="tel" id="ContactForm-phone" name="contact[Phone Number]" placeholder="Phone Number" autocomplete="tel" pattern="[0-9\-]*">
-          <label class="field__label" for="ContactForm-phone">Phone Number</label>
+          <input class="field__input" type="tel" id="ContactForm-phone" name="contact[Phone Number]" placeholder="Phone Number" autocomplete="tel" pattern="[0-9\-]*" required>
+          <label class="field__label" for="ContactForm-phone">Phone Number <em>*</em></label>
         </div>
 
         <!-- 🔹 Location & Logistics -->
