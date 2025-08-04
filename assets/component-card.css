@@ -593,3 +593,11 @@
     clip-path: polygon(var(--shape--blob-5));
   }
 }
+
+
+
+/* Custom style */
+
+.card__media .media  img{
+  height:300px; min-height:300px;
+}
