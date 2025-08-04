@@ -216,13 +216,23 @@
             "row_content": "<p>We don't use ingredients containing gluten or soy, however the facility we use to make the beef may handle allergen containing ingredients so there is a potential risk of cross contamination.</p>",
             "page": ""
           }
+        },
+        "collapsible_row_UEabDr": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What's your refund policy?",
+            "icon": "check_mark",
+            "row_content": "<p>We're 10000% confident in our product. If you don't love it and want a refund, just ask within 30 days of your purchase date and we'll refund you.</p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
         "collapsible_row_zxqWQV",
         "collapsible_row_BRhCDd",
         "collapsible_row_7wwr46",
-        "collapsible_row_pn8LRU"
+        "collapsible_row_pn8LRU",
+        "collapsible_row_UEabDr"
       ],
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
