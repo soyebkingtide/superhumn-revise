@@ -28,6 +28,37 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Default: Mobile (below 750px) — 1 column */
+  gap: 20px; /* Optional spacing between items */
+}
+
+/* Tablet: 750px and up — 2 columns */
+@media (min-width: 750px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop small: 1000px and up — 3 columns */
+@media (min-width: 1000px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Desktop wide: 1300px and up — 4 columns */
+@media (min-width: 1300px) {
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
+
+
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
