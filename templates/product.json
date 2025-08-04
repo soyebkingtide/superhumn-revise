@@ -177,6 +177,68 @@
         "padding_top": 40,
         "padding_bottom": 0
       }
+    },
+    "collapsible_content_yxp4hf": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_zxqWQV": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is SUPERHUMN Beef made of?",
+            "icon": "check_mark",
+            "row_content": "<p>Mushrooms, hemp protein, coconut oil, spices and herbs, natural flavors and colors, and sea salt. That's it!</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_BRhCDd": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Why should I eat this instead of regular beef?",
+            "icon": "check_mark",
+            "row_content": "<p>We could answer this question for days! But basically:</p><ul><li>better health</li><li>over 98% reduction in water/energy/land usage and greenhouse gas emissions</li><li>no piggies involved</li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible_row_7wwr46": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How much protein is in each serving?",
+            "icon": "check_mark",
+            "row_content": "<p>There's 12-16g of high quality complete plant protein from hemp and mushrooms per serving, equal to beef!</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_pn8LRU": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is it gluten free or soy free?",
+            "icon": "check_mark",
+            "row_content": "<p>We don't use ingredients containing gluten or soy, however the facility we use to make the beef may handle allergen containing ingredients so there is a potential risk of cross contamination.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_zxqWQV",
+        "collapsible_row_BRhCDd",
+        "collapsible_row_7wwr46",
+        "collapsible_row_pn8LRU"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "FAQ",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -184,6 +246,7 @@
     "superhumn_featured_collection_Ap6rJn",
     "superhumn_feature_product_kBh6zD",
     "related-products",
-    "rich_text_YX8W3L"
+    "rich_text_YX8W3L",
+    "collapsible_content_yxp4hf"
   ]
 }
