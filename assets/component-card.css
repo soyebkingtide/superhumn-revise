@@ -598,6 +598,6 @@
 
 /* Custom style */
 
-.card__inner .card__media .media  img{
+.card__inner .card__media .media  img, .card:not(.ratio){
   height:300px; min-height:300px;
 }
