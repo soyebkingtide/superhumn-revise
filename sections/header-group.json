@@ -25,6 +25,8 @@
       "block_order": [
         "announcement-bar-0"
       ],
+      "disabled": true,
+      "custom_css": [],
       "settings": {
         "color_scheme": "scheme-4",
         "show_line_separator": false,
