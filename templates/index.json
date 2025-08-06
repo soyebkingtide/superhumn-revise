@@ -513,7 +513,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Shop online",
-            "button_link_1": "#",
+            "button_link_1": "shopify://collections/retail",
             "button_style_secondary_1": true,
             "button_label_2": "FIND A STORE",
             "button_link_2": "#",
@@ -530,25 +530,6 @@
         "padding_top": 80,
         "padding_bottom": 80
       }
-    },
-    "superhumn_beef_products_cmFzJM": {
-      "type": "superhumn-beef-products",
-      "name": "Related Products by Tag",
-      "settings": {
-        "title": "Related Products",
-        "description": "",
-        "heading_size": "hxl",
-        "description_style": "body",
-        "products_to_show": 16,
-        "full_width": true,
-        "color_scheme": "",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "padding_top": 100,
-        "padding_bottom": 100
-      }
     }
   },
   "order": [
@@ -562,7 +543,6 @@
     "custom_liquid_mWaRrm",
     "tick_tock_J9nCJP",
     "superhumn_image_with_text_387P9g",
-    "find_store_FCDCgU",
-    "superhumn_beef_products_cmFzJM"
+    "find_store_FCDCgU"
   ]
 }
