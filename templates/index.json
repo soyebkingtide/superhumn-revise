@@ -244,6 +244,7 @@
           "type": "column",
           "settings": {
             "title": "Jakob Kenter",
+            "text_seccond": "",
             "text": "<p>I’m having an orgasm in my mouth.</p>",
             "link_label": "",
             "link": ""
@@ -253,6 +254,7 @@
           "type": "column",
           "settings": {
             "title": "Terry Siphron",
+            "text_seccond": "",
             "text": "<p>This is so addicting I could legit eat this everyday.</p>",
             "link_label": "",
             "link": ""
@@ -262,6 +264,7 @@
           "type": "column",
           "settings": {
             "title": "Gretchen Rosser",
+            "text_seccond": "",
             "text": "<p>This is some of the best pulled pork I have ever had</p>",
             "link_label": "",
             "link": ""
@@ -271,6 +274,7 @@
           "type": "column",
           "settings": {
             "title": "Desirae Carder",
+            "text_seccond": "",
             "text": "<p>It looks like beef, it smells like beef, it tastes like beef it’s so good.</p>",
             "link_label": "",
             "link": ""
@@ -280,6 +284,7 @@
           "type": "column",
           "settings": {
             "title": "Leonard Cruz",
+            "text_seccond": "",
             "text": "<p>The chili crisp flavor is straight fire</p>",
             "link_label": "",
             "link": ""
@@ -289,6 +294,7 @@
           "type": "column",
           "settings": {
             "title": "Maynard Keenan",
+            "text_seccond": "",
             "text": "<p>What kind of beef is this? Black angus?</p>",
             "link_label": "",
             "link": ""
@@ -298,6 +304,7 @@
           "type": "column",
           "settings": {
             "title": "Crys Lopez",
+            "text_seccond": "Founder of Reggae Eats",
             "text": "<p>This beef barbacoa taco is as good as anything I have ever had</p>",
             "link_label": "",
             "link": ""
@@ -307,7 +314,8 @@
           "type": "column",
           "settings": {
             "title": "Robert Thompson - Founder of Reggae Eats",
-            "text": "<p>Superhuman’s plant-based meats are by far the best substitute to meat I have ever come<br/>across. The flavor profiles, the texture, the utility of the product was just off the charts. I am such<br/>a fan that I am now using Superhumn in every single one of my patties.</p>",
+            "text_seccond": "Founder of Reggae Eats",
+            "text": "<p>Superhuman’s plant-based meats are by far the best substitute to meat I have ever come<br/>across. The flavor profiles, the texture, the utility of the product was just off the charts. I am such a fan that I am now using Superhumn in every single one of my patties.</p>",
             "link_label": "",
             "link": "#"
           }
