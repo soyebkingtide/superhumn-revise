@@ -252,13 +252,13 @@
 
 .super_card {
   /* width: 200px !important; */
-  height: 200px !important;
+  /* height: 200px !important; */
 }
 
 @media (min-width: 1550px) {
   .super_card {
     /* width: 300px !important; */
-    height: 300px !important;
+    /* height: 300px !important; */
     /* max-width: 300px !important; */
   }
 }
