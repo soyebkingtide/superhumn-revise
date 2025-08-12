@@ -220,6 +220,13 @@ top: -24%;
                 {%- endif -%}
 
 
+                {%- if block.settings.text_seccond != blank -%}
+                  <p class="inline-richtext h4">{{ block.settings.text_seccond }}</p>
+                {%- endif -%}
+
+                
+
+
                 {%- if block.settings.link_label != blank -%}
                   <a
                     class="link animate-arrow"
@@ -748,12 +755,19 @@ top: -24%;
           "default": "t:sections.multicolumn.blocks.column.settings.title.default",
           "label": "t:sections.multicolumn.blocks.column.settings.title.label"
         },
+         {
+          "type": "inline_richtext",
+          "id": "text_seccond",
+          "default": "Sub title",
+          "label": "Sub title"
+        },
         {
           "type": "richtext",
           "id": "text",
           "default": "t:sections.multicolumn.blocks.column.settings.text.default",
           "label": "t:sections.multicolumn.blocks.column.settings.text.label"
         },
+        
         {
           "type": "text",
           "id": "link_label",
