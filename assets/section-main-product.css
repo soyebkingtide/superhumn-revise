@@ -173,18 +173,16 @@ product-info {
 .product-form__input {
   flex: 0 0 100%;
   padding: 0;
-  margin: 0 0 2.4rem 0;
+  margin: 2.4rem 0;
   /* max-width: 58.6rem; */
   min-width: fit-content;
   border: none;
-  justify-content: flex-start!important;
-  gap:10px;
+  justify-content: flex-start !important;
+  gap: 10px;
 }
 
-.product--no-media .product-form__input{
-  
-    justify-content: center!important;
-
+.product--no-media .product-form__input {
+  justify-content: center !important;
 }
 
 .product-form__input .form__label {
@@ -352,7 +350,7 @@ a.product__text {
 }
 
 .product--no-media .product-form > .form {
- /* max-width: 30rem; */
+  /* max-width: 30rem; */
   width: 100%;
 }
 
