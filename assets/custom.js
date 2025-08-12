@@ -88,7 +88,7 @@ jQuery(function ($) {
 $(".slider-testimonials").slick({
   slidesToShow: 4,
   slidesToScroll: 1,
-  autoplay: true,
+  autoplay: false,
   speed: 3600,
   autoplaySpeed: 0, // Set to 0 for continuous sliding
   cssEase: "linear", // For smooth, continuous movement
