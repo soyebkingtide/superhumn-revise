@@ -339,6 +339,16 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "column_MjAcKY": {
+          "type": "column",
+          "settings": {
+            "title": "-Kristine Matazzaro",
+            "text_seccond": "Private Chef and Food Specialist",
+            "text": "<p>I have been a private chef for over 25 years and can say with the utmost confidence that Superhumn plant-based meats are the BEST plant-based products ever created!</p>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -351,7 +361,8 @@
         "column_hneFgU",
         "column_TWWtc8",
         "column_BTtjDU",
-        "column_ARNgjJ"
+        "column_ARNgjJ",
+        "column_MjAcKY"
       ],
       "settings": {
         "character_image": "shopify://shop_images/websiteguy.svg",
