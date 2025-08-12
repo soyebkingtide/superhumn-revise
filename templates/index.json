@@ -302,6 +302,15 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "column_TWWtc8": {
+          "type": "column",
+          "settings": {
+            "title": "Robert Thompson - Founder of Reggae Eats",
+            "text": "<p>Superhuman’s plant-based meats are by far the best substitute to meat I have ever come<br/>across. The flavor profiles, the texture, the utility of the product was just off the charts. I am such<br/>a fan that I am now using Superhumn in every single one of my patties.</p>",
+            "link_label": "",
+            "link": "#"
+          }
         }
       },
       "block_order": [
@@ -311,7 +320,8 @@
         "column_8H8G7H",
         "column_xqRjUf",
         "column_HG33Kn",
-        "column_hneFgU"
+        "column_hneFgU",
+        "column_TWWtc8"
       ],
       "settings": {
         "character_image": "shopify://shop_images/websiteguy.svg",
