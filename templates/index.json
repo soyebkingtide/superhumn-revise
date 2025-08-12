@@ -329,6 +329,16 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "column_ARNgjJ": {
+          "type": "column",
+          "settings": {
+            "title": "-Leonard Sherman",
+            "text_seccond": "Founder/Owner Alex’s Meats & Provisions",
+            "text": "<p>I have despised mushrooms for over 40 years.... And I have fallen in love with Superhumn plant-based meats (this is coming from the owner of an animal meat<br/>processor)!</p>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -340,7 +350,8 @@
         "column_HG33Kn",
         "column_hneFgU",
         "column_TWWtc8",
-        "column_BTtjDU"
+        "column_BTtjDU",
+        "column_ARNgjJ"
       ],
       "settings": {
         "character_image": "shopify://shop_images/websiteguy.svg",
