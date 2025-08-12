@@ -66,13 +66,13 @@ window.addEventListener("resize", adjustPosTopImage);
 
 jQuery(function ($) {
   $(".text-scroller-items").slick({
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: false,
 
     dots: false,
     //ariableWidth: true,
-    arrows: false,
+    arrows: true,
 
     //  speed: 10000,
     //autoplaySpeed: 0, // Set to 0 for continuous sliding
