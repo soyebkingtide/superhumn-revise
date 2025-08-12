@@ -71,15 +71,15 @@ jQuery(function ($) {
     autoplay: false,
 
     dots: false,
-    variableWidth: true,
+    //ariableWidth: true,
     arrows: false,
 
-    speed: 10000,
-    autoplaySpeed: 0, // Set to 0 for continuous sliding
-    cssEase: "linear", // For smooth, continuous movement
-    infinite: true, // Allows continuous looping
-    pauseOnFocus: false,
-    pauseOnHover: true,
+    //  speed: 10000,
+    //autoplaySpeed: 0, // Set to 0 for continuous sliding
+    //cssEase: "linear", // For smooth, continuous movement
+    //infinite: true, // Allows continuous looping
+    //auseOnFocus: false,
+    //  pauseOnHover: true,
   });
 });
 
