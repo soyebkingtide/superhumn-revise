@@ -512,7 +512,7 @@
         "buttons_EWGyLU": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop online",
+            "button_label_1": "Power Up",
             "button_link_1": "shopify://collections/retail",
             "button_style_secondary_1": true,
             "button_label_2": "",
