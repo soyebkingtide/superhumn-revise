@@ -66,20 +66,20 @@ window.addEventListener("resize", adjustPosTopImage);
 
 jQuery(function ($) {
   $(".text-scroller-items").slick({
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: false,
 
     dots: false,
-    //ariableWidth: true,
-    arrows: true,
+    variableWidth: true,
+    arrows: false,
 
-    //  speed: 10000,
-    //autoplaySpeed: 0, // Set to 0 for continuous sliding
-    //cssEase: "linear", // For smooth, continuous movement
+    speed: 10000,
+    autoplaySpeed: 0, // Set to 0 for continuous sliding
+    cssEase: "linear", // For smooth, continuous movement
     infinite: true, // Allows continuous looping
-    //auseOnFocus: false,
-    //  pauseOnHover: true,
+    pauseOnFocus: false,
+    pauseOnHover: true,
   });
 });
 
@@ -90,11 +90,11 @@ $(".slider-testimonials").slick({
   slidesToScroll: 1,
   autoplay: false,
   speed: 3600,
-  autoplaySpeed: 0, // Set to 0 for continuous sliding
-  cssEase: "linear", // For smooth, continuous movement
+  //autoplaySpeed: 0, // Set to 0 for continuous sliding
+  //cssEase: "linear", // For smooth, continuous movement
   infinite: true, // Allows continuous looping
-  dots: false,
-  arrows: false,
+  //dots: false,
+  arrows: true,
 
   responsive: [
     {
