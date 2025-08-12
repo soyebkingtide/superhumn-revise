@@ -260,16 +260,6 @@
             "link": ""
           }
         },
-        "column_TWWtc8": {
-          "type": "column",
-          "settings": {
-            "title": "Robert Thompson - Founder of Reggae Eats",
-            "text_seccond": "Founder of Reggae Eats",
-            "text": "<p>Superhuman’s plant-based meats are by far the best substitute to meat I have ever come<br/>across. The flavor profiles, the texture, the utility of the product was just off the charts. I am such a fan that I am now using Superhumn in every single one of my patties.</p>",
-            "link_label": "",
-            "link": "#"
-          }
-        },
         "column_EnyGfa": {
           "type": "column",
           "settings": {
@@ -319,17 +309,38 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "column_TWWtc8": {
+          "type": "column",
+          "settings": {
+            "title": "Robert Thompson - Founder of Reggae Eats",
+            "text_seccond": "Founder of Reggae Eats",
+            "text": "<p>Superhuman’s plant-based meats are by far the best substitute to meat I have ever come<br/>across. The flavor profiles, the texture, the utility of the product was just off the charts. I am such a fan that I am now using Superhumn in every single one of my patties.</p>",
+            "link_label": "",
+            "link": "#"
+          }
+        },
+        "column_BTtjDU": {
+          "type": "column",
+          "settings": {
+            "title": "-- Shannon Frascella D",
+            "text_seccond": "ietician at St. Mary’s University",
+            "text": "<p>I came across Superhumn at a dietician conference and could not fathom that such a clean and protein dense plant-based meat could be so flavorful. It was simply delicious!</p>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "column_xJAiK3",
         "column_GMHkLL",
-        "column_TWWtc8",
         "column_EnyGfa",
         "column_8H8G7H",
         "column_xqRjUf",
         "column_HG33Kn",
-        "column_hneFgU"
+        "column_hneFgU",
+        "column_TWWtc8",
+        "column_BTtjDU"
       ],
       "settings": {
         "character_image": "shopify://shop_images/websiteguy.svg",
