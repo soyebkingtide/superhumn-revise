@@ -86,15 +86,15 @@ jQuery(function ($) {
 // Testimonials Slider
 
 $(".slider-testimonials").slick({
-  slidesToShow: 4,
+  slidesToShow: 6,
   slidesToScroll: 1,
-  autoplay: false,
+  autoplay: true,
   speed: 3600,
-  //autoplaySpeed: 0, // Set to 0 for continuous sliding
-  //cssEase: "linear", // For smooth, continuous movement
+  autoplaySpeed: 0, // Set to 0 for continuous sliding
+  cssEase: "linear", // For smooth, continuous movement
   infinite: true, // Allows continuous looping
-  //dots: false,
-  arrows: true,
+  dots: false,
+  arrows: false,
 
   responsive: [
     {
