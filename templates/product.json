@@ -53,6 +53,13 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "text_TFVmLc": {
+          "type": "text",
+          "settings": {
+            "text": "Free shipping on orders over $99",
+            "text_style": "body"
+          }
         }
       },
       "block_order": [
@@ -63,7 +70,8 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "share"
+        "share",
+        "text_TFVmLc"
       ],
       "settings": {
         "enable_sticky_info": true,
