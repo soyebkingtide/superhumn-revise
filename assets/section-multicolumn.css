@@ -378,3 +378,7 @@
   line-height: 16px;
   font-weight: 700;
 }
+
+ul.slick-slider * {
+  overflow: visible;
+}
