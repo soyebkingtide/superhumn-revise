@@ -371,3 +371,10 @@
     margin-bottom: 20px;
   }
 }
+
+.sub-title {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+}
