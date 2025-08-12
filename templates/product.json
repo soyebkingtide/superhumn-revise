@@ -58,7 +58,7 @@
         "text_TFVmLc": {
           "type": "text",
           "settings": {
-            "text": "Free shipping on orders over $99",
+            "text": "🚚 Free shipping on orders over <strong>$99</strong>",
             "text_style": "body"
           }
         }
