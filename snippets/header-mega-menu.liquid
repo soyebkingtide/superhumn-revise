@@ -5,9 +5,11 @@
   {% render 'header-mega-menu' %}
 {% endcomment %}
 
+{%  assign menu_links = section.settings.menu.links  %}
+
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
-    {%- for link in section.settings.menu.links -%}
+    {%- for link in menu_links -%}
       <li>
         {%- if link.links != blank -%}
           <header-menu>
@@ -21,19 +23,7 @@
                     class="header__active-menu-item"
                   {% endif %}
                 >
-               
-
-                 {% if customer  %}
-               
-                
-                  Get Protein Wholesale
-
-                   {% else %}
-
-                      {{- link.title | escape -}}
-
-                {% endif %}
-
+                  {{- link.title | escape -}}
                 </span>
                 {% render 'icon-caret' %}
               </summary>
@@ -104,4 +94,3 @@
     {%- endfor -%}
   </ul>
 </nav>
-
