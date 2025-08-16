@@ -5,12 +5,13 @@
   {% render 'header-mega-menu' %}
 {% endcomment %}
 
-    {% if customer %}
-{%  assign menu_links = linklists['temp-menu'].links %}
+ {% if customer and customer.tags contains 'wholesale' %}
+  {% assign menu_links = linklists['temp-menu'].links %}
 {% else %}
-{%  assign menu_links = section.settings.menu.links  %}
-
+  {% assign menu_links = section.settings.menu.links %}
 {% endif %}
+
+
 
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
