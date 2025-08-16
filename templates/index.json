@@ -226,12 +226,19 @@
           "settings": {
             "scroll_text": "High Protein"
           }
+        },
+        "text_DW6zkg": {
+          "type": "text",
+          "settings": {
+            "scroll_text": "High Protein"
+          }
         }
       },
       "block_order": [
         "text_UtQhrc",
         "text_WdzLzK",
-        "text_B3Nk8Q"
+        "text_B3Nk8Q",
+        "text_DW6zkg"
       ],
       "settings": {
         "color_scheme": "scheme-755a3726-29a3-4168-87d5-bb0359225390"
