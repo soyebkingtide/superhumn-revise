@@ -5,8 +5,8 @@
   {% render 'header-mega-menu' %}
 {% endcomment %}
 
-{% if customer %}
-{%  assign menu_links = section.settings.menu.footer  %}
+    {% if customer %}
+{%  assign menu_links = section.settings.footer.links  %}
 {% else %}
 {%  assign menu_links = section.settings.menu.links  %}
 
