@@ -68,7 +68,7 @@ jQuery(function ($) {
   $(".text-scroller-items").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
 
     dots: false,
     variableWidth: true,
