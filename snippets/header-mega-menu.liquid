@@ -5,7 +5,7 @@
   {% render 'header-mega-menu' %}
 {% endcomment %}
 
-    {% if customer and customer.tags contains 'wholesale' %}
+    {% if customer  %}
 
       {% assign menu_links = linklists['menu-wholesale'].links %}
 
