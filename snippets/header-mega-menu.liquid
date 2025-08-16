@@ -5,7 +5,12 @@
   {% render 'header-mega-menu' %}
 {% endcomment %}
 
+{% if customer %}
+{%  assign menu_links = section.settings.menu.footer  %}
+{% else %}
 {%  assign menu_links = section.settings.menu.links  %}
+
+{% endif %}
 
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
