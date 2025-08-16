@@ -5,11 +5,15 @@
   {% render 'header-mega-menu' %}
 {% endcomment %}
 
- {% if customer and customer.tags contains 'wholesale' %}
-  {% assign menu_links = linklists['temp-menu'].links %}
-{% else %}
-  {% assign menu_links = section.settings.menu.links %}
-{% endif %}
+    {% if customer and customer.tags contains 'wholesale' %}
+
+      {% assign menu_links = linklists['wholesale-menu'].links %}
+
+    {% else %}
+
+      {% comment %} {% assign menu_links = section.settings.menu.links %} {% endcomment %}
+      
+    {% endif %}
 
 
 
