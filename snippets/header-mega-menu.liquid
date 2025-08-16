@@ -4,7 +4,7 @@
   Usage:
   {% render 'header-mega-menu' %}
 {% endcomment %}
-{% if customer  %}
+
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
     {%- for link in section.settings.menu.links -%}
@@ -23,9 +23,9 @@
                 >
                
 
-                 
+                 {% if customer and link.handle == "get-protein-wholesale" %}
 
-                {% if link.handle == "get-protein-wholesale" %} 
+               
                 
                    {{- link.handle -}}
 
@@ -106,4 +106,3 @@
   </ul>
 </nav>
 
-{% endif %}
