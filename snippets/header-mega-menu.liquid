@@ -21,7 +21,20 @@
                     class="header__active-menu-item"
                   {% endif %}
                 >
-                  {{- link.title | escape -}}
+               
+
+                 
+
+                {% if link.handle == "get-protein-wholesale" %} 
+                
+                   {{- link.handle -}}
+
+                   {% else %}
+
+                      {{- link.title | escape -}}
+
+                {% endif %}
+
                 </span>
                 {% render 'icon-caret' %}
               </summary>
@@ -35,9 +48,6 @@
                   role="list"
                 >
                   {%- for childlink in link.links -%}
-
-                     {{- childlink.handle -}}
-
                     <li>
                       <a
                         id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
