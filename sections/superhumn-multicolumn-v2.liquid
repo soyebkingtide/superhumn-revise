@@ -812,30 +812,38 @@ top: -24%;
 {% endschema %}
 
 {% javascript %}
-  document.addEventListener("DOMContentLoaded", function () {
+  function equalizeTestimonialsHeight() {
   const ul = document.querySelector(".slider-testimonials");
   if (!ul) return;
 
   const listItems = ul.querySelectorAll("li");
-  let maxHeight = 0;
 
-  // Reset height to auto in case this runs more than once
+  // First, reset all heights
   listItems.forEach(li => {
     li.style.height = "auto";
   });
 
-  // Find the maximum height
-  listItems.forEach(li => {
-    const height = li.offsetHeight;
-    if (height > maxHeight) {
-      maxHeight = height;
-    }
-  });
+  // Only apply equal height if screen width is below 500px
+  if (window.innerWidth < 500) {
+    let maxHeight = 0;
 
-  // Set all li elements to the max height
-  listItems.forEach(li => {
-    li.style.height = maxHeight + "px";
-  });
-});
+    // Find max height
+    listItems.forEach(li => {
+      const height = li.offsetHeight;
+      if (height > maxHeight) {
+        maxHeight = height;
+      }
+    });
+
+    // Set all to max height
+    listItems.forEach(li => {
+      li.style.height = maxHeight + "px";
+    });
+  }
+}
+
+// Run on load and resize
+window.addEventListener("load", equalizeTestimonialsHeight);
+window.addEventListener("resize", equalizeTestimonialsHeight);
 
 {% endjavascript %}
