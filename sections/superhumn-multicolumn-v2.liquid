@@ -810,3 +810,32 @@ top: -24%;
   ]
 }
 {% endschema %}
+
+{% javascript %}
+  document.addEventListener("DOMContentLoaded", function () {
+  const ul = document.querySelector(".slider-testimonials");
+  if (!ul) return;
+
+  const listItems = ul.querySelectorAll("li");
+  let maxHeight = 0;
+
+  // Reset height to auto in case this runs more than once
+  listItems.forEach(li => {
+    li.style.height = "auto";
+  });
+
+  // Find the maximum height
+  listItems.forEach(li => {
+    const height = li.offsetHeight;
+    if (height > maxHeight) {
+      maxHeight = height;
+    }
+  });
+
+  // Set all li elements to the max height
+  listItems.forEach(li => {
+    li.style.height = maxHeight + "px";
+  });
+});
+
+{% endjavascript %}
