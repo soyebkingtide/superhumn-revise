@@ -86,7 +86,7 @@ jQuery(function ($) {
 // Testimonials Slider
 
 $(".slider-testimonials").slick({
-  slidesToShow: 6,
+  slidesToShow: 4,
   slidesToScroll: 1,
   autoplay: true,
   speed: 3600,
