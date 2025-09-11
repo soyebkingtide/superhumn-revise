@@ -1,0 +1,235 @@
+{% schema %}
+{
+  "name": "Banner Code Section",
+  "settings": [
+    
+  ],
+  "presets": [
+    {
+      "name": "Custom Code",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+
+    body {
+  background: linear-gradient(to top, #0a0a2a, #2a2a72);
+  background-image: url("https://cdn.shopify.com/s/files/1/0610/8938/2550/files/Section.png?v=1757599588");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.light_wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.light {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.lightbase {
+  position: absolute;
+
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  top: 50%;
+}
+
+.character {
+  position: absolute;
+  opacity: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0.2) rotateX(var(--tiltX, 0deg))
+    rotateY(var(--tiltY, 0deg));
+  transition: transform 0.15s ease-out; /* smooth mouse tilt */
+}
+
+/* Individual final positions */
+#jessica {
+  --final-x: 309px;
+  --final-y: 80px;
+}
+#omi {
+  --final-x: -100px !important;
+  --final-y: -66px !important;
+}
+#marce {
+  --final-x: 268px;
+  --final-y: -80px;
+}
+#jade {
+  --final-x: 100px;
+  --final-y: -30px;
+}
+
+/* Fly in animation */
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.element-opacity {
+  animation: opacity 10s forwards ease-in-out;
+}
+@keyframes floatMove {
+  0% {
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+  15% {
+    /* around 1500ms if duration = 10s */
+    opacity: 0;
+  }
+  16% {
+    opacity: 1;
+  }
+  25% {
+    transform: translate(-49.5%, -49.5%);
+  }
+  50% {
+    transform: translate(-50.5%, -50.5%);
+  }
+  75% {
+    transform: translate(-49.5%, -49.5%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+.element {
+  animation: floatMove 10s infinite ease-in-out;
+}
+
+.fly-in {
+  animation: flyIn 1.5s ease forwards;
+}
+
+@keyframes flyIn {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.2) rotateX(var(--tiltX, 0deg))
+      rotateY(var(--tiltY, 0deg));
+  }
+  100% {
+    opacity: 1;
+    transform: translate(
+        calc(-50% + var(--final-x)),
+        calc(-50% + var(--final-y))
+      )
+      scale(1) rotateX(var(--tiltX, 0deg)) rotateY(var(--tiltY, 0deg));
+  }
+}
+
+/* Floating stays relative to final position */
+.floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(
+        calc(-50% + var(--final-x)),
+        calc(-50% + var(--final-y))
+      )
+      scale(1) rotateX(var(--tiltX, 0deg)) rotateY(var(--tiltY, 0deg));
+  }
+  50% {
+    transform: translate(
+        calc(-50% + var(--final-x) - 10px),
+        calc(-50% + var(--final-y) - 8px)
+      )
+      scale(1.05) rotateX(var(--tiltX, 0deg)) rotateY(var(--tiltY, 0deg));
+  }
+  100% {
+    transform: translate(
+        calc(-50% + var(--final-x)),
+        calc(-50% + var(--final-y))
+      )
+      scale(1) rotateX(var(--tiltX, 0deg)) rotateY(var(--tiltY, 0deg));
+  }
+}
+
+</style>
+
+<img src="https://cdn.shopify.com/s/files/1/0610/8938/2550/files/MARCE_1.png?v=1757479367" alt="Marce" id="marce" class="character" data-final="200,50">
+
+<img src="https://cdn.shopify.com/s/files/1/0610/8938/2550/files/JESSICA_1.png?v=1757479366" alt="Jessica" id="jessica" class="character " data-final="-0,0">
+
+<img src="https://cdn.shopify.com/s/files/1/0610/8938/2550/files/OMI_1.png?v=1757479366" alt="OMI" id="omi" class="character" data-final="0,-100">
+
+<img src="https://cdn.shopify.com/s/files/1/0610/8938/2550/files/JADE_1_1.png?v=1757479367" alt="Jade" id="jade" class="character" data-final="0,150">
+<div class="light_wrapper element-opacity" id="wrapper-lght">
+
+  <img src="https://cdn.shopify.com/s/files/1/0610/8938/2550/files/EFFECTS_2_1_1.png?v=1757554969" class="light">
+
+  <img src="https://cdn.shopify.com/s/files/1/0610/8938/2550/files/EFFECTS_2_1_1.png?v=1757554969" class="lightbase element">
+
+</div>
+
+
+<script>function flyImage(selector, delay = 0) {
+  const el = document.querySelector(selector);
+  if (!el) return;
+
+  setTimeout(() => {
+    el.classList.add("fly-in");
+    el.addEventListener(
+      "animationend",
+      () => {
+        el.style.opacity = "1";
+        el.classList.add("floating");
+      },
+      { once: true }
+    );
+  }, delay);
+}
+
+// Characters enter one by one
+flyImage("#jessica", 2000);
+flyImage("#omi", 1500);
+flyImage("#marce", 2500);
+flyImage("#jade", 500);
+
+document.addEventListener("mousemove", (e) => {
+  const { innerWidth, innerHeight } = window;
+  const moveX = (e.clientX - innerWidth / 2) / 40;
+  const moveY = (e.clientY - innerHeight / 2) / 40;
+
+  document.querySelectorAll(".character").forEach((img) => {
+    img.style.setProperty("--tiltX", `${-moveY}deg`);
+    img.style.setProperty("--tiltY", `${moveX}deg`);
+  });
+});
+
+// ✅ Reset tilt when mouse leaves the window
+window.addEventListener("mouseout", (e) => {
+  if (!e.relatedTarget && !e.toElement) {
+    document.querySelectorAll(".character").forEach((img) => {
+      img.style.setProperty("--tiltX", `0deg`);
+      img.style.setProperty("--tiltY", `0deg`);
+    });
+  }
+});
+</script>
