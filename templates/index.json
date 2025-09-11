@@ -645,11 +645,10 @@
         },
         "caption_3MBpyj": {
           "type": "caption",
-          "disabled": true,
           "settings": {
-            "caption": "Add a tagline",
-            "caption2": "Add a tagline",
-            "caption3": "Add a tagline",
+            "caption": "FUEL",
+            "caption2": "Your",
+            "caption3": "Inner",
             "text_style": "caption-with-letter-spacing",
             "text_size": "fs-48"
           }
