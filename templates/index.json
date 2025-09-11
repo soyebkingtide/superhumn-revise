@@ -9,6 +9,12 @@
  */
 {
   "sections": {
+    "new_image_banner_iDnQ77": {
+      "type": "new-image-banner",
+      "disabled": true,
+      "name": "Banner Code",
+      "settings": {}
+    },
     "superhumn_image_banner_9wBDhQ": {
       "type": "superhumn-image-banner",
       "blocks": {
@@ -624,6 +630,7 @@
     }
   },
   "order": [
+    "new_image_banner_iDnQ77",
     "superhumn_image_banner_9wBDhQ",
     "superhumn_multicolumn_fPG6bK",
     "superhumn_featured_collection_EzDf3X",
