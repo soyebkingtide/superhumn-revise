@@ -396,9 +396,12 @@
   </div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+{% comment %} <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script> {% endcomment %}
 
       <script>
+
+        document.addEventListener("DOMContentLoaded", function() {
+
     
 function flyImage(selector, delay = 0) {
   const el = document.querySelector(selector);
@@ -442,7 +445,7 @@ window.addEventListener("mouseout", (e) => {
       img.style.setProperty("--tiltY", `0deg`);
     });
   }
-});
+});});
 
 
 
