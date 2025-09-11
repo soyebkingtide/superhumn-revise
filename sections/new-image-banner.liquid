@@ -57,7 +57,7 @@
   top: 50%;
 }
 
-.character {
+.character-new {
   position: absolute;
   opacity: 0;
   left: 50%;
@@ -68,19 +68,19 @@
 }
 
 /* Individual final positions */
-#jessica {
+#jessica-new {
   --final-x: 309px;
   --final-y: 80px;
 }
-#omi {
+#omi-new {
   --final-x: -100px !important;
   --final-y: -66px !important;
 }
-#marce {
+#marce-new {
   --final-x: 268px;
   --final-y: -80px;
 }
-#jade {
+#Jade-new {
   --final-x: 100px;
   --final-y: -30px;
 }
@@ -232,13 +232,13 @@
 
 
 
- <img src="https://cdn.shopify.com/s/files/1/0610/8938/2550/files/MARCE_1.png?v=1757479367" alt="Marce" id="marce" class="character" data-final="200,50">
+ <img src="https://cdn.shopify.com/s/files/1/0610/8938/2550/files/MARCE_1.png?v=1757479367" alt="Marce" id="marce-new" class="character-new" data-final="200,50">
 
-<img src="https://cdn.shopify.com/s/files/1/0610/8938/2550/files/JESSICA_1.png?v=1757479366" alt="Jessica" id="jessica" class="character " data-final="-0,0">
+<img src="https://cdn.shopify.com/s/files/1/0610/8938/2550/files/JESSICA_1.png?v=1757479366" alt="Jessica" id="jessica-new" class="character-new " data-final="-0,0">
 
-<img src="https://cdn.shopify.com/s/files/1/0610/8938/2550/files/OMI_1.png?v=1757479366" alt="OMI" id="omi" class="character" data-final="0,-100">
+<img src="https://cdn.shopify.com/s/files/1/0610/8938/2550/files/OMI_1.png?v=1757479366" alt="OMI" id="omi-new" class="character-new" data-final="0,-100">
 
-<img src="https://cdn.shopify.com/s/files/1/0610/8938/2550/files/JADE_1_1.png?v=1757479367" alt="Jade" id="jade" class="character" data-final="0,150">
+<img src="https://cdn.shopify.com/s/files/1/0610/8938/2550/files/JADE_1_1.png?v=1757479367" alt="Jade" id="Jade-new" class="character-new" data-final="0,150">
 <div class="light_wrapper element-opacity" id="wrapper-lght">
 
   <img src="https://cdn.shopify.com/s/files/1/0610/8938/2550/files/EFFECTS_2_1_1.png?v=1757554969" class="light">
@@ -409,18 +409,18 @@ function flyImage(selector, delay = 0) {
   }, delay);
 }
 
-// Characters enter one by one
-flyImage("#jessica", 2000);
-flyImage("#omi", 1500);
-flyImage("#marce", 2500);
-flyImage("#jade", 500);
+// character-news enter one by one
+flyImage("#jessica-new", 2000);
+flyImage("#omi-new", 1500);
+flyImage("#marce-new", 2500);
+flyImage("#Jade-new", 500);
 
 document.addEventListener("mousemove", (e) => {
   const { innerWidth, innerHeight } = window;
   const moveX = (e.clientX - innerWidth / 2) / 40;
   const moveY = (e.clientY - innerHeight / 2) / 40;
 
-  document.querySelectorAll(".character").forEach((img) => {
+  document.querySelectorAll(".character-new").forEach((img) => {
     img.style.setProperty("--tiltX", `${-moveY}deg`);
     img.style.setProperty("--tiltY", `${moveX}deg`);
   });
@@ -429,7 +429,7 @@ document.addEventListener("mousemove", (e) => {
 // ✅ Reset tilt when mouse leaves the window
 window.addEventListener("mouseout", (e) => {
   if (!e.relatedTarget && !e.toElement) {
-    document.querySelectorAll(".character").forEach((img) => {
+    document.querySelectorAll(".character-new").forEach((img) => {
       img.style.setProperty("--tiltX", `0deg`);
       img.style.setProperty("--tiltY", `0deg`);
     });
