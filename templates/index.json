@@ -11,7 +11,6 @@
   "sections": {
     "new_image_banner_iDnQ77": {
       "type": "new-image-banner",
-      "disabled": true,
       "name": "Banner Code",
       "settings": {}
     },
