@@ -43,6 +43,16 @@
             "text_style": "body"
           }
         },
+        "caption_3MBpyj": {
+          "type": "caption",
+          "settings": {
+            "caption": "FUEL",
+            "caption2": "Your",
+            "caption3": "Inner",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "fs-48"
+          }
+        },
         "buttons_gPhkde": {
           "type": "buttons",
           "settings": {
@@ -53,23 +63,13 @@
             "button_link_2": "shopify://collections/retail",
             "button_style_secondary_2": true
           }
-        },
-        "caption_3MBpyj": {
-          "type": "caption",
-          "settings": {
-            "caption": "FUEL",
-            "caption2": "Your",
-            "caption3": "Inner",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "fs-48"
-          }
         }
       },
       "block_order": [
         "heading_NXebRq",
         "text_z3qyq9",
-        "buttons_gPhkde",
-        "caption_3MBpyj"
+        "caption_3MBpyj",
+        "buttons_gPhkde"
       ],
       "name": "Superhumn new banner",
       "settings": {
