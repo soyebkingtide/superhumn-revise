@@ -8,7 +8,7 @@
     height: 100vh;
     overflow: hidden;
   }
-.banner-wrapper  .light_wrapper {
+  .light_wrapper {
     position: relative;
     width: 100%;
     height: 100%;
@@ -17,19 +17,23 @@
     transform: translate(-50%, -50%);
     z-index: -1;
   }
-.banner-wrapper .light {
+  .light {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
   }
-.banner-wrapper  .lightbase {
+  .lightbase {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
   }
+<<<<<<< HEAD
 .banner-wrapper  .character-new {
+=======
+  .character {
+>>>>>>> 8ad78a0e86d99a39486b0eafd5bde5cd216c28a1
     position: absolute;
     opacity: 0;
     left: 50%;
@@ -39,10 +43,17 @@
     transition: transform 0.15s ease-out; /* smooth mouse tilt */
   }
   /* Final positions */
+<<<<<<< HEAD
 .banner-wrapper  #jessica-new { --final-x: 309px; --final-y: 80px; }
 .banner-wrapper #omi-new     { --final-x: -100px; --final-y: -66px; }
 .banner-wrapper  #marce-new   { --final-x: 268px; --final-y: -80px; }
 .banner-wrapper #jade-new    { --final-x: 100px; --final-y: -30px; }
+=======
+  #jessica { --final-x: 309px; --final-y: 80px; }
+  #omi     { --final-x: -100px; --final-y: -66px; }
+  #marce   { --final-x: 268px; --final-y: -80px; }
+  #jade    { --final-x: 100px; --final-y: -30px; }
+>>>>>>> 8ad78a0e86d99a39486b0eafd5bde5cd216c28a1
 
   /* Fade in */
   @keyframes opacity {
@@ -124,8 +135,6 @@
 </div>
 </div>
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-
   function flyImage(selector, delay = 0) {
     const el = document.querySelector(selector);
     if (!el) return;
@@ -163,7 +172,7 @@
         img.style.setProperty("--tiltY", `0deg`);
       });
     }
-  });  });
+  });
 </script>
 
 {% schema %}
