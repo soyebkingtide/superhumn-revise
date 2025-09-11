@@ -1,3 +1,66 @@
+{{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
+{{ 'section-image-banner-custom.css' | asset_url | stylesheet_tag }}
+
+<div
+  id="Banner-{{ section.id }}"
+  class="banner-wrapper banner banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.image_height == 'adapt' and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
+>
+
+  <div class="light_wrapper">
+    <div class="light">
+      <img src="{{ 'light.png' | asset_url }}" alt="Light effect">
+    </div>
+    <div class="lightbase">
+      <img src="{{ 'light-base.png' | asset_url }}" alt="Light base">
+    </div>
+  </div>
+
+  <!-- Character Layer -->
+  <div class="characters-cover">
+    <img id="jessica-new" class="character-new" src="{{ 'jessica.png' | asset_url }}" alt="Jessica">
+    <img id="omi-new" class="character-new" src="{{ 'omi.png' | asset_url }}" alt="Omi">
+    <img id="marce-new" class="character-new" src="{{ 'marce.png' | asset_url }}" alt="Marce">
+    <img id="jade-new" class="character-new" src="{{ 'jade.png' | asset_url }}" alt="Jade">
+  </div>
+
+  <!-- Banner content -->
+  <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width caption-wrapper full-width {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+    <div class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient full-width">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'heading' -%}
+            <h2 class="banner__heading inline-richtext heading fs-italic {{ block.settings.heading_size }} text-shadow">
+              {{ block.settings.heading }}
+            </h2>
+          {%- when 'text' -%}
+            <div class="banner__text rte text-bg {{ block.settings.text_style }}" style="background:url({{ 'text-bg.svg' | asset_url }})">
+              <p>{{ block.settings.text }}</p>
+            </div>
+          {%- when 'buttons' -%}
+            <div class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}">
+              {%- if block.settings.button_label_1 != blank -%}
+                <a href="{{ block.settings.button_link_1 }}" class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">
+                  {{ block.settings.button_label_1 }}
+                </a>
+              {%- endif -%}
+              {%- if block.settings.button_label_2 != blank -%}
+                <a href="{{ block.settings.button_link_2 }}" class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">
+                  {{ block.settings.button_label_2 }}
+                </a>
+              {%- endif -%}
+            </div>
+          {%- when 'caption' -%}
+            <p class="caption-text caption-bar fw-900 {{ block.settings.text_style }} {{ block.settings.text_size }}">
+              {% if block.settings.caption %}<span class="text-shadow">{{ block.settings.caption }}</span>{% endif %}
+              {% if block.settings.caption2 %}<span class="text-shadow">{{ block.settings.caption2 }}</span>{% endif %}
+              {% if block.settings.caption3 %}<span class="text-shadow">{{ block.settings.caption3 }}</span>{% endif %}
+            </p>
+        {%- endcase -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
 <style>
   .banner-wrapper {
     background: linear-gradient(to top, #0a0a2a, #2a2a72);
@@ -7,62 +70,27 @@
     align-items: center;
     height: 100vh;
     overflow: hidden;
-  }
-  .light_wrapper {
     position: relative;
-    width: 100%;
-    height: 100%;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
   }
-  .light {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .lightbase {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-<<<<<<< HEAD
-.banner-wrapper  .character-new {
-=======
-  .character {
->>>>>>> 8ad78a0e86d99a39486b0eafd5bde5cd216c28a1
+  .light_wrapper { position: absolute; width: 100%; height: 100%; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: -1; }
+  .light, .lightbase { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+  
+  .character-new {
     position: absolute;
     opacity: 0;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(0.2) rotateX(var(--tiltX, 0deg))
-      rotateY(var(--tiltY, 0deg));
-    transition: transform 0.15s ease-out; /* smooth mouse tilt */
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%) scale(0.2) rotateX(var(--tiltX, 0deg)) rotateY(var(--tiltY, 0deg));
+    transition: transform 0.15s ease-out;
   }
-  /* Final positions */
-<<<<<<< HEAD
-.banner-wrapper  #jessica-new { --final-x: 309px; --final-y: 80px; }
-.banner-wrapper #omi-new     { --final-x: -100px; --final-y: -66px; }
-.banner-wrapper  #marce-new   { --final-x: 268px; --final-y: -80px; }
-.banner-wrapper #jade-new    { --final-x: 100px; --final-y: -30px; }
-=======
-  #jessica { --final-x: 309px; --final-y: 80px; }
-  #omi     { --final-x: -100px; --final-y: -66px; }
-  #marce   { --final-x: 268px; --final-y: -80px; }
-  #jade    { --final-x: 100px; --final-y: -30px; }
->>>>>>> 8ad78a0e86d99a39486b0eafd5bde5cd216c28a1
+  /* Character final positions */
+  #jessica-new { --final-x: 309px; --final-y: 80px; }
+  #omi-new     { --final-x: -100px; --final-y: -66px; }
+  #marce-new   { --final-x: 268px; --final-y: -80px; }
+  #jade-new    { --final-x: 100px; --final-y: -30px; }
 
   /* Fade in */
-  @keyframes opacity {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  .element-opacity {
-    animation: opacity 10s forwards ease-in-out;
-  }
+  @keyframes opacity { 0% {opacity: 0;} 100% {opacity: 1;} }
+  .element-opacity { animation: opacity 10s forwards ease-in-out; }
 
   /* Floating entrance */
   @keyframes floatMove {
@@ -77,81 +105,22 @@
   .element { animation: floatMove 10s infinite ease-in-out; }
 
   .fly-in { animation: flyIn 1.5s ease forwards; }
-
   @keyframes flyIn {
-    0% {
-      opacity: 0;
-      transform: translate(-50%, -50%) scale(0.2)
-        rotateX(var(--tiltX, 0deg)) rotateY(var(--tiltY, 0deg));
-    }
-    100% {
-      opacity: 1;
-      transform: translate(
-          calc(-50% + var(--final-x)),
-          calc(-50% + var(--final-y))
-        )
-        scale(1) rotateX(var(--tiltX, 0deg)) rotateY(var(--tiltY, 0deg));
-    }
-  }
-
-  /* Floating effect */
-  .floating {
-    animation: floating 3s ease-in-out infinite;
-  }
-  @keyframes floating {
-    0% {
-      transform: translate(
-          calc(-50% + var(--final-x)),
-          calc(-50% + var(--final-y))
-        )
-        scale(1) rotateX(var(--tiltX, 0deg)) rotateY(var(--tiltY, 0deg));
-    }
-    50% {
-      transform: translate(
-          calc(-50% + var(--final-x) - 10px),
-          calc(-50% + var(--final-y) - 8px)
-        )
-        scale(1.05) rotateX(var(--tiltX, 0deg)) rotateY(var(--tiltY, 0deg));
-    }
-    100% {
-      transform: translate(
-          calc(-50% + var(--final-x)),
-          calc(-50% + var(--final-y))
-        )
-        scale(1) rotateX(var(--tiltX, 0deg)) rotateY(var(--tiltY, 0deg));
-    }
+    0% { opacity: 0; transform: translate(-50%, -50%) scale(0.2) rotateX(var(--tiltX,0)) rotateY(var(--tiltY,0)); }
+    100% { opacity: 1; transform: translate(calc(-50% + var(--final-x)), calc(-50% + var(--final-y))) scale(1) rotateX(var(--tiltX,0)) rotateY(var(--tiltY,0)); }
   }
 </style>
-<div class="banner-wrapper">
-<!-- character-news -->
-<img src="https://cdn.shopify.com/s/files/1/0610/8938/2550/files/MARCE_1.png?v=1757479367" alt="Marce" id="marce-new" class="character-new">
-<img src="https://cdn.shopify.com/s/files/1/0610/8938/2550/files/JESSICA_1.png?v=1757479366" alt="Jessica" id="jessica-new" class="character-new">
-<img src="https://cdn.shopify.com/s/files/1/0610/8938/2550/files/OMI_1.png?v=1757479366" alt="OMI" id="omi-new" class="character-new">
-<img src="https://cdn.shopify.com/s/files/1/0610/8938/2550/files/JADE_1_1.png?v=1757479367" alt="Jade" id="jade-new" class="character-new">
 
-<div class="light_wrapper element-opacity">
-  <img src="https://cdn.shopify.com/s/files/1/0610/8938/2550/files/EFFECTS_2_1_1.png?v=1757554969" class="light">
-  <img src="https://cdn.shopify.com/s/files/1/0610/8938/2550/files/EFFECTS_2_1_1.png?v=1757554969" class="lightbase element">
-</div>
-</div>
 <script>
-  function flyImage(selector, delay = 0) {
-    const el = document.querySelector(selector);
-    if (!el) return;
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".character-new").forEach(el => {
     setTimeout(() => {
       el.classList.add("fly-in");
       el.addEventListener("animationend", () => {
-        el.style.opacity = "1";
         el.classList.add("floating");
       }, { once: true });
-    }, delay);
-  }
-
-  // character-news enter one by one
-  flyImage("#jessica-new", 2000);
-  flyImage("#omi-new", 1500);
-  flyImage("#marce-new", 2500);
-  flyImage("#jade-new", 500);
+    }, 500);
+  });
 
   // Mouse tilt
   document.addEventListener("mousemove", (e) => {
@@ -163,17 +132,9 @@
       img.style.setProperty("--tiltY", `${moveX}deg`);
     });
   });
-
-  // Reset tilt when leaving window
-  window.addEventListener("mouseout", (e) => {
-    if (!e.relatedTarget && !e.toElement) {
-      document.querySelectorAll(".character-new").forEach((img) => {
-        img.style.setProperty("--tiltX", `0deg`);
-        img.style.setProperty("--tiltY", `0deg`);
-      });
-    }
-  });
+});
 </script>
+
 
 {% schema %}
 {
