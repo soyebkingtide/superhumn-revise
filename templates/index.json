@@ -32,7 +32,7 @@
         "heading_NXebRq": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
+            "heading": "Image bannersdfsd",
             "heading_size": "h1"
           }
         },
@@ -71,7 +71,6 @@
         "buttons_gPhkde",
         "caption_3MBpyj"
       ],
-      "disabled": true,
       "name": "Superhumn new banner",
       "settings": {
         "image": "shopify://shop_images/Section.png",
@@ -80,7 +79,7 @@
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
-        "color_scheme": "",
+        "color_scheme": "scheme-3",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
