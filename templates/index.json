@@ -54,6 +54,7 @@
         "text_Qb4nyJ",
         "buttons_zcJR8J"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/header-bg.png",
         "image_overlay_opacity": 0,
