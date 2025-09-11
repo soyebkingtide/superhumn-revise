@@ -13,7 +13,79 @@
       "type": "new-image-banner",
       "disabled": true,
       "name": "Banner Code",
-      "settings": {}
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "new_image_banner_fjnNPG": {
+      "type": "new-image-banner",
+      "blocks": {
+        "heading_NXebRq": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "text_z3qyq9": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_gPhkde": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
+        "caption_3MBpyj": {
+          "type": "caption",
+          "settings": {
+            "caption": "Add a tagline",
+            "caption2": "Add a tagline",
+            "caption3": "Add a tagline",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "fs-48"
+          }
+        }
+      },
+      "block_order": [
+        "heading_NXebRq",
+        "text_z3qyq9",
+        "buttons_gPhkde",
+        "caption_3MBpyj"
+      ],
+      "disabled": true,
+      "name": "Superhumn new banner",
+      "settings": {
+        "image": "shopify://shop_images/Section.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     },
     "superhumn_image_banner_9wBDhQ": {
       "type": "superhumn-image-banner",
@@ -630,6 +702,7 @@
   },
   "order": [
     "new_image_banner_iDnQ77",
+    "new_image_banner_fjnNPG",
     "superhumn_image_banner_9wBDhQ",
     "superhumn_multicolumn_fPG6bK",
     "superhumn_featured_collection_EzDf3X",
