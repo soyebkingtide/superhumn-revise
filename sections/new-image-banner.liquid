@@ -29,7 +29,7 @@
     top: 50%;
     transform: translate(-50%, -50%);
   }
-.banner-wrapper  .character {
+.banner-wrapper  .character-new {
     position: absolute;
     opacity: 0;
     left: 50%;
@@ -39,10 +39,10 @@
     transition: transform 0.15s ease-out; /* smooth mouse tilt */
   }
   /* Final positions */
-.banner-wrapper  #jessica { --final-x: 309px; --final-y: 80px; }
-.banner-wrapper #omi     { --final-x: -100px; --final-y: -66px; }
-.banner-wrapper  #marce   { --final-x: 268px; --final-y: -80px; }
-.banner-wrapper #jade    { --final-x: 100px; --final-y: -30px; }
+.banner-wrapper  #jessica-new { --final-x: 309px; --final-y: 80px; }
+.banner-wrapper #omi-new     { --final-x: -100px; --final-y: -66px; }
+.banner-wrapper  #marce-new   { --final-x: 268px; --final-y: -80px; }
+.banner-wrapper #jade-new    { --final-x: 100px; --final-y: -30px; }
 
   /* Fade in */
   @keyframes opacity {
@@ -112,11 +112,11 @@
   }
 </style>
 <div class="banner-wrapper">
-<!-- Characters -->
-<img src="https://cdn.shopify.com/s/files/1/0610/8938/2550/files/MARCE_1.png?v=1757479367" alt="Marce" id="marce" class="character">
-<img src="https://cdn.shopify.com/s/files/1/0610/8938/2550/files/JESSICA_1.png?v=1757479366" alt="Jessica" id="jessica" class="character">
-<img src="https://cdn.shopify.com/s/files/1/0610/8938/2550/files/OMI_1.png?v=1757479366" alt="OMI" id="omi" class="character">
-<img src="https://cdn.shopify.com/s/files/1/0610/8938/2550/files/JADE_1_1.png?v=1757479367" alt="Jade" id="jade" class="character">
+<!-- character-news -->
+<img src="https://cdn.shopify.com/s/files/1/0610/8938/2550/files/MARCE_1.png?v=1757479367" alt="Marce" id="marce-new" class="character-new">
+<img src="https://cdn.shopify.com/s/files/1/0610/8938/2550/files/JESSICA_1.png?v=1757479366" alt="Jessica" id="jessica-new" class="character-new">
+<img src="https://cdn.shopify.com/s/files/1/0610/8938/2550/files/OMI_1.png?v=1757479366" alt="OMI" id="omi-new" class="character-new">
+<img src="https://cdn.shopify.com/s/files/1/0610/8938/2550/files/JADE_1_1.png?v=1757479367" alt="Jade" id="jade-new" class="character-new">
 
 <div class="light_wrapper element-opacity">
   <img src="https://cdn.shopify.com/s/files/1/0610/8938/2550/files/EFFECTS_2_1_1.png?v=1757554969" class="light">
@@ -138,18 +138,18 @@
     }, delay);
   }
 
-  // Characters enter one by one
-  flyImage("#jessica", 2000);
-  flyImage("#omi", 1500);
-  flyImage("#marce", 2500);
-  flyImage("#jade", 500);
+  // character-news enter one by one
+  flyImage("#jessica-new", 2000);
+  flyImage("#omi-new", 1500);
+  flyImage("#marce-new", 2500);
+  flyImage("#jade-new", 500);
 
   // Mouse tilt
   document.addEventListener("mousemove", (e) => {
     const { innerWidth, innerHeight } = window;
     const moveX = (e.clientX - innerWidth / 2) / 40;
     const moveY = (e.clientY - innerHeight / 2) / 40;
-    document.querySelectorAll(".character").forEach((img) => {
+    document.querySelectorAll(".character-new").forEach((img) => {
       img.style.setProperty("--tiltX", `${-moveY}deg`);
       img.style.setProperty("--tiltY", `${moveX}deg`);
     });
@@ -158,7 +158,7 @@
   // Reset tilt when leaving window
   window.addEventListener("mouseout", (e) => {
     if (!e.relatedTarget && !e.toElement) {
-      document.querySelectorAll(".character").forEach((img) => {
+      document.querySelectorAll(".character-new").forEach((img) => {
         img.style.setProperty("--tiltX", `0deg`);
         img.style.setProperty("--tiltY", `0deg`);
       });
