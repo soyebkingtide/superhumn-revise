@@ -346,7 +346,7 @@ font-weight: 700; }
 {% assign case_info = packs_per_case | append: " packs × " | append: pack_weight | append: " " | append: weight_unit | append: " = " | append: total_weight | append: " " | append: weight_unit %}
 {% endcomment %}
 
-{% assign case_info = packs_per_case | append: " x " | append: pack_weight | append: " " | append: weight_unit | append: " packs (" | append: total_weight | append: " " | append: weight_unit | append: ")" %}
+{% comment %} {% assign case_info = packs_per_case | append: " x " | append: pack_weight | append: " " | append: weight_unit | append: " packs (" | append: total_weight | append: " " | append: weight_unit | append: ")" %}
 
 
 
@@ -354,7 +354,7 @@ font-weight: 700; }
 <p><strong>Case ({{ case_info }})</strong></p>
 
 <!-- Add as property to show in shipping info -->
-<input type="hidden" name="properties[Case Info]" value="{{ case_info }}">
+<input type="hidden" name="properties[Case Info]" value="{{ case_info }}"> {% endcomment %}
 
 
 
