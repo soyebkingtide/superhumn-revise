@@ -29,7 +29,7 @@
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
-        "padding_top": 40,
+        "padding_top": 52,
         "padding_bottom": 0
       }
     },
@@ -62,10 +62,10 @@
     "main": {
       "type": "main-register",
       "custom_css": [
-        ".customer h1{display:none; }"
+        ".customer h1 {display: none;}"
       ],
       "settings": {
-        "padding_top": 36,
+        "padding_top": 0,
         "padding_bottom": 20
       }
     }
