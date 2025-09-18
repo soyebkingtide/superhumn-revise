@@ -199,7 +199,7 @@
 {%- assign price_per_lb = price_per_lb_str | times: 1.0 -%}
 
 
-
+{% comment %} 
 
 {%- if pack_weight == 2.0 -%}
   {% assign packs_per_case = 10 %}
@@ -220,7 +220,7 @@
 
 
  <p><strong>Case ({{ packs_per_case }} x {{ pack_weight }} {{ weight_unit }} packs ({{ total_weight }} {{ weight_unit }}))</strong></p>
-
+ {% endcomment %}
 
 
 
