@@ -9,6 +9,40 @@
  */
 {
   "sections": {
+    "rich_text_HmtJzN": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_CFjGFU": {
+          "type": "heading",
+          "settings": {
+            "heading": "Create account",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_CFjGFU"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "custom_liquid_yJCNQB": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 20
+      }
+    },
     "1758166598dcc73e9d": {
       "type": "apps",
       "blocks": {
@@ -31,19 +65,10 @@
         "padding_top": 36,
         "padding_bottom": 20
       }
-    },
-    "custom_liquid_yJCNQB": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom-liquid.presets.name",
-      "settings": {
-        "custom_liquid": "",
-        "color_scheme": "",
-        "padding_top": 20,
-        "padding_bottom": 20
-      }
     }
   },
   "order": [
+    "rich_text_HmtJzN",
     "custom_liquid_yJCNQB",
     "1758166598dcc73e9d",
     "main"
