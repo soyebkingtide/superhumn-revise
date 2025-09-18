@@ -9,13 +9,6 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "main-register",
-      "settings": {
-        "padding_top": 36,
-        "padding_bottom": 20
-      }
-    },
     "1758166598dcc73e9d": {
       "type": "apps",
       "blocks": {
@@ -32,6 +25,13 @@
         "include_margins": true
       }
     },
+    "main": {
+      "type": "main-register",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 20
+      }
+    },
     "custom_liquid_yJCNQB": {
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.presets.name",
@@ -44,8 +44,8 @@
     }
   },
   "order": [
-    "main",
+    "custom_liquid_yJCNQB",
     "1758166598dcc73e9d",
-    "custom_liquid_yJCNQB"
+    "main"
   ]
 }
