@@ -61,6 +61,9 @@
     },
     "main": {
       "type": "main-register",
+      "custom_css": [
+        ".customer h1{display:none; }"
+      ],
       "settings": {
         "padding_top": 36,
         "padding_bottom": 20
