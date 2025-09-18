@@ -84,7 +84,7 @@
                 <label for="SortBy">{{ 'products.facets.sort_by_label' | t }}</label>
               </h2>
 
-              Wholesale page xxxxxxx
+          
               <div class="select">
                 {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
                 <select
@@ -201,6 +201,8 @@
                     style="--animation-order: {{ forloop.index }};"
                   {% endif %}
                 >
+
+
                   {% render 'card-product',
                     card_product: product,
                     media_aspect_ratio: section.settings.image_ratio,
@@ -213,6 +215,18 @@
                     quick_add: section.settings.quick_add,
                     section_id: section.id
                   %}
+
+
+                   <!-- Show product tags -->
+  {% if product.tags.size > 0 %}
+    <ul class="product-tags list-unstyled">
+      {% for tag in product.tags %}
+        <li class="product-tag">{{ tag }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  
                 </li>
                 {%- assign skip_card_product_styles = true -%}
               {%- endfor -%}
