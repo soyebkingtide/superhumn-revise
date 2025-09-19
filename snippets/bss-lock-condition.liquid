@@ -79,17 +79,19 @@
 
 
         {% unless bss_lock_action == 'bss_hide_price' %}
-			 
-        {% assign bss_check_url=canonical_url|replace:'/challenge', '/challenge-verified'|split:'/' %}
-        {% assign no_exclude_url = false %}
-        {% if bss_check_url.size == 4 and bss_check_url.last == 'challenge-verified' %}
-            {% assign no_exclude_url=true %}
-        {% elsif bss_check_url.size == 5 and bss_check_url[3].size == 2 and bss_check_url[4] == 'challenge-verified' %}
-            {% assign no_exclude_url=true %}
-        {% elsif bss_check_url.size == 5 and bss_check_url[3] == 'apps' and bss_check_url[4] == 'intercom-proxy' %}
-            {% assign no_exclude_url=true %}
-        {% endif %}
-    {% if shop and template != 'customers/activate_account' and template != 'customers/reset_password' and request.page_type != 'password' and no_exclude_url == false %}
+			{% unless trial_expired %}
+            {% if current_scope == resource_type_product %}
+             {% if collection %}
+                 {% assign current_scope = resource_type_collection %}
+             {% endif %}
+             {% assign temp_lock = true %}
+             {% assign temp_scope = resource_type_product %}
+             {% for product_collection in product.collections %}
+                 {% assign collection = product_collection %}
+                 {% assign current_scope = resource_type_collection %}
+             {% endfor %}
+            {% endif %}
+             {% if current_scope == resource_type_collection %}
 				{% unless false %}
 					{% assign isExcluded = false %}{% unless isExcluded %}
 						{% assign lock_ids = lock_ids | append: ',5333,' %}
@@ -97,6 +99,10 @@
 					{% endunless %}
 				{% endunless %}
 			{% endif %}
+             {% if temp_lock %}
+                 {% assign current_scope = temp_scope %}
+                 {% assign temp_lock = false %}
+             {% endif %} {% endunless %}
         {% endunless %}
 		
 
