@@ -157,18 +157,12 @@
 					
 					
 					
-					{% assign temp_7761 = false %}
-                    {% if customer %}
-                        {% assign temp_7761 = true %}
-                    {% endif %}
-                    
+						{% assign temp_7761 = false %}
+						{% if true %}
+							{% assign temp_7761 = true %}
+						{% endif %}
 					
-				
-				
-				
-				
-				{% if temp_7761 %}
-				
+					{% if temp_7761 %}
 				
 				
 				
@@ -178,7 +172,13 @@
 				
 				
 				
-            {% assign bss_unlocked_conditions = bss_unlocked_conditions | append: '5333:signed_in,' %}
+				
+				
+				
+				
+				
+				
+            {% assign bss_unlocked_conditions = bss_unlocked_conditions | append: '5333:everyone_has_access,' %}
 		{% assign bss_unlocked_rules = bss_unlocked_rules | append: '5333,' %} 
 			{% assign opened_lock_ids = opened_lock_ids|append:",5333," %}
 			
@@ -193,12 +193,12 @@
 			
 			
 			
-			{% else %} {% assign condition_type = 'signed_in' %} {% assign requires_customer = true %} {% endif %}
 			
 			
 			
 			
 			
+			{% else %}{% assign condition_type = 'everyone_has_access' %}{% endif %}
 
 				{% endunless %}
 			
