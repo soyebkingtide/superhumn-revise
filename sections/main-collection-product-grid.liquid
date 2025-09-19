@@ -35,6 +35,11 @@
   gap: 20px; /* Optional spacing between items */
 }
 
+.product-grid .grid__item{
+  width:100%!important;
+  max-width:100%!important;
+}
+
 /* Tablet: 750px and up — 2 columns */
 @media (min-width: 750px) {
   .product-grid {
@@ -182,7 +187,7 @@
               "
             >
               {% assign skip_card_product_styles = false %}
-              {%- for product in collection.products -%}
+              {%- for product in collection.products -%}{% comment %}start BSS Commerce Hide Price{% endcomment %}{% capture bss_lock_check %}{% render 'bss-lock-condition', scope: 'subject', subject: product, variable: 'transparent' %}{% endcapture %}{% if bss_lock_check contains 'true' %}{% render 'bss-hide-product-design', section: 'sections/main-collection-product-grid.liquid', subject: product %}{% continue %}{% endif %}{% comment %}end BSS Commerce Hide Price{% endcomment %}
                 {% assign lazy_load = false %}
                 {%- if forloop.index > 2 -%}
                   {%- assign lazy_load = true -%}

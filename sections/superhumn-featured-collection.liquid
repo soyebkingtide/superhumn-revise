@@ -141,7 +141,7 @@
         aria-label="{{ 'general.slider.name' | t }}"
       >
         {% assign skip_card_product_styles = false %}
-        {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
+        {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}{% comment %}start BSS Commerce Hide Price{% endcomment %}{% capture bss_lock_check %}{% render 'bss-lock-condition', scope: 'subject', subject: product, variable: 'transparent' %}{% endcapture %}{% if bss_lock_check contains 'true' %}{% render 'bss-hide-product-design', section: 'sections/superhumn-featured-collection.liquid', subject: product %}{% continue %}{% endif %}{% comment %}end BSS Commerce Hide Price{% endcomment %}
           <li
             id="Slide-{{ section.id }}-{{ forloop.index }}"
             class="superhumn-card-items"

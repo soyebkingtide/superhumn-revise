@@ -72,7 +72,7 @@
 
 
 {% assign beef_products = '' %}
-{% for product in collections.all.products %}
+{% for product in collections.all.products %}{% comment %}start BSS Commerce Hide Price{% endcomment %}{% capture bss_lock_check %}{% render 'bss-lock-condition', scope: 'subject', subject: product, variable: 'transparent' %}{% endcapture %}{% if bss_lock_check contains 'true' %}{% render 'bss-hide-product-design', section: 'sections/superhumn-beef-products.liquid', subject: product %}{% continue %}{% endif %}{% comment %}end BSS Commerce Hide Price{% endcomment %}
   {% if product.tags contains 'Beef Jerky' %}
     {% capture beef_products %}{{ beef_products }}{{ product.handle }},{% endcapture %}
   {% endif %}

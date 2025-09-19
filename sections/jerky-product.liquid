@@ -261,7 +261,7 @@ font-weight: 700; }
   <div class="page-width">
     <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
 
- {% comment %} {%- for block in section.blocks -%}
+ {% comment %} {%- for block in section.blocks -%}{% comment %}start BSS Commerce Hide Price{% endcomment %}{% capture bss_lock_check %}{% render 'bss-lock-condition', scope: 'subject', subject: block, variable: 'transparent' %}{% endcapture %}{% if bss_lock_check contains 'true' %}{% render 'bss-hide-product-design', section: 'sections/jerky-product.liquid', subject: block %}{% continue %}{% endif %}{% comment %}end BSS Commerce Hide Price{% endcomment %}
             {%- case block.type -%}
 
          {%- when 'description' -%}
@@ -289,7 +289,7 @@ font-weight: 700; }
         >
           {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
-          {%- for block in section.blocks -%}
+          {%- for block in section.blocks -%}{% comment %}start BSS Commerce Hide Price{% endcomment %}{% capture bss_lock_check %}{% render 'bss-lock-condition', scope: 'subject', subject: block, variable: 'transparent' %}{% endcapture %}{% if bss_lock_check contains 'true' %}{% render 'bss-hide-product-design', section: 'sections/jerky-product.liquid', subject: block %}{% continue %}{% endif %}{% comment %}end BSS Commerce Hide Price{% endcomment %}
             {%- case block.type -%}
               {%- when '@app' -%}
                 {% render block %}
