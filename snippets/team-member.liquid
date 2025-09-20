@@ -1,0 +1,142 @@
+<ul class="team-thumbnail d-flex">
+
+  {% assign page_handle = page.handle %}
+
+    {% assign memberOmi = "omi" %}
+
+  {% assign memberMarcel = "marcel" %}
+
+  {% assign memberJade = "jade" %}
+
+    {% assign memberJessica = "jessica" %}
+
+    
+    {% assign memberLil = "lil-peanut" %}
+ <!-- Fourth Team Member -->
+  <li {% if page_handle == memberJade %} class="thumb-active" {% endif %}>
+    <a href="/pages/jade">
+<img src="//superhumn.co/cdn/shop/files/Jade_c4497b7f-5297-4470-87cf-68a75e461459.png?v=1757329066" class="img-fluid thumbnail-character" alt="{{ page.title | escape }}" width="105" height="auto">    </a>
+  </li>
+
+
+  <!-- Second Team Member (Active if page_handle is jassica) -->
+  <li {% if page_handle == memberOmi %} class="thumb-active" {% endif %}>
+    <a href="/pages/omi">
+
+      
+      <img src="//superhumn.co/cdn/shop/files/Omi_b48aad02-1caa-4034-8c51-07006d2821d7.png?v=1757331075" class="img-fluid thumbnail-character" alt="{{ page.title | escape }}" width="105" height="auto">
+    </a>
+  </li>
+  <!-- Third Team Member -->
+  <li {% if page_handle == memberJessica %} class="thumb-active" {% endif %}>
+    <a href="/pages/jessica">
+      <img src="//superhumn.co/cdn/shop/files/Jessica.png?v=1757334227" class="img-fluid thumbnail-character" alt="{{ page.title | escape }}" width="100" height="auto">
+    </a>
+  </li>
+ 
+
+  <!-- Second Team Member (Active if page_handle is jassica) -->
+  <li {% if page_handle == memberLil %} class="thumb-active" {% endif %}>
+    <a href="/pages/lil-peanut" class="align-items-center">
+      <img src="//superhumn.co/cdn/shop/files/Lil_Peanut.png?v=1757334532" class="img-fluid thumbnail-character" alt="{{ page.title | escape }}" width="97" height="auto">
+    </a>
+  </li>
+
+
+  <!-- Fifth Team Member (Marcel with a different image source) -->
+  <li {% if page_handle == memberMarcel %} class="thumb-active" {% endif %}>
+    <a href="/pages/marcel">
+      <img src="//superhumn.co/cdn/shop/files/Marcel_81e93abc-a641-408e-bf82-6380e5868bb6.png?v=1757334709" class="img-fluid thumbnail-character" alt="{{ page.title | escape }}" width="70" height="auto">
+    </a>
+  </li>
+</ul>
+
+
+
+{%  render 'slick-js' %}
+
+<script>
+
+  $(document).ready(function(){
+
+  $('.team-thumbnail').slick({
+    slidesToShow: 5,
+  slidesToScroll: 1,
+  autoplay: true,
+  speed: 3600,
+  autoplaySpeed: 0, // Set to 0 for continuous sliding
+  cssEase: "linear", // For smooth, continuous movement
+  infinite: true, // Allows continuous looping
+  dots: false,
+  arrows: false,
+   
+     
+
+      responsive: [
+
+      
+        
+    {
+      breakpoint: 1200,
+      settings: {
+
+      
+        slidesToShow: 4,
+    
+   
+       
+      }
+    },
+
+
+           
+    {
+      breakpoint: 1000,
+      settings: {
+
+      
+        slidesToShow: 3,
+    
+   
+       
+      }
+    },
+
+
+    
+    {
+      breakpoint: 749,
+      settings: {
+
+      
+        slidesToShow: 2,
+    
+   
+       
+      }
+    },
+
+
+     
+    {
+      breakpoint: 500,
+      settings: {
+
+      
+        slidesToShow: 1,
+    
+   
+       
+      }
+    },
+
+
+
+
+      ]
+
+  });
+});
+
+
+</script>
