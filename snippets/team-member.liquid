@@ -1,142 +1,81 @@
-<ul class="team-thumbnail d-flex">
-
+<ul class="team-thumbnail">
   {% assign page_handle = page.handle %}
-
-    {% assign memberOmi = "omi" %}
-
+  {% assign memberOmi = "omi" %}
   {% assign memberMarcel = "marcel" %}
-
   {% assign memberJade = "jade" %}
+  {% assign memberJessica = "jessica" %}
+  {% assign memberLil = "lil-peanut" %}
 
-    {% assign memberJessica = "jessica" %}
-
-    
-    {% assign memberLil = "lil-peanut" %}
- <!-- Fourth Team Member -->
+  <!-- Jade -->
   <li {% if page_handle == memberJade %} class="thumb-active" {% endif %}>
     <a href="/pages/jade">
-<img src="//superhumn.co/cdn/shop/files/Jade_c4497b7f-5297-4470-87cf-68a75e461459.png?v=1757329066" class="img-fluid thumbnail-character" alt="{{ page.title | escape }}" width="105" height="auto">    </a>
+      <img src="//superhumn.co/cdn/shop/files/Jade_c4497b7f-5297-4470-87cf-68a75e461459.png?v=1757329066" class="img-fluid thumbnail-character" alt="{{ page.title | escape }}" width="105">
+    </a>
   </li>
 
-
-  <!-- Second Team Member (Active if page_handle is jassica) -->
+  <!-- Omi -->
   <li {% if page_handle == memberOmi %} class="thumb-active" {% endif %}>
     <a href="/pages/omi">
-
-      
-      <img src="//superhumn.co/cdn/shop/files/Omi_b48aad02-1caa-4034-8c51-07006d2821d7.png?v=1757331075" class="img-fluid thumbnail-character" alt="{{ page.title | escape }}" width="105" height="auto">
+      <img src="//superhumn.co/cdn/shop/files/Omi_b48aad02-1caa-4034-8c51-07006d2821d7.png?v=1757331075" class="img-fluid thumbnail-character" alt="{{ page.title | escape }}" width="105">
     </a>
   </li>
-  <!-- Third Team Member -->
+
+  <!-- Jessica -->
   <li {% if page_handle == memberJessica %} class="thumb-active" {% endif %}>
     <a href="/pages/jessica">
-      <img src="//superhumn.co/cdn/shop/files/Jessica.png?v=1757334227" class="img-fluid thumbnail-character" alt="{{ page.title | escape }}" width="100" height="auto">
+      <img src="//superhumn.co/cdn/shop/files/Jessica.png?v=1757334227" class="img-fluid thumbnail-character" alt="{{ page.title | escape }}" width="100">
     </a>
   </li>
- 
 
-  <!-- Second Team Member (Active if page_handle is jassica) -->
+  <!-- Lil Peanut -->
   <li {% if page_handle == memberLil %} class="thumb-active" {% endif %}>
-    <a href="/pages/lil-peanut" class="align-items-center">
-      <img src="//superhumn.co/cdn/shop/files/Lil_Peanut.png?v=1757334532" class="img-fluid thumbnail-character" alt="{{ page.title | escape }}" width="97" height="auto">
+    <a href="/pages/lil-peanut">
+      <img src="//superhumn.co/cdn/shop/files/Lil_Peanut.png?v=1757334532" class="img-fluid thumbnail-character" alt="{{ page.title | escape }}" width="97">
     </a>
   </li>
 
-
-  <!-- Fifth Team Member (Marcel with a different image source) -->
+  <!-- Marcel -->
   <li {% if page_handle == memberMarcel %} class="thumb-active" {% endif %}>
     <a href="/pages/marcel">
-      <img src="//superhumn.co/cdn/shop/files/Marcel_81e93abc-a641-408e-bf82-6380e5868bb6.png?v=1757334709" class="img-fluid thumbnail-character" alt="{{ page.title | escape }}" width="70" height="auto">
+      <img src="//superhumn.co/cdn/shop/files/Marcel_81e93abc-a641-408e-bf82-6380e5868bb6.png?v=1757334709" class="img-fluid thumbnail-character" alt="{{ page.title | escape }}" width="70">
     </a>
   </li>
 </ul>
-
 
 <!-- Slick CSS -->
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 
-<!-- Slick JS -->
+<!-- jQuery + Slick JS -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
-
 <script>
-
   $(document).ready(function(){
-
-  $('.team-thumbnail').slick({
-    slidesToShow: 5,
-  slidesToScroll: 1,
-
-   
-     
-
+    $('.team-thumbnail').slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      infinite: true,
+      arrows: true,
+      dots: false,
       responsive: [
-
-      
-        
-    {
-      breakpoint: 1200,
-      settings: {
-
-      
-        slidesToShow: 4,
-    
-   
-       
-      }
-    },
-
-
-           
-    {
-      breakpoint: 1000,
-      settings: {
-
-      
-        slidesToShow: 3,
-    
-   
-       
-      }
-    },
-
-
-    
-    {
-      breakpoint: 749,
-      settings: {
-
-      
-        slidesToShow: 2,
-    
-   
-       
-      }
-    },
-
-
-     
-    {
-      breakpoint: 500,
-      settings: {
-
-      
-        slidesToShow: 1,
-    
-   
-       
-      }
-    },
-
-
-
-
+        {
+          breakpoint: 1200,
+          settings: { slidesToShow: 4 }
+        },
+        {
+          breakpoint: 1000,
+          settings: { slidesToShow: 3 }
+        },
+        {
+          breakpoint: 749,
+          settings: { slidesToShow: 2 }
+        },
+        {
+          breakpoint: 500,
+          settings: { slidesToShow: 1 }
+        }
       ]
-
+    });
   });
-});
-
-
 </script>
