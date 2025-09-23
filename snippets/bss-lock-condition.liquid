@@ -107,21 +107,27 @@
 					
 					
 					
-					{% assign temp_7762 = false %}
-                    {% if customer %}
-                        {% assign temp_7762 = true %}
-                    {% endif %}
+						{% assign list_tag = customer.tags|join:','|downcase|split:',' %}
+						{% assign restrict_tags = ",wholesale products," %}
+						{% assign temp_7762 = false %}
+
+						{% for customer_tag in list_tag %}
+                            {% assign checking_customer_tag = ',' | append: customer_tag | append: ',' %}
+							{% if restrict_tags contains checking_customer_tag %}
+								{% assign temp_7762 = true %}
+							{% endif %}
+   						{% endfor %}
                     
 					
 				
 				
 				
 				
+				
+				
+				
+				
 				{% if temp_7762 %}
-				
-				
-				
-				
 				
 				
 				
@@ -138,11 +144,11 @@
 			
 			
 			
+			{% else %}{% assign condition_type = 'customer_tag' %} {% assign requires_customer_tag = true %} {% endif %}
 			
 			
 			
 			
-			{% else %} {% assign condition_type = 'signed_in' %} {% assign requires_customer = true %} {% endif %}
 			
 			
 			
