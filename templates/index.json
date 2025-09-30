@@ -32,25 +32,11 @@
         "caption_3MBpyj": {
           "type": "caption",
           "settings": {
-            "caption": "FUEL",
-            "caption2": "Your",
-            "caption3": "Inner",
+            "caption": "MAIN",
+            "caption2": "CHARACTER",
+            "caption3": "MACROS",
             "text_style": "caption-with-letter-spacing",
-            "text_size": "fs-48"
-          }
-        },
-        "heading_NXebRq": {
-          "type": "heading",
-          "settings": {
-            "heading": "SUPER HERO",
-            "heading_size": "h0"
-          }
-        },
-        "text_z3qyq9": {
-          "type": "text",
-          "settings": {
-            "text": "With our high protein beef jerky – the audacious, bold treat with an attitude that'll have your taste buds hooked!",
-            "text_style": "body"
+            "text_size": "h1"
           }
         },
         "buttons_gPhkde": {
@@ -67,8 +53,6 @@
       },
       "block_order": [
         "caption_3MBpyj",
-        "heading_NXebRq",
-        "text_z3qyq9",
         "buttons_gPhkde"
       ],
       "name": "Superhumn new banner",
