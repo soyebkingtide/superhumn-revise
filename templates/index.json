@@ -449,6 +449,16 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "column_F67tLJ": {
+          "type": "column",
+          "settings": {
+            "title": "— Philip S",
+            "text_seccond": "",
+            "text": "<p>It’s delicious it’s like nothing I’ve ever experienced I couldn’t believe it wasn’t meat</p>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -463,7 +473,8 @@
         "column_BTtjDU",
         "column_ARNgjJ",
         "column_MjAcKY",
-        "column_Axdzcb"
+        "column_Axdzcb",
+        "column_F67tLJ"
       ],
       "settings": {
         "character_image": "shopify://shop_images/websiteguy.svg",
