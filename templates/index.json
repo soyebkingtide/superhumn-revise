@@ -459,6 +459,16 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "column_3CcDNy": {
+          "type": "column",
+          "settings": {
+            "title": "— Mark G.",
+            "text_seccond": "",
+            "text": "<p>I thought it was meat! It tastes exceptional, love the high protein </p>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -474,7 +484,8 @@
         "column_ARNgjJ",
         "column_MjAcKY",
         "column_Axdzcb",
-        "column_F67tLJ"
+        "column_F67tLJ",
+        "column_3CcDNy"
       ],
       "settings": {
         "character_image": "shopify://shop_images/websiteguy.svg",
