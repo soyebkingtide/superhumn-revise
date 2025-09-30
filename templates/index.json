@@ -360,6 +360,16 @@
             "link": ""
           }
         },
+        "column_3CcDNy": {
+          "type": "column",
+          "settings": {
+            "title": "— Mark G.",
+            "text_seccond": "",
+            "text": "<p>I thought it was meat! It tastes exceptional, love the high protein </p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
         "column_8H8G7H": {
           "type": "column",
           "settings": {
@@ -386,6 +396,26 @@
             "title": "— Maynard Keenan",
             "text_seccond": "",
             "text": "<p>What kind of beef is this? Black angus?</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_myfp4a": {
+          "type": "column",
+          "settings": {
+            "title": "— Caleb M.",
+            "text_seccond": "",
+            "text": "<p>I actually like eating meat, but not because of the ethical. Most of the time when I eat fake meat it’s not very good</p><p>I would prefer to eat this over meat</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_F67tLJ": {
+          "type": "column",
+          "settings": {
+            "title": "— Philip S",
+            "text_seccond": "",
+            "text": "<p>It’s delicious it’s like nothing I’ve ever experienced I couldn’t believe it wasn’t meat</p>",
             "link_label": "",
             "link": ""
           }
@@ -449,54 +479,24 @@
             "link_label": "",
             "link": ""
           }
-        },
-        "column_F67tLJ": {
-          "type": "column",
-          "settings": {
-            "title": "— Philip S",
-            "text_seccond": "",
-            "text": "<p>It’s delicious it’s like nothing I’ve ever experienced I couldn’t believe it wasn’t meat</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_3CcDNy": {
-          "type": "column",
-          "settings": {
-            "title": "— Mark G.",
-            "text_seccond": "",
-            "text": "<p>I thought it was meat! It tastes exceptional, love the high protein </p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_myfp4a": {
-          "type": "column",
-          "settings": {
-            "title": "— Caleb M.",
-            "text_seccond": "",
-            "text": "<p>I actually like eating meat, but not because of the ethical. Most of the time when I eat fake meat it’s not very good</p><p>I would prefer to eat this over meat</p>",
-            "link_label": "",
-            "link": ""
-          }
         }
       },
       "block_order": [
         "column_xJAiK3",
         "column_GMHkLL",
         "column_EnyGfa",
+        "column_3CcDNy",
         "column_8H8G7H",
         "column_xqRjUf",
         "column_HG33Kn",
+        "column_myfp4a",
+        "column_F67tLJ",
         "column_hneFgU",
         "column_TWWtc8",
         "column_BTtjDU",
         "column_ARNgjJ",
         "column_MjAcKY",
-        "column_Axdzcb",
-        "column_F67tLJ",
-        "column_3CcDNy",
-        "column_myfp4a"
+        "column_Axdzcb"
       ],
       "settings": {
         "character_image": "shopify://shop_images/websiteguy.svg",
