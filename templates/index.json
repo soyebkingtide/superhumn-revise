@@ -469,6 +469,16 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "column_myfp4a": {
+          "type": "column",
+          "settings": {
+            "title": "— Caleb M.",
+            "text_seccond": "",
+            "text": "<p>I actually like eating meat, but not because of the ethical. Most of the time when I eat fake meat it’s not very good</p><p>I would prefer to eat this over meat</p>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -485,7 +495,8 @@
         "column_MjAcKY",
         "column_Axdzcb",
         "column_F67tLJ",
-        "column_3CcDNy"
+        "column_3CcDNy",
+        "column_myfp4a"
       ],
       "settings": {
         "character_image": "shopify://shop_images/websiteguy.svg",
