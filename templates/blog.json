@@ -12,7 +12,7 @@
     "main": {
       "type": "main-blog",
       "custom_css": [
-        "@media screen and (min-width: 20px) {.blog-articles {grid-template-columns: 1fr 1fr 1fr; column-gap: var(--grid-desktop-horizontal-spacing); row-gap: var(--grid-desktop-vertical-spacing); } .blog-articles h3 {font-size: 32px; }}",
+        "@media screen and (min-width: 720px) {.blog-articles {grid-template-columns: 1fr 1fr 1fr; column-gap: var(--grid-desktop-horizontal-spacing); row-gap: var(--grid-desktop-vertical-spacing); } .blog-articles h3 {font-size: 32px; }}",
         "#MainContent {max-width: 1000px;}",
         "#MainContent h3 {font-size: 20px;}"
       ],
