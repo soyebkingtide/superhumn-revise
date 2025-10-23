@@ -280,13 +280,13 @@
         "text_WdzLzK": {
           "type": "text",
           "settings": {
-            "scroll_text": "High Protein"
+            "scroll_text": "Non GMO"
           }
         },
         "text_B3Nk8Q": {
           "type": "text",
           "settings": {
-            "scroll_text": "High Protein"
+            "scroll_text": "KETO"
           }
         },
         "text_DW6zkg": {
@@ -298,19 +298,13 @@
         "text_C4Ye9w": {
           "type": "text",
           "settings": {
-            "scroll_text": "High Protein"
+            "scroll_text": "Non GMO"
           }
         },
         "text_QiWpp3": {
           "type": "text",
           "settings": {
-            "scroll_text": "High Protein"
-          }
-        },
-        "text_NNDJ7A": {
-          "type": "text",
-          "settings": {
-            "scroll_text": "High Protein"
+            "scroll_text": "Keto"
           }
         }
       },
@@ -320,8 +314,7 @@
         "text_B3Nk8Q",
         "text_DW6zkg",
         "text_C4Ye9w",
-        "text_QiWpp3",
-        "text_NNDJ7A"
+        "text_QiWpp3"
       ],
       "settings": {
         "color_scheme": "scheme-755a3726-29a3-4168-87d5-bb0359225390"
