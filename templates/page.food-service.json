@@ -17,10 +17,10 @@
         "padding_bottom": 100
       }
     },
-    "collapsible_content_NE3ALU": {
-      "type": "collapsible-content",
+    "food_service_XJwrRB": {
+      "type": "food-service",
       "blocks": {
-        "collapsible_row_yBGThX": {
+        "collapsible_row_Gq3Mb7": {
           "type": "collapsible_row",
           "settings": {
             "heading": "Collapsible row",
@@ -29,7 +29,7 @@
             "page": ""
           }
         },
-        "collapsible_row_rXPAFg": {
+        "collapsible_row_AVUNLV": {
           "type": "collapsible_row",
           "settings": {
             "heading": "Collapsible row",
@@ -38,7 +38,7 @@
             "page": ""
           }
         },
-        "collapsible_row_LUwiwE": {
+        "collapsible_row_GQpDUx": {
           "type": "collapsible_row",
           "settings": {
             "heading": "Collapsible row",
@@ -47,7 +47,7 @@
             "page": ""
           }
         },
-        "collapsible_row_py8tYP": {
+        "collapsible_row_VjTpyB": {
           "type": "collapsible_row",
           "settings": {
             "heading": "Collapsible row",
@@ -58,14 +58,14 @@
         }
       },
       "block_order": [
-        "collapsible_row_yBGThX",
-        "collapsible_row_rXPAFg",
-        "collapsible_row_LUwiwE",
-        "collapsible_row_py8tYP"
+        "collapsible_row_Gq3Mb7",
+        "collapsible_row_AVUNLV",
+        "collapsible_row_GQpDUx",
+        "collapsible_row_VjTpyB"
       ],
-      "name": "t:sections.collapsible_content.presets.name",
+      "name": "Food Service",
       "settings": {
-        "caption": "CASE UPC/GTN: 10860003308964PRODUCT CODE: SHNGB12C",
+        "caption": "",
         "heading": "GROUND BEEF",
         "heading_size": "h1",
         "heading_alignment": "center",
@@ -73,133 +73,7 @@
         "color_scheme": "",
         "container_color_scheme": "",
         "open_first_collapsible_row": false,
-        "image": "shopify://shop_images/ChatGPT_Image_Nov_6_2025_03_01_35_PM.png",
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "collapsible_content_8bYd79": {
-      "type": "collapsible-content",
-      "blocks": {
-        "collapsible_row_ipVM7R": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_TcDhMQ": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_xVfiJW": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_JWkjh3": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "collapsible_row_ipVM7R",
-        "collapsible_row_TcDhMQ",
-        "collapsible_row_xVfiJW",
-        "collapsible_row_JWkjh3"
-      ],
-      "name": "t:sections.collapsible_content.presets.name",
-      "settings": {
-        "caption": "CASE UPC/GTN: 10860003308964PRODUCT CODE: SHNGB12C",
-        "heading": "GROUND BEEF",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "layout": "none",
-        "color_scheme": "",
-        "container_color_scheme": "",
-        "open_first_collapsible_row": false,
-        "image": "shopify://shop_images/ChatGPT_Image_Nov_6_2025_03_01_35_PM.png",
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "collapsible_content_hXL7Y7": {
-      "type": "collapsible-content",
-      "blocks": {
-        "collapsible_row_gCTi3P": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_Km4PAz": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_bcwgAd": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_8qq6pC": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "collapsible_row_gCTi3P",
-        "collapsible_row_Km4PAz",
-        "collapsible_row_bcwgAd",
-        "collapsible_row_8qq6pC"
-      ],
-      "name": "t:sections.collapsible_content.presets.name",
-      "settings": {
-        "caption": "CASE UPC/GTN: 10860003308964PRODUCT CODE: SHNGB12C",
-        "heading": "GROUND BEEF",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "layout": "none",
-        "color_scheme": "",
-        "container_color_scheme": "",
-        "open_first_collapsible_row": false,
-        "image": "shopify://shop_images/ChatGPT_Image_Nov_6_2025_03_01_35_PM.png",
+        "image": "shopify://shop_images/Screenshot_2025-11-16_at_1.56.25_PM_1.png",
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
         "padding_top": 36,
@@ -209,8 +83,6 @@
   },
   "order": [
     "main",
-    "collapsible_content_NE3ALU",
-    "collapsible_content_8bYd79",
-    "collapsible_content_hXL7Y7"
+    "food_service_XJwrRB"
   ]
 }
