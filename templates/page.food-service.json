@@ -265,12 +265,264 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "food_service_hx4UmG": {
+      "type": "food-service",
+      "blocks": {
+        "collapsible_row_BTTBVN": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "About",
+            "icon": "none",
+            "row_content": "<ul><li>THE MEAT YOU LOVE AND CRAVE</li><li>100% PLANT BASED</li><li>Taste and texture equal to ground beef</li><li>Value - price parity to animal protein</li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible_row_EcktqV": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "FEATURES",
+            "icon": "none",
+            "row_content": "<ul><li>HIGH SOURCE OF PROTEIN</li><li>HIGH IN FIBER</li><li>LOW SATURATED FAT</li><li>GOOD SOURCE OF IRON</li><li>NO ADDED SODIUM</li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible_row_Lznbc3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "INGREDIENTS",
+            "icon": "none",
+            "row_content": "<p>FILTERED WATER, HEMP PROTEIN, SHITAKE<br/>MUSHROOM, REFINED COCONUT OIL, NATURAL FLAVOR</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_Ww8fcE": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "ALLERGENS",
+            "icon": "none",
+            "row_content": "<p>Contains none of the top 9 allergens: milk, eggs, fish, crustacean shellfish, tree nuts, peanuts, wheat, soybeans and sesame.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_Neq4fe": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "STORAGE & PREPARATION",
+            "icon": "none",
+            "row_content": "<ul><li>Shelf life - 365 days when frozen.</li><li>Storage temperature - 40 degrees</li><li>Storage - Frozen, Consume 48 hours after thawing.</li><li>Preparation - Ready to cook (cook to 165 degrees Fahrenheit - validate</li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible_row_XLYYHP": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "PACKAGING INFORMATION",
+            "icon": "none",
+            "row_content": "<ul><li>PACK/SIZE -  10 x 2 lb.</li><li>CASE WEIGHT (LBS) - 20 POUNDS</li><li>CASE CUBE - 5 FEET</li><li>CASE DIMENSIONS - 15 X 11 X 6.6</li><li>CASES/PALLET - 80 CASES</li><li>CASES PER LAYER (TI) - 10 CASES</li><li>LAYERS PER PALLET (HI) - 8</li></ul>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_BTTBVN",
+        "collapsible_row_EcktqV",
+        "collapsible_row_Lznbc3",
+        "collapsible_row_Ww8fcE",
+        "collapsible_row_Neq4fe",
+        "collapsible_row_XLYYHP"
+      ],
+      "name": "Food Service",
+      "settings": {
+        "caption": "CASE UPC/GTN: 10860003308964PRODUCT CODE: SHNGB12C",
+        "heading": "GROUND BEEF",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image": "shopify://shop_images/Screenshot_2025-11-16_at_1.56.25_PM_1.png",
+        "image_ratio": "adapt",
+        "desktop_layout": "image_first",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "food_service_E7iJpC": {
+      "type": "food-service",
+      "blocks": {
+        "collapsible_row_fGaTQN": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "About",
+            "icon": "none",
+            "row_content": "<ul><li>THE MEAT YOU LOVE AND CRAVE</li><li>100% PLANT BASED</li><li>Taste and texture equal to ground beef</li><li>Value - price parity to animal protein</li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible_row_tt7BDW": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "FEATURES",
+            "icon": "none",
+            "row_content": "<ul><li>HIGH SOURCE OF PROTEIN</li><li>HIGH IN FIBER</li><li>LOW SATURATED FAT</li><li>GOOD SOURCE OF IRON</li><li>NO ADDED SODIUM</li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible_row_GkrrWe": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "INGREDIENTS",
+            "icon": "none",
+            "row_content": "<p>FILTERED WATER, HEMP PROTEIN, SHITAKE<br/>MUSHROOM, REFINED COCONUT OIL, NATURAL FLAVOR</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_qKebm3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "ALLERGENS",
+            "icon": "none",
+            "row_content": "<p>Contains none of the top 9 allergens: milk, eggs, fish, crustacean shellfish, tree nuts, peanuts, wheat, soybeans and sesame.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_7UXqiH": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "STORAGE & PREPARATION",
+            "icon": "none",
+            "row_content": "<ul><li>Shelf life - 365 days when frozen.</li><li>Storage temperature - 40 degrees</li><li>Storage - Frozen, Consume 48 hours after thawing.</li><li>Preparation - Ready to cook (cook to 165 degrees Fahrenheit - validate</li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible_row_VdDYnB": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "PACKAGING INFORMATION",
+            "icon": "none",
+            "row_content": "<ul><li>PACK/SIZE -  10 x 2 lb.</li><li>CASE WEIGHT (LBS) - 20 POUNDS</li><li>CASE CUBE - 5 FEET</li><li>CASE DIMENSIONS - 15 X 11 X 6.6</li><li>CASES/PALLET - 80 CASES</li><li>CASES PER LAYER (TI) - 10 CASES</li><li>LAYERS PER PALLET (HI) - 8</li></ul>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_fGaTQN",
+        "collapsible_row_tt7BDW",
+        "collapsible_row_GkrrWe",
+        "collapsible_row_qKebm3",
+        "collapsible_row_7UXqiH",
+        "collapsible_row_VdDYnB"
+      ],
+      "name": "Food Service",
+      "settings": {
+        "caption": "CASE UPC/GTN: 10860003308964PRODUCT CODE: SHNGB12C",
+        "heading": "GROUND BEEF",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image": "shopify://shop_images/Screenshot_2025-11-16_at_1.56.25_PM_1.png",
+        "image_ratio": "adapt",
+        "desktop_layout": "image_first",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "food_service_7jKPjA": {
+      "type": "food-service",
+      "blocks": {
+        "collapsible_row_adyppT": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "About",
+            "icon": "none",
+            "row_content": "<ul><li>THE MEAT YOU LOVE AND CRAVE</li><li>100% PLANT BASED</li><li>Taste and texture equal to ground beef</li><li>Value - price parity to animal protein</li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible_row_DtttGn": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "FEATURES",
+            "icon": "none",
+            "row_content": "<ul><li>HIGH SOURCE OF PROTEIN</li><li>HIGH IN FIBER</li><li>LOW SATURATED FAT</li><li>GOOD SOURCE OF IRON</li><li>NO ADDED SODIUM</li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible_row_hxdD7x": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "INGREDIENTS",
+            "icon": "none",
+            "row_content": "<p>FILTERED WATER, HEMP PROTEIN, SHITAKE<br/>MUSHROOM, REFINED COCONUT OIL, NATURAL FLAVOR</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_i3YgPH": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "ALLERGENS",
+            "icon": "none",
+            "row_content": "<p>Contains none of the top 9 allergens: milk, eggs, fish, crustacean shellfish, tree nuts, peanuts, wheat, soybeans and sesame.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_wad8fh": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "STORAGE & PREPARATION",
+            "icon": "none",
+            "row_content": "<ul><li>Shelf life - 365 days when frozen.</li><li>Storage temperature - 40 degrees</li><li>Storage - Frozen, Consume 48 hours after thawing.</li><li>Preparation - Ready to cook (cook to 165 degrees Fahrenheit - validate</li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible_row_LPmfLP": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "PACKAGING INFORMATION",
+            "icon": "none",
+            "row_content": "<ul><li>PACK/SIZE -  10 x 2 lb.</li><li>CASE WEIGHT (LBS) - 20 POUNDS</li><li>CASE CUBE - 5 FEET</li><li>CASE DIMENSIONS - 15 X 11 X 6.6</li><li>CASES/PALLET - 80 CASES</li><li>CASES PER LAYER (TI) - 10 CASES</li><li>LAYERS PER PALLET (HI) - 8</li></ul>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_adyppT",
+        "collapsible_row_DtttGn",
+        "collapsible_row_hxdD7x",
+        "collapsible_row_i3YgPH",
+        "collapsible_row_wad8fh",
+        "collapsible_row_LPmfLP"
+      ],
+      "name": "Food Service",
+      "settings": {
+        "caption": "CASE UPC/GTN: 10860003308964PRODUCT CODE: SHNGB12C",
+        "heading": "GROUND BEEF",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image": "shopify://shop_images/Screenshot_2025-11-16_at_1.56.25_PM_1.png",
+        "image_ratio": "adapt",
+        "desktop_layout": "image_first",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "food_service_XJwrRB",
     "food_service_yQdMN4",
-    "food_service_XAkJxH"
+    "food_service_XAkJxH",
+    "food_service_hx4UmG",
+    "food_service_E7iJpC",
+    "food_service_7jKPjA"
   ]
 }
