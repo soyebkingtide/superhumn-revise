@@ -64,6 +64,15 @@
             "row_content": "<ul><li>Shelf life - 365 days when frozen.</li><li>Storage temperature - 40 degrees</li><li>Storage - Frozen, Consume 48 hours after thawing.</li><li>Preparation - Ready to cook (cook to 165 degrees Fahrenheit - validate</li></ul>",
             "page": ""
           }
+        },
+        "collapsible_row_GR7rGQ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "PACKAGING INFORMATION",
+            "icon": "none",
+            "row_content": "<ul><li>PACK/SIZE -  10 x 2 lb.</li><li>CASE WEIGHT (LBS) - 20 POUNDS</li><li>CASE CUBE - 5 FEET</li><li>CASE DIMENSIONS - 15 X 11 X 6.6</li><li>CASES/PALLET - 80 CASES</li><li>CASES PER LAYER (TI) - 10 CASES</li><li>LAYERS PER PALLET (HI) - 8</li></ul>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -71,7 +80,8 @@
         "collapsible_row_AVUNLV",
         "collapsible_row_GQpDUx",
         "collapsible_row_VjTpyB",
-        "collapsible_row_ktC8i9"
+        "collapsible_row_ktC8i9",
+        "collapsible_row_GR7rGQ"
       ],
       "name": "Food Service",
       "settings": {
