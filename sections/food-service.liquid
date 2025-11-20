@@ -45,6 +45,15 @@
     gap:17px;
   }
 
+  .tag
+  {
+    
+font-size: 8.795px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+  }
+
   .section--food-service .h2{
     
 font-size: 55.317px;
@@ -114,7 +123,7 @@ margin-bottom:17px;
 
 
             {%- if section.settings.caption != blank -%}
-            <p class="caption-with-letter-spacing">
+            <p class="caption-with-letter-spacing tag">
               {{ section.settings.caption | escape }}
             </p>
           {% endif %}
