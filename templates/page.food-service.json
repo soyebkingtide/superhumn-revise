@@ -24,8 +24,8 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "About",
-            "icon": "check_mark",
-            "row_content": "<ul><li>THE MEAT YOU LOVE AND CRAVE</li><li>100% PLANT BASED</li><li>Taste and texture equal to ground beef</li><li>Value - price parity to animal protein<br/><br/></li></ul>",
+            "icon": "none",
+            "row_content": "<ul><li>THE MEAT YOU LOVE AND CRAVE</li><li>100% PLANT BASED</li><li>Taste and texture equal to ground beef</li><li>Value - price parity to animal protein</li></ul>",
             "page": ""
           }
         },
