@@ -75,7 +75,7 @@
         "open_first_collapsible_row": false,
         "image": "shopify://shop_images/Screenshot_2025-11-16_at_1.56.25_PM_1.png",
         "image_ratio": "adapt",
-        "desktop_layout": "image_second",
+        "desktop_layout": "image_first",
         "padding_top": 36,
         "padding_bottom": 36
       }
