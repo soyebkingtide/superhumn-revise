@@ -23,9 +23,9 @@
         "collapsible_row_Gq3Mb7": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "About",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<ul><li>THE MEAT YOU LOVE AND CRAVE</li><li>100% PLANT BASED</li><li>Taste and texture equal to ground beef</li><li>Value - price parity to animal protein<br/><br/></li></ul>",
             "page": ""
           }
         },
@@ -65,7 +65,7 @@
       ],
       "name": "Food Service",
       "settings": {
-        "caption": "",
+        "caption": "CASE UPC/GTN: 10860003308964PRODUCT CODE: SHNGB12C",
         "heading": "GROUND BEEF",
         "heading_size": "h1",
         "heading_alignment": "center",
