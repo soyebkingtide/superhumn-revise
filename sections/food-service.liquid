@@ -29,6 +29,8 @@
      background:#000;
   }
 
+  .shadow.text-shadow{ text-shadow: 6px 4px 0 #EA3323; }
+
   #MainContent .shopify-section {width: calc(33.333% - 20px);   }
 
 {%- endstyle -%}
@@ -43,7 +45,7 @@
         >
           
           {%- if section.settings.heading != blank -%}
-            <h2 class="collapsible-content__heading inline-richtext {{ section.settings.heading_size }}">
+            <h2 class="collapsible-content__heading inline-richtext {{ section.settings.heading_size }} shadow text-shadow">
               {{ section.settings.heading }}
             </h2>
           {%- else -%}
