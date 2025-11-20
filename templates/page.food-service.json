@@ -32,9 +32,9 @@
         "collapsible_row_AVUNLV": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "FEATURES",
+            "icon": "none",
+            "row_content": "<ul><li>HIGH SOURCE OF PROTEIN</li><li>HIGH IN FIBER</li><li>LOW SATURATED FAT</li><li>GOOD SOURCE OF IRON</li><li>NO ADDED SODIUM</li></ul>",
             "page": ""
           }
         },
